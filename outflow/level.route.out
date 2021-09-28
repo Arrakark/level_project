@@ -1,0 +1,97 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2021.1.165 
+Compiled: Jun 25 2021.
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T8F81" ...
+
+***** Beginning stage routing graph generation ... *****
+Read ipin pattern from /home/vlad/efinity/2021.1/arch/./ipin_oph.xml
+Finished parsing ipin pattern file '/home/vlad/efinity/2021.1/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/vlad/efinity/2021.1/arch/./sb_connectivity_subset.xdb'.
+BuildGraph process took 0.776018 seconds.
+	BuildGraph process took 0.77 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 1338.7 MB, end = 1405.3 MB, delta = 66.596 MB
+BuildGraph process resident set memory usage: begin = 118.94 MB, end = 186.032 MB, delta = 67.092 MB
+	BuildGraph process peak resident set memory usage = 720.404 MB
+check rr_graph process took 0.0363045 seconds.
+	check rr_graph process took 0.04 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 1417.61 MB, end = 1419.55 MB, delta = 1.944 MB
+check rr_graph process resident set memory usage: begin = 198.44 MB, end = 200.32 MB, delta = 1.88 MB
+	check rr_graph process peak resident set memory usage = 720.404 MB
+Generated 393771 RR nodes and 1459856 RR edges
+This design has 0 global control net(s). See /home/vlad/Documents/level_project/outflow/level.route.rpt for details.
+Routing graph took 0.840839 seconds.
+	Routing graph took 0.82 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 1338.7 MB, end = 1419.55 MB, delta = 80.852 MB
+Routing graph resident set memory usage: begin = 118.94 MB, end = 200.32 MB, delta = 81.38 MB
+	Routing graph peak resident set memory usage = 720.404 MB
+***** Ending stage routing graph generation *****
+***** Beginning stage routing ... *****
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+         1          980              16.88              0.123
+         2          175              16.71             0.0934
+         3           57              16.87              0.055
+         4            9              17.51             0.0322
+         5            1              17.83             0.0211
+         6            0              17.83             0.0202
+
+Successfully routed netlist after 6 routing iterations and 1244078 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+Serial number (magic cookie) for the routing is: 458462543
+Netlist fully routed.
+
+Successfully created FPGA route file '/home/vlad/Documents/level_project/outflow/level.route'
+Routing took 0.423694 seconds.
+	Routing took 0.42 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 1419.55 MB, end = 1419.55 MB, delta = 0 MB
+Routing resident set memory usage: begin = 200.32 MB, end = 200.804 MB, delta = 0.484 MB
+	Routing peak resident set memory usage = 720.404 MB
+***** Ending stage routing *****
+***** Beginning stage final timing analysis ... *****
+
+Maximum possible analyzed clocks frequency
+Clock Name      Period (ns)   Frequency (MHz)   Edge
+clk                17.972          55.641     (R-R)
+
+Geomean max period: 17.972
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+clk              clk                  20.000         2.028     (R-R)
+
+
+final timing analysis took 0.026491 seconds.
+	final timing analysis took 0.03 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1419.55 MB, end = 1423.78 MB, delta = 4.232 MB
+final timing analysis resident set memory usage: begin = 200.804 MB, end = 202.872 MB, delta = 2.068 MB
+	final timing analysis peak resident set memory usage = 720.404 MB
+***** Ending stage final timing analysis *****
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from '/home/vlad/Documents/level_project/outflow/level.interface.csv'.
+Successfully processed interface constraints file "/home/vlad/Documents/level_project/outflow/level.interface.csv".
+Finished writing bitstream file /home/vlad/Documents/level_project/work_pnr/level.lbf.
+Bitstream generation took 0.0783589 seconds.
+	Bitstream generation took 0.07 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1423.78 MB, end = 1423.78 MB, delta = 0 MB
+Bitstream generation resident set memory usage: begin = 202.872 MB, end = 204.012 MB, delta = 1.14 MB
+	Bitstream generation peak resident set memory usage = 720.404 MB
+***** Ending stage bitstream generation *****
+The entire flow of EFX_PNR took 4.11892 seconds.
+	The entire flow of EFX_PNR took 4.92 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 157.292 MB, end = 1365.33 MB, delta = 1208.04 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 23.06 MB, end = 145.736 MB, delta = 122.676 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 720.404 MB

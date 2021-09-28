@@ -1,0 +1,30 @@
+
+# Efinity Interface Configuration
+# Version: 2021.1.165
+# Date: 2021-09-27 20:18
+
+# Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
+
+# [required | optional] (input|output|clkout), x, y, z, __bypass__|[~|!]<clock>, [[~|!]<pin_name>] | __vcc__ | __gnd__
+clkout, 78, 17, -1, clk
+clkout, 78, 18, -1, clk
+clkout, 78, 22, -1, clk
+clkout, 78, 23, -1, clk
+input, 78, 85, 1, __bypass__, clk
+output, 0, 105, 0, __bypass__, error_led_o
+output, 78, 70, 0, __bypass__, led_o[0]
+output, 78, 67, 0, __bypass__, led_o[1]
+output, 78, 65, 0, __bypass__, led_o[2]
+output, 78, 62, 0, __bypass__, led_o[3]
+output, 78, 60, 0, __bypass__, led_o[4]
+output, 78, 57, 0, __bypass__, led_o[5]
+output, 78, 55, 0, __bypass__, led_o[6]
+output, 78, 52, 0, __bypass__, led_o[7]
+output, 78, 47, 0, __bypass__, led_o[8]
+input, 78, 102, 1, __bypass__, reset_i
+input, 78, 22, 1, __bypass__, scl_i
+output, 78, 22, 0, __bypass__, scl_o
+output, 78, 23, 0, __bypass__, scl_oe
+input, 78, 17, 1, __bypass__, sda_i
+output, 78, 17, 0, __bypass__, sda_o
+output, 78, 18, 0, __bypass__, sda_oe

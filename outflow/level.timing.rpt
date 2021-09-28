@@ -1,0 +1,215 @@
+
+Efinix Static Timing Analysis Report
+Version: 2021.1.165 
+Date: Mon Sep 27 20:18:27 2021
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+ 
+Top-level Entity Name: level
+
+SDC Filename: /home/vlad/Documents/level_project/constraint.sdc
+
+Timing Model: C2
+	temperature : 0C to 85C
+	voltage : 1.1V +/-50mV
+	speedgrade : 2
+	technology : s40ll
+	status : final
+
+---------- Table of Contents (begin) ----------
+   1. Clock Frequency Summary 
+   2. Clock Relationship Summary 
+   3. Path Details for Max Critical Paths 
+   4. Path Details for Min Critical Paths 
+---------- Table of Contents (end) ------------
+
+---------- 1. Clock Frequency Summary (begin) ----------
+
+User target constrained clocks
+Clock Name      Period (ns)   Frequency (MHz)   Waveform   Source Clock Name
+clk                20.000          50.000         {0.000 10.000}        clk
+
+Maximum possible analyzed clocks frequency
+Clock Name      Period (ns)   Frequency (MHz)   Edge
+clk                17.972          55.641     (R-R)
+
+Geomean max period: 17.972
+
+---------- Clock Frequency Summary (end) ---------------
+
+---------- 2. Clock Relationship Summary (begin) ----------
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+clk              clk                  20.000         2.028     (R-R)
+
+NOTE: Values are in nanoseconds.
+
+---------- Clock Relationship Summary (end) ---------------
+
+---------- 3. Path Details for Max Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (clk vs clk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF|CLK
+Path End      : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF|CE
+Launch Clock  : clk (RISE)
+Capture Clock : clk (RISE)
+Slack         : 2.028  (required time - arrival time)
+Delay         : 16.689
+
+Logic Level : 4
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.757
++ Clock To Q + Data Path Delay : 17.832
+--------------------------------------------
+End-of-path arrival time       : 22.590
+
+Constraint                     : 20.000
++ Capture Clock Path Delay     : 4.757
+- Clock Uncertainty            : 0.140
+--------------------------------------------
+End-of-path required time      : 24.617
+
+
+Launch Clock Path
+pin name                                                                                                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===========================================================================================================================================================================================
+ clk                                                                                                             inpad           0.000                  0.000           2          (78,85)
+ clk                                                                                                             inpad           0.420                  0.420           2          (78,85)
+ clk                                                                                                             io              0.000                  0.420           2          (78,85)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                                                                 gbuf_block      1.019                  1.439           2          (77,85)
+ CLKBUF__0|I                                                                                                     gbuf            3.318                  4.757           2          (77,85)
+ CLKBUF__0|O                                                                                                     gbuf            0.000                  4.757         192          (77,85)
+ CLKBUF__0|clkout                                                                                                gbuf_block      0.000                  4.757         192          (77,85)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF|CLK    ff              0.000                  4.757         192          (61,68)
+
+Data Path
+pin name                                                                                                          model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=============================================================================================================================================================================================
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF|Q        ff               0.650                  0.650           4          (61,68)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF|O_seq    eft              2.409                  3.060           4          (61,68)
+   Routing elements:  
+     Manhattan distance of X:0, Y:5
+ LUT__711|I[0]                                                                                                     eft              0.642                  3.701           4          (61,63)
+ LUT__711|in[0]                                                                                                    lut              0.000                  3.701           4          (61,63)
+ LUT__711|out                                                                                                      lut              0.000                  3.701           3          (61,63)
+ LUT__711|O                                                                                                        eft              3.270                  6.972           3          (61,63)
+   Routing elements:  
+     Manhattan distance of X:2, Y:3
+ LUT__715|I[2]                                                                                                     eft              0.400                  7.372           3          (63,60)
+ LUT__715|in[2]                                                                                                    lut              0.000                  7.372           3          (63,60)
+ LUT__715|out                                                                                                      lut              0.000                  7.372           6          (63,60)
+ LUT__715|O                                                                                                        eft              1.258                  8.630           6          (63,60)
+   Routing elements:  
+     Manhattan distance of X:0, Y:1
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF|I[0]         eft              0.642                  9.271           6          (63,59)
+ LUT__960|in[0]                                                                                                    lut              0.000                  9.271           6          (63,59)
+ LUT__960|out                                                                                                      lut              0.000                  9.271           6          (63,59)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF|O            eft              2.783                 12.055           5          (63,59)
+   Routing elements:   feedthru(1)
+     Manhattan distance of X:0, Y:5
+ LUT__965|I[1]                                                                                                     eft              0.533                 12.587           6          (63,64)
+ LUT__965|in[1]                                                                                                    lut              0.000                 12.587           6          (63,64)
+ LUT__965|out                                                                                                      lut              0.000                 12.587           5          (63,64)
+ LUT__965|O                                                                                                        eft              4.752                 17.340           5          (63,64)
+   Routing elements:   feedthru(2)
+     Manhattan distance of X:4, Y:9
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF|CE           ff               0.493                 17.832           5          (67,73)
+
+Capture Clock Path
+pin name                                                                                                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=======================================================================================================================================================================================
+ clk                                                                                                         inpad           0.000                  0.000           2          (78,85)
+ clk                                                                                                         inpad           0.420                  0.420           2          (78,85)
+ clk                                                                                                         io              0.000                  0.420           2          (78,85)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                                                             gbuf_block      1.019                  1.439           2          (77,85)
+ CLKBUF__0|I                                                                                                 gbuf            3.318                  4.757           2          (77,85)
+ CLKBUF__0|O                                                                                                 gbuf            0.000                  4.757         192          (77,85)
+ CLKBUF__0|clkout                                                                                            gbuf_block      0.000                  4.757         192          (77,85)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF|CLK    ff              0.000                  4.757         192          (67,73)
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (clk vs clk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|CLK
+Path End      : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|D
+Launch Clock  : clk (RISE)
+Capture Clock : clk (RISE)
+Slack         : 0.643  (arrival time - required time)
+Delay         : 0.461
+
+Logic Level : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 1.699
++ Clock To Q + Data Path Delay : 0.693
+--------------------------------------------
+End-of-path arrival time       : 2.392
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 1.699
++ Clock Uncertainty            : 0.050
+--------------------------------------------
+End-of-path required time      : 1.749
+
+
+Launch Clock Path
+pin name                                                                                                                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==============================================================================================================================================================================================================
+ clk                                                                                                                                inpad           0.000                  0.000           2          (78,85)
+ clk                                                                                                                                inpad           0.150                  0.150           2          (78,85)
+ clk                                                                                                                                io              0.000                  0.150           2          (78,85)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                                                                                    gbuf_block      0.364                  0.514           2          (77,85)
+ CLKBUF__0|I                                                                                                                        gbuf            1.185                  1.699           2          (77,85)
+ CLKBUF__0|O                                                                                                                        gbuf            0.000                  1.699         192          (77,85)
+ CLKBUF__0|clkout                                                                                                                   gbuf_block      0.000                  1.699         192          (77,85)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|CLK    ff              0.000                  1.699         192          (53,54)
+
+Data Path
+pin name                                                                                                                             model name    delay (ns)   cumulative delay (ns)    pins on net   location
+================================================================================================================================================================================================================
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|Q        ff               0.232                  0.232           5          (53,54)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|O_seq    eft              0.368                  0.600           5          (53,54)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|I[3]     eft              0.093                  0.693           5          (53,54)
+ LUT__904|in[3]                                                                                                                       lut              0.000                  0.693           5          (53,54)
+ LUT__904|out                                                                                                                         lut              0.000                  0.693           2          (53,54)
+
+Capture Clock Path
+pin name                                                                                                                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==============================================================================================================================================================================================================
+ clk                                                                                                                                inpad           0.000                  0.000           2          (78,85)
+ clk                                                                                                                                inpad           0.150                  0.150           2          (78,85)
+ clk                                                                                                                                io              0.000                  0.150           2          (78,85)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                                                                                    gbuf_block      0.364                  0.514           2          (77,85)
+ CLKBUF__0|I                                                                                                                        gbuf            1.185                  1.699           2          (77,85)
+ CLKBUF__0|O                                                                                                                        gbuf            0.000                  1.699         192          (77,85)
+ CLKBUF__0|clkout                                                                                                                   gbuf_block      0.000                  1.699         192          (77,85)
+ u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF|CLK    ff              0.000                  1.699         192          (53,54)
+
+---------- Path Details for Min Critical Paths (end) ---------------
