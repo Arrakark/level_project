@@ -24,7 +24,7 @@ module level_fsm (
 
 logic signed [7:0] raw_buffer;
 localparam slave_address = {7'h68, 1'b0};
-localparam accel_register = 8'h3B;
+localparam accel_register = 8'h3D;
 localparam wake_register = 8'h6b;
 
 typedef enum logic [6:0] { 
@@ -53,9 +53,9 @@ assign error_led_o = state[2];
 always @(posedge clk_i) begin
   if (reset_i) begin 
     state <= ENSURE_BUSY_1;
-    led_o <= 9'b000000000;
-    raw_buffer <= 8'b00000000;
-    i2c_din_o <= 8'b00000000;
+    led_o <= 9'b0;
+    raw_buffer <= 8'b0;
+    i2c_din_o <= 8'b0;
     i2c_command_byte_o <= 8'h0;
     i2c_slave_addr_o <= 8'b0;
     i2c_num_bytes_o <= 8'd0;
@@ -67,7 +67,7 @@ always @(posedge clk_i) begin
         else begin 
           state <= ASSIGN_WRITE_2;
           //assign DIN, command_byte, slave_addr, and num_bytes here
-          i2c_din_o <= 8'b0000_0000;
+          i2c_din_o <= 8'b0;
           i2c_command_byte_o <= wake_register;
           i2c_slave_addr_o <= slave_address;
           i2c_num_bytes_o <= 8'd2;
@@ -112,6 +112,7 @@ always @(posedge clk_i) begin
       VERIFY_12: begin
         if (i2c_arb_lost_i === 0 && i2c_rxak_i === 1) begin 
           state <= LED_OPERATION_13;
+          //raw_buffer <= i2c_data_out_i; // 0.5g offset for 90 degree switch in axis
           raw_buffer <= i2c_data_out_i; // 0.5g offset for 90 degree switch in axis
         end
         else state <= ERROR;

@@ -1,5 +1,5 @@
 Synthesis report for project level
-Generated at: Sep 27, 2021 20:18:17
+Generated at: Sep 28, 2021 21:59:36
 Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
@@ -26,33 +26,33 @@ Post-optimizations and re-synthesis success.
 
 ### ### EFX_FF CE enables (begin) ### ### ###
 Total number of enable signals: 27
-Enable signal <n214>, number of controlling flip flops: 9
-Enable signal <n217>, number of controlling flip flops: 8
+Enable signal <n216>, number of controlling flip flops: 9
+Enable signal <n219>, number of controlling flip flops: 8
 Enable signal <vcc>, number of controlling flip flops: 105
-Enable signal <n406>, number of controlling flip flops: 5
-Enable signal <n258>, number of controlling flip flops: 1
+Enable signal <n408>, number of controlling flip flops: 7
 Enable signal <n260>, number of controlling flip flops: 1
+Enable signal <n262>, number of controlling flip flops: 1
 Enable signal <u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1]>, number of controlling flip flops: 1
 Enable signal <u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]>, number of controlling flip flops: 1
 Enable signal <i2c_busy>, number of controlling flip flops: 1
-Enable signal <n292>, number of controlling flip flops: 8
-Enable signal <n294>, number of controlling flip flops: 1
-Enable signal <n299>, number of controlling flip flops: 1
-Enable signal <n304>, number of controlling flip flops: 8
-Enable signal <n305>, number of controlling flip flops: 1
-Enable signal <n323>, number of controlling flip flops: 1
-Enable signal <n325>, number of controlling flip flops: 8
-Enable signal <n328>, number of controlling flip flops: 8
-Enable signal <n333>, number of controlling flip flops: 8
-Enable signal <n337>, number of controlling flip flops: 1
-Enable signal <n346>, number of controlling flip flops: 1
-Enable signal <n349>, number of controlling flip flops: 1
-Enable signal <n350>, number of controlling flip flops: 1
+Enable signal <n294>, number of controlling flip flops: 8
+Enable signal <n296>, number of controlling flip flops: 1
+Enable signal <n301>, number of controlling flip flops: 1
+Enable signal <n306>, number of controlling flip flops: 8
+Enable signal <n307>, number of controlling flip flops: 1
+Enable signal <n325>, number of controlling flip flops: 1
+Enable signal <n327>, number of controlling flip flops: 8
+Enable signal <n330>, number of controlling flip flops: 8
+Enable signal <n335>, number of controlling flip flops: 8
+Enable signal <n339>, number of controlling flip flops: 1
+Enable signal <n348>, number of controlling flip flops: 1
+Enable signal <n351>, number of controlling flip flops: 1
 Enable signal <n352>, number of controlling flip flops: 1
+Enable signal <n354>, number of controlling flip flops: 1
 Enable signal <u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1>, number of controlling flip flops: 1
-Enable signal <n378>, number of controlling flip flops: 4
-Enable signal <n411>, number of controlling flip flops: 4
-Enable signal <n418>, number of controlling flip flops: 1
+Enable signal <n380>, number of controlling flip flops: 4
+Enable signal <n415>, number of controlling flip flops: 4
+Enable signal <n422>, number of controlling flip flops: 1
 ### ### EFX FF CE enables (end) ### ### ###
 
 ### ### Sequential Elements Trimming Report (begin) ### ### ### 
@@ -74,14 +74,14 @@ FF Output: u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/gen
 
 Module                                                               FFs        ADDs        LUTs      RAMs DSP/MULTs
 ------------------------------------------------------------         ---        ----        ----      ---- ---------
-level:level                                                       191(0)        0(0)      353(0)      0(0)      0(0)
-+level_inst:level_fsm                                             27(27)        0(0)      50(50)      0(0)      0(0)
-+u_i2c_interface:i2c_interface                                    164(0)        0(0)      303(0)      0(0)      0(0)
- +u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac:i2c_c...      164(0)        0(0)      303(0)      0(0)      0(0)
-  +genblk1.master_ctl_inst:i2c_master_ctl_2e835ddf2f154dd...     164(44)        0(0)     303(87)      0(0)      0(0)
-   +u_pgfts_wrflag:pulse_gen_fts_2e835ddf2f154dd587bb395c...        6(6)        0(0)        5(5)      0(0)      0(0)
-   +u_pgfts_rdflag:pulse_gen_fts_2e835ddf2f154dd587bb395c...        6(6)        0(0)        3(3)      0(0)      0(0)
-   +u_i2c_mstrslv_ctl:i2c_mstrslv_ctl_2e835ddf2f154dd587b...    108(108)        0(0)    208(208)      0(0)      0(0)
+level:level                                                       193(0)        0(0)      360(0)      0(0)      0(0)
++level_inst:level_fsm                                             27(27)        0(0)      53(53)      0(0)      0(0)
++u_i2c_interface:i2c_interface                                    166(0)        0(0)      307(0)      0(0)      0(0)
+ +u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac:i2c_c...      166(0)        0(0)      307(0)      0(0)      0(0)
+  +genblk1.master_ctl_inst:i2c_master_ctl_2e835ddf2f154dd...     166(46)        0(0)     307(95)      0(0)      0(0)
+   +u_pgfts_wrflag:pulse_gen_fts_2e835ddf2f154dd587bb395c...        6(6)        0(0)        8(8)      0(0)      0(0)
+   +u_pgfts_rdflag:pulse_gen_fts_2e835ddf2f154dd587bb395c...        6(6)        0(0)        2(2)      0(0)      0(0)
+   +u_i2c_mstrslv_ctl:i2c_mstrslv_ctl_2e835ddf2f154dd587b...    108(108)        0(0)    202(202)      0(0)      0(0)
 
 ### ### Module Resource Usage Distribution Estimates (end) ### ###
 
@@ -89,7 +89,7 @@ level:level                                                       191(0)        
 
  Clock     Flip-Flops   Memory Ports    Multipliers
  -----     ----------   ------------    -----------
-   clk            191              0              0
+   clk            193              0              0
 
 ### ### Clock Load Distribution Report (end) ### ###
 
@@ -119,13 +119,13 @@ veri_options : verilog_mode=sv_09,vhdl_mode=vhdl_2008
 INPUT  PORTS    : 	4
 OUTPUT PORTS    : 	14
 
-EFX_LUT4        : 	353
-   1-2  Inputs  : 	87
-   3    Inputs  : 	90
-   4    Inputs  : 	176
-EFX_FF          : 	191
+EFX_LUT4        : 	360
+   1-2  Inputs  : 	92
+   3    Inputs  : 	100
+   4    Inputs  : 	168
+EFX_FF          : 	193
 EFX_GBUFCE      : 	1
 ### ### Resource Summary (end) ### ### ###
 
 Plain synthesis (without verilog dump and post-map checks) time : 1s
-Elapsed synthesis time : 1s
+Elapsed synthesis time : 2s

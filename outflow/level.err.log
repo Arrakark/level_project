@@ -811,3 +811,168 @@
 // Sep 27, 2021 20:18:17
 ///////////////////////////////////
 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:34:27
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:40:27
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:41:23
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:42:44
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:44:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:45:22
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:46:23
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 16:48:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:48:33
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:76) illegal character 'e' in binary number 8'be (VERI-1038)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:76) syntax error near 'nd' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:78) 'ASSIGN_WRITE_2' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:79) 'ASSERT_WRITE_3' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:80) 'WAIT_FOR_BUSY_4' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:84) 'WAIT_FOR_DONE_5' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:88) 'VERIFY_6' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:92) 'ENSURE_BUSY_7' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:102) 'ASSIGN_WRITE_8' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:105) 'ASSERT_READ_9' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:106) 'WAIT_FOR_BUSY_10' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:110) 'WAIT_FOR_VALID_11' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:114) 'VERIFY_12' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:122) 'LED_OPERATION_13' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:162) 'ERROR' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:165) syntax error near 'default' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:165) SystemVerilog 2009 keyword default used in incorrect context (VERI-2344)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:166) syntax error near 'endcase' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:166) SystemVerilog 2009 keyword endcase used in incorrect context (VERI-2344)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:48:59
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:76) illegal character 'e' in binary number 8'be (VERI-1038)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:76) syntax error near 'nd' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:78) 'ASSIGN_WRITE_2' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:79) 'ASSERT_WRITE_3' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:80) 'WAIT_FOR_BUSY_4' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:84) 'WAIT_FOR_DONE_5' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:88) 'VERIFY_6' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:92) 'ENSURE_BUSY_7' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:102) 'ASSIGN_WRITE_8' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:105) 'ASSERT_READ_9' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:106) 'WAIT_FOR_BUSY_10' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:110) 'WAIT_FOR_VALID_11' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:114) 'VERIFY_12' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:122) 'LED_OPERATION_13' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:162) 'ERROR' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:165) syntax error near 'default' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:165) SystemVerilog 2009 keyword default used in incorrect context (VERI-2344)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:166) syntax error near 'endcase' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:166) SystemVerilog 2009 keyword endcase used in incorrect context (VERI-2344)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:49:03
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:76) illegal character 'e' in binary number 8'be (VERI-1038)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:76) syntax error near 'nd' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:78) 'ASSIGN_WRITE_2' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:79) 'ASSERT_WRITE_3' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:80) 'WAIT_FOR_BUSY_4' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:84) 'WAIT_FOR_DONE_5' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:88) 'VERIFY_6' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:92) 'ENSURE_BUSY_7' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:102) 'ASSIGN_WRITE_8' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:105) 'ASSERT_READ_9' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:106) 'WAIT_FOR_BUSY_10' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:110) 'WAIT_FOR_VALID_11' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:114) 'VERIFY_12' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:122) 'LED_OPERATION_13' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:162) 'ERROR' is already declared (VERI-1116)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:165) syntax error near 'default' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:165) SystemVerilog 2009 keyword default used in incorrect context (VERI-2344)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:166) syntax error near 'endcase' (VERI-1137)
+[EFX-0010 VERI-ERROR] (/home/vlad/Documents/level_project/level_fsm.sv:166) SystemVerilog 2009 keyword endcase used in incorrect context (VERI-2344)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:49:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:50:36
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:52:12
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:53:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:55:23
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:56:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 28, 2021 21:59:35
+///////////////////////////////////
+

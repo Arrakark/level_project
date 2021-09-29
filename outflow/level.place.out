@@ -15,11 +15,11 @@ Running Placement and Routing for Family "Trion", Device "T8F81" ...
 ***** Beginning stage netlist pre-processing ... *****
 Successfully Read in Verific binary Netlist dump file "/home/vlad/Documents/level_project/level.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 0.00186072 seconds.
+VDB Netlist Checker took 0.00186054 seconds.
 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 166.248 MB, end = 166.248 MB, delta = 0 MB
-VDB Netlist Checker resident set memory usage: begin = 37.324 MB, end = 37.324 MB, delta = 0 MB
-	VDB Netlist Checker peak resident set memory usage = 720.404 MB
+VDB Netlist Checker virtual memory usage: begin = 166.252 MB, end = 166.252 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 36.676 MB, end = 36.676 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 399.704 MB
 ***** Ending VDB Netlist Checker ... *****
 Reading core interface constraints from '/home/vlad/Documents/level_project/outflow/level.interface.csv'.
 Successfully processed interface constraints file "/home/vlad/Documents/level_project/outflow/level.interface.csv".
@@ -29,32 +29,32 @@ Pass 0: Swept away 0 blocks with no fanout.
 Swept away 0 nets and 0 blocks in total.
 Removed 0 LUT buffers.
 Successfully created VPR logical netlist from Verific binary DataBase file "/home/vlad/Documents/level_project/level.vdb".
-Netlist pre-processing took 0.0124751 seconds.
-	Netlist pre-processing took 0.02 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 166.248 MB, end = 166.248 MB, delta = 0 MB
-Netlist pre-processing resident set memory usage: begin = 36.4 MB, end = 37.324 MB, delta = 0.924 MB
-	Netlist pre-processing peak resident set memory usage = 720.404 MB
+Netlist pre-processing took 0.0123086 seconds.
+	Netlist pre-processing took 0.01 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 166.252 MB, end = 166.252 MB, delta = 0 MB
+Netlist pre-processing resident set memory usage: begin = 36.676 MB, end = 36.676 MB, delta = 0 MB
+	Netlist pre-processing peak resident set memory usage = 399.704 MB
 ***** Ending stage netlist pre-processing *****
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
 ***** Beginning stage packing ... *****
-Generate proto netlist for file "/home/vlad/Documents/level_project/work_pnr/level.net_proto" took 0.000512 seconds
+Generate proto netlist for file "/home/vlad/Documents/level_project/work_pnr/level.net_proto" took 0.000529 seconds
 Creating IO constraints file '/home/vlad/Documents/level_project/work_pnr/level.io_place'
-Packing took 0.00276011 seconds.
+Packing took 0.00292982 seconds.
 	Packing took 0 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 167.796 MB, end = 168.456 MB, delta = 0.66 MB
-Packing resident set memory usage: begin = 39.112 MB, end = 40.076 MB, delta = 0.964 MB
-	Packing peak resident set memory usage = 720.404 MB
+Packing virtual memory usage: begin = 167.816 MB, end = 168.476 MB, delta = 0.66 MB
+Packing resident set memory usage: begin = 39.04 MB, end = 39.948 MB, delta = 0.908 MB
+	Packing peak resident set memory usage = 399.704 MB
 ***** Ending stage packing *****
 ***** Beginning stage packed netlist loading ... *****
 Read proto netlist file /home/vlad/Documents/level_project/work_pnr/level.net_proto
-Read proto netlist for file "/home/vlad/Documents/level_project/work_pnr/level.net_proto" took 0.000207 seconds
-Setup net and block data structure took 0.010057 seconds
-Packed netlist loading took 0.0346576 seconds.
-	Packed netlist loading took 0.05 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 168.456 MB, end = 731.084 MB, delta = 562.628 MB
-Packed netlist loading resident set memory usage: begin = 40.076 MB, end = 47.392 MB, delta = 7.316 MB
-	Packed netlist loading peak resident set memory usage = 720.404 MB
+Read proto netlist for file "/home/vlad/Documents/level_project/work_pnr/level.net_proto" took 0.000211 seconds
+Setup net and block data structure took 0.010009 seconds
+Packed netlist loading took 0.0318995 seconds.
+	Packed netlist loading took 0.04 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 168.476 MB, end = 665.568 MB, delta = 497.092 MB
+Packed netlist loading resident set memory usage: begin = 39.948 MB, end = 47.444 MB, delta = 7.496 MB
+	Packed netlist loading peak resident set memory usage = 399.704 MB
 ***** Ending stage packed netlist loading *****
 ***** Beginning stage pre-placement ... *****
 
@@ -79,131 +79,107 @@ Starting Global Placer ...
  ----------     -------  --------------     -------
   Iteration       WHPWL Worst Slack (ps) Convergence
  ----------     -------  --------------     -------
-          1        7273           14703         1.2%
-          2        6390           14703         1.9%
-          3        5790           13281         2.3%
-          4        5176           13036         4.5%
-          5        5489           13036         7.6%
-          6        5809           11561        12.4%
-          7        5332            9231        21.5%
-          8        7271            7240        27.1%
-          9        6476            4142        33.8%
-         10        6124            5555        39.1%
-         11        6925            4602        41.7%
-         12        6311            5541        42.5%
-         13        6398            4887        44.5%
-         14        7111            4988        45.1%
-         15        5853            4186        46.0%
-         16        5335            4261        49.2%
-         17       17202            2290        49.2%
-         18       10568            4230        49.2%
-         19        8605            3884        49.2%
-         20        9238            5385        50.3%
-         21        9046            4819        52.9%
-         22        7854            3615        55.1%
-         23        8237            2346        56.5%
-         24        8062            3419        57.6%
-         25        7803            5766        59.3%
-         26        7429            5792        60.1%
-         27        7480            5805        60.7%
-         28        7600            6269        64.0%
-         29        7694            4593        64.4%
-         30        7608            3975        65.3%
-         31        7374            4609        66.8%
-         32        7782            5435        68.9%
-         33        8042            5224        69.4%
-         34        7828            5594        69.9%
-         35        7688            5666        70.4%
-         36        7666            5666        72.3%
-         37        7582            5074        73.5%
-         38        7588            4741        73.6%
-         39        7279            4741        75.7%
-         40        7489            3824        75.8%
-         41        7177            3787        76.1%
-         42        7154            5262        76.5%
-         43        7278            5169        76.7%
-         44        7212            4476        77.0%
-         45        7016            4346        77.4%
-         46        6794            2522        78.5%
-         47        6828            3822        78.6%
-         48        6969            5116        79.9%
-         49        6863            5096        80.0%
-         50        6909            4064        82.8%
-         51        6808            4531        82.8%
-         52        6956            3485        82.8%
-         53        7151            3254        82.8%
-         54        7122            4232        83.7%
-         55        6976            4026        83.8%
-         56        6875            4100        85.7%
-         57        6963            2245        86.5%
-         58        6798            1982        86.5%
+          1        6675           14047         2.0%
+          2        6768           14047         2.7%
+          3        4597           13375         4.1%
+          4        4145           11708         6.4%
+          5        4500           11739        11.3%
+          6        5801            9480        15.4%
+          7        6487            9526        21.9%
+          8        7898            8886        26.2%
+          9        8082           10167        28.4%
+         10        8810            9020        35.0%
+         11        8260            8215        35.5%
+         12        8199            8101        37.7%
+         13        9782            6080        39.5%
+         14        8961            6894        39.6%
+         15        8335            8133        42.4%
+         16        7788            3512        45.4%
+         17        4753            7524        58.0%
+         18        4885            4094        58.0%
+         19        4488            2761        58.0%
+         20        4260            6542        58.1%
+         21        4597            4859        61.9%
+         22        4135            5349        62.4%
+         23        4596            6658        65.1%
+         24        4684            6308        65.7%
+         25        4716            4822        65.8%
+         26        4531            4854        66.4%
+         27        4513            4573        69.9%
+         28        4438            4015        70.0%
+         29        4391            4015        72.3%
+         30        4318            4024        72.3%
+         31        4442            4200        72.3%
+         32        4407            4169        74.6%
+         33        4429            4841        75.8%
+         34        4489            4042        75.9%
 Starting Annealer
 
  ----------     -------  --------------     -------
   Iteration       WHPWL  Delay Max (ps)     R Limit
  ----------     -------  --------------     -------
-          0        6794           17768        30.0
-          1        2656           23147        30.0
-          2        3435           21717        30.0
-          3        3154           21709        30.0
-          4        2839           20570        30.0
-          5        2796           19243        30.0
-          6        2874           18353        30.0
-          7        2971           18624        30.0
-          8        3023           20199        30.0
-          9        2854           19185        30.0
-         10        2715           19243        29.8
-         11        2687           18718        30.0
-         12        2679           17644        29.3
-         13        2559           17512        29.4
-         14        2545           18024        28.4
-         15        2502           16789        28.0
-         16        2560           16537        27.0
-         17        2484           16034        26.5
-         18        2501           16816        25.2
-         19        2487           16416        24.5
-         20        2475           16347        23.5
-         21        2369           16699        22.7
-         22        2310           15661        21.5
-         23        2378           16828        20.7
-         24        2405           16638        19.5
-         25        2386           15134        18.6
-         26        2379           15318        17.6
-         27        2497           16107        16.8
-         28        2553           17078        15.9
-         29        2488           16598        15.2
-         30        2442           15690        14.3
-         31        2361           15342        13.7
-         32        2301           16105        13.0
-         33        2266           17726        12.2
-         34        2239           16140        11.6
-         35        2184           15285        11.0
-         36        2177           15575        10.4
-         37        2170           15016         9.9
-         38        2164           15770         9.5
-         39        2122           15023         9.2
-         40        2140           15877         8.8
-         41        2120           15632         8.4
-         42        2081           14224         8.0
-         43        2052           14520         7.7
-         44        2022           16383         7.3
-         45        2016           14221         7.0
-         46        2015           15061         6.6
-         47        2017           14192         6.1
-Placement successful: 429 cells are placed
-Peak congestion smeared over 1/4 of the chip is 0.073319 at 54,59
-Congestion-weighted HPWL per net: 3.9671
+          0        4135           17154        30.0
+          1        2769           25734        30.0
+          2        4017           23459        30.0
+          3        3239           20506        30.0
+          4        3086           20352        30.0
+          5        3069           19030        30.0
+          6        3135           18975        30.0
+          7        3144           18826        30.0
+          8        3082           18203        30.0
+          9        2955           18293        30.0
+         10        2952           17380        30.0
+         11        2852           16612        30.0
+         12        2818           19913        30.0
+         13        2661           17548        29.6
+         14        2576           16500        28.9
+         15        2513           16003        28.5
+         16        2509           16713        27.7
+         17        2486           16262        26.7
+         18        2453           15569        25.6
+         19        2509           17163        24.9
+         20        2550           17794        24.0
+         21        2512           16248        22.9
+         22        2419           17153        22.1
+         23        2315           15739        21.3
+         24        2290           16575        20.4
+         25        2276           18210        19.4
+         26        2353           16421        18.4
+         27        2368           16887        17.6
+         28        2290           16982        16.8
+         29        2276           15711        16.1
+         30        2287           15689        15.3
+         31        2248           15953        14.6
+         32        2159           14468        13.9
+         33        2145           14918        13.2
+         34        2115           14903        12.6
+         35        2060           15573        11.9
+         36        2048           15609        11.3
+         37        2042           16385        10.7
+         38        2010           14664        10.2
+         39        1978           15409         9.7
+         40        1968           14426         9.3
+         41        1944           16183         8.8
+         42        1977           15175         8.3
+         43        1941           15849         7.9
+         44        1897           14609         7.5
+         45        1862           14310         7.1
+         46        1887           14111         6.7
+         47        1886           14244         6.2
+Placement successful: 436 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0804799 at 78,89
+Congestion-weighted HPWL per net: 3.56596
 
 Reading placement constraints from '/home/vlad/Documents/level_project/outflow/level.qplace'.
-Finished Realigning Types (143 blocks needed type change)
+Finished Realigning Types (131 blocks needed type change)
 
 Completed placement consistency check successfully.
 
-Placement estimated critical path delay: 14.052 ns
+Placement estimated critical path delay: 14.1041 ns
 Successfully created FPGA place file '/home/vlad/Documents/level_project/outflow/level.place'
-Placement took 1.8736 seconds.
-	Placement took 2.71 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 731.084 MB, end = 1338.7 MB, delta = 607.616 MB
-Placement resident set memory usage: begin = 47.392 MB, end = 118.94 MB, delta = 71.548 MB
-	Placement peak resident set memory usage = 720.404 MB
+Placement took 1.51144 seconds.
+	Placement took 2.4 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 665.568 MB, end = 1004.34 MB, delta = 338.776 MB
+Placement resident set memory usage: begin = 47.444 MB, end = 113.496 MB, delta = 66.052 MB
+	Placement peak resident set memory usage = 399.704 MB
 ***** Ending stage placement *****

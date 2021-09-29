@@ -15,8 +15,8 @@ HEX Generation Options Summary:
 	oscillator_clock_divider                 = DIV8
 	io_weak_pullup                           = on
 Finished generating "/home/vlad/Documents/level_project/outflow/level.hex"
-Efinity Bitstream Generator took 0.915888 seconds.
-	Efinity Bitstream Generator took 0.89 seconds (approximately) in total CPU time.
-Efinity Bitstream Generator virtual memory usage: begin = 62.28 MB, end = 73.252 MB, delta = 10.972 MB
-Efinity Bitstream Generator resident set memory usage: begin = 8.832 MB, end = 21.248 MB, delta = 12.416 MB
-	Efinity Bitstream Generator peak resident set memory usage = 720.404 MB
+Efinity Bitstream Generator took 0.914173 seconds.
+	Efinity Bitstream Generator took 0.87 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 62.28 MB, end = 73.26 MB, delta = 10.98 MB
+Efinity Bitstream Generator resident set memory usage: begin = 8.832 MB, end = 21.188 MB, delta = 12.356 MB
+	Efinity Bitstream Generator peak resident set memory usage = 399.704 MB

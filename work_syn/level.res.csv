@@ -1,14 +1,14 @@
 Module Resource Usage Distribution Estimates
-Generated at: Sep 27, 2021 20:18:17
+Generated at: Sep 28, 2021 21:59:36
 
 Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
 
 Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
-level:level                                                 	     191(0)	       0(0)	     353(0)	     0(0)	     0(0)	
-+level_inst:level_fsm                                       	     27(27)	       0(0)	     50(50)	     0(0)	     0(0)	
-+u_i2c_interface:i2c_interface                              	     164(0)	       0(0)	     303(0)	     0(0)	     0(0)	
- +u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac:i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)	     164(0)	       0(0)	     303(0)	     0(0)	     0(0)	
-  +genblk1.master_ctl_inst:i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)	    164(44)	       0(0)	    303(87)	     0(0)	     0(0)	
-   +u_pgfts_wrflag:pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac	       6(6)	       0(0)	       5(5)	     0(0)	     0(0)	
-   +u_pgfts_rdflag:pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac	       6(6)	       0(0)	       3(3)	     0(0)	     0(0)	
-   +u_i2c_mstrslv_ctl:i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)	   108(108)	       0(0)	   208(208)	     0(0)	     0(0)	
+level:level                                                 	     193(0)	       0(0)	     360(0)	     0(0)	     0(0)	
++level_inst:level_fsm                                       	     27(27)	       0(0)	     53(53)	     0(0)	     0(0)	
++u_i2c_interface:i2c_interface                              	     166(0)	       0(0)	     307(0)	     0(0)	     0(0)	
+ +u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac:i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)	     166(0)	       0(0)	     307(0)	     0(0)	     0(0)	
+  +genblk1.master_ctl_inst:i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)	    166(46)	       0(0)	    307(95)	     0(0)	     0(0)	
+   +u_pgfts_wrflag:pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac	       6(6)	       0(0)	       8(8)	     0(0)	     0(0)	
+   +u_pgfts_rdflag:pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac	       6(6)	       0(0)	       2(2)	     0(0)	     0(0)	
+   +u_i2c_mstrslv_ctl:i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)	   108(108)	       0(0)	   202(202)	     0(0)	     0(0)	

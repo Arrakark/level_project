@@ -1,7 +1,7 @@
 
 Efinity Interface Designer Report
 Version: 2021.1.165
-Date: 2021-09-27 20:18
+Date: 2021-09-28 21:59
 
 Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -85,10 +85,10 @@ Verilog Template: level_template.v
 | Instance Name | Function |
 +---------------+----------+
 |  error_led_o  | NSTATUS  |
-|    led_o[1]   |  CBSEL1  |
-|    led_o[6]   |  CBSEL0  |
-|    reset_i    |  CBUS0   |
+|    led_o[6]   |  CBUS0   |
+|    led_o[7]   |  CBUS2   |
 |      scl      |   CSO    |
+|      sda      |   CSI    |
 +---------------+----------+
 
 ---------- Dual-Function Configuration Pin Usage (end) ----------
@@ -97,23 +97,23 @@ Verilog Template: level_template.v
 
 Global Unused Setting: input with weak pullup
 
-+---------------+----------+--------+-----------------+--------------+----------+----------------------+----------------------+-------------+
-| Instance Name | Resource |  Mode  |     Register    | Clock Region | I/O Bank |     I/O Standard     |       Pad Name       | Package Pin |
-+---------------+----------+--------+-----------------+--------------+----------+----------------------+----------------------+-------------+
-|  error_led_o  | GPIOL_21 | output |                 |              |    1B    | 3.3 V LVTTL / LVCMOS |   GPIOL_21_NSTATUS   |      B3     |
-|    led_o[0]   | GPIOR_20 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |    GPIOR_20_CLK5     |      F8     |
-|    led_o[1]   | GPIOR_21 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS | GPIOR_21_CLK4_CBSEL1 |      E7     |
-|    led_o[2]   | GPIOR_22 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |    GPIOR_22_CTRL5    |      F7     |
-|    led_o[3]   | GPIOR_23 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |    GPIOR_23_CTRL4    |      E6     |
-|    led_o[4]   | GPIOR_24 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |       GPIOR_24       |      F6     |
-|    led_o[5]   | GPIOR_25 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |       GPIOR_25       |      F5     |
-|    led_o[6]   | GPIOR_26 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |   GPIOR_26_CBSEL0    |      G9     |
-|    led_o[7]   | GPIOR_27 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |       GPIOR_27       |      H9     |
-|    led_o[8]   | GPIOR_28 | output |                 |              |    2B    | 3.3 V LVTTL / LVCMOS |       GPIOR_28       |      J9     |
-|    reset_i    | GPIOR_15 | input  |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |    GPIOR_15_CBUS0    |      C9     |
-|      scl      | GPIOR_35 | inout  | I(R),O(R),OE(R) |      R0      |    2B    | 3.3 V LVTTL / LVCMOS |     GPIOR_35_CSO     |      G6     |
-|      sda      | GPIOR_36 | inout  | I(R),O(R),OE(R) |      R0      |    2B    | 3.3 V LVTTL / LVCMOS |       GPIOR_36       |      H6     |
-+---------------+----------+--------+-----------------+--------------+----------+----------------------+----------------------+-------------+
++---------------+----------+--------+-----------------+--------------+----------+----------------------+-----------------------+-------------+
+| Instance Name | Resource |  Mode  |     Register    | Clock Region | I/O Bank |     I/O Standard     |        Pad Name       | Package Pin |
++---------------+----------+--------+-----------------+--------------+----------+----------------------+-----------------------+-------------+
+|  error_led_o  | GPIOL_21 | output |                 |              |    1B    | 3.3 V LVTTL / LVCMOS |    GPIOL_21_NSTATUS   |      B3     |
+|    led_o[0]   | GPIOR_00 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |        GPIOR_00       |      A5     |
+|    led_o[1]   | GPIOR_03 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |        GPIOR_03       |      A6     |
+|    led_o[2]   | GPIOR_06 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |        GPIOR_06       |      C6     |
+|    led_o[3]   | GPIOR_08 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |        GPIOR_08       |      A8     |
+|    led_o[4]   | GPIOR_11 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |        GPIOR_11       |      B8     |
+|    led_o[5]   | GPIOR_13 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |        GPIOR_13       |      D6     |
+|    led_o[6]   | GPIOR_15 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |     GPIOR_15_CBUS0    |      C9     |
+|    led_o[7]   | GPIOR_17 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |  GPIOR_17_CTRL6_CBUS2 |      D8     |
+|    led_o[8]   | GPIOR_19 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |     GPIOR_19_CLK6     |      E8     |
+|    reset_i    | GPIOR_02 | input  |                 |              |    2A    | 3.3 V LVTTL / LVCMOS | GPIOR_02_RESERVED_OUT |      C5     |
+|      scl      | GPIOR_35 | inout  | I(R),O(R),OE(R) |      R0      |    2B    | 3.3 V LVTTL / LVCMOS |      GPIOR_35_CSO     |      G6     |
+|      sda      | GPIOR_34 | inout  | I(R),O(R),OE(R) |      R0      |    2B    | 3.3 V LVTTL / LVCMOS |      GPIOR_34_CSI     |      J7     |
++---------------+----------+--------+-----------------+--------------+----------+----------------------+-----------------------+-------------+
 
 *NOTE
 R: Register Path
