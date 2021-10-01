@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  29 SEP 2021 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  30 SEP 2021 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -274,7 +274,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box28
 \@float@everytoks=\toks28
 \@floatcapt=\box29
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `fig:foobar' multiply defined.
+
+
+LaTeX Warning: Label `fig:foobar' multiply defined.
+
+
+LaTeX Warning: Label `fig:foobar' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -291,8 +301,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
 \scratchdimen=\dimen123
@@ -366,7 +375,11 @@ File: tilt_2.png Graphic file (type png)
 <use tilt_2.png>
 Package pdftex.def Info: tilt_2.png  used on input line 38.
 (pdftex.def)             Requested size: 153.79393pt x 102.49353pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+<fsm.png, id=16, 1121.18875pt x 585.18625pt>
+File: fsm.png Graphic file (type png)
+<use fsm.png>
+Package pdftex.def Info: fsm.png  used on input line 50.
+(pdftex.def)             Requested size: 475.79173pt x 248.33029pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
@@ -375,34 +388,82 @@ te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.50 \end{document}
-                    <./tilt_1.png> <./tilt_3.png> <./tilt_2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+l.54 
+      <./tilt_1.png> <./tilt_3.png> <./tilt_2.png>]
+<tb.png, id=35, 674.52pt x 524.96124pt>
+File: tb.png Graphic file (type png)
+<use tb.png>
+Package pdftex.def Info: tb.png  used on input line 57.
+(pdftex.def)             Requested size: 475.79173pt x 370.306pt.
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 
+      <./fsm.png>]
+<flow.png, id=42, 734.745pt x 813.0375pt>
+File: flow.png Graphic file (type png)
+<use flow.png>
+Package pdftex.def Info: flow.png  used on input line 67.
+(pdftex.def)             Requested size: 475.79173pt x 526.50798pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 
+      <./tb.png>]
+<data_flow.png, id=49, 1029.8475pt x 487.8225pt>
+File: data_flow.png Graphic file (type png)
+<use data_flow.png>
+Package pdftex.def Info: data_flow.png  used on input line 74.
+(pdftex.def)             Requested size: 475.79173pt x 225.36873pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 
+      <./flow.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.88 \end{document}
+                    <./data_flow.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 87B8E68EF157702B4D798E143BC8A1A8;94.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
+(rerunfilecheck)             Checksum: BCE14CE5BD3E483F8FEC0AEE0406E712;90.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 6227 strings out of 494923
- 88793 string characters out of 6180742
- 168818 words of memory out of 5000000
- 9471 multiletter control sequences out of 15000+600000
+ 6255 strings out of 494923
+ 89095 string characters out of 6180742
+ 169898 words of memory out of 5000000
+ 9487 multiletter control sequences out of 15000+600000
  11036 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,7n,29p,831b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,7n,29p,832b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on report.pdf (1 page, 13161380 bytes).
+Output written on report.pdf (5 pages, 13341218 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 32 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 52 words of extra memory for PDF output out of 10000 (max. 10000000)
 
