@@ -194,7 +194,7 @@ always @(posedge clk_i) begin
           led_o <= 9'd8;
         else if (raw_buffer < 8'sb00000011)
           led_o <= 9'd12;
-        else if (raw_buffer <  8'sb00000100)
+        else if (raw_buffer < 8'sb00000100)
           led_o <= 9'd4;
         else if (raw_buffer < 8'sb00000101)
           led_o <= 9'd6;
