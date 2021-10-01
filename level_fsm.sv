@@ -1,7 +1,9 @@
 /*
 Description:
-  An FSM which implements the functionality of a "bubble level" or "spirit level". Reads single-axis accelection data from the MPU-6050 by
-  interfacing with an I2C Core IP from Efinix. Wakes accelerometer up first by writing to register, then reads register in a loop.
+  An FSM which implements the functionality of a "bubble level" or "spirit level". 
+  Reads single-axis accelection data from the MPU-6050 by
+  interfacing with an I2C Core IP from Efinix. Wakes accelerometer up first by writing to register, 
+  then reads register in a loop.
   Updates the status of the 9 LED's based on the acceleration measured. Contains error LED as well.
 
   LED Encoding table looks like so:
@@ -26,16 +28,19 @@ Description:
    7        0.122   0    1997   8    111          0   0   0   0   0   0   0   1   1       3
    8        0.139   0    2280   9    1000         0   0   0   0   0   0   0   0   1       1
 
-  The accelerometer stores each axis measurement as 16 bit. Registers are 8 bit wide. We only access the MSB because we don't need the resolution.
+  The accelerometer stores each axis measurement as 16 bit. Registers are 8 bit wide. 
+  We only access the MSB because we don't need the resolution.
   See page 29 of https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
 
 Inputs:
   clk_i                     - Clock
   reset_i                   - Active high reset
   i2c_busy_i                - Logic high indicates that the I2C bus is busy
-  i2c_rxak_i                - Logic low indicates that the I2C slave devicereceived and acknowledged the I2C transfer
+  i2c_rxak_i                - Logic low indicates that the I2C slave devicereceived and 
+                              acknowledged the I2C transfer
   i2c_arb_lost_i            - Logic high indicates that there is arbitration lost in the I2C transfer
-  i2c_write_done_i          - Logic high indicates that I2C master write data is sent and ready to accept by I2C slave device
+  i2c_write_done_i          - Logic high indicates that I2C master write data is 
+                              sent and ready to accept by I2C slave device
   i2c_data_out_valid_i      - Logic high indicates that I2C master read data is valid and ready to read
   i2c_data_out_i            - Read data output from the I2C core
 
@@ -46,8 +51,10 @@ Outputs:
   i2c_slave_addr_o          - Address of slave in 8bit format. Add trailing zero to use 7-bit addressing.
   i2c_din_o                 - Data read from slave
   i2c_command_byte_o        - Command byte sent to slave. (Register to read from)
-  i2c_num_bytes_o           - Number of bytes of data to write or read. Includes the command byte (if sending one byte, i2c_num_bytes_o = 'd2)
-  error_led_o               - Active high if an error has occured in state machine; lost bytes, error writing to slave or reading
+  i2c_num_bytes_o           - Number of bytes of data to write or read. Includes the 
+                              command byte (if sending one byte, i2c_num_bytes_o = 'd2)
+  error_led_o               - Active high if an error has occured in state machine; lost bytes, 
+                              error writing to slave or reading
   led_o                     - 9 bit bus that lights up based on encoding above
 */
 
@@ -79,19 +86,19 @@ localparam accel_register = 8'h3D;
 localparam wake_register = 8'h6b;
 
 typedef enum logic [6:0] { 
-  ENSURE_BUSY_1 =      7'b0000_000,
-  ASSIGN_WRITE_2 =     7'b0001_000,
-  ASSERT_WRITE_3 =     7'b0010_001,
-  WAIT_FOR_BUSY_4 =    7'b0011_000,
-  WAIT_FOR_DONE_5 =    7'b0100_000,
-  VERIFY_6 =           7'b0101_000,
-  ENSURE_BUSY_7 =      7'b0110_000,
-  ASSIGN_WRITE_8 =     7'b0111_000,
-  ASSERT_READ_9 =      7'b1000_010,
-  WAIT_FOR_BUSY_10 =   7'b1001_000,
-  WAIT_FOR_VALID_11 =  7'b1010_000,
-  VERIFY_12 =          7'b1011_000,
-  LED_OPERATION_13 =   7'b1100_000,
+  ENSURE_BUSY_1 =      7'b0000_000, // wait for I2C controller to not be busy
+  ASSIGN_WRITE_2 =     7'b0001_000, // tell I2C controller which registers to write what to
+  ASSERT_WRITE_3 =     7'b0010_001, // tell I2C controller to write
+  WAIT_FOR_BUSY_4 =    7'b0011_000, // wait for controller to be busy
+  WAIT_FOR_DONE_5 =    7'b0100_000, // wait for controller to finish
+  VERIFY_6 =           7'b0101_000, // verify that there were no errors writing register
+  ENSURE_BUSY_7 =      7'b0110_000, // verify that the controller is not busy
+  ASSIGN_WRITE_8 =     7'b0111_000, // tell I2C controller which registers to read
+  ASSERT_READ_9 =      7'b1000_010, // tell I2C controller to read register
+  WAIT_FOR_BUSY_10 =   7'b1001_000, // wait for controller to be busy
+  WAIT_FOR_VALID_11 =  7'b1010_000, // wait for controller to finish read
+  VERIFY_12 =          7'b1011_000, // verify that no errors occured, register info
+  LED_OPERATION_13 =   7'b1100_000, // output LED pattern
   ERROR =              7'b1101_100
 } state_e;
 
@@ -137,10 +144,11 @@ always @(posedge clk_i) begin
         else state <= WAIT_FOR_DONE_5;
       end
       VERIFY_6: begin
-        if (i2c_arb_lost_i === 0 && i2c_rxak_i === 0) state <= ENSURE_BUSY_7; //check that slave has acknowledged and no bits were lost
+        if (i2c_arb_lost_i === 0 && i2c_rxak_i === 0) state <= ENSURE_BUSY_7; 
+        //check that slave has acknowledged and no bits were lost
         else state <= ERROR;
       end
-      ENSURE_BUSY_7: begin
+      ENSURE_BUSY_7: begin // wait for busy to not be high
         if (i2c_busy_i === 1) state <= ENSURE_BUSY_7;
         else begin 
           state <= ASSIGN_WRITE_8;

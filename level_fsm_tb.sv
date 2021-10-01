@@ -1,4 +1,44 @@
 `timescale 1ns/100ps
+/*
+Description:
+  An FSM testbench for the bubble level FSM. Emulates the functionality of three different states of I2C
+  controller:
+    A perfectly working controller
+    A controller that errors on the read
+    A controller that errors on the write
+
+  Test bench tests:
+    All delays
+    All rx_arb errors checks
+    One write state from the accelerometer to the LEDs
+
+
+DUT Inputs:
+  clk_i                     - Clock
+  reset_i                   - Active high reset
+  i2c_busy_i                - Logic high indicates that the I2C bus is busy
+  i2c_rxak_i                - Logic low indicates that the I2C slave devicereceived and 
+                              acknowledged the I2C transfer
+  i2c_arb_lost_i            - Logic high indicates that there is arbitration lost in the I2C transfer
+  i2c_write_done_i          - Logic high indicates that I2C master write data is 
+                              sent and ready to accept by I2C slave device
+  i2c_data_out_valid_i      - Logic high indicates that I2C master read data is valid and ready to read
+  i2c_data_out_i            - Read data output from the I2C core
+
+
+DUT Outputs:
+  i2c_write_o               - Write to slave strobe high
+  i2c_read_o                - Read from slave strobe high
+  i2c_slave_addr_o          - Address of slave in 8bit format. Add trailing zero to use 7-bit addressing.
+  i2c_din_o                 - Data read from slave
+  i2c_command_byte_o        - Command byte sent to slave. (Register to read from)
+  i2c_num_bytes_o           - Number of bytes of data to write or read. Includes the 
+                              command byte (if sending one byte, i2c_num_bytes_o = 'd2)
+  error_led_o               - Active high if an error has occured in state machine; lost bytes, 
+                              error writing to slave or reading
+  led_o                     - 9 bit bus that lights up based on encoding above
+*/
+
 
 module level_fsm_tb;
 
@@ -83,6 +123,11 @@ module level_fsm_tb;
     /////////////////////////////
     ///   Normal operation   ////
     /////////////////////////////
+    // in this section we test the normal operation of the I2C controller
+    // that no errors are thrown, read, write, delays work
+    // correct LED pattern shows up
+    // and that we loop reading
+
     // make sure writing has not started
     assert(i2c_din_o == 8'b0);
     assert(i2c_command_byte_o == 8'b0);
@@ -140,6 +185,8 @@ module level_fsm_tb;
     /////////////////////////////
     ////   Error on read     ////
     /////////////////////////////
+    // in this section we confirm that upon a read error the FSM goes into error state
+
     assert(i2c_command_byte_o == 8'h3D);
     assert(i2c_slave_addr_o == {7'h68, 1'b0});
     assert(i2c_num_bytes_o == 8'd2);
@@ -171,6 +218,7 @@ module level_fsm_tb;
     /////////////////////////////
     ////   Error on write    ////
     /////////////////////////////
+    // in this section we confirm that upon a write error the FSM goes into error state
     assert(i2c_din_o == 8'b0);
     assert(i2c_command_byte_o == 8'b0);
     assert(i2c_slave_addr_o == 8'b0);
