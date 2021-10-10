@@ -1,3 +1,0 @@
-Instance Name,Instance Type,Severity,Rule,Description
-pll_inst1,pll,error,pll_rule_clkin_driver,The gpio resource GPIOL_20 for CLKIN is not configured.
-scl,clock,warning,clock_rule_undefined_name,No clock source defined (clk)

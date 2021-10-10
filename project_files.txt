@@ -1,2 +1,0 @@
-level_fsm.sv
-level_fsm_tb.sv
