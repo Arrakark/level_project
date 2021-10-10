@@ -1,0 +1,35 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Photo stills of the device in action. When you tilt the device to the left as in a), the LEDs to the right light up. As you tilt the device more to the right, the lit LED moves from right to left as in b) and c). When level, the blue center LED lights up.}}{1}{figure.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{1}{figure.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{1}{figure.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{1}{figure.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Overview}{2}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Block diagram of the FSM and how it forms the bubble-level system. The level FSM talks to the I2C core, which communicates to the MPU via a set of buffered GPIO blocks on the FPGA. A reset button resets all FSMs to their initial state. The design runs is compiled for a 50MHz clock constraint. The output to outside of the FPGA is buffered through the GPIO logic blocks, which was the reason I used IP specific to the FPGA.}}{2}{figure.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Flow diagram of the internal functioning of the FSM. The assertion of the addresses, data, command byte is done even though it is slightly redundant in this situation to allow for easy expansion of functionality by changing those lines to be tri-state and allowing other modules to write to them.}}{3}{figure.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Data flow diagram for the FSM.}}{4}{figure.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}States}{4}{subsection.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Testing}{5}{section.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Block diagram of how the level FSM (not the Efinix i2c core) is connected to the test bench. The test bench is a simple piece of logic that provides timed inputs to the level FSM and asserts that the outputs of the FSM are what are expected. When a new test is run by the test bench logic, the instantiated DUT is reset. Asserts are used to check correct functionality. }}{5}{figure.5}}
+\newlabel{RF1}{6}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Waveform diagram from FSM test. The FSM was tested under three scenarios: perfectly functioning I2C controller and MPU, an error on the read command, and an error on the write command. All delays were verified to work (waiting for busy, write and read finish). }}{6}{figure.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Code (also included in separate file)}{7}{section.4}}
+\@writefile{lol}{\contentsline {lstlisting}{level\textunderscore fsm.sv}{7}{lstlisting.-2}}
+\@writefile{lol}{\contentsline {lstlisting}{level\textunderscore fsm\textunderscore tb.sv}{10}{lstlisting.-3}}

@@ -1,0 +1,2 @@
+WARNING: CPU random generator seem to be failing, disable hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff

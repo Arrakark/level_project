@@ -1,0 +1,184 @@
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-1160.15.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project ELEC402_PROJ0_26951160
+vsim work.level_fsm_tb
+# vsim work.level_fsm_tb 
+# Start time: 15:22:37 on Oct 04,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+restart
+run
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 140
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 141
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 142
+# ** Error: Assertion error.
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 144
+# ** Error: Assertion error.
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 147
+# ** Error: Assertion error.
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 163
+# ** Error: Assertion error.
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 167
+# ** Error: Assertion error.
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 182
+# ** Error: Assertion error.
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 194
+# ** Error: Assertion error.
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 209
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 223
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 224
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 225
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 228
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 229
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 230
+# ** Error: Assertion error.
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 232
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 235
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv(251)
+#    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
+# 1
+# Break at /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv line 251
+# Causality operation skipped due to absence of debug database file
+# Compile of level_fsm_map.v was successful.
+# Compile of level_fsm_tb.sv was successful.
+# Compile of NanGate_15nm_OCL_conditional.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.level_fsm_tb -voptargs=+acc
+# End time: 15:29:44 on Oct 04,2021, Elapsed time: 0:07:07
+# Errors: 18, Warnings: 1
+# vsim work.level_fsm_tb -voptargs="+acc" 
+# Start time: 15:29:44 on Oct 04,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NAND2_X2(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X2(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.CLKBUF_X1(fast)
+# Loading work.AND2_X1(fast)
+# Loading work.OR2_X1(fast)
+# Loading work.INV_X2(fast)
+# Loading work.CLKBUF_X2(fast)
+# Loading work.BUF_X2(fast)
+# Loading work.CLKBUF_X4(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.NAND4_X2(fast)
+# Loading work.CLKBUF_X12(fast)
+# Loading work.AND2_X2(fast)
+# Loading work.BUF_X1(fast)
+# Loading work.NAND3_X2(fast)
+# Loading work.OR2_X2(fast)
+# Loading work.BUF_X4(fast)
+# Loading work.OR4_X1(fast)
+# Loading work.AND3_X1(fast)
+# Loading work.OR3_X1(fast)
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+run
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 140
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 141
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 142
+# ** Error: Assertion error.
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 144
+# ** Error: Assertion error.
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 147
+# ** Error: Assertion error.
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 163
+# ** Error: Assertion error.
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 167
+# ** Error: Assertion error.
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 182
+# ** Error: Assertion error.
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 194
+# ** Error: Assertion error.
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 209
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 223
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 224
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 225
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 228
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 229
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 230
+# ** Error: Assertion error.
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 232
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 235
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv(251)
+#    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
+# 1
+# Break in Module level_fsm_tb at /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv line 251
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/wave.do

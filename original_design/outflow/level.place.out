@@ -1,0 +1,185 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2021.1.165 
+Compiled: Jun 25 2021.
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T8F81" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "/home/vlad/Documents/level_project/level.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.00186054 seconds.
+	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 166.252 MB, end = 166.252 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 36.676 MB, end = 36.676 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 399.704 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from '/home/vlad/Documents/level_project/outflow/level.interface.csv'.
+Successfully processed interface constraints file "/home/vlad/Documents/level_project/outflow/level.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+Pass 0: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 0 blocks in total.
+Removed 0 LUT buffers.
+Successfully created VPR logical netlist from Verific binary DataBase file "/home/vlad/Documents/level_project/level.vdb".
+Netlist pre-processing took 0.0123086 seconds.
+	Netlist pre-processing took 0.01 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 166.252 MB, end = 166.252 MB, delta = 0 MB
+Netlist pre-processing resident set memory usage: begin = 36.676 MB, end = 36.676 MB, delta = 0 MB
+	Netlist pre-processing peak resident set memory usage = 399.704 MB
+***** Ending stage netlist pre-processing *****
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+***** Beginning stage packing ... *****
+Generate proto netlist for file "/home/vlad/Documents/level_project/work_pnr/level.net_proto" took 0.000529 seconds
+Creating IO constraints file '/home/vlad/Documents/level_project/work_pnr/level.io_place'
+Packing took 0.00292982 seconds.
+	Packing took 0 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 167.816 MB, end = 168.476 MB, delta = 0.66 MB
+Packing resident set memory usage: begin = 39.04 MB, end = 39.948 MB, delta = 0.908 MB
+	Packing peak resident set memory usage = 399.704 MB
+***** Ending stage packing *****
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file /home/vlad/Documents/level_project/work_pnr/level.net_proto
+Read proto netlist for file "/home/vlad/Documents/level_project/work_pnr/level.net_proto" took 0.000211 seconds
+Setup net and block data structure took 0.010009 seconds
+Packed netlist loading took 0.0318995 seconds.
+	Packed netlist loading took 0.04 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 168.476 MB, end = 665.568 MB, delta = 497.092 MB
+Packed netlist loading resident set memory usage: begin = 39.948 MB, end = 47.444 MB, delta = 7.496 MB
+	Packed netlist loading peak resident set memory usage = 399.704 MB
+***** Ending stage packed netlist loading *****
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+SDC file '/home/vlad/Documents/level_project/constraint.sdc' parsed successfully.
+1 clocks (including virtual clocks), 0 inputs and 4 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from '/home/vlad/Documents/level_project/outflow/level.interface.csv'.
+Successfully processed interface constraints file "/home/vlad/Documents/level_project/outflow/level.interface.csv".
+Writing IO placement constraints to '/home/vlad/Documents/level_project/outflow/level.interface.io'.
+
+Reading placement constraints from '/home/vlad/Documents/level_project/outflow/level.interface.io'.
+
+Reading placement constraints from '/home/vlad/Documents/level_project/work_pnr/level.io_place'.
+***** Ending stage initial placement *****
+***** Beginning stage placement ... *****
+NumRegions 1
+Starting Global Placer ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1        6675           14047         2.0%
+          2        6768           14047         2.7%
+          3        4597           13375         4.1%
+          4        4145           11708         6.4%
+          5        4500           11739        11.3%
+          6        5801            9480        15.4%
+          7        6487            9526        21.9%
+          8        7898            8886        26.2%
+          9        8082           10167        28.4%
+         10        8810            9020        35.0%
+         11        8260            8215        35.5%
+         12        8199            8101        37.7%
+         13        9782            6080        39.5%
+         14        8961            6894        39.6%
+         15        8335            8133        42.4%
+         16        7788            3512        45.4%
+         17        4753            7524        58.0%
+         18        4885            4094        58.0%
+         19        4488            2761        58.0%
+         20        4260            6542        58.1%
+         21        4597            4859        61.9%
+         22        4135            5349        62.4%
+         23        4596            6658        65.1%
+         24        4684            6308        65.7%
+         25        4716            4822        65.8%
+         26        4531            4854        66.4%
+         27        4513            4573        69.9%
+         28        4438            4015        70.0%
+         29        4391            4015        72.3%
+         30        4318            4024        72.3%
+         31        4442            4200        72.3%
+         32        4407            4169        74.6%
+         33        4429            4841        75.8%
+         34        4489            4042        75.9%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0        4135           17154        30.0
+          1        2769           25734        30.0
+          2        4017           23459        30.0
+          3        3239           20506        30.0
+          4        3086           20352        30.0
+          5        3069           19030        30.0
+          6        3135           18975        30.0
+          7        3144           18826        30.0
+          8        3082           18203        30.0
+          9        2955           18293        30.0
+         10        2952           17380        30.0
+         11        2852           16612        30.0
+         12        2818           19913        30.0
+         13        2661           17548        29.6
+         14        2576           16500        28.9
+         15        2513           16003        28.5
+         16        2509           16713        27.7
+         17        2486           16262        26.7
+         18        2453           15569        25.6
+         19        2509           17163        24.9
+         20        2550           17794        24.0
+         21        2512           16248        22.9
+         22        2419           17153        22.1
+         23        2315           15739        21.3
+         24        2290           16575        20.4
+         25        2276           18210        19.4
+         26        2353           16421        18.4
+         27        2368           16887        17.6
+         28        2290           16982        16.8
+         29        2276           15711        16.1
+         30        2287           15689        15.3
+         31        2248           15953        14.6
+         32        2159           14468        13.9
+         33        2145           14918        13.2
+         34        2115           14903        12.6
+         35        2060           15573        11.9
+         36        2048           15609        11.3
+         37        2042           16385        10.7
+         38        2010           14664        10.2
+         39        1978           15409         9.7
+         40        1968           14426         9.3
+         41        1944           16183         8.8
+         42        1977           15175         8.3
+         43        1941           15849         7.9
+         44        1897           14609         7.5
+         45        1862           14310         7.1
+         46        1887           14111         6.7
+         47        1886           14244         6.2
+Placement successful: 436 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0804799 at 78,89
+Congestion-weighted HPWL per net: 3.56596
+
+Reading placement constraints from '/home/vlad/Documents/level_project/outflow/level.qplace'.
+Finished Realigning Types (131 blocks needed type change)
+
+Completed placement consistency check successfully.
+
+Placement estimated critical path delay: 14.1041 ns
+Successfully created FPGA place file '/home/vlad/Documents/level_project/outflow/level.place'
+Placement took 1.51144 seconds.
+	Placement took 2.4 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 665.568 MB, end = 1004.34 MB, delta = 338.776 MB
+Placement resident set memory usage: begin = 47.444 MB, end = 113.496 MB, delta = 66.052 MB
+	Placement peak resident set memory usage = 399.704 MB
+***** Ending stage placement *****

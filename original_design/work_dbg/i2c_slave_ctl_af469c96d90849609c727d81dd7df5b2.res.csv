@@ -1,0 +1,11 @@
+Module Resource Usage Distribution Estimates
+Generated at: Sep 25, 2021 17:31:38
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
+i2c_slave_ctl_af469c96d90849609c727d81dd7df5b2:i2c_slave_ctl_af469c96d90849609c727d81dd7df5b2	    740(91)	      25(0)	   957(107)	     2(0)	     0(0)	
++u_pgfts_wrflag:pulse_gen_fts_af469c96d90849609c727d81dd7df5b2	       6(6)	       0(0)	       2(2)	     0(0)	     0(0)	
++u_pgfts_rdflag:pulse_gen_fts_af469c96d90849609c727d81dd7df5b2	       6(6)	       0(0)	       2(2)	     0(0)	     0(0)	
++u_i2c_slv_ctl:i2c_mstrslv_ctl_af469c96d90849609c727d81dd7df5b2(I2C_FAST_MODE=1)	     72(72)	       0(0)	   108(108)	     0(0)	     0(0)	
++edb_top_inst:edb_top                                       	   565(565)	     25(25)	   738(738)	     2(2)	     0(0)	
