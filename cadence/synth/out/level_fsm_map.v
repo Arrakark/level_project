@@ -22,39 +22,26 @@ module level_fsm(clk_i, reset_i, i2c_busy_i, i2c_rxak_i,
   wire [7:0] i2c_slave_addr_o, i2c_din_o, i2c_command_byte_o,
        i2c_num_bytes_o;
   wire [8:0] led_o;
-  wire [7:0] raw_buffer;
   wire [6:0] state;
+  wire [7:0] raw_buffer;
   wire n_0, n_1, n_2, n_3, n_4, n_5, n_6, n_7;
   wire n_8, n_9, n_10, n_11, n_12, n_13, n_14, n_15;
-  wire n_16, n_19, n_24, n_25, n_28, n_33, n_36, n_37;
-  wire n_41, n_44, n_45, n_46, n_49, n_50, n_51, n_53;
-  wire n_57, n_58, n_60, n_61, n_62, n_66, n_68, n_71;
-  wire n_72, n_75, n_77, n_79, n_80, n_82, n_85, n_87;
-  wire n_88, n_93, n_95, n_100, n_101, n_104, n_114, n_116;
-  wire n_121, n_129, n_130, n_135, n_136, n_138, n_141, n_142;
-  wire n_143, n_144, n_148, n_149, n_153, n_154, n_155, n_158;
-  wire n_160, n_173, n_175, n_176, n_178, n_179, n_181, n_182;
-  wire n_184, n_187, n_189, n_191, n_192, n_204, n_205, n_206;
-  wire n_207, n_208, n_209, n_212, n_213, n_246, n_262, n_286;
-  wire n_317, n_320, n_324, n_326, n_327, n_332, n_381, n_401;
-  wire n_527, n_541, n_543, n_550, n_551, n_555, n_559, n_562;
-  wire n_563, n_565, n_566, n_567, n_573, n_582, n_587, n_588;
-  wire n_590, n_591, n_596, n_606, n_607, n_609, n_619, n_628;
-  wire n_630, n_631, n_632, n_634, n_635, n_638, n_639, n_642;
-  wire n_645, n_653, n_655, n_657, n_659, n_664, n_676, n_677;
-  wire n_680, n_688, n_689, n_690, n_699, n_700, n_701, n_702;
-  wire n_703, n_713, n_714, n_715, n_716, n_717, n_718, n_720;
-  wire n_721, n_724, n_725, n_727, n_728, n_734, n_736, n_737;
-  wire n_738, n_740, n_748, n_749, n_751, n_753, n_755, n_757;
-  wire n_758, n_760, n_761, n_763, n_764, n_765, n_767, n_770;
-  wire n_775, n_777, n_778, n_781, n_784, n_850, n_851, n_898;
-  wire n_899, n_900, n_901, n_902, n_903, n_904, n_905, n_908;
-  wire n_935, n_936, n_937, n_938, n_968, n_969, n_970, n_971;
-  wire n_1009, n_1010, n_1012, n_1021, n_1024, n_1025, n_1026, n_1027;
-  wire n_1028, n_1029, n_1030, n_1031, n_1032, n_1033, n_1034, n_1035;
-  wire n_1036, n_1037, n_1038, n_1039, n_1040, n_1041, n_1042, n_1107;
-  wire n_1112, n_1113, n_1114, n_1117, n_1130, n_1131, n_1142, n_1143;
-  wire n_1144, n_1150, n_1151, n_1152;
+  wire n_16, n_17, n_18, n_19, n_20, n_21, n_22, n_23;
+  wire n_24, n_25, n_26, n_27, n_28, n_29, n_30, n_31;
+  wire n_32, n_33, n_34, n_35, n_36, n_37, n_38, n_39;
+  wire n_40, n_41, n_42, n_43, n_44, n_45, n_46, n_47;
+  wire n_48, n_49, n_50, n_51, n_52, n_53, n_54, n_55;
+  wire n_56, n_57, n_58, n_59, n_60, n_61, n_62, n_63;
+  wire n_64, n_65, n_66, n_67, n_68, n_69, n_70, n_71;
+  wire n_72, n_73, n_74, n_75, n_76, n_77, n_78, n_79;
+  wire n_80, n_81, n_82, n_83, n_84, n_85, n_86, n_87;
+  wire n_88, n_89, n_90, n_91, n_92, n_93, n_94, n_95;
+  wire n_96, n_97, n_98, n_99, n_100, n_101, n_102, n_103;
+  wire n_104, n_105, n_106, n_107, n_108, n_109, n_110, n_111;
+  wire n_112, n_113, n_114, n_115, n_116, n_117, n_118, n_119;
+  wire n_120, n_121, n_122, n_123, n_124, n_125, n_126, n_127;
+  wire n_128, n_129, n_130, n_131, n_132, n_133, n_134, n_135;
+  wire n_136, n_137, n_138, n_139, n_140, n_142, n_143;
   assign i2c_num_bytes_o[0] = 1'b0;
   assign i2c_num_bytes_o[1] = i2c_slave_addr_o[7];
   assign i2c_num_bytes_o[2] = 1'b0;
@@ -84,331 +71,236 @@ module level_fsm(clk_i, reset_i, i2c_busy_i, i2c_rxak_i,
   assign i2c_slave_addr_o[4] = i2c_slave_addr_o[7];
   assign i2c_slave_addr_o[5] = 1'b0;
   assign i2c_slave_addr_o[6] = i2c_slave_addr_o[7];
-  DFFSNQ_X1 \raw_buffer_reg[0] (.SN (1'b1), .CLK (clk_i), .D (n_213),
-       .Q (raw_buffer[0]));
-  DFFSNQ_X1 \raw_buffer_reg[1] (.SN (1'b1), .CLK (clk_i), .D (n_212),
-       .Q (raw_buffer[1]));
-  DFFSNQ_X1 \raw_buffer_reg[2] (.SN (1'b1), .CLK (clk_i), .D (n_209),
-       .Q (raw_buffer[2]));
-  DFFSNQ_X1 \raw_buffer_reg[3] (.SN (1'b1), .CLK (clk_i), .D (n_208),
-       .Q (raw_buffer[3]));
-  DFFSNQ_X1 \raw_buffer_reg[4] (.SN (1'b1), .CLK (clk_i), .D (n_207),
-       .Q (raw_buffer[4]));
-  DFFSNQ_X1 \raw_buffer_reg[5] (.SN (1'b1), .CLK (clk_i), .D (n_204),
-       .Q (raw_buffer[5]));
-  DFFSNQ_X1 \raw_buffer_reg[6] (.SN (1'b1), .CLK (clk_i), .D (n_206),
-       .Q (raw_buffer[6]));
-  DFFSNQ_X1 \raw_buffer_reg[7] (.SN (1'b1), .CLK (clk_i), .D (n_205),
-       .Q (raw_buffer[7]));
-  DFFSNQ_X1 \state_reg[3] (.SN (1'b1), .CLK (clk_i), .D (n_573), .Q
+  DFFSNQ_X1 \state_reg[3] (.SN (1'b1), .CLK (clk_i), .D (n_143), .Q
        (state[3]));
-  OAI22_X1 g23925(.A1 (n_718), .A2 (n_7), .B1 (n_566), .B2 (n_49), .ZN
-       (n_213));
-  OAI22_X1 g23926(.A1 (n_718), .A2 (n_3), .B1 (n_566), .B2 (n_50), .ZN
-       (n_212));
-  OAI22_X1 g23927(.A1 (n_718), .A2 (n_1), .B1 (n_566), .B2 (n_58), .ZN
-       (n_209));
-  OAI22_X1 g23928(.A1 (n_718), .A2 (n_6), .B1 (n_566), .B2 (n_2), .ZN
-       (n_208));
-  DFFSNQ_X1 \state_reg[4] (.SN (1'b1), .CLK (clk_i), .D (n_635), .Q
+  NAND3_X1 g3795(.A1 (n_120), .A2 (n_142), .A3 (n_105), .ZN (n_143));
+  NOR4_X1 g3797(.A1 (n_140), .A2 (n_68), .A3 (n_110), .A4 (n_54), .ZN
+       (n_142));
+  DFFSNQ_X1 \i2c_command_byte_o_reg[1] (.SN (1'b1), .CLK (clk_i), .D
+       (n_139), .Q (i2c_command_byte_o[6]));
+  NAND2_X1 g3826(.A1 (n_138), .A2 (n_57), .ZN (n_140));
+  DFFSNQ_X1 \state_reg[4] (.SN (1'b1), .CLK (clk_i), .D (n_135), .Q
        (state[4]));
-  DFFRNQ_X1 \i2c_command_byte_o_reg[1] (.RN (1'b1), .CLK (clk_i), .D
-       (n_1026), .Q (i2c_command_byte_o[6]));
-  DFFSNQ_X1 \state_reg[5] (.SN (1'b1), .CLK (clk_i), .D (n_938), .Q
-       (state[5]));
-  OAI22_X1 g23929(.A1 (n_718), .A2 (n_8), .B1 (n_566), .B2 (n_13), .ZN
-       (n_207));
-  OAI22_X1 g23930(.A1 (n_718), .A2 (n_12), .B1 (n_566), .B2 (n_14), .ZN
-       (n_206));
-  OAI22_X1 g23931(.A1 (n_718), .A2 (n_4), .B1 (n_566), .B2 (n_100), .ZN
-       (n_205));
-  OAI22_X1 g23932(.A1 (n_718), .A2 (n_15), .B1 (n_566), .B2 (n_10), .ZN
-       (n_204));
-  DFFSNQ_X1 \state_reg[2] (.SN (1'b1), .CLK (clk_i), .D (n_703), .Q
-       (error_led_o));
-  DFFSNQ_X1 \state_reg[6] (.SN (1'b1), .CLK (clk_i), .D (n_757), .Q
-       (state[6]));
-  DFFSNQ_X1 \i2c_command_byte_o_reg[2] (.SN (1'b1), .CLK (clk_i), .D
-       (n_971), .Q (i2c_command_byte_o[4]));
-  DFFSNQ_X1 \led_o_reg[1] (.SN (1'b1), .CLK (clk_i), .D (n_1107), .Q
-       (led_o[1]));
-  DFFRNQ_X1 \i2c_slave_addr_o_reg[4] (.RN (1'b1), .CLK (clk_i), .D
-       (n_1027), .Q (i2c_slave_addr_o[7]));
-  DFFRNQ_X1 \led_o_reg[4] (.RN (1'b1), .CLK (clk_i), .D (n_189), .Q
-       (led_o[4]));
-  DFFSNQ_X1 \led_o_reg[0] (.SN (1'b1), .CLK (clk_i), .D (n_182), .Q
-       (led_o[0]));
-  DFFSNQ_X1 \led_o_reg[7] (.SN (1'b1), .CLK (clk_i), .D (n_1112), .Q
-       (led_o[7]));
-  DFFSNQ_X1 \led_o_reg[3] (.SN (1'b1), .CLK (clk_i), .D (n_179), .Q
-       (led_o[3]));
-  DFFSNQ_X1 \led_o_reg[5] (.SN (1'b1), .CLK (clk_i), .D (n_1117), .Q
+  DFFSNQ_X1 \led_o_reg[5] (.SN (1'b1), .CLK (clk_i), .D (n_131), .Q
        (led_o[5]));
-  DFFSNQ_X1 \led_o_reg[2] (.SN (1'b1), .CLK (clk_i), .D (n_192), .Q
-       (led_o[2]));
-  DFFSNQ_X1 \led_o_reg[8] (.SN (1'b1), .CLK (clk_i), .D (n_181), .Q
-       (led_o[8]));
-  DFFSNQ_X1 \led_o_reg[6] (.SN (1'b1), .CLK (clk_i), .D (n_619), .Q
+  DFFSNQ_X1 \i2c_slave_addr_o_reg[4] (.SN (1'b1), .CLK (clk_i), .D
+       (n_134), .Q (i2c_slave_addr_o[7]));
+  DFFSNQ_X1 \led_o_reg[7] (.SN (1'b1), .CLK (clk_i), .D (n_133), .Q
+       (led_o[7]));
+  DFFSNQ_X1 \led_o_reg[4] (.SN (1'b1), .CLK (clk_i), .D (n_136), .Q
+       (led_o[4]));
+  DFFSNQ_X1 \led_o_reg[1] (.SN (1'b1), .CLK (clk_i), .D (n_137), .Q
+       (led_o[1]));
+  DFFSNQ_X1 \led_o_reg[3] (.SN (1'b1), .CLK (clk_i), .D (n_128), .Q
+       (led_o[3]));
+  DFFRNQ_X1 \raw_buffer_reg[7] (.RN (1'b1), .CLK (clk_i), .D (n_126),
+       .Q (raw_buffer[7]));
+  DFFRNQ_X1 \raw_buffer_reg[1] (.RN (1'b1), .CLK (clk_i), .D (n_118),
+       .Q (raw_buffer[1]));
+  DFFRNQ_X1 \raw_buffer_reg[2] (.RN (1'b1), .CLK (clk_i), .D (n_117),
+       .Q (raw_buffer[2]));
+  DFFRNQ_X1 \raw_buffer_reg[3] (.RN (1'b1), .CLK (clk_i), .D (n_116),
+       .Q (raw_buffer[3]));
+  DFFRNQ_X1 \raw_buffer_reg[4] (.RN (1'b1), .CLK (clk_i), .D (n_114),
+       .Q (raw_buffer[4]));
+  DFFRNQ_X1 \raw_buffer_reg[5] (.RN (1'b1), .CLK (clk_i), .D (n_115),
+       .Q (raw_buffer[5]));
+  DFFRNQ_X1 \raw_buffer_reg[6] (.RN (1'b1), .CLK (clk_i), .D (n_113),
+       .Q (raw_buffer[6]));
+  DFFRNQ_X1 \raw_buffer_reg[0] (.RN (1'b1), .CLK (clk_i), .D (n_119),
+       .Q (raw_buffer[0]));
+  DFFSNQ_X1 \state_reg[6] (.SN (1'b1), .CLK (clk_i), .D (n_121), .Q
+       (state[6]));
+  DFFSNQ_X1 \led_o_reg[6] (.SN (1'b1), .CLK (clk_i), .D (n_125), .Q
        (led_o[6]));
-  OAI21_X1 g23965(.A1 (n_191), .A2 (n_175), .B (n_588), .ZN (n_192));
-  NAND3_X1 g23945(.A1 (n_144), .A2 (n_143), .A3 (n_130), .ZN (n_189));
-  OAI21_X1 g23949(.A1 (n_88), .A2 (n_135), .B (i2c_command_byte_o[6]),
-       .ZN (n_187));
-  OAI21_X1 g23958(.A1 (n_587), .A2 (n_11), .B (n_160), .ZN (n_182));
-  OAI21_X1 g23959(.A1 (n_587), .A2 (n_5), .B (n_148), .ZN (n_181));
-  OAI21_X1 g23960(.A1 (n_191), .A2 (n_178), .B (n_1010), .ZN (n_179));
-  DFFSNQ_X1 \state_reg[1] (.SN (1'b1), .CLK (clk_i), .D (n_138), .Q
-       (state[1]));
-  NAND2_X1 g23975(.A1 (n_121), .A2 (n_677), .ZN (n_160));
-  NAND2_X1 g23982(.A1 (n_778), .A2 (n_905), .ZN (n_158));
-  NAND2_X1 g23997(.A1 (n_153), .A2 (n_784), .ZN (n_154));
-  INV_X1 g24012(.I (n_184), .ZN (n_149));
-  NAND2_X1 g23974(.A1 (n_101), .A2 (n_677), .ZN (n_148));
-  NAND4_X1 g23985(.A1 (n_136), .A2 (n_142), .A3 (n_72), .A4 (n_141),
-       .ZN (n_144));
-  NAND4_X1 g23987(.A1 (n_129), .A2 (n_142), .A3 (n_25), .A4 (n_141),
-       .ZN (n_143));
-  NOR2_X1 g23994(.A1 (n_851), .A2 (n_62), .ZN (n_138));
-  NAND2_X2 g23995(.A1 (n_677), .A2 (n_136), .ZN (n_191));
-  AOI21_X1 g23996(.A1 (n_114), .A2 (n_82), .B (reset_i), .ZN (n_135));
-  DFFSNQ_X1 \state_reg[0] (.SN (1'b1), .CLK (clk_i), .D (n_1031), .Q
-       (state[0]));
-  NAND2_X2 g24013(.A1 (n_645), .A2 (n_68), .ZN (n_184));
-  INV_X1 g24015(.I (n_659), .ZN (n_130));
-  NAND2_X2 g24002(.A1 (n_677), .A2 (n_129), .ZN (n_176));
-  INV_X1 g24039(.I (n_851), .ZN (n_153));
-  AOI21_X1 g24000(.A1 (n_66), .A2 (n_24), .B (raw_buffer[7]), .ZN
-       (n_121));
-  NOR2_X2 g24022(.A1 (n_908), .A2 (n_93), .ZN (n_155));
-  AOI21_X1 g23999(.A1 (n_45), .A2 (n_71), .B (n_100), .ZN (n_101));
-  AOI22_X1 g24038(.A1 (n_1039), .A2 (n_85), .B1 (n_778), .B2 (n_46),
-       .ZN (n_95));
-  NAND2_X1 g24044(.A1 (n_41), .A2 (i2c_busy_i), .ZN (n_93));
-  CLKBUF_X1 g24056(.I (n_676), .Z (n_142));
-  NOR2_X1 g24059(.A1 (n_902), .A2 (n_724), .ZN (n_114));
-  INV_X1 g24100(.I (n_87), .ZN (n_88));
-  NOR2_X1 g24020(.A1 (n_1009), .A2 (raw_buffer[7]), .ZN (n_136));
-  NOR2_X1 g24049(.A1 (n_1040), .A2 (i2c_busy_i), .ZN (n_82));
-  NAND2_X1 g24051(.A1 (n_664), .A2 (n_332), .ZN (n_79));
-  AND2_X1 g24053(.A1 (n_781), .A2 (n_80), .Z (n_77));
-  OR2_X1 g24055(.A1 (n_80), .A2 (reset_i), .Z (n_75));
-  INV_X1 g24062(.I (n_71), .ZN (n_72));
-  NOR2_X1 g24067(.A1 (n_1040), .A2 (n_401), .ZN (n_68));
-  INV_X1 g24070(.I (n_1009), .ZN (n_66));
-  INV_X1 g24101(.I (n_61), .ZN (n_87));
-  NOR2_X1 g24105(.A1 (i2c_read_o), .A2 (n_33), .ZN (n_60));
-  NOR2_X1 g24021(.A1 (n_44), .A2 (n_100), .ZN (n_129));
-  AOI22_X1 g24033(.A1 (n_19), .A2 (raw_buffer[2]), .B1 (raw_buffer[1]),
-       .B2 (n_58), .ZN (n_175));
-  INV_X1 g24112(.I (n_760), .ZN (n_57));
-  NAND2_X1 g24046(.A1 (n_51), .A2 (raw_buffer[2]), .ZN (n_173));
-  NAND2_X1 g24047(.A1 (n_51), .A2 (n_58), .ZN (n_178));
-  NAND3_X1 g24063(.A1 (n_50), .A2 (n_49), .A3 (n_58), .ZN (n_71));
-  INV_X1 g24072(.I (n_44), .ZN (n_45));
-  INV_X1 g24097(.I (n_781), .ZN (n_62));
-  CLKBUF_X1 g24068(.I (n_1037), .Z (n_141));
-  INV_X1 g24102(.I (n_609), .ZN (n_61));
-  INV_X1 g24099(.I (n_609), .ZN (n_41));
-  INV_X1 g24116(.I (n_1040), .ZN (n_104));
-  NAND4_X1 g24073(.A1 (raw_buffer[5]), .A2 (raw_buffer[3]), .A3
-       (raw_buffer[6]), .A4 (raw_buffer[4]), .ZN (n_44));
-  NAND2_X1 g24074(.A1 (n_9), .A2 (i2c_rxak_i), .ZN (n_80));
-  NAND2_X1 g24075(.A1 (led_o[4]), .A2 (n_968), .ZN (n_116));
-  NAND2_X1 g24077(.A1 (n_968), .A2 (n_46), .ZN (n_37));
-  NAND2_X1 g24078(.A1 (n_332), .A2 (n_46), .ZN (n_36));
-  NAND2_X1 g24106(.A1 (i2c_slave_addr_o[7]), .A2 (n_968), .ZN (n_28));
-  INV_X1 g24088(.I (n_24), .ZN (n_25));
-  NOR2_X1 g24086(.A1 (i2c_rxak_i), .A2 (i2c_arb_lost_i), .ZN (n_85));
-  NOR2_X1 g24087(.A1 (raw_buffer[1]), .A2 (raw_buffer[0]), .ZN (n_19));
-  INV_X2 g24136(.I (n_16), .ZN (n_53));
-  NAND2_X1 g24089(.A1 (raw_buffer[1]), .A2 (raw_buffer[2]), .ZN (n_24));
-  NAND2_X1 g24083(.A1 (raw_buffer[1]), .A2 (raw_buffer[0]), .ZN (n_51));
-  INV_X1 g24145(.I (i2c_data_out_i[5]), .ZN (n_15));
-  INV_X1 g24123(.I (raw_buffer[6]), .ZN (n_14));
-  INV_X1 g24144(.I (i2c_busy_i), .ZN (n_46));
-  INV_X1 g24141(.I (raw_buffer[0]), .ZN (n_49));
-  INV_X1 g24140(.I (raw_buffer[4]), .ZN (n_13));
-  INV_X1 g24127(.I (raw_buffer[7]), .ZN (n_100));
-  INV_X1 g24126(.I (i2c_write_o), .ZN (n_33));
-  INV_X1 g24148(.I (i2c_data_out_i[6]), .ZN (n_12));
-  INV_X1 g24121(.I (led_o[0]), .ZN (n_11));
-  INV_X1 g24129(.I (raw_buffer[5]), .ZN (n_10));
-  INV_X1 g24150(.I (i2c_arb_lost_i), .ZN (n_9));
-  INV_X1 g24151(.I (i2c_data_out_i[4]), .ZN (n_8));
-  INV_X1 g24147(.I (i2c_data_out_i[0]), .ZN (n_7));
-  INV_X1 g24119(.I (raw_buffer[1]), .ZN (n_50));
-  INV_X1 g24142(.I (i2c_data_out_i[3]), .ZN (n_6));
-  INV_X1 g24138(.I (led_o[8]), .ZN (n_5));
-  CLKBUF_X2 g24137(.I (state[1]), .Z (n_16));
-  INV_X1 g24149(.I (i2c_data_out_i[7]), .ZN (n_4));
-  INV_X1 g24152(.I (i2c_data_out_i[1]), .ZN (n_3));
-  INV_X1 g24118(.I (raw_buffer[2]), .ZN (n_58));
-  INV_X1 g24122(.I (raw_buffer[3]), .ZN (n_2));
-  INV_X1 g24146(.I (i2c_data_out_i[2]), .ZN (n_1));
-  INV_X1 fopt(.I (n_567), .ZN (n_246));
-  NAND3_X1 g24192(.A1 (n_699), .A2 (n_903), .A3 (i2c_read_o), .ZN
-       (n_262));
-  CLKBUF_X2 g24218(.I (error_led_o), .Z (n_286));
-  NOR2_X1 g24247(.A1 (n_327), .A2 (n_80), .ZN (n_317));
-  BUF_X2 g24251(.I (state[3]), .Z (n_320));
-  CLKBUF_X4 g24255(.I (n_320), .Z (n_324));
-  NAND2_X1 g24256(.A1 (n_0), .A2 (state[5]), .ZN (n_326));
-  CLKBUF_X2 g24258(.I (state[5]), .Z (n_327));
-  INV_X2 g24262(.I (state[5]), .ZN (n_332));
-  INV_X2 g24310(.I (n_0), .ZN (n_381));
-  NAND2_X1 g24327(.A1 (n_559), .A2 (n_327), .ZN (n_401));
-  OR2_X1 g45(.A1 (state[0]), .A2 (reset_i), .Z (n_527));
-  NOR3_X1 g99(.A1 (n_541), .A2 (n_724), .A3 (n_781), .ZN (n_543));
-  NAND2_X1 g103(.A1 (n_728), .A2 (n_725), .ZN (n_541));
-  NOR2_X1 g55(.A1 (n_908), .A2 (n_550), .ZN (n_551));
-  NAND2_X1 g56(.A1 (n_736), .A2 (n_1041), .ZN (n_550));
-  INV_X1 fopt24466(.I (error_led_o), .ZN (n_555));
-  INV_X2 fopt34(.I (error_led_o), .ZN (n_559));
-  NAND2_X2 g24467(.A1 (n_565), .A2 (n_968), .ZN (n_566));
-  NAND4_X2 g24468(.A1 (n_57), .A2 (n_317), .A3 (n_755), .A4 (n_781),
-       .ZN (n_565));
-  INV_X1 fopt24469(.I (n_562), .ZN (n_563));
-  CLKBUF_X12 fopt62(.I (state[4]), .Z (n_562));
-  INV_X1 fopt61(.I (n_562), .ZN (n_567));
-  NAND4_X1 g24470(.A1 (n_717), .A2 (n_628), .A3 (n_689), .A4 (n_1144),
-       .ZN (n_573));
-  NOR2_X1 g23(.A1 (n_700), .A2 (n_753), .ZN (n_582));
-  INV_X1 g24477(.I (n_740), .ZN (n_587));
-  NAND2_X1 g24478(.A1 (n_740), .A2 (led_o[2]), .ZN (n_588));
-  NAND2_X1 g24481(.A1 (n_104), .A2 (n_60), .ZN (n_590));
-  NAND2_X1 g24482(.A1 (n_61), .A2 (n_761), .ZN (n_591));
-  INV_X1 g21(.I (i2c_write_done_i), .ZN (n_596));
-  CLKBUF_X1 g24490(.I (n_606), .Z (n_607));
-  NOR2_X1 g24491(.A1 (state[5]), .A2 (reset_i), .ZN (n_606));
-  INV_X1 g24492(.I (n_606), .ZN (n_609));
-  OAI21_X1 g81(.A1 (n_176), .A2 (n_175), .B (n_639), .ZN (n_619));
-  NOR2_X1 g528(.A1 (n_1028), .A2 (n_632), .ZN (n_628));
-  NAND3_X1 g253(.A1 (n_630), .A2 (n_634), .A3 (n_631), .ZN (n_635));
-  OAI21_X1 g255(.A1 (n_153), .A2 (n_701), .B (n_104), .ZN (n_630));
-  AOI21_X1 g256(.A1 (n_155), .A2 (n_664), .B (n_1032), .ZN (n_631));
-  NOR2_X1 g254(.A1 (n_632), .A2 (n_677), .ZN (n_634));
-  NOR2_X1 g257(.A1 (n_590), .A2 (n_591), .ZN (n_632));
-  NAND2_X1 g26(.A1 (n_655), .A2 (n_638), .ZN (n_639));
-  AND2_X1 g27(.A1 (led_o[6]), .A2 (n_1114), .Z (n_638));
-  AND2_X1 g24504(.A1 (n_559), .A2 (n_765), .Z (n_642));
-  AND2_X1 g24505(.A1 (n_755), .A2 (n_765), .Z (n_645));
-  NAND2_X1 g24514(.A1 (n_738), .A2 (n_899), .ZN (n_655));
-  NOR2_X1 g24516(.A1 (n_286), .A2 (i2c_write_o), .ZN (n_653));
-  AND2_X2 g63_dup(.A1 (n_653), .A2 (n_1038), .Z (n_657));
-  AOI21_X1 g24519(.A1 (n_657), .A2 (n_899), .B (n_116), .ZN (n_659));
-  BUF_X1 fopt24521(.I (n_1039), .Z (n_664));
-  AND2_X2 g24528(.A1 (n_676), .A2 (n_1037), .Z (n_677));
-  NOR2_X1 g24529(.A1 (n_760), .A2 (n_326), .ZN (n_676));
-  NOR2_X1 g28(.A1 (n_758), .A2 (n_85), .ZN (n_680));
-  NOR2_X1 g24535(.A1 (n_688), .A2 (n_149), .ZN (n_689));
-  NOR2_X1 g25(.A1 (n_851), .A2 (n_1042), .ZN (n_688));
-  CLKBUF_X2 fopt24536(.I (n_326), .Z (n_690));
-  NAND2_X1 g48(.A1 (n_716), .A2 (n_702), .ZN (n_703));
-  NAND2_X1 g49(.A1 (n_701), .A2 (n_77), .ZN (n_702));
-  INV_X2 g50(.I (n_700), .ZN (n_701));
-  NAND3_X2 g51(.A1 (n_775), .A2 (n_607), .A3 (n_699), .ZN (n_700));
-  NOR2_X2 g52(.A1 (n_286), .A2 (i2c_write_o), .ZN (n_699));
-  NOR2_X1 g61(.A1 (n_1143), .A2 (n_715), .ZN (n_716));
-  NOR2_X1 g62(.A1 (n_713), .A2 (n_714), .ZN (n_715));
-  NAND3_X1 g64(.A1 (n_680), .A2 (n_1039), .A3 (n_736), .ZN (n_713));
-  NAND2_X1 g65(.A1 (n_699), .A2 (n_53), .ZN (n_714));
-  NOR2_X1 g60(.A1 (n_582), .A2 (n_715), .ZN (n_717));
-  OR2_X2 g63(.A1 (n_714), .A2 (n_158), .Z (n_718));
-  NOR2_X1 g76(.A1 (n_720), .A2 (n_332), .ZN (n_721));
-  INV_X1 g80(.I (n_559), .ZN (n_720));
-  NAND2_X1 g79(.A1 (n_53), .A2 (n_559), .ZN (n_724));
-  NOR2_X1 g77(.A1 (n_758), .A2 (n_332), .ZN (n_725));
-  NOR2_X2 g10(.A1 (i2c_write_o), .A2 (reset_i), .ZN (n_727));
-  BUF_X4 g24540(.I (state[0]), .Z (i2c_write_o));
-  CLKBUF_X2 g24541(.I (n_727), .Z (n_728));
-  NAND4_X1 g71(.A1 (n_904), .A2 (n_734), .A3 (n_1039), .A4 (n_736), .ZN
-       (n_737));
-  NOR2_X1 g72(.A1 (i2c_write_o), .A2 (n_381), .ZN (n_734));
-  NOR2_X2 g24543(.A1 (n_332), .A2 (reset_i), .ZN (n_736));
-  AOI21_X1 g92(.A1 (n_738), .A2 (n_901), .B (reset_i), .ZN (n_740));
-  AND2_X1 g93(.A1 (n_653), .A2 (n_1038), .Z (n_738));
-  NOR2_X1 g287(.A1 (n_751), .A2 (n_1036), .ZN (n_753));
-  OAI21_X1 g288(.A1 (n_748), .A2 (n_749), .B (n_1034), .ZN (n_751));
-  INV_X1 g292(.I (n_324), .ZN (n_748));
-  NAND2_X1 g291(.A1 (n_567), .A2 (n_46), .ZN (n_749));
-  NOR2_X2 g32(.A1 (n_381), .A2 (i2c_write_o), .ZN (n_755));
-  CLKBUF_X12 fopt24551(.I (state[6]), .Z (n_758));
-  NAND3_X1 g24552(.A1 (n_154), .A2 (n_1144), .A3 (n_770), .ZN (n_757));
-  NAND2_X1 g24554(.A1 (n_555), .A2 (state[6]), .ZN (n_760));
-  NOR2_X1 g24555(.A1 (state[6]), .A2 (error_led_o), .ZN (n_761));
-  INV_X1 fopt24557(.I (n_763), .ZN (n_764));
-  BUF_X1 g24558(.I (state[6]), .Z (n_763));
-  NOR2_X1 g24559(.A1 (state[6]), .A2 (n_37), .ZN (n_765));
-  INV_X2 g24562(.I (n_1038), .ZN (n_767));
-  NAND2_X1 g24563(.A1 (n_767), .A2 (n_701), .ZN (n_770));
-  INV_X2 g24566(.I (state[1]), .ZN (n_0));
-  NOR2_X2 g24567(.A1 (n_381), .A2 (n_764), .ZN (n_775));
-  BUF_X1 g24570(.I (n_381), .Z (i2c_read_o));
-  NOR2_X2 g24571(.A1 (n_327), .A2 (n_777), .ZN (n_778));
-  INV_X2 g24572(.I (state[3]), .ZN (n_777));
-  NOR2_X2 g24575(.A1 (n_563), .A2 (n_777), .ZN (n_781));
-  OAI21_X1 g24577(.A1 (n_777), .A2 (n_85), .B (n_62), .ZN (n_784));
-  NAND3_X2 g2(.A1 (n_728), .A2 (n_850), .A3 (n_721), .ZN (n_851));
-  NOR2_X1 g3(.A1 (n_758), .A2 (n_16), .ZN (n_850));
-  NOR2_X2 g24700(.A1 (n_690), .A2 (n_898), .ZN (n_899));
-  INV_X1 fopt24701(.I (state[6]), .ZN (n_898));
-  NOR2_X1 g94_dup24702(.A1 (n_690), .A2 (n_900), .ZN (n_901));
-  INV_X1 fopt24703(.I (state[6]), .ZN (n_900));
-  NAND2_X1 g24704(.A1 (n_898), .A2 (n_33), .ZN (n_902));
-  INV_X1 fopt24705(.I (n_898), .ZN (n_903));
-  NOR2_X1 g24706(.A1 (n_900), .A2 (n_559), .ZN (n_904));
-  NOR3_X1 g24707(.A1 (n_900), .A2 (n_567), .A3 (n_75), .ZN (n_905));
-  NAND2_X1 g7(.A1 (n_755), .A2 (n_559), .ZN (n_908));
-  NAND2_X1 g24734(.A1 (n_935), .A2 (n_937), .ZN (n_938));
-  NOR3_X1 g95(.A1 (n_1143), .A2 (n_543), .A3 (n_551), .ZN (n_935));
-  OAI21_X1 g94(.A1 (n_701), .A2 (n_155), .B (n_936), .ZN (n_937));
-  INV_X1 g96(.I (n_62), .ZN (n_936));
-  NAND2_X1 g24757(.A1 (n_970), .A2 (n_184), .ZN (n_971));
-  NAND2_X1 g24758(.A1 (n_1029), .A2 (n_969), .ZN (n_970));
-  AND2_X1 g1(.A1 (i2c_command_byte_o[4]), .A2 (n_968), .Z (n_969));
-  INV_X1 g24760(.I (reset_i), .ZN (n_968));
-  OR4_X1 g24786(.A1 (raw_buffer[4]), .A2 (raw_buffer[3]), .A3
-       (raw_buffer[6]), .A4 (raw_buffer[5]), .Z (n_1009));
-  NAND3_X1 g24787(.A1 (n_655), .A2 (led_o[3]), .A3 (n_1114), .ZN
-       (n_1010));
-  NAND4_X1 g24789(.A1 (n_778), .A2 (n_755), .A3 (n_642), .A4 (n_246),
-       .ZN (n_1012));
-  NAND2_X1 g24794(.A1 (n_187), .A2 (n_1025), .ZN (n_1026));
-  BUF_X1 fopt132(.I (n_1024), .Z (n_1025));
-  NAND2_X2 g126(.A1 (n_1021), .A2 (n_1131), .ZN (n_1024));
-  NOR2_X2 g130(.A1 (n_767), .A2 (n_36), .ZN (n_1021));
-  NAND3_X1 g123(.A1 (n_1025), .A2 (n_184), .A3 (n_28), .ZN (n_1027));
-  NAND2_X1 g122(.A1 (n_1024), .A2 (n_1012), .ZN (n_1028));
-  NAND2_X1 g127(.A1 (n_1021), .A2 (n_114), .ZN (n_1029));
-  NOR2_X1 g124(.A1 (n_1030), .A2 (n_79), .ZN (n_1031));
-  CLKBUF_X2 fopt24795(.I (n_1130), .Z (n_1030));
-  NOR2_X1 g125(.A1 (n_1030), .A2 (n_95), .ZN (n_1032));
-  NAND3_X1 g24796(.A1 (n_1033), .A2 (n_777), .A3
-       (i2c_data_out_valid_i), .ZN (n_1034));
-  BUF_X4 g24797(.I (state[4]), .Z (n_1033));
-  AND3_X1 g24798(.A1 (n_324), .A2 (n_1035), .A3 (n_80), .Z (n_1036));
-  BUF_X1 fopt24799(.I (n_1033), .Z (n_1035));
-  NOR3_X1 g24800(.A1 (n_320), .A2 (n_1033), .A3 (n_527), .ZN (n_1037));
-  NOR2_X2 g24801(.A1 (n_320), .A2 (n_1033), .ZN (n_1038));
-  NOR2_X2 g24802(.A1 (n_1033), .A2 (n_777), .ZN (n_1039));
-  NAND2_X1 g24803(.A1 (n_777), .A2 (n_1033), .ZN (n_1040));
-  NOR2_X1 g57_dup24804(.A1 (n_324), .A2 (n_1035), .ZN (n_1041));
-  OR3_X1 g24805(.A1 (n_596), .A2 (n_1035), .A3 (n_324), .Z (n_1042));
-  OAI21_X1 g24873(.A1 (n_191), .A2 (n_173), .B (n_1150), .ZN (n_1107));
-  OAI21_X1 g24879(.A1 (n_176), .A2 (n_178), .B (n_1151), .ZN (n_1112));
-  NAND2_X2 g24884(.A1 (n_657), .A2 (n_899), .ZN (n_1113));
-  OAI21_X1 g24885(.A1 (n_176), .A2 (n_173), .B (n_1152), .ZN (n_1117));
-  INV_X1 g24888(.I (reset_i), .ZN (n_1114));
-  INV_X1 g19(.I (n_1130), .ZN (n_1131));
-  NAND3_X1 g20(.A1 (n_727), .A2 (n_761), .A3 (n_53), .ZN (n_1130));
-  NOR2_X1 g24909(.A1 (n_1142), .A2 (n_1143), .ZN (n_1144));
-  NOR3_X1 g53(.A1 (n_262), .A2 (n_87), .A3 (n_767), .ZN (n_1142));
-  INV_X1 g54(.I (n_737), .ZN (n_1143));
-  NAND3_X1 g24915(.A1 (n_1113), .A2 (led_o[1]), .A3 (n_1114), .ZN
-       (n_1150));
-  NAND3_X1 g24916(.A1 (n_1113), .A2 (led_o[7]), .A3 (n_1114), .ZN
-       (n_1151));
-  NAND3_X1 g24917(.A1 (n_1113), .A2 (led_o[5]), .A3 (n_1114), .ZN
-       (n_1152));
+  OAI22_X1 g3832(.A1 (n_107), .A2 (reset_i), .B1 (n_4), .B2 (n_71), .ZN
+       (n_139));
+  DFFSNQ_X1 \led_o_reg[2] (.SN (1'b1), .CLK (clk_i), .D (n_124), .Q
+       (led_o[2]));
+  AOI22_X1 g3849(.A1 (n_99), .A2 (n_83), .B1 (state[4]), .B2 (n_109),
+       .ZN (n_138));
+  OAI22_X1 g3850(.A1 (n_127), .A2 (n_129), .B1 (n_0), .B2 (n_132), .ZN
+       (n_137));
+  OAI21_X1 g3827(.A1 (n_22), .A2 (n_122), .B (n_112), .ZN (n_136));
+  NAND2_X1 g3811(.A1 (n_111), .A2 (n_76), .ZN (n_135));
+  AOI21_X1 g3829(.A1 (n_3), .A2 (n_102), .B (reset_i), .ZN (n_134));
+  OAI22_X1 g3830(.A1 (n_130), .A2 (raw_buffer[2]), .B1 (n_1), .B2
+       (n_132), .ZN (n_133));
+  OAI22_X1 g3831(.A1 (n_130), .A2 (n_129), .B1 (n_12), .B2 (n_132), .ZN
+       (n_131));
+  DFFSNQ_X1 \state_reg[2] (.SN (1'b1), .CLK (clk_i), .D (n_106), .Q
+       (error_led_o));
+  DFFSNQ_X1 \i2c_command_byte_o_reg[2] (.SN (1'b1), .CLK (clk_i), .D
+       (n_108), .Q (i2c_command_byte_o[4]));
+  OAI22_X1 g3848(.A1 (n_127), .A2 (raw_buffer[2]), .B1 (n_13), .B2
+       (n_132), .ZN (n_128));
+  NOR2_X1 g3825(.A1 (n_88), .A2 (reset_i), .ZN (n_126));
+  OAI22_X1 g3852(.A1 (n_123), .A2 (n_81), .B1 (n_14), .B2 (n_132), .ZN
+       (n_125));
+  OAI22_X1 g3862(.A1 (n_123), .A2 (n_122), .B1 (n_7), .B2 (n_132), .ZN
+       (n_124));
+  NAND2_X1 g3838(.A1 (n_120), .A2 (n_103), .ZN (n_121));
+  NOR2_X1 g3818(.A1 (n_97), .A2 (reset_i), .ZN (n_119));
+  NOR2_X1 g3819(.A1 (n_96), .A2 (reset_i), .ZN (n_118));
+  NOR2_X1 g3820(.A1 (n_93), .A2 (reset_i), .ZN (n_117));
+  NOR2_X1 g3821(.A1 (n_92), .A2 (reset_i), .ZN (n_116));
+  NOR2_X1 g3822(.A1 (n_90), .A2 (reset_i), .ZN (n_115));
+  NOR2_X1 g3823(.A1 (n_91), .A2 (reset_i), .ZN (n_114));
+  NOR2_X1 g3824(.A1 (n_89), .A2 (reset_i), .ZN (n_113));
+  AOI22_X1 g3851(.A1 (n_27), .A2 (n_104), .B1 (led_o[4]), .B2 (n_61),
+       .ZN (n_112));
+  NOR4_X1 g3828(.A1 (n_110), .A2 (n_62), .A3 (n_109), .A4 (n_74), .ZN
+       (n_111));
+  OAI21_X1 g3856(.A1 (n_69), .A2 (reset_i), .B (n_84), .ZN (n_108));
+  AOI21_X1 g3857(.A1 (i2c_command_byte_o[6]), .A2 (n_98), .B (n_101),
+       .ZN (n_107));
+  DFFSNQ_X1 \state_reg[5] (.SN (1'b1), .CLK (clk_i), .D (n_80), .Q
+       (state[5]));
+  DFFSNQ_X1 \led_o_reg[8] (.SN (1'b1), .CLK (clk_i), .D (n_87), .Q
+       (led_o[8]));
+  NAND2_X1 g3837(.A1 (n_79), .A2 (n_105), .ZN (n_106));
+  DFFSNQ_X1 \led_o_reg[0] (.SN (1'b1), .CLK (clk_i), .D (n_77), .Q
+       (led_o[0]));
+  NAND2_X1 g3853(.A1 (n_100), .A2 (n_104), .ZN (n_130));
+  NOR3_X1 g3855(.A1 (n_85), .A2 (n_86), .A3 (n_55), .ZN (n_103));
+  AOI21_X1 g3859(.A1 (n_17), .A2 (n_82), .B (n_101), .ZN (n_102));
+  NAND2_X1 g3864(.A1 (n_100), .A2 (n_78), .ZN (n_127));
+  NAND2_X1 g3868(.A1 (n_98), .A2 (n_64), .ZN (n_99));
+  AOI22_X1 g3840(.A1 (n_95), .A2 (i2c_data_out_i[0]), .B1
+       (raw_buffer[0]), .B2 (n_94), .ZN (n_97));
+  AOI22_X1 g3841(.A1 (n_95), .A2 (i2c_data_out_i[1]), .B1
+       (raw_buffer[1]), .B2 (n_94), .ZN (n_96));
+  AOI22_X1 g3842(.A1 (n_95), .A2 (i2c_data_out_i[2]), .B1
+       (raw_buffer[2]), .B2 (n_94), .ZN (n_93));
+  AOI22_X1 g3843(.A1 (n_95), .A2 (i2c_data_out_i[3]), .B1
+       (raw_buffer[3]), .B2 (n_94), .ZN (n_92));
+  AOI22_X1 g3844(.A1 (n_95), .A2 (i2c_data_out_i[4]), .B1
+       (raw_buffer[4]), .B2 (n_94), .ZN (n_91));
+  AOI22_X1 g3845(.A1 (n_95), .A2 (i2c_data_out_i[5]), .B1
+       (raw_buffer[5]), .B2 (n_94), .ZN (n_90));
+  AOI22_X1 g3846(.A1 (n_95), .A2 (i2c_data_out_i[6]), .B1
+       (raw_buffer[6]), .B2 (n_94), .ZN (n_89));
+  AOI22_X1 g3847(.A1 (n_95), .A2 (i2c_data_out_i[7]), .B1
+       (raw_buffer[7]), .B2 (n_94), .ZN (n_88));
+  AOI21_X1 g3854(.A1 (state[6]), .A2 (n_56), .B (n_66), .ZN (n_120));
+  OAI22_X1 g3858(.A1 (n_33), .A2 (n_75), .B1 (n_2), .B2 (n_132), .ZN
+       (n_87));
+  DFFSNQ_X1 \state_reg[1] (.SN (1'b1), .CLK (clk_i), .D (n_86), .Q
+       (i2c_read_o));
+  AOI21_X1 g3861(.A1 (n_50), .A2 (n_85), .B (n_73), .ZN (n_105));
+  NAND2_X1 g3865(.A1 (n_83), .A2 (n_82), .ZN (n_84));
+  INV_X1 g3866(.I (n_104), .ZN (n_81));
+  NAND4_X1 g3839(.A1 (n_79), .A2 (n_51), .A3 (n_59), .A4 (n_49), .ZN
+       (n_80));
+  INV_X1 g3886(.I (n_78), .ZN (n_122));
+  OAI22_X1 g3860(.A1 (n_29), .A2 (n_76), .B1 (n_6), .B2 (n_132), .ZN
+       (n_77));
+  NOR2_X1 g3867(.A1 (n_32), .A2 (n_75), .ZN (n_104));
+  AOI21_X1 g3871(.A1 (n_70), .A2 (n_72), .B (n_42), .ZN (n_74));
+  INV_X1 g3875(.I (n_82), .ZN (n_98));
+  NOR3_X1 g3887(.A1 (n_28), .A2 (raw_buffer[7]), .A3 (n_76), .ZN
+       (n_78));
+  INV_X1 g3869(.I (n_94), .ZN (n_95));
+  NOR3_X1 g3872(.A1 (n_72), .A2 (n_71), .A3 (n_65), .ZN (n_73));
+  NOR2_X1 g3876(.A1 (n_70), .A2 (i2c_busy_i), .ZN (n_82));
+  NOR2_X1 g3878(.A1 (n_70), .A2 (n_71), .ZN (n_86));
+  NAND2_X1 g3879(.A1 (i2c_command_byte_o[4]), .A2 (n_67), .ZN (n_69));
+  NOR2_X1 g3883(.A1 (n_67), .A2 (reset_i), .ZN (n_68));
+  INV_X1 g3889(.I (n_79), .ZN (n_66));
+  NAND3_X1 g3870(.A1 (n_63), .A2 (state[3]), .A3 (n_65), .ZN (n_94));
+  NAND2_X1 g3874(.A1 (raw_buffer[7]), .A2 (n_60), .ZN (n_75));
+  NAND2_X1 g3877(.A1 (n_63), .A2 (i2c_data_out_valid_i), .ZN (n_64));
+  NAND3_X1 g3890(.A1 (state[6]), .A2 (state[5]), .A3 (n_43), .ZN
+       (n_79));
+  DFFSNQ_X1 \state_reg[0] (.SN (1'b1), .CLK (clk_i), .D (n_47), .Q
+       (i2c_write_o));
+  NOR2_X1 g3880(.A1 (n_45), .A2 (n_52), .ZN (n_62));
+  INV_X1 g3881(.I (n_132), .ZN (n_61));
+  NAND2_X1 g3894(.A1 (n_58), .A2 (state[4]), .ZN (n_70));
+  INV_X1 g3896(.I (n_60), .ZN (n_76));
+  INV_X1 g3898(.I (n_101), .ZN (n_67));
+  OAI21_X1 g3900(.A1 (n_83), .A2 (n_15), .B (n_58), .ZN (n_59));
+  INV_X1 g3901(.I (n_63), .ZN (n_72));
+  NAND3_X1 g3905(.A1 (n_58), .A2 (n_36), .A3 (i2c_write_done_i), .ZN
+       (n_57));
+  NAND2_X1 g3882(.A1 (n_41), .A2 (n_18), .ZN (n_132));
+  NOR4_X1 g3884(.A1 (state[5]), .A2 (i2c_write_o), .A3 (error_led_o),
+       .A4 (n_31), .ZN (n_56));
+  NOR3_X1 g3885(.A1 (n_53), .A2 (n_40), .A3 (reset_i), .ZN (n_55));
+  NOR3_X1 g3888(.A1 (n_53), .A2 (n_52), .A3 (i2c_busy_i), .ZN (n_54));
+  NOR3_X1 g3892(.A1 (n_44), .A2 (n_71), .A3 (n_16), .ZN (n_85));
+  OR4_X1 g3893(.A1 (n_46), .A2 (n_50), .A3 (n_71), .A4 (n_38), .Z
+       (n_51));
+  NOR2_X1 g3895(.A1 (n_48), .A2 (n_71), .ZN (n_109));
+  NOR2_X1 g3897(.A1 (n_35), .A2 (n_49), .ZN (n_60));
+  NOR2_X1 g3899(.A1 (n_24), .A2 (n_48), .ZN (n_101));
+  NOR2_X1 g3902(.A1 (n_53), .A2 (n_50), .ZN (n_63));
+  NOR3_X1 g3904(.A1 (n_46), .A2 (state[6]), .A3 (n_52), .ZN (n_47));
+  AOI21_X1 g3906(.A1 (n_39), .A2 (i2c_busy_i), .B (n_34), .ZN (n_45));
+  INV_X1 g3912(.I (n_44), .ZN (n_58));
+  NOR4_X1 g3914(.A1 (i2c_read_o), .A2 (n_11), .A3 (i2c_write_o), .A4
+       (n_52), .ZN (n_43));
+  NOR4_X1 g3891(.A1 (n_26), .A2 (n_50), .A3 (state[6]), .A4 (n_42), .ZN
+       (n_110));
+  NAND3_X1 g3907(.A1 (n_37), .A2 (n_40), .A3 (state[6]), .ZN (n_41));
+  NAND2_X1 g3908(.A1 (n_39), .A2 (n_38), .ZN (n_48));
+  NAND2_X1 g3910(.A1 (n_37), .A2 (n_36), .ZN (n_49));
+  NAND2_X1 g3911(.A1 (n_39), .A2 (state[6]), .ZN (n_53));
+  NAND2_X1 g3913(.A1 (n_37), .A2 (n_35), .ZN (n_44));
+  INV_X1 g3916(.I (n_39), .ZN (n_46));
+  NOR4_X1 g3922(.A1 (n_30), .A2 (state[6]), .A3 (i2c_rxak_i), .A4
+       (i2c_arb_lost_i), .ZN (n_34));
+  NOR2_X1 g3909(.A1 (n_23), .A2 (n_32), .ZN (n_33));
+  NAND2_X1 g3915(.A1 (i2c_read_o), .A2 (n_36), .ZN (n_31));
+  NOR2_X1 g3917(.A1 (n_30), .A2 (state[5]), .ZN (n_39));
+  NOR2_X1 g3918(.A1 (n_30), .A2 (n_25), .ZN (n_37));
+  NAND2_X1 g3928(.A1 (n_50), .A2 (n_19), .ZN (n_52));
+  OAI21_X1 g3903(.A1 (n_28), .A2 (n_27), .B (n_10), .ZN (n_29));
+  NAND3_X1 g3919(.A1 (n_25), .A2 (n_21), .A3 (i2c_write_o), .ZN (n_26));
+  AOI22_X1 g3923(.A1 (n_20), .A2 (raw_buffer[2]), .B1 (n_129), .B2
+       (raw_buffer[1]), .ZN (n_123));
+  NOR2_X1 g3924(.A1 (n_24), .A2 (reset_i), .ZN (n_36));
+  INV_X1 g3926(.I (n_22), .ZN (n_23));
+  NAND2_X1 g3925(.A1 (n_21), .A2 (n_5), .ZN (n_30));
+  NAND2_X1 g3927(.A1 (n_20), .A2 (n_129), .ZN (n_22));
+  INV_X1 g3931(.I (n_24), .ZN (n_40));
+  INV_X1 g3941(.I (n_71), .ZN (n_19));
+  NAND4_X1 g3920(.A1 (raw_buffer[6]), .A2 (raw_buffer[4]), .A3
+       (raw_buffer[5]), .A4 (raw_buffer[3]), .ZN (n_32));
+  OR4_X1 g3921(.A1 (raw_buffer[5]), .A2 (raw_buffer[3]), .A3
+       (raw_buffer[6]), .A4 (raw_buffer[4]), .Z (n_28));
+  NOR2_X1 g3929(.A1 (n_8), .A2 (i2c_arb_lost_i), .ZN (n_65));
+  NOR2_X1 g3933(.A1 (n_9), .A2 (n_129), .ZN (n_27));
+  INV_X1 g3938(.I (n_83), .ZN (n_42));
+  NAND2_X1 g3942(.A1 (state[3]), .A2 (n_18), .ZN (n_71));
+  NAND2_X1 g3932(.A1 (n_50), .A2 (n_17), .ZN (n_24));
+  NOR2_X1 g3930(.A1 (raw_buffer[1]), .A2 (raw_buffer[0]), .ZN (n_20));
+  NAND2_X1 g3935(.A1 (raw_buffer[1]), .A2 (raw_buffer[0]), .ZN (n_100));
+  NOR2_X1 g3937(.A1 (state[6]), .A2 (i2c_busy_i), .ZN (n_38));
+  NOR2_X1 g3934(.A1 (i2c_read_o), .A2 (error_led_o), .ZN (n_21));
+  NOR2_X1 g3936(.A1 (i2c_rxak_i), .A2 (i2c_arb_lost_i), .ZN (n_16));
+  NOR2_X1 g3939(.A1 (state[3]), .A2 (reset_i), .ZN (n_83));
+  NOR2_X1 g3940(.A1 (state[4]), .A2 (reset_i), .ZN (n_15));
+  INV_X1 g3957(.I (led_o[6]), .ZN (n_14));
+  INV_X1 g3958(.I (led_o[3]), .ZN (n_13));
+  INV_X1 g3955(.I (led_o[5]), .ZN (n_12));
+  INV_X1 g3959(.I (error_led_o), .ZN (n_11));
+  INV_X1 g3954(.I (state[6]), .ZN (n_35));
+  INV_X1 g3944(.I (raw_buffer[7]), .ZN (n_10));
+  INV_X1 g3951(.I (raw_buffer[1]), .ZN (n_9));
+  INV_X1 g3962(.I (i2c_rxak_i), .ZN (n_8));
+  INV_X1 g3960(.I (led_o[2]), .ZN (n_7));
+  INV_X1 g3947(.I (state[5]), .ZN (n_25));
+  INV_X1 g3943(.I (led_o[0]), .ZN (n_6));
+  INV_X1 g3963(.I (reset_i), .ZN (n_18));
+  INV_X1 g3956(.I (raw_buffer[2]), .ZN (n_129));
+  INV_X1 g3945(.I (i2c_write_o), .ZN (n_5));
+  INV_X1 g3952(.I (i2c_command_byte_o[6]), .ZN (n_4));
+  INV_X1 g3949(.I (i2c_slave_addr_o[7]), .ZN (n_3));
+  INV_X1 g3950(.I (state[4]), .ZN (n_50));
+  INV_X1 g3953(.I (state[3]), .ZN (n_17));
+  INV_X1 g3948(.I (led_o[8]), .ZN (n_2));
+  INV_X1 g3961(.I (led_o[7]), .ZN (n_1));
+  INV_X1 g3946(.I (led_o[1]), .ZN (n_0));
 endmodule
 
