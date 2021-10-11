@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  10 OCT 2021 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.11.1)  10 OCT 2021 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,45 +670,53 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<closeup_delayed_wave.png, id=27, 1517.67pt x 731.73375pt>
+<delayed_wave2.png, id=27, 1517.67pt x 727.71875pt>
+File: delayed_wave2.png Graphic file (type png)
+<use delayed_wave2.png>
+Package pdftex.def Info: delayed_wave2.png  used on input line 80.
+(pdftex.def)             Requested size: 475.79173pt x 228.13332pt.
+<closeup_delayed_wave.png, id=29, 1517.67pt x 731.73375pt>
 File: closeup_delayed_wave.png Graphic file (type png)
 <use closeup_delayed_wave.png>
-Package pdftex.def Info: closeup_delayed_wave.png  used on input line 77.
+Package pdftex.def Info: closeup_delayed_wave.png  used on input line 85.
 (pdftex.def)             Requested size: 475.79173pt x 229.39198pt.
-<delayed_wave.png, id=29, 1517.67pt x 727.71875pt>
-File: delayed_wave.png Graphic file (type png)
-<use delayed_wave.png>
-Package pdftex.def Info: delayed_wave.png  used on input line 82.
-(pdftex.def)             Requested size: 475.79173pt x 228.13332pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
-nation with the same identifier (name{figure.1}) has been already used, duplica
-te ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.1}) has been already used, dup
+licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.85 
-      <./closeup_delayed_wave.png>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 89.
- (./synth/out/level_fsm_area.rpt
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 13.
+l.88 
+      <./delayed_wave2.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 98.
+
+(./synth/out/level_fsm_area.rpt [3pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.5   Technology 
+                 library:     NanGate_15nm_OCL revision 1.0 <./closeup_delayed_
+wave.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <6> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 13.
 )
-(./synth/out/level_fsm_gates.rpt [2pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.18 INV_X1 
-                       36   5.308    NanGate_15nm_OCL <./delayed_wave.png>])
-(./synth/out/level_fsm_power.rpt) (./synth/out/level_fsm_timing.rpt [3])
+(./synth/out/level_fsm_gates.rpt) (./synth/out/level_fsm_power.rpt)
+(./synth/out/level_fsm_timing.rpt [4])
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -718,44 +726,40 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2015/06/04 1.6 listings language file
 )
-(./synth/out/level_fsm_map.v [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+(./synth/out/level_fsm_map.v [5]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
- [5] [6] [7]) [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
-
-(./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
+ [6] [7] [8]) [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 6275E2D99CFC50C3365A51138EDA01AF;282.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 18480 strings out of 494923
- 333212 string characters out of 6180742
- 489999 words of memory out of 5000000
- 21031 multiletter control sequences out of 15000+600000
- 10441 words of font info for 40 fonts, out of 8000000 for 9000
+ 18488 strings out of 494923
+ 333338 string characters out of 6180742
+ 489439 words of memory out of 5000000
+ 21038 multiletter control sequences out of 15000+600000
+ 11689 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,6n,54p,406b,1924s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,54p,1020b,1924s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb>
-Output written on report.pdf (8 pages, 274489 bytes).
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb>
+Output written on report.pdf (9 pages, 316368 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 437 named destinations out of 1000 (max. 500000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 438 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
