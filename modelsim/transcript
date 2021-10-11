@@ -12,13 +12,27 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading project ELEC402_PROJ0_26951160
-vsim work.level_fsm_tb
-# vsim work.level_fsm_tb 
-# Start time: 15:22:37 on Oct 04,2021
-# ** Note: (vsim-3812) Design is being optimized...
+vsim -vopt work.level_fsm_tb
+# vsim -vopt work.level_fsm_tb 
+# Start time: 19:05:21 on Oct 10,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.level_fsm_tb(fast)
 # Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.OR4_X1(fast)
 add wave -position insertpoint  \
 sim:/level_fsm_tb/clk_i \
 sim:/level_fsm_tb/reset_i \
@@ -36,93 +50,495 @@ sim:/level_fsm_tb/i2c_command_byte_o \
 sim:/level_fsm_tb/i2c_num_bytes_o \
 sim:/level_fsm_tb/error_led_o \
 sim:/level_fsm_tb/led_o
-restart
-run
+run -all
 # ** Error: Assertion error.
-#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 140
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 140
 # ** Error: Assertion error.
-#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 141
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 141
 # ** Error: Assertion error.
-#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 142
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 142
 # ** Error: Assertion error.
-#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 144
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 144
 # ** Error: Assertion error.
-#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 147
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 147
 # ** Error: Assertion error.
-#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 163
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 163
 # ** Error: Assertion error.
-#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 167
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 167
 # ** Error: Assertion error.
-#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 182
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 182
+# ** Error: $hold( posedge CLK &&& xid_4:22 ns, posedge D:22 ns, 100 ps );
+#    Time: 22 ns  Iteration: 1  Process: /level_fsm_tb/dut/\led_o_reg[7] /\led_o_reg[7]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 731
 # ** Error: Assertion error.
-#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 194
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 194
 # ** Error: Assertion error.
-#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 209
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 209
 # ** Error: Assertion error.
-#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 223
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 223
 # ** Error: Assertion error.
-#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 224
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 224
 # ** Error: Assertion error.
-#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 225
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 225
 # ** Error: Assertion error.
-#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 228
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 228
 # ** Error: Assertion error.
-#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 229
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 229
 # ** Error: Assertion error.
-#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 230
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 230
+# ** Error: $hold( posedge CLK &&& xid_4:38 ns, posedge D:38 ns, 100 ps );
+#    Time: 38 ns  Iteration: 1  Process: /level_fsm_tb/dut/\state_reg[3] /\state_reg[3]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 731
 # ** Error: Assertion error.
-#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 232
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 232
 # ** Error: Assertion error.
-#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 235
-# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv(251)
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 235
+# ** Error: Assertion error.
+#    Time: 41 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 239
+# ** Error: Assertion error.
+#    Time: 44 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 248
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv(251)
 #    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
 # 1
-# Break at /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv line 251
-# Causality operation skipped due to absence of debug database file
+# Break at /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv line 251
+# Compile of NanGate_15nm_OCL_conditional.v was successful.
 # Compile of level_fsm_map.v was successful.
 # Compile of level_fsm_tb.sv was successful.
-# Compile of NanGate_15nm_OCL_conditional.v was successful.
 # 3 compiles, 0 failed with no errors.
-vsim work.level_fsm_tb -voptargs=+acc
-# End time: 15:29:44 on Oct 04,2021, Elapsed time: 0:07:07
-# Errors: 18, Warnings: 1
-# vsim work.level_fsm_tb -voptargs="+acc" 
-# Start time: 15:29:44 on Oct 04,2021
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v
+# Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:12:44 on Oct 10,2021
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v 
+# -- Compiling module level_fsm
+# 
+# Top level modules:
+# 	level_fsm
+# End time: 19:12:44 on Oct 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v
+# Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:12:59 on Oct 10,2021
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v 
+# -- Compiling module level_fsm
+# 
+# Top level modules:
+# 	level_fsm
+# End time: 19:12:59 on Oct 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv
+# Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:12:59 on Oct 10,2021
+# vlog -reportprogress 300 -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv 
+# -- Compiling module level_fsm_tb
+# 
+# Top level modules:
+# 	level_fsm_tb
+# End time: 19:12:59 on Oct 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -novopt work.level_fsm_tb
+# End time: 19:13:07 on Oct 10,2021, Elapsed time: 0:07:46
+# Errors: 22, Warnings: 0
+# vsim -novopt work.level_fsm_tb 
+# Start time: 19:13:07 on Oct 10,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 19:13:08 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -voptargs=+acc work.level_fsm_tb
+# vsim work.level_fsm_tb 
+# Start time: 19:13:13 on Oct 10,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.OR4_X1(fast)
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+run -all
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 140
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 141
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 142
+# ** Error: Assertion error.
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 144
+# ** Error: Assertion error.
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 147
+# ** Error: Assertion error.
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 163
+# ** Error: Assertion error.
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 167
+# ** Error: Assertion error.
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 182
+# ** Error: $hold( posedge CLK &&& xid_4:22 ns, posedge D:22 ns, 100 ps );
+#    Time: 22 ns  Iteration: 1  Process: /level_fsm_tb/dut/\led_o_reg[7] /\led_o_reg[7]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 731
+# ** Error: Assertion error.
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 194
+# ** Error: Assertion error.
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 209
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 223
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 224
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 225
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 228
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 229
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 230
+# ** Error: $hold( posedge CLK &&& xid_4:38 ns, posedge D:38 ns, 100 ps );
+#    Time: 38 ns  Iteration: 1  Process: /level_fsm_tb/dut/\state_reg[3] /\state_reg[3]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 731
+# ** Error: Assertion error.
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 232
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 235
+# ** Error: Assertion error.
+#    Time: 41 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 239
+# ** Error: Assertion error.
+#    Time: 44 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 248
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv(251)
+#    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
+# 1
+# Break at /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv line 251
+vlog -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv
+# Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:25:57 on Oct 10,2021
+# vlog -reportprogress 300 -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv 
+# -- Compiling module level_fsm_tb
+# 
+# Top level modules:
+# 	level_fsm_tb
+# End time: 19:25:57 on Oct 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v
+# Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:25:58 on Oct 10,2021
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v 
+# -- Compiling module level_fsm
+# 
+# Top level modules:
+# 	level_fsm
+# End time: 19:25:59 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Closing VCD file "level_fsm_tb.vcd"
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.OR4_X1(fast)
+run -all
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 140
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 141
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 142
+# ** Error: Assertion error.
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 144
+# ** Error: Assertion error.
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 147
+# ** Error: Assertion error.
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 163
+# ** Error: Assertion error.
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 167
+# ** Error: Assertion error.
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 182
+# ** Error: $hold( posedge CLK &&& xid_4:22 ns, posedge D:22 ns, 100 ps );
+#    Time: 22 ns  Iteration: 1  Process: /level_fsm_tb/dut/\led_o_reg[7] /\led_o_reg[7]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 731
+# ** Error: Assertion error.
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 194
+# ** Error: Assertion error.
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 209
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 223
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 224
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 225
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 228
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 229
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 230
+# ** Error: $hold( posedge CLK &&& xid_4:38 ns, posedge D:38 ns, 100 ps );
+#    Time: 38 ns  Iteration: 1  Process: /level_fsm_tb/dut/\state_reg[3] /\state_reg[3]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 731
+# ** Error: Assertion error.
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 232
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 235
+# ** Error: Assertion error.
+#    Time: 41 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 239
+# ** Error: Assertion error.
+#    Time: 44 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 248
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv(251)
+#    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
+# 1
+# Break at /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv line 251
+# Compile of NanGate_15nm_OCL_conditional.v was successful.
+# Compile of level_fsm_map.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of level_fsm_map.v was successful.
+restart
+# Closing VCD file "level_fsm_tb.vcd"
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13131) Failed to find design unit level_fsm_tb(fast).
+#         Searched libraries:
+#             work
+# Optimization failed
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:46:28 on Oct 10,2021
+# vlog -reportprogress 300 -work work -refresh -force_refresh 
+# -- Refreshing module AND2_X1
+# -- Refreshing module AND2_X2
+# -- Refreshing module AND3_X1
+# -- Refreshing module AND3_X2
+# -- Refreshing module AND4_X1
+# -- Refreshing module AND4_X2
+# -- Refreshing module ANTENNA
+# -- Refreshing module AOI21_X1
+# -- Refreshing module AOI21_X2
+# -- Refreshing module AOI22_X1
+# -- Refreshing module AOI22_X2
+# -- Refreshing module BUF_X1
+# -- Refreshing module BUF_X12
+# -- Refreshing module BUF_X16
+# -- Refreshing module BUF_X2
+# -- Refreshing module BUF_X4
+# -- Refreshing module BUF_X8
+# -- Refreshing module CLKBUF_X1
+# -- Refreshing module CLKBUF_X12
+# -- Refreshing module CLKBUF_X16
+# -- Refreshing module CLKBUF_X2
+# -- Refreshing module CLKBUF_X4
+# -- Refreshing module CLKBUF_X8
+# -- Refreshing module CLKGATETST_X1
+# -- Refreshing module DFFRNQ_X1
+# -- Refreshing module DFFSNQ_X1
+# -- Refreshing module FA_X1
+# -- Refreshing module FILL_X1
+# -- Refreshing module FILL_X16
+# -- Refreshing module FILL_X2
+# -- Refreshing module FILL_X4
+# -- Refreshing module FILL_X8
+# -- Refreshing module FILLTIE
+# -- Refreshing module HA_X1
+# -- Refreshing module INV_X1
+# -- Refreshing module INV_X12
+# -- Refreshing module INV_X16
+# -- Refreshing module INV_X2
+# -- Refreshing module INV_X4
+# -- Refreshing module INV_X8
+# -- Refreshing module level_fsm
+# -- Refreshing module LHQ_X1
+# -- Refreshing module MUX2_X1
+# -- Refreshing module NAND2_X1
+# -- Refreshing module NAND2_X2
+# -- Refreshing module NAND3_X1
+# -- Refreshing module NAND3_X2
+# -- Refreshing module NAND4_X1
+# -- Refreshing module NAND4_X2
+# -- Refreshing UDP ng_xbuf
+# -- Refreshing module NOR2_X1
+# -- Refreshing module NOR2_X2
+# -- Refreshing module NOR3_X1
+# -- Refreshing module NOR3_X2
+# -- Refreshing module NOR4_X1
+# -- Refreshing module NOR4_X2
+# -- Refreshing module OAI21_X1
+# -- Refreshing module OAI21_X2
+# -- Refreshing module OAI22_X1
+# -- Refreshing module OAI22_X2
+# -- Refreshing module OR2_X1
+# -- Refreshing module OR2_X2
+# -- Refreshing module OR3_X1
+# -- Refreshing module OR3_X2
+# -- Refreshing module OR4_X1
+# -- Refreshing module OR4_X2
+# -- Refreshing module SDFFRNQ_X1
+# -- Refreshing module SDFFSNQ_X1
+# -- Refreshing UDP seq_CLKGATETST_X1
+# -- Refreshing UDP seq_DFFRNQ_X1
+# -- Refreshing UDP seq_DFFSNQ_X1
+# -- Refreshing UDP seq_LHQ_X1
+# -- Refreshing UDP seq_SDFFRNQ_X1
+# -- Refreshing UDP seq_SDFFSNQ_X1
+# -- Refreshing module TBUF_X1
+# -- Refreshing module TBUF_X12
+# -- Refreshing module TBUF_X16
+# -- Refreshing module TBUF_X2
+# -- Refreshing module TBUF_X4
+# -- Refreshing module TBUF_X8
+# -- Refreshing module TIEH
+# -- Refreshing module TIEL
+# -- Refreshing module up_counter
+# -- Refreshing module up_counter_tb
+# -- Refreshing module XNOR2_X1
+# -- Refreshing module XOR2_X1
+# End time: 19:46:28 on Oct 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim SE-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 19:46:28 on Oct 10,2021
+# vcom -reportprogress 300 -work work -refresh -force_refresh 
+# -- Skipping module AND2_X1
+# -- Skipping module AND2_X2
+# -- Skipping module AND3_X1
+# -- Skipping module AND3_X2
+# -- Skipping module AND4_X1
+# -- Skipping module AND4_X2
+# -- Skipping module ANTENNA
+# -- Skipping module AOI21_X1
+# -- Skipping module AOI21_X2
+# -- Skipping module AOI22_X1
+# -- Skipping module AOI22_X2
+# -- Skipping module BUF_X1
+# -- Skipping module BUF_X12
+# -- Skipping module BUF_X16
+# -- Skipping module BUF_X2
+# -- Skipping module BUF_X4
+# -- Skipping module BUF_X8
+# -- Skipping module CLKBUF_X1
+# -- Skipping module CLKBUF_X12
+# -- Skipping module CLKBUF_X16
+# -- Skipping module CLKBUF_X2
+# -- Skipping module CLKBUF_X4
+# -- Skipping module CLKBUF_X8
+# -- Skipping module CLKGATETST_X1
+# -- Skipping module DFFRNQ_X1
+# -- Skipping module DFFSNQ_X1
+# -- Skipping module FA_X1
+# -- Skipping module FILL_X1
+# -- Skipping module FILL_X16
+# -- Skipping module FILL_X2
+# -- Skipping module FILL_X4
+# -- Skipping module FILL_X8
+# -- Skipping module FILLTIE
+# -- Skipping module HA_X1
+# -- Skipping module INV_X1
+# -- Skipping module INV_X12
+# -- Skipping module INV_X16
+# -- Skipping module INV_X2
+# -- Skipping module INV_X4
+# -- Skipping module INV_X8
+# -- Skipping module level_fsm
+# -- Skipping module LHQ_X1
+# -- Skipping module MUX2_X1
+# -- Skipping module NAND2_X1
+# -- Skipping module NAND2_X2
+# -- Skipping module NAND3_X1
+# -- Skipping module NAND3_X2
+# -- Skipping module NAND4_X1
+# -- Skipping module NAND4_X2
+# -- Skipping UDP ng_xbuf
+# -- Skipping module NOR2_X1
+# -- Skipping module NOR2_X2
+# -- Skipping module NOR3_X1
+# -- Skipping module NOR3_X2
+# -- Skipping module NOR4_X1
+# -- Skipping module NOR4_X2
+# -- Skipping module OAI21_X1
+# -- Skipping module OAI21_X2
+# -- Skipping module OAI22_X1
+# -- Skipping module OAI22_X2
+# -- Skipping module OR2_X1
+# -- Skipping module OR2_X2
+# -- Skipping module OR3_X1
+# -- Skipping module OR3_X2
+# -- Skipping module OR4_X1
+# -- Skipping module OR4_X2
+# -- Skipping module SDFFRNQ_X1
+# -- Skipping module SDFFSNQ_X1
+# -- Skipping UDP seq_CLKGATETST_X1
+# -- Skipping UDP seq_DFFRNQ_X1
+# -- Skipping UDP seq_DFFSNQ_X1
+# -- Skipping UDP seq_LHQ_X1
+# -- Skipping UDP seq_SDFFRNQ_X1
+# -- Skipping UDP seq_SDFFSNQ_X1
+# -- Skipping module TBUF_X1
+# -- Skipping module TBUF_X12
+# -- Skipping module TBUF_X16
+# -- Skipping module TBUF_X2
+# -- Skipping module TBUF_X4
+# -- Skipping module TBUF_X8
+# -- Skipping module TIEH
+# -- Skipping module TIEL
+# -- Skipping module up_counter
+# -- Skipping module up_counter_tb
+# -- Skipping module XNOR2_X1
+# -- Skipping module XOR2_X1
+# End time: 19:46:29 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Load canceled
+# Compile of level_fsm_tb.sv was successful.
+# Compile of NanGate_15nm_OCL_conditional.v was successful.
+# Compile of level_fsm_map.v was successful.
+# Compile of level_fsm_tb.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.level_fsm_tb
+# vsim work.level_fsm_tb 
+# Start time: 19:13:13 on Oct 10,2021
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.level_fsm_tb(fast)
 # Loading work.level_fsm(fast)
 # Loading work.DFFSNQ_X1(fast)
-# Loading work.OAI22_X1(fast)
-# Loading work.DFFRNQ_X1(fast)
-# Loading work.OAI21_X1(fast)
 # Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
 # Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
 # Loading work.INV_X1(fast)
 # Loading work.NAND4_X1(fast)
-# Loading work.NOR2_X1(fast)
-# Loading work.NAND2_X2(fast)
-# Loading work.AOI21_X1(fast)
-# Loading work.NOR2_X2(fast)
-# Loading work.AOI22_X1(fast)
-# Loading work.CLKBUF_X1(fast)
-# Loading work.AND2_X1(fast)
-# Loading work.OR2_X1(fast)
-# Loading work.INV_X2(fast)
-# Loading work.CLKBUF_X2(fast)
-# Loading work.BUF_X2(fast)
-# Loading work.CLKBUF_X4(fast)
-# Loading work.NOR3_X1(fast)
-# Loading work.NAND4_X2(fast)
-# Loading work.CLKBUF_X12(fast)
-# Loading work.AND2_X2(fast)
-# Loading work.BUF_X1(fast)
-# Loading work.NAND3_X2(fast)
-# Loading work.OR2_X2(fast)
-# Loading work.BUF_X4(fast)
 # Loading work.OR4_X1(fast)
-# Loading work.AND3_X1(fast)
-# Loading work.OR3_X1(fast)
 add wave -position insertpoint  \
 sim:/level_fsm_tb/clk_i \
 sim:/level_fsm_tb/reset_i \
@@ -140,45 +556,230 @@ sim:/level_fsm_tb/i2c_command_byte_o \
 sim:/level_fsm_tb/i2c_num_bytes_o \
 sim:/level_fsm_tb/error_led_o \
 sim:/level_fsm_tb/led_o
-run
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+run -all
 # ** Error: Assertion error.
-#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 140
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 140
 # ** Error: Assertion error.
-#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 141
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 141
 # ** Error: Assertion error.
-#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 142
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 142
 # ** Error: Assertion error.
-#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 144
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 144
 # ** Error: Assertion error.
-#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 147
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 147
 # ** Error: Assertion error.
-#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 163
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 163
 # ** Error: Assertion error.
-#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 167
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 167
 # ** Error: Assertion error.
-#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 182
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 182
+# ** Error: $hold( posedge CLK &&& xid_4:22 ns, posedge D:22 ns, 100 ps );
+#    Time: 22 ns  Iteration: 1  Process: /level_fsm_tb/dut/\led_o_reg[7] /\led_o_reg[7]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 756
 # ** Error: Assertion error.
-#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 194
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 194
 # ** Error: Assertion error.
-#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 209
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 209
 # ** Error: Assertion error.
-#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 223
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 223
 # ** Error: Assertion error.
-#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 224
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 224
 # ** Error: Assertion error.
-#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 225
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 225
 # ** Error: Assertion error.
-#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 228
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 228
 # ** Error: Assertion error.
-#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 229
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 229
 # ** Error: Assertion error.
-#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 230
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 230
+# ** Error: $hold( posedge CLK &&& xid_4:38 ns, posedge D:38 ns, 100 ps );
+#    Time: 38 ns  Iteration: 1  Process: /level_fsm_tb/dut/\state_reg[3] /\state_reg[3]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 756
 # ** Error: Assertion error.
-#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 232
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 232
 # ** Error: Assertion error.
-#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv Line: 235
-# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv(251)
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 235
+# ** Error: Assertion error.
+#    Time: 41 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 239
+# ** Error: Assertion error.
+#    Time: 44 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 248
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv(251)
 #    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
 # 1
-# Break in Module level_fsm_tb at /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/level_fsm_tb.sv line 251
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/wave.do
+# Break at /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv line 251
+# Compile of NanGate_15nm_OCL_conditional.v was successful.
+# Compile of level_fsm_map.v was successful.
+# Compile of level_fsm_tb.sv was successful.
+# Compile of level_fsm.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.level_fsm_tb
+# End time: 19:56:13 on Oct 10,2021, Elapsed time: 0:43:00
+# Errors: 45, Warnings: 0
+# vsim -voptargs="+acc" work.level_fsm_tb 
+# Start time: 19:56:13 on Oct 10,2021
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "level_fsm(fast)".
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Fatal: Internal Error - vopt returned success but vsim could not find a design to simulate!. Please contact customer support for further assistance.
+# Error loading design
+# End time: 19:56:14 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vsim -voptargs=+acc work.level_fsm_tb
+# vsim -voptargs="+acc" work.level_fsm_tb 
+# Start time: 19:56:17 on Oct 10,2021
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "level_fsm(fast)".
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Fatal: Internal Error - vopt returned success but vsim could not find a design to simulate!. Please contact customer support for further assistance.
+# Error loading design
+# End time: 19:56:18 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# Compile of NanGate_15nm_OCL_conditional.v was successful.
+# Compile of level_fsm_map.v was successful.
+# Compile of level_fsm_tb.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.level_fsm_tb
+# vsim -voptargs="+acc" work.level_fsm_tb 
+# Start time: 20:00:58 on Oct 10,2021
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Fatal: Internal Error - vopt returned success but vsim could not find a design to simulate!. Please contact customer support for further assistance.
+# Error loading design
+# End time: 20:00:59 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+vsim -voptargs=+acc work.level_fsm_tb
+# vsim -voptargs="+acc" work.level_fsm_tb 
+# Start time: 20:01:37 on Oct 10,2021
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vsim-7) Failed to open info file "/ubc/ece/home/ugrads/l/l9w0b/ELEC402/ModelSim_26951160/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Fatal: Internal Error - vopt returned success but vsim could not find a design to simulate!. Please contact customer support for further assistance.
+# Error loading design
+# End time: 20:01:38 on Oct 10,2021, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+vsim -novopt work.level_fsm_tb
+# vsim -novopt work.level_fsm_tb 
+# Start time: 20:01:40 on Oct 10,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 20:01:40 on Oct 10,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim -vopt work.level_fsm_tb
+# vsim -vopt work.level_fsm_tb 
+# Start time: 20:01:42 on Oct 10,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.OR4_X1(fast)
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+run -all
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 140
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 141
+# ** Error: Assertion error.
+#    Time: 5 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 142
+# ** Error: Assertion error.
+#    Time: 6 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 144
+# ** Error: Assertion error.
+#    Time: 7 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 147
+# ** Error: Assertion error.
+#    Time: 14 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 163
+# ** Error: Assertion error.
+#    Time: 15 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 167
+# ** Error: Assertion error.
+#    Time: 22 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 182
+# ** Error: $hold( posedge CLK &&& xid_4:22 ns, posedge D:22 ns, 100 ps );
+#    Time: 22 ns  Iteration: 1  Process: /level_fsm_tb/dut/\led_o_reg[7] /\led_o_reg[7]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 756
+# ** Error: Assertion error.
+#    Time: 24 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 194
+# ** Error: Assertion error.
+#    Time: 32 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 209
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 223
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 224
+# ** Error: Assertion error.
+#    Time: 37 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 225
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 228
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 229
+# ** Error: Assertion error.
+#    Time: 38 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 230
+# ** Error: $hold( posedge CLK &&& xid_4:38 ns, posedge D:38 ns, 100 ps );
+#    Time: 38 ns  Iteration: 1  Process: /level_fsm_tb/dut/\state_reg[3] /\state_reg[3]  File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/NanGate_15nm_OCL_conditional.v Line: 756
+# ** Error: Assertion error.
+#    Time: 39 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 232
+# ** Error: Assertion error.
+#    Time: 40 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 235
+# ** Error: Assertion error.
+#    Time: 41 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 239
+# ** Error: Assertion error.
+#    Time: 44 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 248
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv(251)
+#    Time: 144 ns  Iteration: 0  Instance: /level_fsm_tb
+# 1
+# Break at /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv line 251

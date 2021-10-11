@@ -122,7 +122,7 @@ always @(posedge clk_i) begin
   else begin
     case(state)
       ENSURE_BUSY_1: begin
-        if (i2c_busy_i === 1) state <= ENSURE_BUSY_1;
+        if (i2c_busy_i == 1) state <= ENSURE_BUSY_1;
         else begin 
           state <= ASSIGN_WRITE_2;
           //assign DIN, command_byte, slave_addr, and num_bytes here
@@ -136,20 +136,20 @@ always @(posedge clk_i) begin
       ASSIGN_WRITE_2: state <= ASSERT_WRITE_3; //assign inputs first before flashing write strobe
       ASSERT_WRITE_3: state <= WAIT_FOR_BUSY_4; //write strobe
       WAIT_FOR_BUSY_4: begin
-        if (i2c_busy_i === 1) state <= WAIT_FOR_DONE_5; //wait for busy
+        if (i2c_busy_i == 1) state <= WAIT_FOR_DONE_5; //wait for busy
         else state <= WAIT_FOR_BUSY_4;
       end
       WAIT_FOR_DONE_5: begin //wait for write done
-        if (i2c_write_done_i === 1) state <= VERIFY_6;
+        if (i2c_write_done_i == 1) state <= VERIFY_6;
         else state <= WAIT_FOR_DONE_5;
       end
       VERIFY_6: begin
-        if (i2c_arb_lost_i === 0 && i2c_rxak_i === 0) state <= ENSURE_BUSY_7; 
+        if (i2c_arb_lost_i == 0 && i2c_rxak_i == 0) state <= ENSURE_BUSY_7; 
         //check that slave has acknowledged and no bits were lost
         else state <= ERROR;
       end
       ENSURE_BUSY_7: begin // wait for busy to not be high
-        if (i2c_busy_i === 1) state <= ENSURE_BUSY_7;
+        if (i2c_busy_i == 1) state <= ENSURE_BUSY_7;
         else begin 
           state <= ASSIGN_WRITE_8;
           //assign command_byte, slave_addr, and num_bytes here
@@ -162,15 +162,15 @@ always @(posedge clk_i) begin
       ASSIGN_WRITE_8: state <= ASSERT_READ_9; //wait for writing of data
       ASSERT_READ_9: state <= WAIT_FOR_BUSY_10; //flash read strobe
       WAIT_FOR_BUSY_10: begin
-        if (i2c_busy_i === 1) state <= WAIT_FOR_VALID_11; //wait for busy
+        if (i2c_busy_i == 1) state <= WAIT_FOR_VALID_11; //wait for busy
         else state <= WAIT_FOR_BUSY_10;
       end
       WAIT_FOR_VALID_11: begin
-        if (i2c_data_out_valid_i === 1) state <= VERIFY_12; // wait for data rx
+        if (i2c_data_out_valid_i == 1) state <= VERIFY_12; // wait for data rx
         else state <= WAIT_FOR_VALID_11;
       end
       VERIFY_12: begin
-        if (i2c_arb_lost_i === 0 && i2c_rxak_i === 1) begin //check that no bits lost and no slave ack
+        if (i2c_arb_lost_i == 0 && i2c_rxak_i == 1) begin //check that no bits lost and no slave ack
           state <= LED_OPERATION_13;
           raw_buffer <= i2c_data_out_i; // register the data
         end

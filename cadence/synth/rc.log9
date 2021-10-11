@@ -1,0 +1,937 @@
+Checking out license 'RTL_Compiler_Ultra'... (6 seconds elapsed)
+License 'RTL_Compiler_Ultra' checkout failed.
+Checking out license 'RTL_Compiler_Physical'... (2 seconds elapsed)
+License 'RTL_Compiler_Physical' checkout failed.
+Checking out license 'RTL_Compiler_Verification'... (10 seconds elapsed)
+License 'RTL_Compiler_Verification' checkout failed.
+Checking out license 'RTL_Compiler_L'... (2 seconds elapsed)
+License 'RTL_Compiler_L' checkout failed.
+Checking out license 'Virtuoso_Digital_Implem'... (1 second elapsed)
+Finished loading tool scripts (7 seconds elapsed)
+
+                                             Cadence Encounter(R) RTL Compiler
+                                Version RC14.13 - v14.10-s027_1 (64-bit), built Nov 17 2014
+
+
+Copyright notice: Copyright 1997-2014 Cadence Design Systems, Inc. All rights reserved worldwide. 
+
+WARNING: This version of RC is 2519 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+===========================================================================================================================
+                                       Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  dp_perform_rewriting_operations
+            design  lp_clock_gating_hierarchical
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  gint_has_connected_pg_pin
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  logic0_driven
+               net  logic1_driven
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  driver_for_unloaded_ports
+              root  enable_parallel_iopt
+              root  enc_in_place_opt
+              root  enc_opt_drv
+              root  hdl_bit_blast_threshold
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  lp_clock_gating_hierarchical
+              root  lp_insert_clock_gating_incremental
+              root  lp_iopt_mvt_multipass_flow
+              root  lp_multi_vt_optimization_effort
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  power_optimization_effort
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+         subdesign  lp_clock_gating_hierarchical
+
+Send us feedback at rc_feedback@cadence.com.
+===========================================================================================================================
+
+rc:/> source ./in/
+ambiguous "./in/": level_fsm.sv load_etc.tcl timing.sdc 
+rc:/> source ./in/load_etc.tcl 
+Sourcing './in/load_etc.tcl' (Sun Oct 10 19:49:59 -0700 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /ubc/ece/data/cmc2/kits/ncsu_pdk/FreePDK15/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/CCS
+Warning : Found CCS construct in the cell. [LBR-408]
+        : Found 'CCS' construct in file 'NanGate_15nm_OCL_worst_low_conditional_ccs.lib', at line 126, column 27.
+        : Currently, CCS constructs are only parsed & ignored.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.720000, -40.000000) in library 'NanGate_15nm_OCL_worst_low_conditional_ccs.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+
+  Message Summary for Library NanGate_15nm_OCL_worst_low_conditional_ccs.lib:
+  ***************************************************************************
+  Found CCS construct in the cell. [LBR-408]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 6
+  Found 'statetable' group in cell. [LBR-83]: 1
+  Created nominal operating condition. [LBR-412]: 1
+  ***************************************************************************
+ 
+  Setting attribute of root '/': 'library' = NanGate_15nm_OCL_worst_low_conditional_ccs.lib
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'NanGate_15nm_OCL_worst_low_conditional_ccs.lib', Total cells: 76, Unusable cells: 9.
+	List of unusable cells: 'ANTENNA FILLTIE FILL_X1 FILL_X2 FILL_X4 FILL_X8 FILL_X16 TIEH TIEL .'
+        : For more information, refer to 'Cells Identified as Unusable' in the RC User Guide. The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'level_fsm' from file './in/level_fsm.sv'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'level_fsm' with default parameters value.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'level_fsm'.
+===========================================
+The RUNTIME after ELABORATION is 9 secs
+and the MEMORY_USAGE after ELABORATION is 87.00 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'level_fsm'
+
+No empty modules in design 'level_fsm'
+
+  Done Checking the design.
+Statistics for commands executed by read_sdc:
+ "create_clock"            - successful      1 , failed      0 (runtime  0.00)
+ "current_design"          - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"               - successful      1 , failed      0 (runtime  0.00)
+Total runtime 0
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 6 hierarchical instances.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 25 sequential instances.
+  Synthesis succeeded.
+===========================================
+The RUNTIME after GENERIC is 10 secs
+and the MEMORY_USAGE after GENERIC is 87.00 MB
+===========================================
+Mapping level_fsm to gates.
+Multi-threaded constant propagation [1|1] ...
+Info    : Replacing the synchronous part of an always feeding back flip-flop with a logic constant. [GLO-45]
+        : The instance is 'i2c_din_o_reg[0]'. The constant is '0'.
+        : The value used to replace the flop can be set by the root attribute 'optimize_seq_x_to'. The assigned constant might also conflict with the simulation and/or verification setup.
+Info    : Replacing the synchronous part of an always feeding back flip-flop with a logic constant. [GLO-45]
+        : The instance is 'i2c_slave_addr_o_reg[0]'. The constant is '0'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'i2c_din_o_reg[0]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_0_flops'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'i2c_slave_addr_o_reg[0]'.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 2 sequential instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 2 sequential instances.
+Multi-threaded Virtual Mapping (1 thread, 1 of 12 CPUs usable)
+ 
+Global mapping target info
+==========================
+Cost Group 'clk' target slack:   -38 ps
+Target path end-point (Pin: state_reg[5]/d)
+
+Multi-threaded Virtual Mapping (1 thread, 1 of 12 CPUs usable)
+Warning : Removing exception that can no longer be satisfied. [TIM-308]
+        : The exception is 'path_adjusts/adj_7'. The underlying object being freed is pin '/designs/level_fsm/instances_seq/state_reg[1]24039/pins_in/srd'.
+        : This occurs when from, through, or to points for the exception are deleted.
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                   84      -43 
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+ 
+Global incremental target info
+==============================
+Cost Group 'clk' target slack:   -44 ps
+Target path end-point (Pin: state_reg[3]/D (DFFSNQ_X1/D))
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr                  83      -43 
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+Info    : 'Conformal LEC14.1-p100' or later builds is recommended for verification. [WDO-600]
+        : The use of 'Conformal LEC14.1-p100' or later builds is recommended to get better verification results.
+Generating a dofile for design 'level_fsm' in file 'fv/level_fsm/rtl_to_g1.do' ...
+Info    : Forcing flat compare. [WDO-212]
+        : No hierarchies found in design.
+
+  Done mapping level_fsm
+  Synthesis succeeded.
+===========================================
+The RUNTIME after MAPPED is 16 secs
+and the MEMORY_USAGE after MAPPED is 93.00 MB
+===========================================
+  Incrementally optimizing level_fsm
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                    83      -43     -1092         0        0
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+ const_prop                   83      -43     -1092         0        0
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+ simp_cc_inputs               83      -43     -1092         0        0
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+ hi_fo_buf                    83      -43     -1092         0        0
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                   83      -43     -1092         0        0
+            Worst cost_group: clk, WNS: -43.6
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+ incr_delay                   94      -38      -992         0        0
+            Worst cost_group: clk, WNS: -38.8
+            Path: state_reg[1]/CLK --> raw_buffer_reg[0]/D
+ incr_delay                   96      -38      -989         0        0
+            Worst cost_group: clk, WNS: -38.2
+            Path: state_reg[4]/CLK --> led_o_reg[1]/D
+ incr_delay                   96      -38      -982         0        0
+            Worst cost_group: clk, WNS: -38.0
+            Path: state_reg[4]/CLK --> led_o_reg[2]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz        53  (       10 /       12 )  0.07
+       crit_upsz        84  (       13 /       17 )  0.06
+       crit_slew        49  (        0 /        0 )  0.02
+        setup_dn        49  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st        49  (        0 /        0 )  0.00
+        plc_star        49  (        0 /        0 )  0.00
+       plc_ba_st        49  (        0 /        0 )  0.00
+     plc_ba_star        49  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st        49  (        0 /        0 )  0.00
+            fopt        49  (        0 /        0 )  0.00
+       crit_swap        49  (        0 /        0 )  0.02
+       mux2_swap        49  (        0 /        0 )  0.00
+       crit_dnsz        46  (        0 /        0 )  0.04
+       load_swap        49  (        0 /        0 )  0.01
+            fopt        42  (        2 /        2 )  0.03
+        setup_dn        40  (        0 /        0 )  0.00
+       load_isol        61  (       16 /       16 )  0.20
+       load_isol        38  (        0 /        0 )  0.05
+        move_for        38  (        0 /        0 )  0.01
+        move_for        38  (        0 /        0 )  0.00
+          rem_bi        38  (        0 /        0 )  0.00
+         offload        38  (        0 /        0 )  0.00
+          rem_bi        38  (        0 /        4 )  0.02
+         offload        38  (        0 /        0 )  0.05
+           phase        38  (        0 /        0 )  0.00
+        in_phase        38  (        0 /        0 )  0.00
+       merge_bit        43  (        4 /        4 )  0.01
+     merge_idrvr        35  (        0 /        0 )  0.00
+     merge_iload        35  (        0 /        0 )  0.00
+    merge_idload        35  (        0 /        0 )  0.00
+      merge_drvr        35  (        0 /        5 )  0.04
+      merge_load        35  (        0 /        3 )  0.02
+          decomp        35  (        0 /        0 )  0.03
+        p_decomp        35  (        0 /        0 )  0.02
+        levelize        35  (        0 /        0 )  0.00
+        mb_split        35  (        0 /        0 )  0.00
+             dup        39  (        1 /        1 )  0.03
+      mux_retime        38  (        0 /        0 )  0.00
+         buf2inv        38  (        0 /        0 )  0.00
+             exp         7  (        1 /        5 )  0.00
+       gate_deco        15  (        0 /        0 )  0.07
+       gcomp_tim         8  (        0 /        0 )  0.02
+  inv_pair_2_buf        56  (        0 /        0 )  0.00
+
+ incr_delay                   97      -38      -981         0        0
+            Worst cost_group: clk, WNS: -38.0
+            Path: state_reg[0]/CLK --> led_o_reg[2]/D
+ incr_delay                   97      -37      -980         0        0
+            Worst cost_group: clk, WNS: -37.9
+            Path: state_reg[3]/CLK --> state_reg[3]/D
+ incr_delay                   96      -37      -973         0        0
+            Worst cost_group: clk, WNS: -37.6
+            Path: state_reg[2]/CLK --> state_reg[3]/D
+ incr_delay                   96      -37      -973         0        0
+            Worst cost_group: clk, WNS: -37.6
+            Path: state_reg[2]/CLK --> state_reg[3]/D
+ incr_delay                   96      -37      -970         0        0
+            Worst cost_group: clk, WNS: -37.2
+            Path: state_reg[4]/CLK --> raw_buffer_reg[0]/D
+ incr_delay                   98      -37      -963         0        0
+            Worst cost_group: clk, WNS: -37.1
+            Path: state_reg[3]/CLK --> led_o_reg[6]/D
+ incr_delay                   98      -37      -962         0        0
+            Worst cost_group: clk, WNS: -37.0
+            Path: state_reg[6]/CLK --> state_reg[3]/D
+ incr_delay                   99      -37      -967         0        0
+            Worst cost_group: clk, WNS: -37.0
+            Path: state_reg[1]/CLK --> state_reg[4]/D
+ incr_delay                   99      -36      -966         0        0
+            Worst cost_group: clk, WNS: -36.9
+            Path: state_reg[3]/CLK --> led_o_reg[2]/D
+ incr_delay                   99      -36      -963         0        0
+            Worst cost_group: clk, WNS: -36.7
+            Path: state_reg[4]/CLK --> state_reg[3]/D
+ incr_delay                  100      -36      -953         0        0
+            Worst cost_group: clk, WNS: -36.4
+            Path: state_reg[2]/CLK --> state_reg[2]/D
+ incr_delay                   99      -36      -952         0        0
+            Worst cost_group: clk, WNS: -36.4
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ incr_delay                   99      -36      -949         0        0
+            Worst cost_group: clk, WNS: -36.3
+            Path: state_reg[1]/CLK --> state_reg[4]/D
+ incr_delay                  100      -36      -949         0        0
+            Worst cost_group: clk, WNS: -36.1
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ incr_delay                  101      -36      -947         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ incr_delay                  102      -36      -947         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+         crr_220        18  (        0 /       14 )  1.30
+        crr_glob        27  (        0 /        0 )  0.04
+         crr_200        41  (       14 /       33 )  0.69
+        crr_glob        65  (       12 /       14 )  0.06
+         crr_300        18  (        3 /       13 )  0.37
+        crr_glob        31  (        1 /        3 )  0.02
+         crr_400        26  (        6 /       20 )  0.77
+        crr_glob        47  (        6 /        6 )  0.05
+         crr_111        47  (        5 /       41 )  2.16
+        crr_glob        54  (        4 /        5 )  0.10
+         crr_210        24  (        1 /       18 )  1.66
+        crr_glob        37  (        1 /        1 )  0.04
+         crr_110        60  (       12 /       46 )  1.45
+        crr_glob        69  (       10 /       12 )  0.09
+         crr_101        43  (        6 /       32 )  0.91
+        crr_glob        53  (        5 /        6 )  0.06
+         crr_201        20  (        0 /       16 )  0.71
+        crr_glob        26  (        0 /        0 )  0.03
+         crr_211        20  (        0 /       16 )  1.18
+        crr_glob        26  (        0 /        0 )  0.04
+        crit_msz        78  (        3 /        3 )  0.10
+       crit_upsz        68  (        9 /        9 )  0.05
+       crit_slew        47  (        0 /        0 )  0.03
+        setup_dn        94  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st        47  (        0 /        0 )  0.00
+        plc_star        47  (        0 /        0 )  0.00
+       plc_ba_st        47  (        0 /        0 )  0.00
+     plc_ba_star        47  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st        47  (        0 /        0 )  0.00
+            fopt        94  (        0 /        0 )  0.04
+       crit_swap        47  (        0 /        0 )  0.02
+       mux2_swap        47  (        0 /        0 )  0.00
+       crit_dnsz        24  (        0 /        0 )  0.02
+       load_swap        47  (        0 /        0 )  0.02
+            fopt        94  (        0 /        0 )  0.04
+        setup_dn        94  (        0 /        0 )  0.00
+       load_isol       126  (        6 /        6 )  0.18
+       load_isol       126  (        6 /        6 )  0.18
+        move_for       112  (        0 /        0 )  0.02
+        move_for       112  (        0 /        0 )  0.02
+          rem_bi       112  (        0 /        6 )  0.02
+         offload       112  (        0 /        0 )  0.04
+          rem_bi       112  (        0 /        6 )  0.02
+         offload       112  (        0 /        0 )  0.04
+       merge_bit        56  (        1 /        2 )  0.01
+     merge_idrvr        48  (        0 /        0 )  0.00
+     merge_iload        48  (        0 /        0 )  0.00
+    merge_idload        48  (        0 /        0 )  0.00
+      merge_drvr        48  (        0 /        4 )  0.03
+      merge_load        48  (        0 /        2 )  0.01
+           phase        48  (        0 /        0 )  0.00
+          decomp        48  (        0 /        0 )  0.03
+        p_decomp        48  (        0 /        0 )  0.03
+        levelize        48  (        0 /        0 )  0.00
+        mb_split        48  (        0 /        0 )  0.00
+        in_phase        48  (        0 /        0 )  0.00
+             dup        51  (        1 /        1 )  0.04
+      mux_retime        48  (        0 /        0 )  0.00
+         buf2inv        48  (        0 /        0 )  0.00
+             exp        26  (        0 /       19 )  0.01
+       gate_deco        16  (        0 /        0 )  0.06
+       gcomp_tim        17  (        1 /        1 )  0.04
+  inv_pair_2_buf        40  (        0 /        0 )  0.00
+ init_drc                    102      -36      -947         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                    102      -36      -947         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ incr_tns                     99      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[4]/CLK --> state_reg[3]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt       134  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st       134  (        0 /        0 )  0.00
+        plc_star       134  (        0 /        0 )  0.00
+       plc_ba_st       134  (        0 /        0 )  0.00
+     plc_ba_star       134  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz       134  (        1 /       10 )  0.18
+       crit_upsz       133  (       10 /       16 )  0.10
+          plc_st       123  (        0 /        0 )  0.00
+        plc_star       123  (        0 /        0 )  0.00
+       plc_ba_st       123  (        0 /        0 )  0.00
+     plc_ba_star       123  (        0 /        0 )  0.00
+       plc_lo_st       123  (        0 /        0 )  0.00
+       crit_swap       123  (        0 /        2 )  0.04
+       mux2_swap       123  (        0 /        0 )  0.00
+       crit_dnsz        92  (        6 /       16 )  0.08
+       load_swap       117  (        0 /        7 )  0.05
+            fopt       117  (        1 /        1 )  0.05
+        setup_dn       116  (        0 /        0 )  0.00
+       load_isol       116  (        0 /        0 )  0.26
+       load_isol       116  (        0 /        0 )  0.05
+        move_for       116  (        1 /        2 )  0.03
+        move_for       115  (        0 /        1 )  0.02
+          rem_bi       115  (        0 /        0 )  0.00
+         offload       115  (        0 /        0 )  0.00
+          rem_bi       115  (        0 /        2 )  0.03
+         offload       115  (        0 /        3 )  0.06
+       merge_bit       125  (        3 /        4 )  0.01
+     merge_idrvr       112  (        0 /        0 )  0.00
+     merge_iload       112  (        0 /        0 )  0.00
+    merge_idload       112  (        0 /        0 )  0.01
+      merge_drvr       112  (        0 /        0 )  0.01
+      merge_load       112  (        0 /        0 )  0.01
+           phase       112  (        0 /        0 )  0.00
+          decomp       112  (        1 /        1 )  0.09
+        p_decomp       111  (        0 /        0 )  0.05
+        levelize       111  (        0 /        0 )  0.00
+        mb_split       111  (        0 /        0 )  0.00
+             dup       111  (        0 /        0 )  0.04
+      mux_retime       111  (        0 /        0 )  0.00
+       crr_local       111  (        2 /       15 )  1.67
+         buf2inv       109  (        0 /        0 )  0.00
+
+ init_area                    99      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[4]/CLK --> state_reg[3]/D
+ rem_buf                      98      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ rem_inv                      97      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ merge_bi                     97      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ gate_comp                    96      -36      -937         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[4]/CLK --> state_reg[3]/D
+ area_down                    94      -36      -937         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[4]/CLK --> state_reg[3]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         2  (        0 /        0 )  0.00
+         rem_buf        24  (        3 /        7 )  0.03
+         rem_inv        12  (        1 /        4 )  0.01
+        merge_bi        10  (        3 /        6 )  0.01
+      rem_inv_qb        17  (        0 /        0 )  0.00
+    seq_res_area         4  (        0 /        0 )  0.22
+        io_phase         4  (        0 /        4 )  0.01
+       gate_comp        40  (        5 /        8 )  0.10
+       gcomp_mog         0  (        0 /        0 )  0.01
+       glob_area         9  (        0 /        9 )  0.02
+       area_down        13  (        3 /        6 )  0.04
+         rem_buf        20  (        0 /        2 )  0.02
+         rem_inv        10  (        0 /        3 )  0.01
+        merge_bi         7  (        0 /        3 )  0.01
+      rem_inv_qb        17  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                   94      -36      -937         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[4]/CLK --> state_reg[3]/D
+ incr_delay                   95      -36      -940         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+ incr_delay                   95      -36      -939         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[3]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+         crr_220         6  (        0 /        5 )  1.06
+        crr_glob         9  (        0 /        0 )  0.01
+         crr_200         6  (        2 /        5 )  0.11
+        crr_glob         9  (        0 /        2 )  0.01
+         crr_300         4  (        0 /        3 )  0.07
+        crr_glob         9  (        0 /        0 )  0.00
+         crr_400         5  (        0 /        4 )  0.12
+        crr_glob         9  (        0 /        0 )  0.01
+         crr_111        11  (        1 /        9 )  0.41
+        crr_glob        11  (        1 /        1 )  0.02
+         crr_210         5  (        0 /        4 )  0.18
+        crr_glob         7  (        0 /        0 )  0.01
+         crr_110         7  (        0 /        5 )  0.15
+        crr_glob         7  (        0 /        0 )  0.01
+         crr_101         7  (        0 /        5 )  0.14
+        crr_glob         7  (        0 /        0 )  0.01
+         crr_201         5  (        0 /        4 )  0.20
+        crr_glob         7  (        0 /        0 )  0.01
+         crr_211         5  (        0 /        4 )  0.30
+        crr_glob         7  (        0 /        0 )  0.01
+        crit_msz        23  (        0 /        3 )  0.03
+       crit_upsz        23  (        0 /        1 )  0.02
+       crit_slew        23  (        0 /        1 )  0.02
+        setup_dn        46  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st        23  (        0 /        0 )  0.00
+        plc_star        23  (        0 /        0 )  0.00
+       plc_ba_st        23  (        0 /        0 )  0.00
+     plc_ba_star        23  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st        23  (        0 /        0 )  0.00
+            fopt        46  (        0 /        0 )  0.01
+       crit_swap        23  (        0 /        0 )  0.00
+       mux2_swap        23  (        0 /        0 )  0.00
+       crit_dnsz         6  (        0 /        0 )  0.01
+       load_swap        23  (        0 /        0 )  0.01
+            fopt        46  (        0 /        0 )  0.01
+        setup_dn        46  (        0 /        0 )  0.00
+       load_isol        46  (        0 /        0 )  0.06
+       load_isol        46  (        0 /        0 )  0.06
+        move_for        43  (        1 /        1 )  0.00
+        move_for        43  (        1 /        1 )  0.00
+          rem_bi        40  (        0 /        1 )  0.00
+         offload        40  (        0 /        0 )  0.00
+          rem_bi        40  (        0 /        1 )  0.00
+         offload        40  (        0 /        0 )  0.00
+       merge_bit        21  (        0 /        0 )  0.00
+     merge_idrvr        20  (        0 /        0 )  0.00
+     merge_iload        20  (        0 /        0 )  0.00
+    merge_idload        20  (        0 /        0 )  0.00
+      merge_drvr        20  (        0 /        3 )  0.02
+      merge_load        20  (        0 /        2 )  0.01
+           phase        20  (        0 /        0 )  0.00
+          decomp        16  (        3 /        3 )  0.02
+        p_decomp        10  (        0 /        0 )  0.01
+        levelize        10  (        0 /        0 )  0.00
+        mb_split        10  (        0 /        0 )  0.00
+        in_phase        10  (        0 /        0 )  0.00
+             dup        10  (        0 /        1 )  0.01
+      mux_retime        10  (        0 /        0 )  0.00
+         buf2inv        10  (        0 /        0 )  0.00
+             exp         1  (        0 /        1 )  0.00
+       gate_deco         2  (        0 /        0 )  0.01
+       gcomp_tim         7  (        0 /        0 )  0.02
+  inv_pair_2_buf        10  (        0 /        0 )  0.00
+ init_drc                     95      -36      -939         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[3]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                     95      -36      -939         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[3]/D
+ incr_tns                     94      -36      -935         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[3]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt        26  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st        26  (        0 /        0 )  0.00
+        plc_star        26  (        0 /        0 )  0.00
+       plc_ba_st        26  (        0 /        0 )  0.00
+     plc_ba_star        26  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz        26  (        1 /        2 )  0.04
+       crit_upsz        25  (        3 /        6 )  0.03
+          plc_st        22  (        0 /        0 )  0.00
+        plc_star        22  (        0 /        0 )  0.00
+       plc_ba_st        22  (        0 /        0 )  0.00
+     plc_ba_star        22  (        0 /        0 )  0.00
+       plc_lo_st        22  (        0 /        0 )  0.00
+       crit_swap        22  (        0 /        2 )  0.02
+       mux2_swap        22  (        0 /        0 )  0.00
+       crit_dnsz        17  (        0 /        3 )  0.02
+       load_swap        22  (        0 /        1 )  0.01
+            fopt        22  (        0 /        0 )  0.01
+        setup_dn        22  (        0 /        0 )  0.00
+       load_isol        22  (        0 /        0 )  0.05
+       load_isol        22  (        0 /        0 )  0.01
+        move_for        22  (        0 /        0 )  0.00
+        move_for        22  (        0 /        0 )  0.00
+          rem_bi        22  (        0 /        0 )  0.00
+         offload        22  (        0 /        0 )  0.00
+          rem_bi        22  (        0 /        0 )  0.01
+         offload        22  (        0 /        0 )  0.02
+       merge_bit        22  (        0 /        0 )  0.00
+     merge_idrvr        22  (        0 /        0 )  0.00
+     merge_iload        22  (        0 /        0 )  0.00
+    merge_idload        22  (        0 /        0 )  0.01
+      merge_drvr        22  (        0 /        0 )  0.00
+      merge_load        22  (        0 /        0 )  0.00
+           phase        22  (        0 /        0 )  0.00
+          decomp        22  (        0 /        0 )  0.02
+        p_decomp        22  (        0 /        0 )  0.01
+        levelize        22  (        0 /        0 )  0.00
+        mb_split        22  (        0 /        0 )  0.00
+             dup        22  (        0 /        0 )  0.01
+      mux_retime        22  (        0 /        0 )  0.00
+       crr_local        22  (        2 /        3 )  0.37
+         buf2inv        20  (        0 /        0 )  0.00
+
+ init_area                    94      -36      -935         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[3]/D
+ rem_buf                      94      -36      -935         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[3]/D
+ gate_comp                    94      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         2  (        0 /        0 )  0.00
+         rem_buf        21  (        1 /        4 )  0.02
+         rem_inv         9  (        0 /        3 )  0.01
+        merge_bi         7  (        0 /        3 )  0.01
+      rem_inv_qb        17  (        0 /        0 )  0.00
+        io_phase         2  (        0 /        2 )  0.01
+       gate_comp        38  (        3 /        6 )  0.10
+       gcomp_mog         0  (        0 /        0 )  0.01
+       glob_area         9  (        0 /        9 )  0.01
+       area_down        12  (        0 /        6 )  0.04
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                   94      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz        20  (        0 /        0 )  0.03
+       crit_upsz        20  (        0 /        0 )  0.02
+       crit_slew        20  (        0 /        0 )  0.01
+        setup_dn        20  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st        20  (        0 /        0 )  0.00
+        plc_star        20  (        0 /        0 )  0.00
+       plc_ba_st        20  (        0 /        0 )  0.00
+     plc_ba_star        20  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st        20  (        0 /        0 )  0.00
+            fopt        20  (        0 /        0 )  0.00
+       crit_swap        20  (        0 /        0 )  0.00
+       mux2_swap        20  (        0 /        0 )  0.00
+       crit_dnsz        11  (        0 /        0 )  0.01
+       load_swap        20  (        0 /        0 )  0.01
+            fopt        20  (        0 /        0 )  0.01
+        setup_dn        20  (        0 /        0 )  0.00
+       load_isol        20  (        0 /        0 )  0.05
+       load_isol        20  (        0 /        0 )  0.00
+        move_for        20  (        0 /        0 )  0.00
+        move_for        20  (        0 /        0 )  0.00
+          rem_bi        20  (        0 /        0 )  0.00
+         offload        20  (        0 /        0 )  0.00
+          rem_bi        20  (        0 /        1 )  0.00
+         offload        20  (        0 /        0 )  0.00
+           phase        20  (        0 /        0 )  0.00
+        in_phase        20  (        0 /        0 )  0.00
+       merge_bit        21  (        0 /        0 )  0.00
+     merge_idrvr        20  (        0 /        0 )  0.00
+     merge_iload        20  (        0 /        0 )  0.00
+    merge_idload        20  (        0 /        0 )  0.00
+      merge_drvr        20  (        0 /        3 )  0.02
+      merge_load        20  (        0 /        2 )  0.01
+          decomp        20  (        0 /        0 )  0.02
+        p_decomp        20  (        0 /        0 )  0.01
+        levelize        20  (        0 /        0 )  0.00
+        mb_split        20  (        0 /        0 )  0.00
+             dup        20  (        0 /        0 )  0.01
+      mux_retime        20  (        0 /        0 )  0.00
+         buf2inv        20  (        0 /        0 )  0.00
+             exp         1  (        0 /        1 )  0.00
+       gate_deco         2  (        0 /        0 )  0.01
+       gcomp_tim         7  (        0 /        0 )  0.02
+  inv_pair_2_buf        20  (        0 /        0 )  0.00
+
+ init_drc                     94      -36      -936         0        0
+            Worst cost_group: clk, WNS: -36.0
+            Path: state_reg[2]/CLK --> led_o_reg[1]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+  Done mapping level_fsm
+  Synthesis succeeded.
+Warning : No tie hi/lo cell found for tiecell insertion. [UTUI-204]
+        : Could not find a tielo cell to insert tiecells in /designs/level_fsm.
+        : Possible reason is that the tiecells in library are avoided, if present. Unavoid them to use for tiecell insertion.
+Warning : No tie hi/lo cell found for tiecell insertion. [UTUI-204]
+        : Could not find a tiehi cell to insert tiecells in /designs/level_fsm.
+Error   : Cannot proceed with tiecell insertion. [UTUI-216] [insert_tiehilo_cells]
+        : Fix the problems reported above.
+===========================================
+The RUNTIME after INCREMENTAL is 37 secs
+and the MEMORY_USAGE after INCREMENTAL is 95.00 MB
+===========================================
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'level_fsm'.
+        : Use 'report timing -lint' for more information.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -setuphold has changed from split to merge_always. Specify '-setuphold split' to preserve the behavior of the previous release.
+        : Specify the option explicitly.
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -recrem has changed from split to merge_always. Specify '-recrem split' to preserve the behavior of the previous release.
+===========================================
+The RUNTIME after FINAL is 37 secs
+and the MEMORY_USAGE after FINAL is 97.00 MB
+===========================================
+Exiting...
+rc:/> exit
+Normal exit.

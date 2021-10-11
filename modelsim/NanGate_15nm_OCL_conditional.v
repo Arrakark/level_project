@@ -57,6 +57,7 @@ module AND2_X1 (A1, A2, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -73,6 +74,7 @@ module AND2_X2 (A1, A2, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -96,6 +98,7 @@ module AND3_X1 (A1, A2, A3, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -115,6 +118,7 @@ module AND3_X2 (A1, A2, A3, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -141,6 +145,7 @@ module AND4_X1 (A1, A2, A3, A4, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -165,6 +170,7 @@ module AND4_X2 (A1, A2, A3, A4, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -172,6 +178,7 @@ module ANTENNA (I);
   input I;
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -198,6 +205,7 @@ module AOI21_X1 (A1, A2, B, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -220,6 +228,7 @@ module AOI21_X2 (A1, A2, B, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -255,6 +264,7 @@ module AOI22_X1 (A1, A2, B1, B2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -288,6 +298,7 @@ module AOI22_X2 (A1, A2, B1, B2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -302,6 +313,7 @@ module BUF_X1 (I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -320,6 +332,7 @@ module BUF_X2 (I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -334,6 +347,7 @@ module BUF_X4 (I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -352,6 +366,7 @@ module BUF_X8 (I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -366,6 +381,7 @@ module BUF_X12 (I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -384,6 +400,7 @@ module BUF_X16 (I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -398,6 +415,7 @@ module CLKBUF_X1 (I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -416,6 +434,7 @@ module CLKBUF_X2 (I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -430,6 +449,7 @@ module CLKBUF_X4 (I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -448,6 +468,7 @@ module CLKBUF_X8 (I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -464,6 +485,7 @@ module CLKBUF_X12 (I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -478,6 +500,7 @@ module CLKBUF_X16 (I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -542,6 +565,7 @@ module CLKGATETST_X1 (CLK, E, TE, Q);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -641,6 +665,7 @@ module DFFRNQ_X1 (D, RN, CLK, Q);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 primitive \seq_DFFSNQ_X1  (IQ, SN, nextstate, CLK, NOTIFIER);
   output IQ;
@@ -738,6 +763,7 @@ module DFFSNQ_X1 (D, SN, CLK, Q);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -793,12 +819,14 @@ module FA_X1 (A, B, CI, CO, S);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
 module FILLTIE ();
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -809,12 +837,14 @@ module FILL_X1 ();
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
 module FILL_X2 ();
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -825,6 +855,7 @@ module FILL_X4 ();
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -833,12 +864,14 @@ module FILL_X8 ();
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
 module FILL_X16 ();
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -869,6 +902,7 @@ module HA_X1 (A, B, CO, S);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -883,6 +917,7 @@ module INV_X1 (I, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -901,6 +936,7 @@ module INV_X2 (I, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -915,6 +951,7 @@ module INV_X4 (I, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -933,6 +970,7 @@ module INV_X8 (I, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -949,6 +987,7 @@ module INV_X12 (I, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -963,6 +1002,7 @@ module INV_X16 (I, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1022,6 +1062,7 @@ module LHQ_X1 (D, E, Q);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1048,6 +1089,7 @@ module MUX2_X1 (I0, I1, S, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1067,6 +1109,7 @@ module NAND2_X1 (A1, A2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1084,6 +1127,7 @@ module NAND2_X2 (A1, A2, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1108,6 +1152,7 @@ module NAND3_X1 (A1, A2, A3, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1128,6 +1173,7 @@ module NAND3_X2 (A1, A2, A3, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1155,6 +1201,7 @@ module NAND4_X1 (A1, A2, A3, A4, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1180,6 +1227,7 @@ module NAND4_X2 (A1, A2, A3, A4, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1199,6 +1247,7 @@ module NOR2_X1 (A1, A2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1216,6 +1265,7 @@ module NOR2_X2 (A1, A2, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1240,6 +1290,7 @@ module NOR3_X1 (A1, A2, A3, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1260,6 +1311,7 @@ module NOR3_X2 (A1, A2, A3, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1287,6 +1339,7 @@ module NOR4_X1 (A1, A2, A3, A4, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1310,6 +1363,7 @@ module NOR4_X2 (A1, A2, A3, A4, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1336,6 +1390,7 @@ module OAI21_X1 (A1, A2, B, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1358,6 +1413,7 @@ module OAI21_X2 (A1, A2, B, ZN);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1393,6 +1449,7 @@ module OAI22_X1 (A1, A2, B1, B2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1426,6 +1483,7 @@ module OAI22_X2 (A1, A2, B1, B2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1444,6 +1502,7 @@ module OR2_X1 (A1, A2, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1460,6 +1519,7 @@ module OR2_X2 (A1, A2, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1483,6 +1543,7 @@ module OR3_X1 (A1, A2, A3, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1502,6 +1563,7 @@ module OR3_X2 (A1, A2, A3, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1528,6 +1590,7 @@ module OR4_X1 (A1, A2, A3, A4, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1550,6 +1613,7 @@ module OR4_X2 (A1, A2, A3, A4, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1687,6 +1751,7 @@ module SDFFRNQ_X1 (D, RN, SE, SI, CLK, Q);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 primitive \seq_SDFFSNQ_X1  (IQ, SN, nextstate, CLK, NOTIFIER);
   output IQ;
@@ -1822,6 +1887,7 @@ module SDFFSNQ_X1 (D, SE, SI, SN, CLK, Q);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1840,6 +1906,7 @@ module TBUF_X1 (EN, I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1862,6 +1929,7 @@ module TBUF_X2 (EN, I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1880,6 +1948,7 @@ module TBUF_X4 (EN, I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1902,6 +1971,7 @@ module TBUF_X8 (EN, I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1920,6 +1990,7 @@ module TBUF_X12 (EN, I, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1942,6 +2013,7 @@ module TBUF_X16 (EN, I, Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1952,6 +2024,7 @@ module TIEH (Z);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -1960,6 +2033,7 @@ module TIEL (ZN);
 
   buf(ZN, 0);
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 
@@ -1987,6 +2061,7 @@ module XNOR2_X1 (A1, A2, ZN);
 endmodule
 `endcelldefine
 `endcelldefine
+`endcelldefine
 
 `timescale 1ns/10ps
 `celldefine
@@ -2009,6 +2084,7 @@ module XOR2_X1 (A1, A2, Z);
   endspecify
 
 endmodule
+`endcelldefine
 `endcelldefine
 `endcelldefine
 

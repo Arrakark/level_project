@@ -1,5 +1,5 @@
 set DESIGN level_fsm
-set SYN_EFF medium
+set SYN_EFF high 
 set MAP_EFF high
 set SYN_PATH "."
 set PDKDIR /ubc/ece/data/cmc2/kits/ncsu_pdk/FreePDK15/
@@ -36,5 +36,5 @@ write_sdf > ./out/${DESIGN}_map.sdf
 
 timestat FINAL
 puts "Exiting..."
-quit
+
 
