@@ -1,13 +1,13 @@
-Checking out license 'RTL_Compiler_Ultra'... (2 seconds elapsed)
+Checking out license 'RTL_Compiler_Ultra'... (28 seconds elapsed)
 License 'RTL_Compiler_Ultra' checkout failed.
-Checking out license 'RTL_Compiler_Physical'... (1 second elapsed)
+Checking out license 'RTL_Compiler_Physical'... (3 seconds elapsed)
 License 'RTL_Compiler_Physical' checkout failed.
-Checking out license 'RTL_Compiler_Verification'... (2 seconds elapsed)
+Checking out license 'RTL_Compiler_Verification'... (1 second elapsed)
 License 'RTL_Compiler_Verification' checkout failed.
-Checking out license 'RTL_Compiler_L'... (10 seconds elapsed)
+Checking out license 'RTL_Compiler_L'... (15 seconds elapsed)
 License 'RTL_Compiler_L' checkout failed.
-Checking out license 'Virtuoso_Digital_Implem'... (21 seconds elapsed)
-Finished loading tool scripts (8 seconds elapsed)
+Checking out license 'Virtuoso_Digital_Implem'... (5 seconds elapsed)
+Finished loading tool scripts (13 seconds elapsed)
 
                                              Cadence Encounter(R) RTL Compiler
                                 Version RC14.13 - v14.10-s027_1 (64-bit), built Nov 17 2014
@@ -123,7 +123,7 @@ Send us feedback at rc_feedback@cadence.com.
 rc:/> source ./in/
 ambiguous "./in/": level_fsm.sv load_etc.tcl timing.sdc 
 rc:/> source ./in/load_etc.tcl 
-Sourcing './in/load_etc.tcl' (Sun Oct 10 20:38:50 -0700 2021)...
+Sourcing './in/load_etc.tcl' (Sun Oct 10 21:48:50 -0700 2021)...
   Setting attribute of root '/': 'lib_search_path' = /ubc/ece/data/cmc2/kits/ncsu_pdk/FreePDK15/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/CCS
 Warning : Found CCS construct in the cell. [LBR-408]
         : Found 'CCS' construct in file 'NanGate_15nm_OCL_worst_low_conditional_ccs.lib', at line 126, column 27.
@@ -202,7 +202,7 @@ Multi-threaded Virtual Mapping (1 thread, 1 of 12 CPUs usable)
  
 Global mapping target info
 ==========================
-Cost Group 'clk' target slack:   300 ps
+Cost Group 'clk' target slack:   150 ps
 Target path end-point (Pin: state_reg[3]/d)
 
 Multi-threaded Virtual Mapping (1 thread, 1 of 12 CPUs usable)
@@ -218,7 +218,7 @@ Operation                   Area   Slacks
  
 Global incremental target info
 ==============================
-Cost Group 'clk' target slack:   200 ps
+Cost Group 'clk' target slack:   100 ps
 Target path end-point (Pin: raw_buffer_reg[7]/D (DFFRNQ_X1/D))
 
  
@@ -487,10 +487,10 @@ Operation                   Area   Slacks      Slack    Trans      Cap
          rem_inv         0  (        0 /        0 )  0.00
         merge_bi         0  (        0 /        0 )  0.00
       rem_inv_qb        19  (        0 /        0 )  0.00
-    seq_res_area         4  (        0 /        0 )  0.17
+    seq_res_area         4  (        0 /        0 )  0.16
         io_phase         0  (        0 /        0 )  0.00
        gate_comp         0  (        0 /        0 )  0.01
-       gcomp_mog         0  (        0 /        0 )  0.01
+       gcomp_mog         0  (        0 /        0 )  0.00
        glob_area        14  (        0 /       14 )  0.00
        area_down         0  (        0 /        0 )  0.00
          rem_buf         0  (        0 /        0 )  0.00
@@ -608,8 +608,8 @@ Warning : No tie hi/lo cell found for tiecell insertion. [UTUI-204]
 Error   : Cannot proceed with tiecell insertion. [UTUI-216] [insert_tiehilo_cells]
         : Fix the problems reported above.
 ===========================================
-The RUNTIME after INCREMENTAL is 11 secs
-and the MEMORY_USAGE after INCREMENTAL is 102.00 MB
+The RUNTIME after INCREMENTAL is 12 secs
+and the MEMORY_USAGE after INCREMENTAL is 101.00 MB
 ===========================================
 Warning : Possible timing problems have been detected in this design. [TIM-11]
         : The design is 'level_fsm'.
@@ -625,5 +625,4 @@ The RUNTIME after FINAL is 12 secs
 and the MEMORY_USAGE after FINAL is 103.00 MB
 ===========================================
 Exiting...
-rc:/> exit
-Normal exit.
+rc:/> 

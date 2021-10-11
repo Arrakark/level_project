@@ -37,6 +37,7 @@ R2
 R3
 n@_opt10
 R4
+R0
 T_opt2
 !s110 1633917840
 Vl2_;:2mXW8VeE?gZhWWXi1
@@ -998,13 +999,13 @@ R15
 R3
 n@i@n@v_@x8
 vlevel_fsm
-R5
+!s110 1633927780
 !i10b 1
 !s100 OlRI_6_=cI`nNDhL]XMBJ1
 Im9CZHW^D3@QL8A_a6[00X0
 R6
 R7
-w1633923535
+w1633927735
 8/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v
 F/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v
 L0 6
@@ -1012,7 +1013,7 @@ R11
 r1
 !s85 0
 31
-R12
+!s108 1633927780.000000
 !s107 /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_map.v|
 !i113 0

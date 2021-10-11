@@ -98,3 +98,126 @@ run -all
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/wave.do
 # Causality operation skipped due to absence of debug database file
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/wave.do
+# Compile of level_fsm_map.v was successful.
+restart
+# Closing VCD file "level_fsm_tb.vcd"
+# ** Note: (vsim-8009) Loading existing optimized design _opt10
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.OR4_X1(fast)
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+# End time: 21:50:06 on Oct 10,2021, Elapsed time: 1:01:13
+# Errors: 0, Warnings: 1
+# Closing project /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/cadence.mpf
+# reading /ubc/ece/data/cmc2/tools/mentor/modelsim.10.7c/modeltech/linux_x86_64/../modelsim.ini
+# Loading project cadence
+vsim -voptargs=+acc work.level_fsm_tb
+# vsim -voptargs="+acc" work.level_fsm_tb 
+# Start time: 21:50:19 on Oct 10,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt10
+# Loading sv_std.std
+# Loading work.level_fsm_tb(fast)
+# Loading work.level_fsm(fast)
+# Loading work.DFFSNQ_X1(fast)
+# Loading work.NAND3_X1(fast)
+# Loading work.NOR4_X1(fast)
+# Loading work.NAND2_X1(fast)
+# Loading work.DFFRNQ_X1(fast)
+# Loading work.OAI22_X1(fast)
+# Loading work.AOI22_X1(fast)
+# Loading work.OAI21_X1(fast)
+# Loading work.AOI21_X1(fast)
+# Loading work.NOR2_X1(fast)
+# Loading work.NOR3_X1(fast)
+# Loading work.INV_X1(fast)
+# Loading work.NAND4_X1(fast)
+# Loading work.OR4_X1(fast)
+add wave -position insertpoint  \
+sim:/level_fsm_tb/clk_i \
+sim:/level_fsm_tb/reset_i \
+sim:/level_fsm_tb/i2c_busy_i \
+sim:/level_fsm_tb/i2c_rxak_i \
+sim:/level_fsm_tb/i2c_arb_lost_i \
+sim:/level_fsm_tb/i2c_write_done_i \
+sim:/level_fsm_tb/i2c_data_out_valid_i \
+sim:/level_fsm_tb/i2c_data_out_i \
+sim:/level_fsm_tb/i2c_write_o \
+sim:/level_fsm_tb/i2c_read_o \
+sim:/level_fsm_tb/i2c_slave_addr_o \
+sim:/level_fsm_tb/i2c_din_o \
+sim:/level_fsm_tb/i2c_command_byte_o \
+sim:/level_fsm_tb/i2c_num_bytes_o \
+sim:/level_fsm_tb/error_led_o \
+sim:/level_fsm_tb/led_o
+run -all
+# ** Error: Assertion error.
+#    Time: 50 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 140
+# ** Error: Assertion error.
+#    Time: 50 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 141
+# ** Error: Assertion error.
+#    Time: 50 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 142
+# ** Error: Assertion error.
+#    Time: 60 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 144
+# ** Error: Assertion error.
+#    Time: 70 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 147
+# ** Error: Assertion error.
+#    Time: 140 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 163
+# ** Error: Assertion error.
+#    Time: 150 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 167
+# ** Error: Assertion error.
+#    Time: 220 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 182
+# ** Error: Assertion error.
+#    Time: 240 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 194
+# ** Error: Assertion error.
+#    Time: 320 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 209
+# ** Error: Assertion error.
+#    Time: 370 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 223
+# ** Error: Assertion error.
+#    Time: 370 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 224
+# ** Error: Assertion error.
+#    Time: 370 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 225
+# ** Error: Assertion error.
+#    Time: 380 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 228
+# ** Error: Assertion error.
+#    Time: 380 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 229
+# ** Error: Assertion error.
+#    Time: 380 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 230
+# ** Error: Assertion error.
+#    Time: 390 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 232
+# ** Error: Assertion error.
+#    Time: 400 ns  Scope: level_fsm_tb File: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv Line: 235
+# ** Note: $finish    : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv(251)
+#    Time: 1440 ns  Iteration: 0  Instance: /level_fsm_tb
+# 1
+# Break in Module level_fsm_tb at /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/modelsim/level_fsm_tb.sv line 251
+# End time: 21:50:42 on Oct 10,2021, Elapsed time: 0:00:23
+# Errors: 18, Warnings: 0

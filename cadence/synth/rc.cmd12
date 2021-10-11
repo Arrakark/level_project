@@ -6,4 +6,3 @@
 #   -cmdfile rc.cmd
 
 source ./in/load_etc.tcl 
-exit
