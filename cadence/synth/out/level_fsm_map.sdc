@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Encounter(R) RTL Compiler RC14.13 - v14.10-s027_1 on Sun Oct 10 18:44:04 -0700 2021
+#  Created by Encounter(R) RTL Compiler RC14.13 - v14.10-s027_1 on Sun Oct 10 20:38:55 -0700 2021
 
 # ####################################################################
 
@@ -12,7 +12,7 @@ set_units -time 1.0ps
 # Set the current design
 current_design level_fsm
 
-create_clock -name "clk" -add -period 20000.0 -waveform {0.0 50.0} [get_ports clk_i]
+create_clock -name "clk" -add -period 10000.0 -waveform {0.0 50.0} [get_ports clk_i]
 set_clock_gating_check -setup 0.0 
 set_wire_load_mode "enclosed"
 set_dont_use [get_lib_cells NanGate_15nm_OCL/ANTENNA]
