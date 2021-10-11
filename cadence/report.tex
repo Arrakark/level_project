@@ -69,17 +69,26 @@
 \maketitle
 
 \section{Introduction}
+In this assignment, the original bubble level FSM was synthesised in Cadence using elements from the FreePDK15 library.
+
+- Comparison of waveforms from ideal case (Assignment 1) vs waveforms from synthesis (Assignment 2).
+
+- Analysis of how gates match with behavioural Verilog
+
+- Effects of changing synthesis parameters
+
+3. Visual Waveforms showing state transitions from mapped Verilog. [40]
 
 \section{Outputs of RTL Compiler}
 
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.99\textwidth]{closeup_delayed_wave.png}
-    \caption{}
+\includegraphics[width=0.99\textwidth]{delayed_wave.png}
+    \caption{The original test bench was run on the synthesized design. The test bench passed all assertions as last time due to the fact that all assertions were on the next clock cycle after a state change. The simulation frequency was adjusted from 1GHz to 100MHz to reflect the more accurate timing when run at 50MHz on the FPGA. The clock constraint was also adjusted to 200MHz to ensure positive slack. }
 \end{figure}
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.99\textwidth]{delayed_wave.png}
+\includegraphics[width=0.99\textwidth]{closeup_delayed_wave.png}
     \caption{}
 \end{figure}
 
