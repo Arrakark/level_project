@@ -1,4 +1,4 @@
-`timescale 10ns/100ps
+`timescale 10ns/1ps
 /*
 Description:
   An FSM testbench for the bubble level FSM. Emulates the functionality of three different states of I2C
