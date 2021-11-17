@@ -17,14 +17,14 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Outputs of RTL Compiler}{1}{section.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces }}{1}{figure.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces }}{2}{figure.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Outputs of RTL Compiler}{2}{section.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Reports}{2}{subsection.3.1}}
-\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore area.rpt}{2}{lstlisting.-1}}
-\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore gates.rpt}{2}{lstlisting.-2}}
-\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore power.rpt}{3}{lstlisting.-3}}
-\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore timing.rpt}{3}{lstlisting.-4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Mapped Verilog}{4}{subsection.3.2}}
-\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore map.v}{4}{lstlisting.-5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Outputs of RTL Compiler}{2}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The original test bench was run on the newly compiled design. The test bench passed all assertions as last time due to the fact that all assertions were on the next clock cycle after a state change. The simulation frequency was adjusted from 1GHz to 100MHz to reflect the more accurate timing when run at 50MHz on the FPGA. The clock constraint was also adjusted to 200MHz to ensure positive slack and lots of headroom. }}{2}{figure.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces We see some changes from the previous simulation. Most notably, there is now delay between the clock and the output of signals from the FSM. These delays are different for different signals as expected. There are still no delays in the input of signals though because that was part of the original test bench. We make the assumption that the signals arrive at or before clock change. In this figure at around 380000ps we see the delay of the command byte relative to the reference clock. I assume if our signal was to propagate at uneven times through a combinational circuit we would see that in this simulation. However, all signals are from registers, so we cannot see a difference in the arrival of different signals on the same bus. Since the frequency we are running this project at is so low compared to the actual frequency, the delays have little effect on the functionality of the circuit.}}{3}{figure.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Outputs of RTL Compiler}{3}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Reports}{3}{subsection.3.1}}
+\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore area.rpt}{3}{lstlisting.-1}}
+\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore gates.rpt}{4}{lstlisting.-2}}
+\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore power.rpt}{4}{lstlisting.-3}}
+\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore timing.rpt}{5}{lstlisting.-4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Mapped Verilog}{5}{subsection.3.2}}
+\@writefile{lol}{\contentsline {lstlisting}{synth/out/level\textunderscore fsm\textunderscore map.v}{5}{lstlisting.-5}}

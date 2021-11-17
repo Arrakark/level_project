@@ -69,28 +69,28 @@
 \maketitle
 
 \section{Introduction}
-In this assignment, the original bubble level FSM was synthesised in Cadence using elements from the FreePDK15 library.
+In this assignment, the original bubble level FSM was synthesised in Cadence using elements from the FreePDK15 library. The compiled Verilog module was transformed into logic gates/elements from the library with simulated delays. I note a presence of delays proportional to the delay of elements in the data paths. 170 cells are in the final design.
 
-- Comparison of waveforms from ideal case (Assignment 1) vs waveforms from synthesis (Assignment 2).
-
-- Analysis of how gates match with behavioural Verilog
-
-- Effects of changing synthesis parameters
-
-3. Visual Waveforms showing state transitions from mapped Verilog. [40]
+To make use of the functional simulation, the clock parameters were adjusted to match the worst-case real-world scenario. The clock timing constraint was set to 200MHz; simulation speed to 100MHz, and the execution target frequency on the FPGA is 50MHz. I do this to give the design lots of clock headroom in case someone want overclock by x2 (Note that the I\textsuperscript{2}C controller has an operating frequency of either 100MHz or 50MHz). 
 
 \section{Outputs of RTL Compiler}
 
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.99\textwidth]{delayed_wave.png}
-    \caption{The original test bench was run on the synthesized design. The test bench passed all assertions as last time due to the fact that all assertions were on the next clock cycle after a state change. The simulation frequency was adjusted from 1GHz to 100MHz to reflect the more accurate timing when run at 50MHz on the FPGA. The clock constraint was also adjusted to 200MHz to ensure positive slack. }
+\includegraphics[width=0.99\textwidth]{delayed_wave2.png}
+    \caption{The original test bench was run on the newly compiled design. The test bench passed all assertions as last time due to the fact that all assertions were on the next clock cycle after a state change. The simulation frequency was adjusted from 1GHz to 100MHz to reflect the more accurate timing when run at 50MHz on the FPGA. The clock constraint was also adjusted to 200MHz to ensure positive slack and lots of headroom. }
 \end{figure}
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{closeup_delayed_wave.png}
-    \caption{}
+    \caption{We see some changes from the previous simulation. Most notably, there is now delay between the clock and the output of signals from the FSM. These delays are different for different signals as expected. There are still no delays in the input of signals though because that was part of the original test bench. We make the assumption that the signals arrive at or before clock change. In this figure at around 380000ps we see the delay of the command byte relative to the reference clock. I assume if our signal was to propagate at uneven times through a combinational circuit we would see that in this simulation. However, all signals are from registers, so we cannot see a difference in the arrival of different signals on the same bus. Since the frequency we are running this project at is so low compared to the actual frequency, the delays have little effect on the functionality of the circuit.}
 \end{figure}
+
+I note here that the following synthesis parameters effect the simulation in the following ways:
+\begin{itemize}
+  \item timing.sdc file has a clock constraint that Cadence RTL designer uses to verify and optimize layout for set-up, slack and hold times. Increasing the clock frequency makes the compiler work harder (more optimization) to align the cells in a way to meet the constraints. 
+  \item test bench timescale sets the scale for delays in the simulation, and the resolution at which the simulation is done.
+\end{itemize}
 
 \section{Outputs of RTL Compiler}
 \subsection{Reports}
