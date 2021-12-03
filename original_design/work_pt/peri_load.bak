@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<efxpt:design_db name="level" device_def="T8F81" location="/home/vlad/Documents/level_project" version="2021.1.165" db_version="20211999" last_change_date="Tue Sep 28 21:59:33 2021" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+<efxpt:design_db name="level" device_def="T8F81" location="/home/vlad/Documents/level_project/original_design" version="2021.1.165" db_version="20211999" last_change_date="Thu Oct 14 00:39:46 2021" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
     <efxpt:device_info>
         <efxpt:iobank_info>
             <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
@@ -40,6 +40,9 @@
         <efxpt:gpio name="led_o[8]" gpio_def="GPIOR_19" mode="output" bus_name="led_o" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
             <efxpt:output_config name="led_o[8]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="4"/>
         </efxpt:gpio>
+        <efxpt:gpio name="pll_clkin" gpio_def="GPIOL_20" mode="input" bus_name="" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:input_config name="pll_clkin" name_ddio_lo="" conn_type="pll_clkin" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
         <efxpt:gpio name="reset_i" gpio_def="GPIOR_02" mode="input" bus_name="" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
             <efxpt:input_config name="reset_i" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="weak pullup" is_schmitt_trigger="false" ddio_type="none"/>
         </efxpt:gpio>
@@ -56,9 +59,11 @@
         <efxpt:global_unused_config state="input with weak pullup"/>
         <efxpt:bus name="led_o" mode="output" msb="8" lsb="0"/>
     </efxpt:gpio_info>
-    <efxpt:pll_info/>
-    <efxpt:osc_info>
-        <efxpt:osc name="osc_inst1" osc_def="OSC_0" clock_name="clk"/>
-    </efxpt:osc_info>
+    <efxpt:pll_info>
+        <efxpt:pll name="pll_clkin" pll_def="PLL_0" ref_clock_name="" ref_clock_freq="33.33" multiplier="24" pre_divider="1" post_divider="1" reset_name="" locked_name="" is_ipfrz="false" is_bypass_lock="true">
+            <efxpt:output_clock name="clk" number="0" out_divider="16"/>
+        </efxpt:pll>
+    </efxpt:pll_info>
+    <efxpt:osc_info/>
     <efxpt:jtag_info/>
 </efxpt:design_db>

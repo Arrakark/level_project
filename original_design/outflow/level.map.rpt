@@ -1,20 +1,20 @@
 Synthesis report for project level
-Generated at: Sep 28, 2021 21:59:36
+Generated at: Oct 14, 2021 00:40:30
 Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
 Top-level Entity Name : level
 ### ### File List (begin) ### ### ###
-/home/vlad/Documents/level_project/level_fsm.sv
-/home/vlad/Documents/level_project/level.sv
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v
+/home/vlad/Documents/level_project/original_design/level_fsm.sv
+/home/vlad/Documents/level_project/original_design/level.sv
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v
 ### ### File List (end) ### ### ###
 
 ### ### Pre-optimizations and mapping (begin) ### ### ###
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v (685)" removed instance : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/dff_143/i8
-@ "/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v (685)" representative instance : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/dff_143/i7
+@ "/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v (685)" removed instance : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/dff_143/i8
+@ "/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v (685)" representative instance : u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/dff_143/i7
 
 Mapping success.
 ### ### Mapping (end) ### ### ###
@@ -98,14 +98,14 @@ level:level                                                       193(0)        
 family : Trion
 device : T8F81
 project : level
-project-xml : /home/vlad/Documents/level_project/level.xml
+project-xml : /home/vlad/Documents/level_project/original_design/level.xml
 root : level
-I : /home/vlad/Documents/level_project
-I : /home/vlad/Documents/level_project/ip/i2c_interface
-output-dir : /home/vlad/Documents/level_project/outflow
-work-dir : /home/vlad/Documents/level_project/work_syn
-write-efx-verilog : /home/vlad/Documents/level_project/outflow/level.map.v
-binary-db : /home/vlad/Documents/level_project/level.vdb
+I : /home/vlad/Documents/level_project/original_design
+I : /home/vlad/Documents/level_project/original_design/ip/i2c_interface
+output-dir : /home/vlad/Documents/level_project/original_design/outflow
+work-dir : /home/vlad/Documents/level_project/original_design/work_syn
+write-efx-verilog : /home/vlad/Documents/level_project/original_design/outflow/level.map.v
+binary-db : /home/vlad/Documents/level_project/original_design/level.vdb
 insert-ios : 0
 max-carry-cascade : 160
 max_mult : -1
@@ -127,5 +127,5 @@ EFX_FF          : 	193
 EFX_GBUFCE      : 	1
 ### ### Resource Summary (end) ### ### ###
 
-Plain synthesis (without verilog dump and post-map checks) time : 1s
+Plain synthesis (without verilog dump and post-map checks) time : 2s
 Elapsed synthesis time : 2s

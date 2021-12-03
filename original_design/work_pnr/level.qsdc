@@ -1,6 +1,8 @@
 clock {
   name: "clk"
   period: 20000
+  rising_edge: 0
+  falling_edge: 5000
   target_pin {
     cell: "clk"
     port: "INPAD"
@@ -8,23 +10,5 @@ clock {
   origin: SDC
   uncertainty {
     value: 140
-  }
-  output_delay {
-    pin {
-      cell: "scl_oe"
-      port: "OUTPAD"
-    }
-    setup: -3903
-    analysis: MAX
-    ref_clock_edge: RISING
-  }
-  output_delay {
-    pin {
-      cell: "sda_oe"
-      port: "OUTPAD"
-    }
-    setup: -3903
-    analysis: MAX
-    ref_clock_edge: RISING
   }
 }

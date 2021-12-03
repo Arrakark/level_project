@@ -4,91 +4,91 @@
 [EFX-0000 INFO] 
 [EFX-0000 INFO] Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
 
-INFO: Read project database "/home/vlad/Documents/level_project/level.xml"
+INFO: Read project database "/home/vlad/Documents/level_project/original_design/level.xml"
 INFO: ***** Beginning Analysis ... *****
 INFO: default VHDL library search path is now "/home/vlad/efinity/2021.1/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
 -- Analyzing Verilog file '/home/vlad/efinity/2021.1/sim_models/maplib/efinix_maplib.v' (VERI-1482)
--- Analyzing Verilog file '/home/vlad/Documents/level_project/level_fsm.sv' (VERI-1482)
--- Analyzing Verilog file '/home/vlad/Documents/level_project/level.sv' (VERI-1482)
--- Analyzing Verilog file '/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v' (VERI-1482)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(342): WARNING: parameter 'IDLE_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(343): WARNING: parameter 'START_GEN0_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(344): WARNING: parameter 'WRITE_CMDBYTE0_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(345): WARNING: parameter 'WRITE_DAT0_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(346): WARNING: parameter 'START_GEN1_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(347): WARNING: parameter 'WRITE_CMDBYTE1_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(348): WARNING: parameter 'RESTART_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(349): WARNING: parameter 'WRITE_DAT2_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(350): WARNING: parameter 'STOP_GEN_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(351): WARNING: parameter 'DONE_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(990): WARNING: parameter 'CLOCK_PERIOD_NS' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(993): WARNING: parameter 'T_HIGH' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(997): WARNING: parameter 'T_LOW' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1001): WARNING: parameter 'T_HD_START' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1005): WARNING: parameter 'T_SU_START' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1009): WARNING: parameter 'T_HD_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1012): WARNING: parameter 'T_SU_STOP' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1016): WARNING: parameter 'T_BUF' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1022): WARNING: parameter 'ST_SCL_IDLE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1023): WARNING: parameter 'ST_SCL_START' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1024): WARNING: parameter 'ST_SCL_LOW_EDGE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1025): WARNING: parameter 'ST_SCL_WAIT_uC' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1026): WARNING: parameter 'ST_SCL_LOW' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1027): WARNING: parameter 'ST_SCL_HIGH_EDGE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1028): WARNING: parameter 'ST_SCL_HIGH' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1029): WARNING: parameter 'ST_SCL_STOP_WAIT' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1031): WARNING: parameter 'ST_SLV_SCL_IDLE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1032): WARNING: parameter 'ST_SLV_SCL_HOLD_SDA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1033): WARNING: parameter 'ST_SLV_SCL_WAIT_uC' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1034): WARNING: parameter 'ST_SLV_SCL_STOP_WAIT' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1037): WARNING: parameter 'ST_I2C_IDLE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1038): WARNING: parameter 'ST_I2C_HEADER' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1039): WARNING: parameter 'ST_I2C_ACK_HEADER' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1040): WARNING: parameter 'ST_I2C_RCV_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1041): WARNING: parameter 'ST_I2C_ACK_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1042): WARNING: parameter 'ST_I2C_XMIT_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1043): WARNING: parameter 'ST_I2C_WAIT_ACK' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1044): WARNING: parameter 'ST_I2C_STOP' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1047): WARNING: parameter 'BYTE_CNT' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1048): WARNING: parameter 'XFER_DONE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2179): WARNING: parameter 'IDLE_WRST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2180): WARNING: parameter 'GEN_WR_STROBE' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2181): WARNING: parameter 'GEN_TX_DONE' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2183): WARNING: parameter 'IDLE_RDST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2184): WARNING: parameter 'READ_CMDBYTE_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2185): WARNING: parameter 'RESTART_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2186): WARNING: parameter 'WAIT_4_READ_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2187): WARNING: parameter 'READ_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2188): WARNING: parameter 'GEN_RD_STROBE' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2189): WARNING: parameter 'GEN_RD_VALID' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2414): WARNING: generate block is allowed only inside loop and conditional generate in SystemVerilog mode (VERI-2365)
-INFO: Analysis took 0.0148822 seconds.
-INFO: 	Analysis took 0.02 seconds (approximately) in total CPU time.
-INFO: Analysis virtual memory usage: begin = 200.916 MB, end = 201.312 MB, delta = 0.396 MB
-INFO: Analysis resident set memory usage: begin = 71.308 MB, end = 74.636 MB, delta = 3.328 MB
-INFO: 	Analysis peak resident set memory usage = 399.704 MB
+-- Analyzing Verilog file '/home/vlad/Documents/level_project/original_design/level_fsm.sv' (VERI-1482)
+-- Analyzing Verilog file '/home/vlad/Documents/level_project/original_design/level.sv' (VERI-1482)
+-- Analyzing Verilog file '/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v' (VERI-1482)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(342): WARNING: parameter 'IDLE_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(343): WARNING: parameter 'START_GEN0_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(344): WARNING: parameter 'WRITE_CMDBYTE0_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(345): WARNING: parameter 'WRITE_DAT0_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(346): WARNING: parameter 'START_GEN1_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(347): WARNING: parameter 'WRITE_CMDBYTE1_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(348): WARNING: parameter 'RESTART_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(349): WARNING: parameter 'WRITE_DAT2_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(350): WARNING: parameter 'STOP_GEN_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(351): WARNING: parameter 'DONE_ST' becomes localparam in 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(990): WARNING: parameter 'CLOCK_PERIOD_NS' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(993): WARNING: parameter 'T_HIGH' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(997): WARNING: parameter 'T_LOW' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1001): WARNING: parameter 'T_HD_START' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1005): WARNING: parameter 'T_SU_START' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1009): WARNING: parameter 'T_HD_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1012): WARNING: parameter 'T_SU_STOP' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1016): WARNING: parameter 'T_BUF' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1022): WARNING: parameter 'ST_SCL_IDLE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1023): WARNING: parameter 'ST_SCL_START' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1024): WARNING: parameter 'ST_SCL_LOW_EDGE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1025): WARNING: parameter 'ST_SCL_WAIT_uC' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1026): WARNING: parameter 'ST_SCL_LOW' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1027): WARNING: parameter 'ST_SCL_HIGH_EDGE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1028): WARNING: parameter 'ST_SCL_HIGH' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1029): WARNING: parameter 'ST_SCL_STOP_WAIT' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1031): WARNING: parameter 'ST_SLV_SCL_IDLE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1032): WARNING: parameter 'ST_SLV_SCL_HOLD_SDA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1033): WARNING: parameter 'ST_SLV_SCL_WAIT_uC' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1034): WARNING: parameter 'ST_SLV_SCL_STOP_WAIT' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1037): WARNING: parameter 'ST_I2C_IDLE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1038): WARNING: parameter 'ST_I2C_HEADER' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1039): WARNING: parameter 'ST_I2C_ACK_HEADER' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1040): WARNING: parameter 'ST_I2C_RCV_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1041): WARNING: parameter 'ST_I2C_ACK_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1042): WARNING: parameter 'ST_I2C_XMIT_DATA' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1043): WARNING: parameter 'ST_I2C_WAIT_ACK' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1044): WARNING: parameter 'ST_I2C_STOP' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1047): WARNING: parameter 'BYTE_CNT' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1048): WARNING: parameter 'XFER_DONE' becomes localparam in 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2179): WARNING: parameter 'IDLE_WRST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2180): WARNING: parameter 'GEN_WR_STROBE' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2181): WARNING: parameter 'GEN_TX_DONE' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2183): WARNING: parameter 'IDLE_RDST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2184): WARNING: parameter 'READ_CMDBYTE_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2185): WARNING: parameter 'RESTART_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2186): WARNING: parameter 'WAIT_4_READ_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2187): WARNING: parameter 'READ_ST' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2188): WARNING: parameter 'GEN_RD_STROBE' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2189): WARNING: parameter 'GEN_RD_VALID' becomes localparam in 'i2c_slave_ctl_2e835ddf2f154dd587bb395c6ea8daac' with formal parameter declaration list (VERI-1199)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2414): WARNING: generate block is allowed only inside loop and conditional generate in SystemVerilog mode (VERI-2365)
+INFO: Analysis took 0.0145984 seconds.
+INFO: 	Analysis took 0.01 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 200.952 MB, end = 201.348 MB, delta = 0.396 MB
+INFO: Analysis resident set memory usage: begin = 71.208 MB, end = 74.488 MB, delta = 3.28 MB
+INFO: 	Analysis peak resident set memory usage = 459.108 MB
 INFO: ***** Ending Analysis ... *****
 INFO: ***** Beginning Elaboration ... *****
-/home/vlad/Documents/level_project/level.sv(1): INFO: compiling module 'level' (VERI-1018)
-/home/vlad/Documents/level_project/level_fsm.sv(3): INFO: compiling module 'level_fsm' (VERI-1018)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(100): WARNING: port 'slv_scl_in' is not connected on this instance (VERI-2435)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(100): WARNING: port 'slv_scl_out' remains unconnected for this instance (VERI-1927)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(46): INFO: compiling module 'i2c_interface' (VERI-1018)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(125): INFO: compiling module 'i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)' (VERI-1018)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(303): INFO: compiling module 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)' (VERI-1018)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2613): INFO: compiling module 'pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac' (VERI-1018)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(947): INFO: compiling module 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)' (VERI-1018)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1694): WARNING: expression size 5 truncated to fit in target size 4 (VERI-1209)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(777): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(782): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
-/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(77): WARNING: input port 'slv_scl_in' is not connected on this instance (VDB-1013)
-INFO: Elaboration took 0.0211246 seconds.
+/home/vlad/Documents/level_project/original_design/level.sv(1): INFO: compiling module 'level' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/level_fsm.sv(61): INFO: compiling module 'level_fsm' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(100): WARNING: port 'slv_scl_in' is not connected on this instance (VERI-2435)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(100): WARNING: port 'slv_scl_out' remains unconnected for this instance (VERI-1927)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(46): INFO: compiling module 'i2c_interface' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(125): INFO: compiling module 'i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(303): INFO: compiling module 'i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2613): INFO: compiling module 'pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(947): INFO: compiling module 'i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)' (VERI-1018)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1694): WARNING: expression size 5 truncated to fit in target size 4 (VERI-1209)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(777): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(782): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(77): WARNING: input port 'slv_scl_in' is not connected on this instance (VDB-1013)
+INFO: Elaboration took 0.0207815 seconds.
 INFO: 	Elaboration took 0.02 seconds (approximately) in total CPU time.
-INFO: Elaboration virtual memory usage: begin = 201.312 MB, end = 204.888 MB, delta = 3.576 MB
-INFO: Elaboration resident set memory usage: begin = 74.636 MB, end = 79.504 MB, delta = 4.868 MB
-INFO: 	Elaboration peak resident set memory usage = 399.704 MB
+INFO: Elaboration virtual memory usage: begin = 201.348 MB, end = 204.8 MB, delta = 3.452 MB
+INFO: Elaboration resident set memory usage: begin = 74.488 MB, end = 79.416 MB, delta = 4.928 MB
+INFO: 	Elaboration peak resident set memory usage = 459.108 MB
 INFO: ***** Ending Elaboration ... *****
 [EFX-0000 INFO] Setting Synthesis Option: mode=speed
 INFO: ***** Beginning Reading Mapping Library ... *****
@@ -113,89 +113,89 @@ INFO: ***** Beginning Reading Mapping Library ... *****
 /home/vlad/efinity/2021.1/sim_models/maplib/efinix_maplib.v(693): INFO: compiling module 'EFX_RAM10' (VERI-1018)
 /home/vlad/efinity/2021.1/sim_models/maplib/efinix_maplib.v(794): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
 /home/vlad/efinity/2021.1/sim_models/maplib/efinix_maplib.v(924): INFO: compiling module 'EFX_SRL8' (VERI-1018)
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:959) Removing redundant signal : restart
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:961) Removing redundant signal : MADR[0]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:1127) Removing redundant signal : sdaInS0
-[EFX-0266 WARNING] Module Instance 'u_i2c_mstrslv_ctl' input pin tied to constant (mif_clr=0).
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:201) Removing redundant signal : slv_sda_out
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:202) Removing redundant signal : slv_sda_oe
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:203) Removing redundant signal : slv_sda_in
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:205) Removing redundant signal : slv_scl_out
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:206) Removing redundant signal : slv_scl_oe
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:207) Removing redundant signal : slv_scl_in
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:210) Removing redundant signal : slv_read
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:211) Removing redundant signal : slv_write
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[7]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[6]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[5]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[4]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[3]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[2]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[1]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[0]
-[EFX-0200 WARNING] (/home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v:213) Removing redundant signal : slv_data_out[7]
-[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
-INFO: Reading Mapping Library took 0.0100706 seconds.
+INFO: Reading Mapping Library took 0.00973728 seconds.
 INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
-INFO: Reading Mapping Library virtual memory usage: begin = 205.564 MB, end = 205.564 MB, delta = 0 MB
-INFO: Reading Mapping Library resident set memory usage: begin = 80.472 MB, end = 80.472 MB, delta = 0 MB
-INFO: 	Reading Mapping Library peak resident set memory usage = 399.704 MB
+INFO: Reading Mapping Library virtual memory usage: begin = 205.584 MB, end = 205.584 MB, delta = 0 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 80.384 MB, end = 80.384 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 459.108 MB
 INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0000 INFO] ... Pre-synthesis checks begin
-[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... NameSpace init begin
-[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Mapping design "level"
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "level_fsm" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "level_fsm" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:959) Removing redundant signal : restart
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:961) Removing redundant signal : MADR[0]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:1127) Removing redundant signal : sdaInS0
+[EFX-0266 WARNING] Module Instance 'u_i2c_mstrslv_ctl' input pin tied to constant (mif_clr=0).
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:201) Removing redundant signal : slv_sda_out
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:202) Removing redundant signal : slv_sda_oe
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:203) Removing redundant signal : slv_sda_in
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:205) Removing redundant signal : slv_scl_out
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:206) Removing redundant signal : slv_scl_oe
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:207) Removing redundant signal : slv_scl_in
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:210) Removing redundant signal : slv_read
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:211) Removing redundant signal : slv_write
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[7]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[6]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[5]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[4]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[3]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[2]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[1]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:212) Removing redundant signal : slv_din[0]
+[EFX-0200 WARNING] (/home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v:213) Removing redundant signal : slv_data_out[7]
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "level_fsm" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "pulse_gen_fts_2e835ddf2f154dd587bb395c6ea8daac" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_mstrslv_ctl_2e835ddf2f154dd587bb395c6ea8daac(I2C_FAST_MODE=1,CLOCK_FREQ=50)" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_master_ctl_2e835ddf2f154dd587bb395c6ea8daac(DATA_BYTE_WIDTH=8,I2C_FAST_MODE=1,CLOCK_FREQ=50)" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_controller_2e835ddf2f154dd587bb395c6ea8daac(CLOCK_FREQ=50,DATA_BYTE_WIDTH=8,SLAVE_ADDR=84)" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_interface" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_interface" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_interface" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "level" begin
 [EFX-0000 INFO] ... Clock Enable Synthesis Performed on 46 flops.
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "level" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "level" end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Flat optimizations begin
-[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Flat synthesis begin
-[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Flat optimizations begin
-[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Check and break combinational loops begin
-[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Sequential Optimization begin
 [EFX-0000 INFO] ... Clock Network clk with 227 loads will be considered for sequential optimization.
 [EFX-0000 INFO] ... Sequential Optimization deduced 880 equivalent points.
-[EFX-0000 INFO] ... Sequential Optimization end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Top level netlist IO pre-synthesis begin
 [EFX-0000 INFO] ... SOP modeling begin
-[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... LUT mapping begin
 [EFX-0000 INFO] ... LS, strategy: 3, nd: 358, ed: 1152, lv: 4
-[EFX-0000 INFO] ... LUT mapping end (Real time : 1s CPU user time : 2s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... LUT mapping end (Real time : 1s CPU user time : 2s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
-[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Postmap Retiming Optimization begin
 [EFX-0000 INFO] ... Clock Network n3 with 193 loads will be considered for retiming optimization.
 [EFX-0000 INFO] ... Performed 0 retime moves.
-[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 399704KB)
-[EFX-0000 INFO] ... Top level netlist IO pre-synthesis end (Real time : 1s CPU user time : 2s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 459108KB)
+[EFX-0000 INFO] ... Top level netlist IO pre-synthesis end (Real time : 2s CPU user time : 2s CPU sys time : 0s MEM : 459108KB)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
-[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 399704KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 459108KB)
 INFO: ***** Beginning VDB Netlist Checker ... *****
-INFO: VDB Netlist Checker took 0.00161446 seconds.
+INFO: VDB Netlist Checker took 0.00166185 seconds.
 INFO: 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-INFO: VDB Netlist Checker virtual memory usage: begin = 217.844 MB, end = 217.844 MB, delta = 0 MB
-INFO: VDB Netlist Checker resident set memory usage: begin = 99.052 MB, end = 99.052 MB, delta = 0 MB
-INFO: 	VDB Netlist Checker peak resident set memory usage = 399.704 MB
+INFO: VDB Netlist Checker virtual memory usage: begin = 217.836 MB, end = 217.836 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 98.92 MB, end = 98.92 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 459.108 MB
 INFO: ***** Ending VDB Netlist Checker ... *****
--- Writing netlist 'level' to Verilog file '/home/vlad/Documents/level_project/outflow/level.map.v' (VDB-1030)
+-- Writing netlist 'level' to Verilog file '/home/vlad/Documents/level_project/original_design/outflow/level.map.v' (VDB-1030)
 [EFX-0000 INFO] Resource Summary 
 [EFX-0000 INFO] =============================== 
 [EFX-0000 INFO] EFX_LUT4        : 	360

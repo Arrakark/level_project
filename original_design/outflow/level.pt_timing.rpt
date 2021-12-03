@@ -1,7 +1,7 @@
 
 Efinity Interface Designer Timing Report
 Version: 2021.1.165
-Date: 2021-09-28 21:59
+Date: 2021-10-14 00:40
 
 Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -9,15 +9,15 @@ Device: T8F81
 Project: level
 Timing Model: C2 (final)
 
----------- 1. Oscillator Timing Report (begin) ----------
+---------- 1. PLL Timing Report (begin) ----------
 
 +-------+-------------+
 | Clock | Period (ns) |
 +-------+-------------+
-|  clk  |    100000   |
+|  clk  |    20.00    |
 +-------+-------------+
 
----------- Oscillator Timing Report (end) ----------
+---------- PLL Timing Report (end) ----------
 
 ---------- 2. GPIO Timing Report (begin) ----------
 
@@ -36,6 +36,7 @@ Non-registered GPIO Configuration:
 +---------------+-------------+-----------+----------+----------+
 | Instance Name |   Pin Name  | Parameter | Max (ns) | Min (ns) |
 +---------------+-------------+-----------+----------+----------+
+|   pll_clkin   |  pll_clkin  |  GPIO_IN  |  1.954   |  0.698   |
 |    reset_i    |   reset_i   |  GPIO_IN  |  1.954   |  0.698   |
 |  error_led_o  | error_led_o |  GPIO_OUT |  4.915   |  1.756   |
 |    led_o[0]   |   led_o[0]  |  GPIO_OUT |  4.915   |  1.756   |

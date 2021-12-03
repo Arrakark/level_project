@@ -1,7 +1,7 @@
 
 Efinity Interface Designer Report
 Version: 2021.1.165
-Date: 2021-09-28 21:59
+Date: 2021-10-14 00:40
 
 Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -26,10 +26,10 @@ Configuration Mode: active (x1)
 ---------- Table of Contents (end) ------------
 
 ---------- 1. Periphery Usage Summary (begin) ----------
-gpio: 13 / 55 (23.64%)
+gpio: 14 / 55 (25.45%)
 jtag: 0 / 2 (0.0%)
-osc: 1 / 1 (100.0%)
-pll: 0 / 1 (0.0%)
+osc: 0 / 1 (0.0%)
+pll: 1 / 1 (100.0%)
 ---------- Periphery Usage Summary (end) ----------
 
 ---------- 2. Generated Output Files (begin) ----------
@@ -58,11 +58,11 @@ Verilog Template: level_template.v
 
 ---------- 4. Global Connection Summary (begin) ----------
 
-+----------+--------------+------+
-| Pin Name |   Resource   | Type |
-+----------+--------------+------+
-|   clk    | OSC_0.CLKOUT | GCLK |
-+----------+--------------+------+
++----------+---------------+------+
+| Pin Name |    Resource   | Type |
++----------+---------------+------+
+|   clk    | PLL_0.CLKOUT0 | GCLK |
++----------+---------------+------+
 
 ---------- Global Connection Summary (end) ----------
 
@@ -110,6 +110,7 @@ Global Unused Setting: input with weak pullup
 |    led_o[6]   | GPIOR_15 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |     GPIOR_15_CBUS0    |      C9     |
 |    led_o[7]   | GPIOR_17 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |  GPIOR_17_CTRL6_CBUS2 |      D8     |
 |    led_o[8]   | GPIOR_19 | output |                 |              |    2A    | 3.3 V LVTTL / LVCMOS |     GPIOR_19_CLK6     |      E8     |
+|   pll_clkin   | GPIOL_20 | input  |                 |              |    1B    | 3.3 V LVTTL / LVCMOS |     GPIOL_20_PLLIN    |      C3     |
 |    reset_i    | GPIOR_02 | input  |                 |              |    2A    | 3.3 V LVTTL / LVCMOS | GPIOR_02_RESERVED_OUT |      C5     |
 |      scl      | GPIOR_35 | inout  | I(R),O(R),OE(R) |      R0      |    2B    | 3.3 V LVTTL / LVCMOS |      GPIOR_35_CSO     |      G6     |
 |      sda      | GPIOR_34 | inout  | I(R),O(R),OE(R) |      R0      |    2B    | 3.3 V LVTTL / LVCMOS |      GPIOR_34_CSI     |      J7     |
@@ -125,6 +126,7 @@ Input GPIO Configuration:
 +---------------+-----------+---------------------+-----------------+--------------+-----------------+
 | Instance Name | Input Pin | Alternate Input Pin | Input Clock Pin | Pull Up/Down | Schmitt Trigger |
 +---------------+-----------+---------------------+-----------------+--------------+-----------------+
+|   pll_clkin   |           |      pll_clkin      |                 |     none     |     Disable     |
 |    reset_i    |  reset_i  |                     |                 | weak pullup  |     Disable     |
 +---------------+-----------+---------------------+-----------------+--------------+-----------------+
 
@@ -160,21 +162,43 @@ Inout GPIO Configuration:
 
 ---------- 8. PLL Usage Summary (begin) ----------
 
-No PLL was configured
+Instance Name                 : pll_clkin
+Resource                      : PLL_0
+Reference Clock Resource      : GPIOL_20
+Reference Clock Frequency     : 33.33 MHz
+Reference Clock Period        : 30.00 ns
+Multiplier (M)                : 24
+Pre-Divider (N)               : 1
+VCO Frequency                 : 799.92 MHz
+Post-Divider (O)              : 1
+PLL Frequency                 : 799.92 MHz
+
+Output Clock 0
+Clock Pin Name                : clk
+Output Divider                : 16
+Output Frequency              : 49.99 MHz
+Output Period                 : 20.00 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 33.33 MHz * (24/1)
+	    = 799.92 MHz
+	PLL = VCO / O
+	    = 799.92 MHz / 1
+	    = 799.92 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 799.92 MHz / 16
+	        = 49.99 MHz
+
+SDC Constraints:
+	create_clock -period 20.00 clk
 
 ---------- PLL Usage Summary (end) ----------
 
 ---------- 9. Oscillator Usage Summary (begin) ----------
 
-+---------------+----------+-----------+-----------+--------+
-| Instance Name | Resource | Clock Pin | Frequency | Period |
-+---------------+----------+-----------+-----------+--------+
-|   osc_inst1   |  OSC_0   |    clk    |   10 KHz  | 100us  |
-+---------------+----------+-----------+-----------+--------+
-
-SDC Constraints:
-	create_clock -period 100000 clk
-
+No Oscillator was configured
 
 ---------- Oscillator Usage Summary (end) ----------
 

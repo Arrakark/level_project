@@ -1,7 +1,7 @@
 
 # Efinity Interface Designer SDC
 # Version: 2021.1.165
-# Date: 2021-09-28 21:59
+# Date: 2021-10-14 00:40
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -9,12 +9,14 @@
 # Project: level
 # Timing Model: C2 (final)
 
-# Oscillator Constraints
-########################
-create_clock -period 100000 [get_ports {clk}]
+# PLL Constraints
+#################
+create_clock -period 20.00 -waveform {10.00 20.00} [get_ports {clk}]
 
 # GPIO Constraints
 ####################
+# set_input_delay -clock <CLOCK> -max <MAX CALCULATION> [get_ports {pll_clkin}]
+# set_input_delay -clock <CLOCK> -min <MIN CALCULATION> [get_ports {pll_clkin}]
 # set_input_delay -clock <CLOCK> -max <MAX CALCULATION> [get_ports {reset_i}]
 # set_input_delay -clock <CLOCK> -min <MIN CALCULATION> [get_ports {reset_i}]
 # set_output_delay -clock <CLOCK> -max <MAX CALCULATION> [get_ports {error_led_o}]

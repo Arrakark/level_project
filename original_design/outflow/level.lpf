@@ -2,7 +2,7 @@
 <efxpt:periphery design="level" device="T8F81" xmlns:efxpt="http://www.efinixinc.com/peri_device_db" xmlns:efxutil="http://www.efinixinc.com/peri_tool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_device_db lpf.xsd">
   <!-- Efinity Logical Peripheral File -->
   <!-- Version: 2021.1.165 -->
-  <!-- Date: 2021-09-28 21:59 -->
+  <!-- Date: 2021-10-14 00:40 -->
   <!-- Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved. -->
   <efxpt:sequence size="61">
     <efxpt:instance id="GPIOL_00" index="0" type="gpio"/>
@@ -483,7 +483,7 @@
     <efxpt:parameter name="PCR_OE_SEL" value="DISABLE"/>
     <efxpt:parameter name="PCR_OUT_SEL" value="BYPASS"/>
     <efxpt:parameter name="PCR_PULLDOWN" value="DISABLE"/>
-    <efxpt:parameter name="PCR_PULLUP" value="ENABLE"/>
+    <efxpt:parameter name="PCR_PULLUP" value="DISABLE"/>
     <efxpt:parameter name="PCR_SCHMITT_TRIGGER" value="DISABLE"/>
     <efxpt:parameter name="PCR_SLEW_RATE" value="DISABLE"/>
     <efxpt:parameter name="UNUSED" value="ENABLE"/>
@@ -505,12 +505,12 @@
     <efxpt:parameter name="PCR_BYPASS1" value="DISABLE"/>
     <efxpt:parameter name="PCR_BYPASS2" value="DISABLE"/>
     <efxpt:parameter name="PCR_BYPASS_LOCK" value="ENABLE"/>
-    <efxpt:parameter name="PCR_DIVIDER0" value="2"/>
+    <efxpt:parameter name="PCR_DIVIDER0" value="16"/>
     <efxpt:parameter name="PCR_DIVIDER1" value="2"/>
     <efxpt:parameter name="PCR_DIVIDER2" value="2"/>
-    <efxpt:parameter name="PCR_IPENABLE" value="DISABLE"/>
+    <efxpt:parameter name="PCR_IPENABLE" value="ENABLE"/>
     <efxpt:parameter name="PCR_IPEN_PCR_FRZ" value="DISABLE"/>
-    <efxpt:parameter name="PCR_MCOUNTER" value="1"/>
+    <efxpt:parameter name="PCR_MCOUNTER" value="24"/>
     <efxpt:parameter name="PCR_NCOUNTER" value="1"/>
     <efxpt:parameter name="PCR_OCOUNTER" value="1"/>
     <efxpt:parameter name="PCR_PLLBYPASS" value="DISABLE"/>
@@ -962,7 +962,7 @@
     <efxpt:parameter name="UNUSED" value="ENABLE"/>
   </efxpt:instance>
   <efxpt:instance id="OSC_0" type="osc">
-    <efxpt:parameter name="PCR_EN_OSC" value="ENABLE"/>
+    <efxpt:parameter name="PCR_EN_OSC" value="DISABLE"/>
     <efxpt:parameter name="PCR_USR_CTRL" value="DISABLE"/>
   </efxpt:instance>
 </efxpt:periphery>
