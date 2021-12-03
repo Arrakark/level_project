@@ -1,0 +1,48 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -virtualIPO false }
+setExtractRCMode  -engine preRoute
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "1"}
+catch {setNanoRouteMode -quiet -droutePostRouteWidenWireRule "LEFSpecialRouteSpec"}
+catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
+catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpCurrentTimingReport "/tmp/innovus_temp_32991_ssh-soc.ece.ubc.ca_l9w0b_mGcvzs/nanoroute_tmp_32YHHU/.timing_report2.d"}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 37.500000}
+catch {setNanoRouteMode -quiet -routeTdrEffort 10}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -place_design_floorplan_mode false }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setUsefulSkewMode -maxAllowedDelay 1 }
+catch { setUsefulSkewMode -maxSkew false }
+catch { setUsefulSkewMode -noBoundary false }
+catch { setUsefulSkewMode -useCells {BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL} }
+catch { setSrouteMode -viaConnectToShape noshape }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setPinAssignMode -pinEditInBatch false }
+catch { setAddRingMode -avoid_short false }
+catch { setAddRingMode -extend_over_row false }
+catch { setAddRingMode -ignore_rows false }
+catch { setAddRingMode -orthogonal_only true }
+catch { setAddRingMode -ring_target default }
+catch { setAddRingMode -skip_crossing_trunks none }
+catch { setAddRingMode -skip_via_on_pin standardcell }
+catch { setAddRingMode -skip_via_on_wire_shape noshape }
+catch { setAddRingMode -stacked_via_bottom_layer Metal1 }
+catch { setAddRingMode -stacked_via_top_layer Metal11 }
+catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setRouteMode -earlyGlobalHonorMsvRouteConstraint false }
+catch { setRouteMode -earlyGlobalRoutePartitionPinGuide true }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setEndCapMode -boundary_tap false }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

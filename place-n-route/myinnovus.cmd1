@@ -1,0 +1,135 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Dec  2 21:54:59 2021                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+#@(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+#@(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+#@(#)CDS: CPE v18.10-p005
+#@(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+set init_gnd_net VSS
+set init_lef_file {/CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+set init_verilog ../Verilog/synth/out/level_fsm_map.v
+set init_mmmc_file MMMC.tcl
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.928716904277 0.700008 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+set ptngSprNoRefreshPins 1
+setPtnPinStatus -cell level_fsm -pin clk_i -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin i2c_arb_lost_i -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin i2c_busy_i -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[0]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[1]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[2]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[3]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[4]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[5]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[6]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin {i2c_data_out_i[7]} -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin i2c_data_out_valid_i -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin i2c_rxak_i -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin i2c_write_done_i -status unplaced -silent
+setPtnPinStatus -cell level_fsm -pin reset_i -status unplaced -silent
+set ptngSprNoRefreshPins 0
+ptnSprRefreshPinsAndBlockages
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType center -spacing 0.5 -pin {clk_i i2c_arb_lost_i i2c_busy_i {i2c_data_out_i[0]} {i2c_data_out_i[1]} {i2c_data_out_i[2]} {i2c_data_out_i[3]} {i2c_data_out_i[4]} {i2c_data_out_i[5]} {i2c_data_out_i[6]} {i2c_data_out_i[7]} i2c_data_out_valid_i i2c_rxak_i i2c_write_done_i reset_i}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 4 -spreadType center -spacing 0.5 -pin {error_led_o {i2c_command_byte_o[0]} {i2c_command_byte_o[1]} {i2c_command_byte_o[2]} {i2c_command_byte_o[3]} {i2c_command_byte_o[4]} {i2c_command_byte_o[5]} {i2c_command_byte_o[6]} {i2c_command_byte_o[7]} {i2c_din_o[0]} {i2c_din_o[1]} {i2c_din_o[2]} {i2c_din_o[3]} {i2c_din_o[4]} {i2c_din_o[5]} {i2c_din_o[6]} {i2c_din_o[7]} {i2c_num_bytes_o[0]} {i2c_num_bytes_o[1]} {i2c_num_bytes_o[2]} {i2c_num_bytes_o[3]} {i2c_num_bytes_o[4]} {i2c_num_bytes_o[5]} {i2c_num_bytes_o[6]} {i2c_num_bytes_o[7]} i2c_read_o {i2c_slave_addr_o[0]} {i2c_slave_addr_o[1]} {i2c_slave_addr_o[2]} {i2c_slave_addr_o[3]} {i2c_slave_addr_o[4]} {i2c_slave_addr_o[5]} {i2c_slave_addr_o[6]} {i2c_slave_addr_o[7]} i2c_write_o {led_o[0]} {led_o[1]} {led_o[2]} {led_o[3]} {led_o[4]} {led_o[5]} {led_o[6]} {led_o[7]} {led_o[8]}}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -use GROUND -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 0.5 -pin {VDD VSS}
+setPinAssignMode -pinEditInBatch false
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -use GROUND -pinWidth 0.06 -pinDepth 0.335 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing -0.6 -pin {VDD VSS}
+setPinAssignMode -pinEditInBatch false
+saveDesign -cellview {cdsDefTechLib level_fsm level_layout}
+saveDesign -cellview {NCSU_TechLib_FreePDK15 level_fsm level_layout}
+gui_select -rect {16.029 1.214 18.621 -1.261}
+ptnSprRefreshPinsAndBlockages
+deselectAll
+selectObject IO_Pin VSS
+deselectAll
+selectPhyPin 17.0700 0.0000 17.1300 0.3350 1 VSS
+deselectAll
+selectObject IO_Pin VDD
+deselectAll
+selectObject IO_Pin VSS
+ptnSprRefreshPinsAndBlockages
+deselectAll
+createLib level_fsm_lib -attachTech {}
+saveDesign -cellview {NCSU_TechLib_FreePDK15 level_fsm level_fsm}
+saveDesign -cellview {NCSU_TechLib_FreePDK15 level_fsm level_fsm}
+gui_select -rect {-2.179 23.208 2.300 9.056}
+deleteSelectedFromFPlan
+gui_select -rect {8.704 5.099 20.108 -1.551}
+deleteSelectedFromFPlan
+gui_select -rect {42.195 29.525 -9.241 -3.321}
+deleteSelectedFromFPlan
+deselectAll
+selectObject IO_Pin {i2c_num_bytes_o[5]}
+deleteSelectedFromFPlan
+deselectAll
+init_design
+init_design
+gui_select -rect {44.121 31.850 -6.239 -0.980}
+gui_select -rect {40.790 29.262 -2.325 -0.883}
+gui_select -rect {-4.428 31.462 40.337 -3.308}

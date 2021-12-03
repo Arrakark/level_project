@@ -1,0 +1,9 @@
+WARNING: HOST <ssh-soc.ece.ubc.ca> DOES NOT APPEAR TO BE A CADENCE SUPPORTED LINUX CONFIGURATION.
+         For More Info,  Please Run '<cdsroot>/tools.lnx86/bin/checkSysConf' <productId>.
+
+ipvs:    INFO: Note that OpenAccess (OA) requires running the Configure phase.
+ipvs:          See the "OpenAccess Installation and Configuration Guide" before
+ipvs:          you complete the configuration step. This manual is included with
+ipvs:          the Cadence product documentation.
+ipvs:   ERROR: The command /CMC/tools/cadence/PVS14.12.000_lnx86/share/oa/bin/sysname returned an error status:
+                            unknown

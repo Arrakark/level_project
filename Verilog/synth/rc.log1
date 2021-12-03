@@ -1,0 +1,1843 @@
+Checking out license 'RTL_Compiler_Ultra'... (10 seconds elapsed)
+License 'RTL_Compiler_Ultra' checkout failed.
+Checking out license 'RTL_Compiler_Physical'... (12 seconds elapsed)
+License 'RTL_Compiler_Physical' checkout failed.
+Checking out license 'RTL_Compiler_Verification'... (8 seconds elapsed)
+License 'RTL_Compiler_Verification' checkout failed.
+Checking out license 'RTL_Compiler_L'... (2 seconds elapsed)
+License 'RTL_Compiler_L' checkout failed.
+Checking out license 'Virtuoso_Digital_Implem'... (1 second elapsed)
+Finished loading tool scripts (7 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+          Version RC14.13 - v14.10-s027_1 (64-bit), built Nov 17 2014
+
+
+Copyright notice: Copyright 1997-2014 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+WARNING: This version of RC is 2557 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  dp_perform_rewriting_operations
+            design  lp_clock_gating_hierarchical
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  gint_has_connected_pg_pin
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  logic0_driven
+               net  logic1_driven
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  driver_for_unloaded_ports
+              root  enable_parallel_iopt
+              root  enc_in_place_opt
+              root  enc_opt_drv
+              root  hdl_bit_blast_threshold
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  lp_clock_gating_hierarchical
+              root  lp_insert_clock_gating_incremental
+              root  lp_iopt_mvt_multipass_flow
+              root  lp_multi_vt_optimization_effort
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  power_optimization_effort
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+         subdesign  lp_clock_gating_hierarchical
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/> source ./in/load_etc.tcl 
+Sourcing './in/load_etc.tcl' (Wed Nov 17 10:18:27 -0800 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/timing_power_noise/CCS
+Error   : File error. [FILE-100] [set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' not found
+        : Make sure that the file is a readable regular file and has the specified name.
+Unable to open library slow_vdd1v0_basicCells.lib.
+Error   : A library file does not exist. [LBR-68] [set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_attribute]
+        : The value 'slow_vdd1v0_basicCells.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type 'set_attribute -h <attr_name> *'.
+1
+rc:/> source ./in/load_etc.tcl 
+Sourcing './in/load_etc.tcl' (Wed Nov 17 10:19:14 -0800 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 2
+  Found 'statetable' group in cell. [LBR-83]: 16
+  Created nominal operating condition. [LBR-412]: 1
+  *******************************************************
+ 
+  Setting attribute of root '/': 'library' = slow_vdd1v0_basicCells.lib
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ')', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+        : Invalid Verilog syntax is parsed, or unsupported Verilog syntax is encountered.
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+    led_o <= 9'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 118, column 5.
+        : A variable must be declared before it can be referenced.
+    i2c_din_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 120, column 5.
+    i2c_command_byte_o <= 8'h0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 121, column 5.
+    i2c_slave_addr_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 122, column 5.
+    i2c_num_bytes_o <= 8'd0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 123, column 5.
+          i2c_din_o <= 8'b0;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 133, column 11.
+          i2c_command_byte_o <= wake_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 134, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 135, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 136, column 11.
+          i2c_command_byte_o <= accel_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 160, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 161, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 162, column 11.
+          led_o <= 9'd256;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 185, column 11.
+          led_o <= 9'd384;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 187, column 11.
+          led_o <= 9'd128;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 189, column 11.
+          led_o <= 9'd192;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 191, column 11.
+          led_o <= 9'd64;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 193, column 11.
+          led_o <= 9'd96;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 195, column 11.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 34.
+        else if (raw_buffer < 8'sb11111110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 42.
+        else if (raw_buffer < 8'sb11111110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 43.
+          led_o <= 9'd32;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 197, column 11.
+          led_o <= 9'd32;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 197, column 20.
+        else if (raw_buffer < 8'sb11111111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 29.
+        else if (raw_buffer < 8'sb11111111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 31.
+        else if (raw_buffer < 8'sb11111111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 34.
+        else if (raw_buffer < 8'sb11111111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 42.
+        else if (raw_buffer < 8'sb11111111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 43.
+          led_o <= 9'd48;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 199, column 11.
+          led_o <= 9'd48;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 199, column 20.
+        else if (raw_buffer < 8'sb00000000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 29.
+        else if (raw_buffer < 8'sb00000000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 31.
+        else if (raw_buffer < 8'sb00000000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 34.
+        else if (raw_buffer < 8'sb00000000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 42.
+        else if (raw_buffer < 8'sb00000000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 43.
+          led_o <= 9'd16;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 201, column 11.
+          led_o <= 9'd16;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 201, column 20.
+        else if (raw_buffer < 8'sb00000001)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 29.
+        else if (raw_buffer < 8'sb00000001)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 31.
+        else if (raw_buffer < 8'sb00000001)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 34.
+        else if (raw_buffer < 8'sb00000001)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 42.
+        else if (raw_buffer < 8'sb00000001)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 43.
+          led_o <= 9'd24;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 203, column 11.
+          led_o <= 9'd24;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 203, column 20.
+        else if (raw_buffer < 8'sb00000010)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 29.
+        else if (raw_buffer < 8'sb00000010)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 31.
+        else if (raw_buffer < 8'sb00000010)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 34.
+        else if (raw_buffer < 8'sb00000010)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 42.
+        else if (raw_buffer < 8'sb00000010)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 43.
+          led_o <= 9'd8;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 205, column 11.
+          led_o <= 9'd8;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 205, column 20.
+        else if (raw_buffer < 8'sb00000011)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 29.
+        else if (raw_buffer < 8'sb00000011)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 31.
+        else if (raw_buffer < 8'sb00000011)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 34.
+        else if (raw_buffer < 8'sb00000011)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 42.
+        else if (raw_buffer < 8'sb00000011)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 43.
+          led_o <= 9'd12;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 207, column 11.
+          led_o <= 9'd12;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 207, column 20.
+        else if (raw_buffer < 8'sb00000100)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 29.
+        else if (raw_buffer < 8'sb00000100)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 31.
+        else if (raw_buffer < 8'sb00000100)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 34.
+        else if (raw_buffer < 8'sb00000100)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 42.
+        else if (raw_buffer < 8'sb00000100)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 43.
+          led_o <= 9'd4;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 209, column 11.
+          led_o <= 9'd4;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 209, column 20.
+        else if (raw_buffer < 8'sb00000101)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 29.
+        else if (raw_buffer < 8'sb00000101)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 31.
+        else if (raw_buffer < 8'sb00000101)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 34.
+        else if (raw_buffer < 8'sb00000101)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 42.
+        else if (raw_buffer < 8'sb00000101)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 43.
+          led_o <= 9'd6;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 211, column 11.
+          led_o <= 9'd6;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 211, column 20.
+        else if (raw_buffer < 8'sb00000110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 29.
+        else if (raw_buffer < 8'sb00000110)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 31.
+        else if (raw_buffer < 8'sb00000110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 34.
+        else if (raw_buffer < 8'sb00000110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 42.
+        else if (raw_buffer < 8'sb00000110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 43.
+          led_o <= 9'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 213, column 11.
+          led_o <= 9'd2;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 213, column 20.
+        else if (raw_buffer < 8'sb00000111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 29.
+        else if (raw_buffer < 8'sb00000111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 31.
+        else if (raw_buffer < 8'sb00000111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 34.
+        else if (raw_buffer < 8'sb00000111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 42.
+        else if (raw_buffer < 8'sb00000111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 43.
+          led_o <= 9'd3;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 215, column 11.
+          led_o <= 9'd3;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 215, column 20.
+        else if (raw_buffer < 8'sb00001000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 29.
+        else if (raw_buffer < 8'sb00001000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 31.
+        else if (raw_buffer < 8'sb00001000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 34.
+        else if (raw_buffer < 8'sb00001000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 42.
+        else if (raw_buffer < 8'sb00001000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 43.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 217, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 217, column 20.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 219, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 219, column 20.
+        state <= ENSURE_BUSY_7;
+               |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 220, column 16.
+        state <= ERROR;
+                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 223, column 22.
+      default:  state <= ENSURE_BUSY_1;
+                                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 225, column 38.
+1
+rc:/> source ./in/load_etc.tcl 
+Sourcing './in/load_etc.tcl' (Wed Nov 17 10:21:29 -0800 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing
+Freeing libraries in memory (slow_vdd1v0_basicCells.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 2
+  Found 'statetable' group in cell. [LBR-83]: 16
+  Created nominal operating condition. [LBR-412]: 1
+  *******************************************************
+ 
+  Setting attribute of root '/': 'library' = slow_vdd1v0_basicCells.lib
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ')', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+    led_o <= 9'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 118, column 5.
+    i2c_din_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 120, column 5.
+    i2c_command_byte_o <= 8'h0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 121, column 5.
+    i2c_slave_addr_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 122, column 5.
+    i2c_num_bytes_o <= 8'd0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 123, column 5.
+          i2c_din_o <= 8'b0;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 133, column 11.
+          i2c_command_byte_o <= wake_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 134, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 135, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 136, column 11.
+          i2c_command_byte_o <= accel_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 160, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 161, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 162, column 11.
+          led_o <= 9'd256;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 185, column 11.
+          led_o <= 9'd384;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 187, column 11.
+          led_o <= 9'd128;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 189, column 11.
+          led_o <= 9'd192;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 191, column 11.
+          led_o <= 9'd64;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 193, column 11.
+          led_o <= 9'd96;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 195, column 11.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 34.
+        else if (raw_buffer < 8'sb11111110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 42.
+        else if (raw_buffer < 8'sb11111110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 43.
+          led_o <= 9'd32;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 197, column 11.
+          led_o <= 9'd32;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 197, column 20.
+        else if (raw_buffer < 8'sb11111111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 29.
+        else if (raw_buffer < 8'sb11111111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 31.
+        else if (raw_buffer < 8'sb11111111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 34.
+        else if (raw_buffer < 8'sb11111111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 42.
+        else if (raw_buffer < 8'sb11111111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 43.
+          led_o <= 9'd48;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 199, column 11.
+          led_o <= 9'd48;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 199, column 20.
+        else if (raw_buffer < 8'sb00000000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 29.
+        else if (raw_buffer < 8'sb00000000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 31.
+        else if (raw_buffer < 8'sb00000000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 34.
+        else if (raw_buffer < 8'sb00000000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 42.
+        else if (raw_buffer < 8'sb00000000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 43.
+          led_o <= 9'd16;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 201, column 11.
+          led_o <= 9'd16;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 201, column 20.
+        else if (raw_buffer < 8'sb00000001)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 29.
+        else if (raw_buffer < 8'sb00000001)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 31.
+        else if (raw_buffer < 8'sb00000001)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 34.
+        else if (raw_buffer < 8'sb00000001)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 42.
+        else if (raw_buffer < 8'sb00000001)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 43.
+          led_o <= 9'd24;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 203, column 11.
+          led_o <= 9'd24;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 203, column 20.
+        else if (raw_buffer < 8'sb00000010)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 29.
+        else if (raw_buffer < 8'sb00000010)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 31.
+        else if (raw_buffer < 8'sb00000010)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 34.
+        else if (raw_buffer < 8'sb00000010)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 42.
+        else if (raw_buffer < 8'sb00000010)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 43.
+          led_o <= 9'd8;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 205, column 11.
+          led_o <= 9'd8;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 205, column 20.
+        else if (raw_buffer < 8'sb00000011)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 29.
+        else if (raw_buffer < 8'sb00000011)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 31.
+        else if (raw_buffer < 8'sb00000011)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 34.
+        else if (raw_buffer < 8'sb00000011)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 42.
+        else if (raw_buffer < 8'sb00000011)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 43.
+          led_o <= 9'd12;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 207, column 11.
+          led_o <= 9'd12;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 207, column 20.
+        else if (raw_buffer < 8'sb00000100)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 29.
+        else if (raw_buffer < 8'sb00000100)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 31.
+        else if (raw_buffer < 8'sb00000100)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 34.
+        else if (raw_buffer < 8'sb00000100)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 42.
+        else if (raw_buffer < 8'sb00000100)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 43.
+          led_o <= 9'd4;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 209, column 11.
+          led_o <= 9'd4;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 209, column 20.
+        else if (raw_buffer < 8'sb00000101)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 29.
+        else if (raw_buffer < 8'sb00000101)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 31.
+        else if (raw_buffer < 8'sb00000101)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 34.
+        else if (raw_buffer < 8'sb00000101)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 42.
+        else if (raw_buffer < 8'sb00000101)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 43.
+          led_o <= 9'd6;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 211, column 11.
+          led_o <= 9'd6;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 211, column 20.
+        else if (raw_buffer < 8'sb00000110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 29.
+        else if (raw_buffer < 8'sb00000110)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 31.
+        else if (raw_buffer < 8'sb00000110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 34.
+        else if (raw_buffer < 8'sb00000110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 42.
+        else if (raw_buffer < 8'sb00000110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 43.
+          led_o <= 9'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 213, column 11.
+          led_o <= 9'd2;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 213, column 20.
+        else if (raw_buffer < 8'sb00000111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 29.
+        else if (raw_buffer < 8'sb00000111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 31.
+        else if (raw_buffer < 8'sb00000111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 34.
+        else if (raw_buffer < 8'sb00000111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 42.
+        else if (raw_buffer < 8'sb00000111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 43.
+          led_o <= 9'd3;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 215, column 11.
+          led_o <= 9'd3;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 215, column 20.
+        else if (raw_buffer < 8'sb00001000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 29.
+        else if (raw_buffer < 8'sb00001000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 31.
+        else if (raw_buffer < 8'sb00001000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 34.
+        else if (raw_buffer < 8'sb00001000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 42.
+        else if (raw_buffer < 8'sb00001000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 43.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 217, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 217, column 20.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 219, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 219, column 20.
+        state <= ENSURE_BUSY_7;
+               |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 220, column 16.
+        state <= ERROR;
+                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 223, column 22.
+      default:  state <= ENSURE_BUSY_1;
+                                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 225, column 38.
+1
+rc:/> clear
+[3;J[H[2Jrc:/> source ./in/load_etc.tcl 
+Sourcing './in/load_etc.tcl' (Wed Nov 17 10:22:35 -0800 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing
+Freeing libraries in memory (slow_vdd1v0_basicCells.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 2
+  Found 'statetable' group in cell. [LBR-83]: 16
+  Created nominal operating condition. [LBR-412]: 1
+  *******************************************************
+ 
+  Setting attribute of root '/': 'library' = slow_vdd1v0_basicCells.lib
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ')', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+    led_o <= 9'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 118, column 5.
+    i2c_din_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 120, column 5.
+    i2c_command_byte_o <= 8'h0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 121, column 5.
+    i2c_slave_addr_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 122, column 5.
+    i2c_num_bytes_o <= 8'd0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 123, column 5.
+          i2c_din_o <= 8'b0;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 133, column 11.
+          i2c_command_byte_o <= wake_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 134, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 135, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 136, column 11.
+          i2c_command_byte_o <= accel_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 160, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 161, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 162, column 11.
+          led_o <= 9'd256;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 185, column 11.
+          led_o <= 9'd384;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 187, column 11.
+          led_o <= 9'd128;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 189, column 11.
+          led_o <= 9'd192;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 191, column 11.
+          led_o <= 9'd64;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 193, column 11.
+          led_o <= 9'd96;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 195, column 11.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 34.
+        else if (raw_buffer < 8'sb11111110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 42.
+        else if (raw_buffer < 8'sb11111110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 43.
+          led_o <= 9'd32;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 197, column 11.
+          led_o <= 9'd32;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 197, column 20.
+        else if (raw_buffer < 8'sb11111111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 29.
+        else if (raw_buffer < 8'sb11111111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 31.
+        else if (raw_buffer < 8'sb11111111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 34.
+        else if (raw_buffer < 8'sb11111111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 42.
+        else if (raw_buffer < 8'sb11111111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 43.
+          led_o <= 9'd48;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 199, column 11.
+          led_o <= 9'd48;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 199, column 20.
+        else if (raw_buffer < 8'sb00000000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 29.
+        else if (raw_buffer < 8'sb00000000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 31.
+        else if (raw_buffer < 8'sb00000000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 34.
+        else if (raw_buffer < 8'sb00000000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 42.
+        else if (raw_buffer < 8'sb00000000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 43.
+          led_o <= 9'd16;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 201, column 11.
+          led_o <= 9'd16;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 201, column 20.
+        else if (raw_buffer < 8'sb00000001)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 29.
+        else if (raw_buffer < 8'sb00000001)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 31.
+        else if (raw_buffer < 8'sb00000001)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 34.
+        else if (raw_buffer < 8'sb00000001)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 42.
+        else if (raw_buffer < 8'sb00000001)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 43.
+          led_o <= 9'd24;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 203, column 11.
+          led_o <= 9'd24;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 203, column 20.
+        else if (raw_buffer < 8'sb00000010)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 29.
+        else if (raw_buffer < 8'sb00000010)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 31.
+        else if (raw_buffer < 8'sb00000010)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 34.
+        else if (raw_buffer < 8'sb00000010)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 42.
+        else if (raw_buffer < 8'sb00000010)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 43.
+          led_o <= 9'd8;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 205, column 11.
+          led_o <= 9'd8;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 205, column 20.
+        else if (raw_buffer < 8'sb00000011)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 29.
+        else if (raw_buffer < 8'sb00000011)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 31.
+        else if (raw_buffer < 8'sb00000011)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 34.
+        else if (raw_buffer < 8'sb00000011)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 42.
+        else if (raw_buffer < 8'sb00000011)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 43.
+          led_o <= 9'd12;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 207, column 11.
+          led_o <= 9'd12;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 207, column 20.
+        else if (raw_buffer < 8'sb00000100)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 29.
+        else if (raw_buffer < 8'sb00000100)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 31.
+        else if (raw_buffer < 8'sb00000100)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 34.
+        else if (raw_buffer < 8'sb00000100)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 42.
+        else if (raw_buffer < 8'sb00000100)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 43.
+          led_o <= 9'd4;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 209, column 11.
+          led_o <= 9'd4;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 209, column 20.
+        else if (raw_buffer < 8'sb00000101)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 29.
+        else if (raw_buffer < 8'sb00000101)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 31.
+        else if (raw_buffer < 8'sb00000101)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 34.
+        else if (raw_buffer < 8'sb00000101)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 42.
+        else if (raw_buffer < 8'sb00000101)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 43.
+          led_o <= 9'd6;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 211, column 11.
+          led_o <= 9'd6;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 211, column 20.
+        else if (raw_buffer < 8'sb00000110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 29.
+        else if (raw_buffer < 8'sb00000110)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 31.
+        else if (raw_buffer < 8'sb00000110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 34.
+        else if (raw_buffer < 8'sb00000110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 42.
+        else if (raw_buffer < 8'sb00000110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 43.
+          led_o <= 9'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 213, column 11.
+          led_o <= 9'd2;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 213, column 20.
+        else if (raw_buffer < 8'sb00000111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 29.
+        else if (raw_buffer < 8'sb00000111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 31.
+        else if (raw_buffer < 8'sb00000111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 34.
+        else if (raw_buffer < 8'sb00000111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 42.
+        else if (raw_buffer < 8'sb00000111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 43.
+          led_o <= 9'd3;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 215, column 11.
+          led_o <= 9'd3;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 215, column 20.
+        else if (raw_buffer < 8'sb00001000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 29.
+        else if (raw_buffer < 8'sb00001000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 31.
+        else if (raw_buffer < 8'sb00001000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 34.
+        else if (raw_buffer < 8'sb00001000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 42.
+        else if (raw_buffer < 8'sb00001000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 43.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 217, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 217, column 20.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 219, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 219, column 20.
+        state <= ENSURE_BUSY_7;
+               |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 220, column 16.
+        state <= ERROR;
+                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 223, column 22.
+      default:  state <= ENSURE_BUSY_1;
+                                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 225, column 38.
+1
+rc:/> clear
+[3;J[H[2Jrc:/> clear
+[3;J[H[2Jrc:/> source ./in/load_etc.tcl 
+Sourcing './in/load_etc.tcl' (Wed Nov 17 10:22:46 -0800 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /CMC/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing
+Freeing libraries in memory (slow_vdd1v0_basicCells.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 2
+  Found 'statetable' group in cell. [LBR-83]: 16
+  Created nominal operating condition. [LBR-412]: 1
+  *******************************************************
+ 
+  Setting attribute of root '/': 'library' = slow_vdd1v0_basicCells.lib
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ')', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+  output wire         i2c_write_o,
+       |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'output' in file './in/level_fsm.sv' on line 75, column 8.
+    led_o <= 9'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 118, column 5.
+    i2c_din_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 120, column 5.
+    i2c_command_byte_o <= 8'h0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 121, column 5.
+    i2c_slave_addr_o <= 8'b0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 122, column 5.
+    i2c_num_bytes_o <= 8'd0;
+    |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 123, column 5.
+          i2c_din_o <= 8'b0;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_din_o' in file './in/level_fsm.sv' on line 133, column 11.
+          i2c_command_byte_o <= wake_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 134, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 135, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 136, column 11.
+          i2c_command_byte_o <= accel_register;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_command_byte_o' in file './in/level_fsm.sv' on line 160, column 11.
+          i2c_slave_addr_o <= slave_address;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_slave_addr_o' in file './in/level_fsm.sv' on line 161, column 11.
+          i2c_num_bytes_o <= 8'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'i2c_num_bytes_o' in file './in/level_fsm.sv' on line 162, column 11.
+          led_o <= 9'd256;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 185, column 11.
+          led_o <= 9'd384;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 187, column 11.
+          led_o <= 9'd128;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 189, column 11.
+          led_o <= 9'd192;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 191, column 11.
+          led_o <= 9'd64;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 193, column 11.
+          led_o <= 9'd96;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 195, column 11.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 29.
+        else if (raw_buffer < 8'sb11111110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 34.
+        else if (raw_buffer < 8'sb11111110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 42.
+        else if (raw_buffer < 8'sb11111110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 196, column 43.
+          led_o <= 9'd32;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 197, column 11.
+          led_o <= 9'd32;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 197, column 20.
+        else if (raw_buffer < 8'sb11111111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 29.
+        else if (raw_buffer < 8'sb11111111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 31.
+        else if (raw_buffer < 8'sb11111111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 34.
+        else if (raw_buffer < 8'sb11111111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 42.
+        else if (raw_buffer < 8'sb11111111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 198, column 43.
+          led_o <= 9'd48;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 199, column 11.
+          led_o <= 9'd48;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 199, column 20.
+        else if (raw_buffer < 8'sb00000000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 29.
+        else if (raw_buffer < 8'sb00000000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 31.
+        else if (raw_buffer < 8'sb00000000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 34.
+        else if (raw_buffer < 8'sb00000000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 42.
+        else if (raw_buffer < 8'sb00000000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 200, column 43.
+          led_o <= 9'd16;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 201, column 11.
+          led_o <= 9'd16;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 201, column 20.
+        else if (raw_buffer < 8'sb00000001)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 29.
+        else if (raw_buffer < 8'sb00000001)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 31.
+        else if (raw_buffer < 8'sb00000001)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 34.
+        else if (raw_buffer < 8'sb00000001)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 42.
+        else if (raw_buffer < 8'sb00000001)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 202, column 43.
+          led_o <= 9'd24;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 203, column 11.
+          led_o <= 9'd24;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 203, column 20.
+        else if (raw_buffer < 8'sb00000010)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 29.
+        else if (raw_buffer < 8'sb00000010)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 31.
+        else if (raw_buffer < 8'sb00000010)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 34.
+        else if (raw_buffer < 8'sb00000010)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 42.
+        else if (raw_buffer < 8'sb00000010)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 204, column 43.
+          led_o <= 9'd8;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 205, column 11.
+          led_o <= 9'd8;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 205, column 20.
+        else if (raw_buffer < 8'sb00000011)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 29.
+        else if (raw_buffer < 8'sb00000011)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 31.
+        else if (raw_buffer < 8'sb00000011)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 34.
+        else if (raw_buffer < 8'sb00000011)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 42.
+        else if (raw_buffer < 8'sb00000011)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 206, column 43.
+          led_o <= 9'd12;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 207, column 11.
+          led_o <= 9'd12;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 207, column 20.
+        else if (raw_buffer < 8'sb00000100)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 29.
+        else if (raw_buffer < 8'sb00000100)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 31.
+        else if (raw_buffer < 8'sb00000100)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 34.
+        else if (raw_buffer < 8'sb00000100)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 42.
+        else if (raw_buffer < 8'sb00000100)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 208, column 43.
+          led_o <= 9'd4;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 209, column 11.
+          led_o <= 9'd4;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 209, column 20.
+        else if (raw_buffer < 8'sb00000101)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 29.
+        else if (raw_buffer < 8'sb00000101)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 31.
+        else if (raw_buffer < 8'sb00000101)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 34.
+        else if (raw_buffer < 8'sb00000101)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 42.
+        else if (raw_buffer < 8'sb00000101)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 210, column 43.
+          led_o <= 9'd6;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 211, column 11.
+          led_o <= 9'd6;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 211, column 20.
+        else if (raw_buffer < 8'sb00000110)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 29.
+        else if (raw_buffer < 8'sb00000110)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 31.
+        else if (raw_buffer < 8'sb00000110)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 34.
+        else if (raw_buffer < 8'sb00000110)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 42.
+        else if (raw_buffer < 8'sb00000110)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 212, column 43.
+          led_o <= 9'd2;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 213, column 11.
+          led_o <= 9'd2;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 213, column 20.
+        else if (raw_buffer < 8'sb00000111)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 29.
+        else if (raw_buffer < 8'sb00000111)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 31.
+        else if (raw_buffer < 8'sb00000111)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 34.
+        else if (raw_buffer < 8'sb00000111)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 42.
+        else if (raw_buffer < 8'sb00000111)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 214, column 43.
+          led_o <= 9'd3;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 215, column 11.
+          led_o <= 9'd3;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 215, column 20.
+        else if (raw_buffer < 8'sb00001000)
+                            |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 29.
+        else if (raw_buffer < 8'sb00001000)
+                              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 31.
+        else if (raw_buffer < 8'sb00001000)
+                                 |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 34.
+        else if (raw_buffer < 8'sb00001000)
+                                         |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 42.
+        else if (raw_buffer < 8'sb00001000)
+                                          |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 216, column 43.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 217, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 217, column 20.
+          led_o <= 9'd1;
+          |
+Error   : Reference to undeclared variable. [VLOGPT-20] [read_hdl]
+        : Symbol 'led_o' in file './in/level_fsm.sv' on line 219, column 11.
+          led_o <= 9'd1;
+                   |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found 'number' in file './in/level_fsm.sv' on line 219, column 20.
+        state <= ENSURE_BUSY_7;
+               |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting a statement in file './in/level_fsm.sv' on line 220, column 16.
+        state <= ERROR;
+                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 223, column 22.
+      default:  state <= ENSURE_BUSY_1;
+                                     |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Expecting token ';', found '<identifier>' in file './in/level_fsm.sv' on line 225, column 38.
+1
+rc:/> exit
+Normal exit.

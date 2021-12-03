@@ -1,0 +1,66 @@
+@(#)$CDS: ihdl version 6.1.8-64b 03/06/2019 02:40 (ip-172-18-22-58) $  Fri Dec  3 00:37:51 2021
+
+INFO (VERILOGIN-589): Using xmvlog binary for compilation.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFFHQX1. Therefore using library
+gsclib045, cell DFFHQX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFFQXL. Therefore using library
+gsclib045, cell DFFQXL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OR4X1. Therefore using library
+gsclib045, cell OR4X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI2BB1X1. Therefore using library
+gsclib045, cell OAI2BB1X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2X1. Therefore using library
+gsclib045, cell NOR2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND4XL. Therefore using library
+gsclib045, cell NAND4XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI33XL. Therefore using library
+gsclib045, cell AOI33XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI21X1. Therefore using library
+gsclib045, cell OAI21X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI31X1. Therefore using library
+gsclib045, cell OAI31X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND3BXL. Therefore using library
+gsclib045, cell NAND3BXL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2X1. Therefore using library
+gsclib045, cell NAND2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND3X1. Therefore using library
+gsclib045, cell NAND3X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI22X1. Therefore using library
+gsclib045, cell AOI22X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OR3XL. Therefore using library
+gsclib045, cell OR3XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI211X1. Therefore using library
+gsclib045, cell OAI211X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2BX1. Therefore using library
+gsclib045, cell NAND2BX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI32X1. Therefore using library
+gsclib045, cell AOI32X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI211XL. Therefore using library
+gsclib045, cell AOI211XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX1. Therefore using library
+gsclib045, cell INVX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2BX1. Therefore using library
+gsclib045, cell NOR2BX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI33X1. Therefore using library
+gsclib045, cell OAI33X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI21X1. Therefore using library
+gsclib045, cell AOI21X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AND4X1. Therefore using library
+gsclib045, cell AND4X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AND2X1. Therefore using library
+gsclib045, cell AND2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2XL. Therefore using library
+gsclib045, cell NAND2XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR3XL. Therefore using library
+gsclib045, cell NOR3XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR3X1. Therefore using library
+gsclib045, cell NOR3X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2XL. Therefore using library
+gsclib045, cell NOR2XL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVXL. Therefore using library
+gsclib045, cell INVXL, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module TIELO. Therefore using library
+gsclib045, cell TIELO, and view symbol as the symbol.
+INFO (VERILOGIN-357): Checked in symbol level_fsm.
+INFO (VERILOGIN-372): Checked-in schematic level_fsm.
+INFO (VERILOGIN-206): End of Logfile.

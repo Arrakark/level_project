@@ -1,0 +1,4 @@
+INCLUDE tech.lib
+DEFINE level_fsm_pnr /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2/level_fsm_pnr
+DEFINE avTech /CMC/tools/cadence/ASSURA04.16.102-618_lnx86/tools.lnx86/assura/etc/avtech/avTech
+DEFINE level_fsm_schematic /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2/level_fsm_schematic

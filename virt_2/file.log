@@ -1,0 +1,520 @@
+\# Program start time:     UTC 2021.12.03 08:06:54.072
+\# Local time: PST (UTC-08:00) 2021.12.03 00:06:54.072
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 03/06/2019 04:04 (ip-172-18-22-55) $
+\o Hierarchy:		/ubc/ece/data/cmc2/tools/cadence/IC06.18.020_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.2  (64-bit addresses)
+\# Command line:	/CMC/tools/cadence/IC06.18.020_lnx86/tools/dfII/bin/64bit/virtuoso -log file.log
+\# Host name (type):	ssh-soc.ece.ubc.ca (x86_64)
+\# Operating system:	Linux 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:59.0 (2560x1375)
+\# Available geometry:			TL(0:31) BR(2559:1374)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 70000000)
+\# X resource pool:	base 0x1e00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        506 MB
+\# Available memory:	      4,577 MB
+\# System memory:	     66,458 MB
+\# Maximum memory size:	     66,194 MB
+\# Max mem available:	      4,818 MB
+\# Initial memory used:	        242 MB
+\#        process size:	      1,531 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 12.00/12.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		l9w0b
+\o Working Directory:	ssh-soc.ece.ubc.ca:/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2
+\# Process Id:		67707
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Memory report: using         406 MB, process size 1,712 MB at UTC 2021.12.03 08:06:55.810
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.60s.
+\o // 
+\o // 
+\o //          The Cadence GPDK045 
+\o //          45nm CMOS 11M/2P Generic PDK 
+\o //            gpdk045   v6.0: The Virtuoso technology library 
+\o //            gsclib045 v4.4: The multi-Vt standard cell library set 
+\o //            giolib045 v3.3: The IO and bondpad cells library 
+\o // 
+\o // 
+\o END OF SKILL CUSTOMIZATION
+\o END OF Cadence BINDKEY CUSTOMIZATION
+\o END OF USER CUSTOMIZATION
+\o //
+\o //  Calibre Skill Interface * (v2019.1_37.21) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\# Available memory:          4,495 MB at UTC 2021.12.03 08:07:04.199
+\# Memory report: Maximum memory size now 4,970 MB at UTC 2021.12.03 08:07:04.199
+\# Thread usage report: 15 active threads, active load 1.00 at UTC 2021.12.03 08:07:04.199
+\o END OF Calibre CUSTOMIZATION
+\p > 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\a _treeSetOpcGUI(t)
+\r t
+\a ddsOpenLibManager()
+\r t
+\o  
+\o Library Manager created library "level_fsm_pnr"
+\p > 
+\a hiiSetCurrentForm('ddsTechOptionForm)
+\r t
+\a ddsTechOptionForm->Option->value="Attach to an existing technology library"
+\r "Attach to an existing technology library"
+\# Memory report: Maximum memory size now 4,870 MB at UTC 2021.12.03 08:07:34.000
+\a hiFormDone(ddsTechOptionForm)
+\i tcNewLibDisplayAttachTechForm("level_fsm_pnr")
+\p > 
+\a hiiSetCurrentForm('tcNewLibAttachTechForm)
+\r t
+\a tcNewLibAttachTechForm->attachTechLibList->value= '( "gpdk045" )
+\r ("gpdk045")
+\a hiFormDone(tcNewLibAttachTechForm)
+\o Loading gpdk045/libInit.il ...
+\o 	Loading gpdk045/loadCxt.ile ... done!
+\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+\o 	Loading gpdk045/gpdk045_customFilter.il ... done!
+\o 	Loading gpdk045/libInitCustomExit.il ... 
+\o 	Loading Environment Settings ...
+\o 	Loading Model Management File ...
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\# Memory report: using         512 MB, process size 1,830 MB at UTC 2021.12.03 08:07:58.114
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\# Memory report: Maximum memory size now 4,984 MB at UTC 2021.12.03 08:07:59.149
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o Loading lx.cxt 
+\o Loading lce.cxt 
+\o Loading le.cxt 
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading rte.cxt 
+\o Loading te.cxt 
+\o Loading schHDL.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\# Memory report: using         614 MB, process size 2,009 MB at UTC 2021.12.03 08:08:04.398
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 45nm PDK                       *           
+\o   *                        (gpdk045)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	VERSION: 5.0 (22-Feb-2016)
+\o 
+\o done!
+\o Loaded gpdk045/libInit.il successfully!
+\o INFO (TECH-180011): Design library 'level_fsm_pnr' successfully attached to technology library 'gpdk045'.
+\r t
+\r t
+\# Memory report: Maximum memory size now 4,859 MB at UTC 2021.12.03 08:08:39.001
+\a pipoDisplay(transStreamInNewForm)
+\r t
+\# Available memory:          4,043 MB at UTC 2021.12.03 08:08:59.004
+\# Memory report: Maximum memory size now 4,671 MB at UTC 2021.12.03 08:08:59.004
+\a _xst_in_setGuiFieldValue( "strmFile" "../place-n-route/level_fsm.gds" "1" )
+\r t
+\a _xst_in_setGuiFieldValue( "library" "level_fsm_pnr" )
+\r t
+\a _xst_in_setGuiFieldValue( "topCell" "level_fsm" )
+\r t
+\# Memory report: Maximum memory size now 4,356 MB at UTC 2021.12.03 08:09:19.000
+\a _xst_in_setGuiFieldValue( "attachTechFileOfLib" "gpdk045" )
+\r t
+\# Available memory:          3,562 MB at UTC 2021.12.03 08:09:29.000
+\# Memory report: Maximum memory size now 4,200 MB at UTC 2021.12.03 08:09:29.000
+\a _xst_in_setGuiFieldValue( "layerMap" "../../../../../../../data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/gpdk045.layermap" "1" )
+\r t
+\# Memory report: Maximum memory size now 4,341 MB at UTC 2021.12.03 08:09:59.002
+\# Memory report: Maximum memory size now 4,225 MB at UTC 2021.12.03 08:10:09.000
+\a _xst_in_mainFormOk(  )
+\r t
+\a _xst_in_mainFormDoTranslate(  )
+\r t
+\o INFO (XSTRM-222): strmin -library 'level_fsm_pnr' -strmFile '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.gds' -attachTechFileOfLib 'gpdk045' -topCell 'level_fsm' -logFile 'strmIn.log' -layerMap '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/gpdk045.layermap'
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.62s.
+\o ********************************************************************************
+\o Product   : Virtuoso(R) XStream In
+\o Program   : @(#)$CDS: strmin version 6.1.8-64b 03/06/2019 02:37 (ip-172-18-22-55) $
+\o           : sub-version  IC6.1.8-64b.500.2 
+\o Started at: 03-Dec-2021  00:10:21
+\o User Name : l9w0b
+\o Host Name : ssh-soc.ece.ubc.ca
+\o Directory : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2
+\o CADENCE Design Systems, Inc.
+\o ********************************************************************************
+\o Info: Cellview Rev Num:99,  Tech Rev Num:59
+\o 
+\o Loading gpdk045/libInit.il ...
+\o 	Loading gpdk045/loadCxt.ile ... done!
+\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+\o 	Loading gpdk045/gpdk045_customFilter.il ... done!
+\o 	Loading gpdk045/libInitCustomExit.il ... 
+\o 	Loading Environment Settings ...
+\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 45nm PDK                       *           
+\o   *                        (gpdk045)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	VERSION: 5.0 (22-Feb-2016)
+\o 
+\o done!
+\o Loaded gpdk045/libInit.il successfully!
+\o WARNING (XSTRM-75): Target library 'level_fsm_pnr' is attached to the technology library 'gpdk045'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+\o WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+\o INFO (XSTRM-217): Reading the layer map file, /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/gpdk045.layermap
+\o INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+\o 
+\o Summary of Options:
+\o 	library				level_fsm_pnr
+\o 	strmFile			/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.gds
+\o 	logFile				strmIn.log
+\o 	topCell				level_fsm
+\o 	view				layout
+\o 	case				Preserve
+\o 	layerMap			/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/gpdk045.layermap
+\o 	propSeparator			,
+\o 	attachTechFileOfLib				gpdk045
+\o 
+\o INFO (XSTRM-220): 1. Translating STRUCTURE DFFHQX1 as cellView level_fsm_pnr/DFFHQX1/layout.
+\o INFO (XSTRM-220): 2. Translating STRUCTURE DFFQXL as cellView level_fsm_pnr/DFFQXL/layout.
+\o INFO (XSTRM-220): 3. Translating STRUCTURE OR4X1 as cellView level_fsm_pnr/OR4X1/layout.
+\o INFO (XSTRM-220): 4. Translating STRUCTURE OAI2BB1X1 as cellView level_fsm_pnr/OAI2BB1X1/layout.
+\o INFO (XSTRM-220): 5. Translating STRUCTURE NOR2X1 as cellView level_fsm_pnr/NOR2X1/layout.
+\o INFO (XSTRM-220): 6. Translating STRUCTURE NAND4XL as cellView level_fsm_pnr/NAND4XL/layout.
+\o INFO (XSTRM-220): 7. Translating STRUCTURE AOI33XL as cellView level_fsm_pnr/AOI33XL/layout.
+\o INFO (XSTRM-220): 8. Translating STRUCTURE OAI21X1 as cellView level_fsm_pnr/OAI21X1/layout.
+\o INFO (XSTRM-220): 9. Translating STRUCTURE OAI31X1 as cellView level_fsm_pnr/OAI31X1/layout.
+\o INFO (XSTRM-220): 10. Translating STRUCTURE NAND3BXL as cellView level_fsm_pnr/NAND3BXL/layout.
+\o INFO (XSTRM-220): 11. Translating STRUCTURE NAND2X1 as cellView level_fsm_pnr/NAND2X1/layout.
+\o INFO (XSTRM-220): 12. Translating STRUCTURE NAND3X1 as cellView level_fsm_pnr/NAND3X1/layout.
+\o INFO (XSTRM-220): 13. Translating STRUCTURE AOI22X1 as cellView level_fsm_pnr/AOI22X1/layout.
+\o INFO (XSTRM-220): 14. Translating STRUCTURE OR3XL as cellView level_fsm_pnr/OR3XL/layout.
+\o INFO (XSTRM-220): 15. Translating STRUCTURE OAI211X1 as cellView level_fsm_pnr/OAI211X1/layout.
+\o INFO (XSTRM-220): 16. Translating STRUCTURE NAND2BX1 as cellView level_fsm_pnr/NAND2BX1/layout.
+\o INFO (XSTRM-220): 17. Translating STRUCTURE AOI32X1 as cellView level_fsm_pnr/AOI32X1/layout.
+\o INFO (XSTRM-220): 18. Translating STRUCTURE AOI211XL as cellView level_fsm_pnr/AOI211XL/layout.
+\o INFO (XSTRM-220): 19. Translating STRUCTURE INVX1 as cellView level_fsm_pnr/INVX1/layout.
+\o INFO (XSTRM-220): 20. Translating STRUCTURE NOR2BX1 as cellView level_fsm_pnr/NOR2BX1/layout.
+\o INFO (XSTRM-220): 21. Translating STRUCTURE OAI33X1 as cellView level_fsm_pnr/OAI33X1/layout.
+\o INFO (XSTRM-220): 22. Translating STRUCTURE AOI21X1 as cellView level_fsm_pnr/AOI21X1/layout.
+\o INFO (XSTRM-220): 23. Translating STRUCTURE AND4X1 as cellView level_fsm_pnr/AND4X1/layout.
+\o INFO (XSTRM-220): 24. Translating STRUCTURE AND2X1 as cellView level_fsm_pnr/AND2X1/layout.
+\o INFO (XSTRM-220): 25. Translating STRUCTURE NAND2XL as cellView level_fsm_pnr/NAND2XL/layout.
+\o INFO (XSTRM-220): 26. Translating STRUCTURE NOR3XL as cellView level_fsm_pnr/NOR3XL/layout.
+\o INFO (XSTRM-220): 27. Translating STRUCTURE NOR3X1 as cellView level_fsm_pnr/NOR3X1/layout.
+\o INFO (XSTRM-220): 28. Translating STRUCTURE NOR2XL as cellView level_fsm_pnr/NOR2XL/layout.
+\o INFO (XSTRM-220): 29. Translating STRUCTURE INVXL as cellView level_fsm_pnr/INVXL/layout.
+\o INFO (XSTRM-220): 30. Translating STRUCTURE TIELO as cellView level_fsm_pnr/TIELO/layout.
+\o INFO (XSTRM-220): 31. Translating STRUCTURE M4_M3_HV as cellView level_fsm_pnr/M4_M3_HV/layout.
+\o INFO (XSTRM-220): 32. Translating STRUCTURE M4_M3_M_EV as cellView level_fsm_pnr/M4_M3_M_EV/layout.
+\o INFO (XSTRM-220): 33. Translating STRUCTURE M5_M4_VH as cellView level_fsm_pnr/M5_M4_VH/layout.
+\o INFO (XSTRM-220): 34. Translating STRUCTURE M5_M4_VV as cellView level_fsm_pnr/M5_M4_VV/layout.
+\o INFO (XSTRM-220): 35. Translating STRUCTURE M5_M4_HH as cellView level_fsm_pnr/M5_M4_HH/layout.
+\o INFO (XSTRM-220): 36. Translating STRUCTURE M4_M3_HH as cellView level_fsm_pnr/M4_M3_HH/layout.
+\o INFO (XSTRM-220): 37. Translating STRUCTURE level_fsm as cellView level_fsm_pnr/level_fsm/layout.
+\o WARNING (XSTRM-36): The objects in the stream layer-datatype '108:0' are ignored. This is because the stream layer-datatype pair is not specified in the layer map file. Specify the stream layer-datatype pair in the layer map file and try again.
+\o WARNING (XSTRM-36): The objects in the stream layer-datatype '127:0' are ignored. This is because the stream layer-datatype pair is not specified in the layer map file. Specify the stream layer-datatype pair in the layer map file and try again.
+\o 
+\o Summary of Objects Translated:
+\o 	Instances:                              241
+\o 	CustomVias:                             0
+\o 	StandardVias:                           940
+\o 	CdsGenVias:                             0
+\o 	Arrays:                                 0
+\o 	Polygons:                               258
+\o 	Paths:                                  1237
+\o 	PathSegs:                               0
+\o 	Rectangles:                             1573
+\o 	Text:                                   388
+\o 	Node:                                   0
+\o 	Line:                                   0
+\o 	Cells:                                  37
+\o 
+\o Elapsed Time: 6.1s   User Time: 0.3s   CPU Time: 0.2s   Peak VM: 78560KB
+\o INFO (XSTRM-234): Translation completed. '0' error(s) and '4' warning(s) found.
+\o strmin completed.
+\i ddsServOpen("level_fsm_pnr" "level_fsm" "" "edit" nil)
+\p > 
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a hiFormDone(deOpenForm)
+\r t
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p > 
+\# Thread usage report: 13 active threads, active load 1.00 at UTC 2021.12.03 08:10:38.423
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p > 
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\o Loading drdEdit.cxt 
+\o Loading soi.cxt 
+\o Loading wsp.cxt 
+\o Load shared object file /CMC/tools/cadence/ASSURA04.16.102-618_lnx86/tools.lnx86/assura/lib/64bit/libavview.so
+\o Version:  @(#)$CDS: libavview.so version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.1 04/18/19 11:03 (ip-172-18-22-202) $
+\o *INFO* avTech library doesn't exist.
+\o *INFO* The default avTech will be added to list of libraries
+\o *INFO* avTech library /CMC/tools/cadence/ASSURA04.16.102-618_lnx86/tools.lnx86/assura/etc/avtech/avTech was added successfully
+\o Loading mpt.cxt 
+\o Loading vb.cxt 
+\o Loading see.cxt 
+\o Loading oi.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading nt.cxt 
+\o Loading asst.cxt 
+\o Loading simui.cxt 
+\o Loading hsm.cxt 
+\o Loading ia.cxt 
+\o Loading vca.cxt 
+\o Loading atd.cxt 
+\a when(dwindow('ptePaletteAssistant1) hiMapWindow(dwindow('ptePaletteAssistant1)))
+\r t
+\a hiResizeWindow(swindow(1) list(-3:-3 2557:1312))
+\r t
+\a hiZoomInAtMouse()
+\i 17.64:12.41
+\r t
+\a hiZoomInAtMouse()
+\i 17.64:12.41
+\r t
+\a hiZoomOutAtMouse()
+\i 36.22:8.65
+\r t
+\a hiZoomOutAtMouse()
+\i 36.22:8.64
+\r t
+\a hiZoomInAtMouse()
+\i 12.16:16.25
+\r t
+\a hiZoomInAtMouse()
+\i 12.16:16.25
+\r t
+\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
+\r 31
+\a hiZoomInAtMouse()
+\i 9.21:13.51
+\r t
+\a hiZoomInAtMouse()
+\i 9.14:13.1
+\r t
+\a hiZoomOutAtMouse()
+\i 9.14:13.09
+\r t
+\a hiZoomOutAtMouse()
+\i 9.14:13.09
+\r t
+\a hiZoomOutAtMouse()
+\i 9.14:13.08
+\r t
+\a hiZoomInAtMouse()
+\i 22.21:24.08
+\r t
+\a hiZoomInAtMouse()
+\i 6.65:24.01
+\r t
+\a hiZoomInAtMouse()
+\i 5.07:23.69
+\r t
+\a hiZoomInAtMouse()
+\i 5.47:23.48
+\r t
+\a hiZoomOutAtMouse()
+\i 7.44:23.38
+\r t
+\a hiZoomInAtMouse()
+\i 6.13:23.16
+\r t
+\a hiZoomOutAtMouse()
+\i 6.43:23.25
+\r t
+\a hiZoomOutAtMouse()
+\i 6.42:23.25
+\r t
+\a hiZoomOutAtMouse()
+\i 6.42:23.25
+\r t
+\a hiZoomOutAtMouse()
+\i 3.51:26.36
+\r t
+\a hiZoomOutAtMouse()
+\i 3.51:26.37
+\r t
+\a hiZoomInAtMouse()
+\i 20.74:15.78
+\r t
+\a hiZoomInAtMouse()
+\i 34.23:14.35
+\r t
+\a hiZoomInAtMouse()
+\i 34.2:14.34
+\r t
+\a hiZoomInAtMouse()
+\i 34.2:14.34
+\r t
+\a hiZoomOutAtMouse()
+\i 33.63:14.7
+\r t
+\a hiZoomOutAtMouse()
+\i 33.64:14.67
+\r t
+\a hiZoomOutAtMouse()
+\i 33.64:14.67
+\r t
+\a pteShowUsedLPP(t)
+\r t
+\a pteShowUsedLPP(nil)
+\r t
+\a pteShowUsedLPP(t)
+\r t
+\a _deUpdateWindowMenu('leSessionWindowMenu2 2)
+\r t
+\a _deUpdateWindowMenu('leSessionWindowMenu2 2)
+\r t
+\a ivHiDRC()
+\o Loading layerProc.cxt 
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\# Displaying modal dbox "ivDBox", title " "
+\w *WARNING* Failed to find DRC rules divaDRC.rul
+\w in library gpdk045.
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\r t
+\a impHdlDisplay(impHdlOptionsFormMain)
+\r t
+\a hiiSetCurrentForm('impHdlOptionsFormMain)
+\r t
+\a _ihdlBrowseForFile(impHdlOptionsForm 'impHdlVerDesignField "Verilog Files To Import" 'existingFiles "VerilogFiles (*.v);;All Files (*)")
+\p > 
+\# Available memory:          5,838 MB at UTC 2021.12.03 08:12:41.258
+\# Memory report: Maximum memory size now 6,544 MB at UTC 2021.12.03 08:12:41.259
+\a (hiFileDialogSetSelection ihdlFileBrowse '("/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route" ( "level_fsm.v")) 'done)
+\r t
+\a (hiFileDialogDone ihdlFileBrowse t)
+\r t
+\r (("/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route" "level_fsm.v"))
+\a ihdlBrowseLibrary()
+\r t
+\# Memory report: Maximum memory size now 6,687 MB at UTC 2021.12.03 08:13:01.000
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page1->impHdlTargetLibField->value="level_fsm_schematic"
+\r "level_fsm_schematic"
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page1->impHdlRefLibField->value="gsclib045 sample basic"
+\r "gsclib045 sample basic"
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page1->vinAddImportOptDisclosure->value= t
+\r t
+\# Memory report: Maximum memory size now 6,942 MB at UTC 2021.12.03 08:13:21.002
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->value=2
+\r 2
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->vinGlobalNetsDisclosure->value= t
+\r t
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->impHdlConnectGroundNetByNameField->value= t
+\r t
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->impHdlConnectPowerNetByNameField->value= t
+\r t
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->impHdlGroundNetField->value="VSS!"
+\r "VSS!"
+\a hiFormDone(impHdlOptionsFormMain)
+\o INFO (VERILOGIN_GUI-13): Verilog Import process has started ...
+\r t
+\o ERROR (VERILOGIN-540): visadev load failed
+\o INFO (VERILOGIN_GUI-15): Verilog Import completed. Look at logfile, ./verilogIn.log, for process execution details.
+\# Displaying modal dbox "sgChkLog2", title " VerilogIn "
+\p > 
+\a hiDBoxOK(sgChkLog2)
+\r t
+\a hiResizeWindow(swindow(1) list(117:214 1017:904))
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a _deUpdateMenu('maskLayoutTools 2)
+\r t
+\a hiCloseWindow(swindow(1))
+\r t
+\a _hiSetCurrentWinNum(3)
+\r t
+\a hiCloseWindow(window(3))
+\r t
+\a hiQuit()
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o 
+\# Memory report: on exit            705 MB, process size 2,117 MB at UTC 2021.12.03 08:14:37.934
+\# Memory report: peak usage         705 MB, process size 2,132 MB

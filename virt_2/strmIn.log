@@ -1,0 +1,85 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.8-64b 03/06/2019 02:37 (ip-172-18-22-55) $
+          : sub-version  IC6.1.8-64b.500.2 
+Started at: 03-Dec-2021  00:10:21
+User Name : l9w0b
+Host Name : ssh-soc.ece.ubc.ca
+Directory : /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'level_fsm_pnr' is attached to the technology library 'gpdk045'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/gpdk045.layermap
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				level_fsm_pnr
+	strmFile			/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.gds
+	logFile				strmIn.log
+	topCell				level_fsm
+	view				layout
+	case				Preserve
+	layerMap			/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/gpdk045.layermap
+	propSeparator			,
+	attachTechFileOfLib				gpdk045
+
+INFO (XSTRM-220): 1. Translating STRUCTURE DFFHQX1 as cellView level_fsm_pnr/DFFHQX1/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE DFFQXL as cellView level_fsm_pnr/DFFQXL/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE OR4X1 as cellView level_fsm_pnr/OR4X1/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE OAI2BB1X1 as cellView level_fsm_pnr/OAI2BB1X1/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE NOR2X1 as cellView level_fsm_pnr/NOR2X1/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE NAND4XL as cellView level_fsm_pnr/NAND4XL/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE AOI33XL as cellView level_fsm_pnr/AOI33XL/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE OAI21X1 as cellView level_fsm_pnr/OAI21X1/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE OAI31X1 as cellView level_fsm_pnr/OAI31X1/layout.
+INFO (XSTRM-220): 10. Translating STRUCTURE NAND3BXL as cellView level_fsm_pnr/NAND3BXL/layout.
+INFO (XSTRM-220): 11. Translating STRUCTURE NAND2X1 as cellView level_fsm_pnr/NAND2X1/layout.
+INFO (XSTRM-220): 12. Translating STRUCTURE NAND3X1 as cellView level_fsm_pnr/NAND3X1/layout.
+INFO (XSTRM-220): 13. Translating STRUCTURE AOI22X1 as cellView level_fsm_pnr/AOI22X1/layout.
+INFO (XSTRM-220): 14. Translating STRUCTURE OR3XL as cellView level_fsm_pnr/OR3XL/layout.
+INFO (XSTRM-220): 15. Translating STRUCTURE OAI211X1 as cellView level_fsm_pnr/OAI211X1/layout.
+INFO (XSTRM-220): 16. Translating STRUCTURE NAND2BX1 as cellView level_fsm_pnr/NAND2BX1/layout.
+INFO (XSTRM-220): 17. Translating STRUCTURE AOI32X1 as cellView level_fsm_pnr/AOI32X1/layout.
+INFO (XSTRM-220): 18. Translating STRUCTURE AOI211XL as cellView level_fsm_pnr/AOI211XL/layout.
+INFO (XSTRM-220): 19. Translating STRUCTURE INVX1 as cellView level_fsm_pnr/INVX1/layout.
+INFO (XSTRM-220): 20. Translating STRUCTURE NOR2BX1 as cellView level_fsm_pnr/NOR2BX1/layout.
+INFO (XSTRM-220): 21. Translating STRUCTURE OAI33X1 as cellView level_fsm_pnr/OAI33X1/layout.
+INFO (XSTRM-220): 22. Translating STRUCTURE AOI21X1 as cellView level_fsm_pnr/AOI21X1/layout.
+INFO (XSTRM-220): 23. Translating STRUCTURE AND4X1 as cellView level_fsm_pnr/AND4X1/layout.
+INFO (XSTRM-220): 24. Translating STRUCTURE AND2X1 as cellView level_fsm_pnr/AND2X1/layout.
+INFO (XSTRM-220): 25. Translating STRUCTURE NAND2XL as cellView level_fsm_pnr/NAND2XL/layout.
+INFO (XSTRM-220): 26. Translating STRUCTURE NOR3XL as cellView level_fsm_pnr/NOR3XL/layout.
+INFO (XSTRM-220): 27. Translating STRUCTURE NOR3X1 as cellView level_fsm_pnr/NOR3X1/layout.
+INFO (XSTRM-220): 28. Translating STRUCTURE NOR2XL as cellView level_fsm_pnr/NOR2XL/layout.
+INFO (XSTRM-220): 29. Translating STRUCTURE INVXL as cellView level_fsm_pnr/INVXL/layout.
+INFO (XSTRM-220): 30. Translating STRUCTURE TIELO as cellView level_fsm_pnr/TIELO/layout.
+INFO (XSTRM-220): 31. Translating STRUCTURE M4_M3_HV as cellView level_fsm_pnr/M4_M3_HV/layout.
+INFO (XSTRM-220): 32. Translating STRUCTURE M4_M3_M_EV as cellView level_fsm_pnr/M4_M3_M_EV/layout.
+INFO (XSTRM-220): 33. Translating STRUCTURE M5_M4_VH as cellView level_fsm_pnr/M5_M4_VH/layout.
+INFO (XSTRM-220): 34. Translating STRUCTURE M5_M4_VV as cellView level_fsm_pnr/M5_M4_VV/layout.
+INFO (XSTRM-220): 35. Translating STRUCTURE M5_M4_HH as cellView level_fsm_pnr/M5_M4_HH/layout.
+INFO (XSTRM-220): 36. Translating STRUCTURE M4_M3_HH as cellView level_fsm_pnr/M4_M3_HH/layout.
+INFO (XSTRM-220): 37. Translating STRUCTURE level_fsm as cellView level_fsm_pnr/level_fsm/layout.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '108:0' are ignored. This is because the stream layer-datatype pair is not specified in the layer map file. Specify the stream layer-datatype pair in the layer map file and try again.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '127:0' are ignored. This is because the stream layer-datatype pair is not specified in the layer map file. Specify the stream layer-datatype pair in the layer map file and try again.
+
+Summary of Objects Translated:
+	Instances:                              241
+	CustomVias:                             0
+	StandardVias:                           940
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               258
+	Paths:                                  1237
+	PathSegs:                               0
+	Rectangles:                             1573
+	Text:                                   388
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  37
+
+Elapsed Time: 6.1s   User Time: 0.3s   CPU Time: 0.2s   Peak VM: 78560KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '4' warning(s) found.

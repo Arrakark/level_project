@@ -1,0 +1,42 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 03/12/2021 04:24 (sjfdcl1035) $
+\o Sub version:		sub-version  s175 
+\o Arguments:		-mpssession virtuoso58142 -mpshost ssh-soc.ece.ubc.ca 
+\o Working Directory:	ssh-soc.ece.ubc.ca:/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/Verilog
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/Verilog/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(115 92 1644 845))
+\o changeWorkingDir("/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/Verilog") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\w Warning: The directory: '/ubc/ece/data/cmc2/tools/cadence/IC06.16.090_lnx86/tools/dfII/etc/cdsDefTechLib' does not exist
+\w 	but was defined in libFile '/ubc/ece/home/ugrads/l/l9w0b/cds.lib' for Lib 'cdsDefTechLib'.
+\w Warning: The directory: '/ubc/ece/data/cmc2/tools/cadence/IC06.16.090_lnx86/tools/dfII/etc/cdslib/basic' does not exist
+\w 	but was defined in libFile '/ubc/ece/home/ugrads/l/l9w0b/cds.lib' for Lib 'basic'.
+\w Warning: The directory: '/ubc/ece/data/cmc2/tools/cadence/IC06.16.090_lnx86/tools/dfII/etc/cdslib/sheets/US_8ths' does not exist
+\w 	but was defined in libFile '/ubc/ece/home/ugrads/l/l9w0b/cds.lib' for Lib 'US_8ths'.
+\w Warning: The directory: '/ubc/ece/data/cmc2/tools/cadence/IC06.16.090_lnx86/tools/dfII/etc/cdslib/artist/analogLib' does not exist
+\w 	but was defined in libFile '/ubc/ece/home/ugrads/l/l9w0b/cds.lib' for Lib 'analogLib'.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

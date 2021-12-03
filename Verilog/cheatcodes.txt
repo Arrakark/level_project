@@ -1,0 +1,4 @@
+source /CMC/kits/AMSKIT616_GPDK/underg_install.csh
+source setup_local.csh
+virtuoso -l mylog.log &
+

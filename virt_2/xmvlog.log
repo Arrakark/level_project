@@ -1,0 +1,20 @@
+xmvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+TOOL:	xmvlog(64)	19.09-s008: Started on Dec 03, 2021 at 00:37:54 PST
+xmvlog
+    -use5x
+    -work __nclib
+    -view module
+    -logfile xmvlog.log
+    -cdslib /tmp/ihdl_cdslibb3487_113487
+    -messages
+    -nostdout
+    -nocopyright
+    -ESCAPEDNAME
+    /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.v
+
+file: /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.v
+	module __nclib.level_fsm:module
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xmvlog(64)	19.09-s008: Exiting on Dec 03, 2021 at 00:37:54 PST  (total: 00:00:00)

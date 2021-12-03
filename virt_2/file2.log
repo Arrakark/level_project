@@ -1,0 +1,6547 @@
+\# Program start time:     UTC 2021.12.03 08:15:19.718
+\# Local time: PST (UTC-08:00) 2021.12.03 00:15:19.718
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 03/06/2019 04:04 (ip-172-18-22-55) $
+\o Hierarchy:		/ubc/ece/data/cmc2/tools/cadence/IC06.18.020_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.2  (64-bit addresses)
+\# Command line:	/CMC/tools/cadence/IC06.18.020_lnx86/tools/dfII/bin/64bit/virtuoso -log file2.log
+\# Host name (type):	ssh-soc.ece.ubc.ca (x86_64)
+\# Operating system:	Linux 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:59.0 (2560x1375)
+\# Available geometry:			TL(0:31) BR(2559:1374)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 70000000)
+\# X resource pool:	base 0x1e00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        505 MB
+\# Available memory:	      6,532 MB
+\# System memory:	     66,458 MB
+\# Maximum memory size:	     66,194 MB
+\# Max mem available:	      6,773 MB
+\# Initial memory used:	        241 MB
+\#        process size:	      1,537 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 12.00/12.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		l9w0b
+\o Working Directory:	ssh-soc.ece.ubc.ca:/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2
+\# Process Id:		20883
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Memory report: using         405 MB, process size 1,719 MB at UTC 2021.12.03 08:15:21.561
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\# Available memory:          6,209 MB at UTC 2021.12.03 08:15:30.041
+\# Memory report: Maximum memory size now 6,663 MB at UTC 2021.12.03 08:15:30.041
+\# Thread usage report: 15 active threads, active load 1.00 at UTC 2021.12.03 08:15:30.041
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.60s.
+\o // 
+\o // 
+\o //          The Cadence GPDK045 
+\o //          45nm CMOS 11M/2P Generic PDK 
+\o //            gpdk045   v6.0: The Virtuoso technology library 
+\o //            gsclib045 v4.4: The multi-Vt standard cell library set 
+\o //            giolib045 v3.3: The IO and bondpad cells library 
+\o // 
+\o // 
+\o END OF SKILL CUSTOMIZATION
+\o END OF Cadence BINDKEY CUSTOMIZATION
+\o END OF USER CUSTOMIZATION
+\o //
+\o //  Calibre Skill Interface * (v2019.1_37.21) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o END OF Calibre CUSTOMIZATION
+\p > 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\a _treeSetOpcGUI(t)
+\r t
+\# Memory report: Maximum memory size now 6,405 MB at UTC 2021.12.03 08:15:40.000
+\# Memory report: Maximum memory size now 6,752 MB at UTC 2021.12.03 08:16:10.000
+\# Available memory:          5,601 MB at UTC 2021.12.03 08:16:40.000
+\# Memory report: Maximum memory size now 6,086 MB at UTC 2021.12.03 08:16:40.000
+\# Memory report: Maximum memory size now 5,882 MB at UTC 2021.12.03 08:16:50.003
+\# Available memory:          4,931 MB at UTC 2021.12.03 08:17:00.000
+\# Memory report: Maximum memory size now 5,417 MB at UTC 2021.12.03 08:17:00.000
+\# Memory report: Maximum memory size now 5,192 MB at UTC 2021.12.03 08:17:20.000
+\# Available memory:          4,128 MB at UTC 2021.12.03 08:17:30.000
+\# Memory report: Maximum memory size now 4,614 MB at UTC 2021.12.03 08:17:30.000
+\# Available memory:          3,592 MB at UTC 2021.12.03 08:17:40.003
+\# Memory report: Maximum memory size now 4,078 MB at UTC 2021.12.03 08:17:40.003
+\# Memory report: Maximum memory size now 3,992 MB at UTC 2021.12.03 08:17:50.000
+\# Memory report: Maximum memory size now 4,121 MB at UTC 2021.12.03 08:20:50.000
+\# Available memory:          4,068 MB at UTC 2021.12.03 08:21:20.000
+\# Memory report: Maximum memory size now 4,554 MB at UTC 2021.12.03 08:21:20.001
+\# Memory report: Maximum memory size now 4,840 MB at UTC 2021.12.03 08:21:30.001
+\# Memory report: Maximum memory size now 4,609 MB at UTC 2021.12.03 08:22:10.000
+\# Memory report: Maximum memory size now 4,755 MB at UTC 2021.12.03 08:22:40.000
+\# Memory report: Maximum memory size now 4,653 MB at UTC 2021.12.03 08:24:10.001
+\# Memory report: Maximum memory size now 4,554 MB at UTC 2021.12.03 08:24:30.000
+\# Memory report: Maximum memory size now 4,714 MB at UTC 2021.12.03 08:26:50.000
+\# Memory report: Maximum memory size now 4,589 MB at UTC 2021.12.03 08:27:10.000
+\# Memory report: Maximum memory size now 4,490 MB at UTC 2021.12.03 08:27:20.001
+\# Memory report: Maximum memory size now 4,394 MB at UTC 2021.12.03 08:29:00.001
+\# Memory report: Maximum memory size now 4,302 MB at UTC 2021.12.03 08:36:10.000
+\a ddsOpenLibManager()
+\r t
+\a impHdlDisplay(impHdlOptionsFormMain)
+\r t
+\a hiiSetCurrentForm('impHdlOptionsFormMain)
+\r t
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page1->vinAddImportOptDisclosure->value=t
+\r t
+\a hiiSetCurrentForm('impHdlOptionsFormMain)
+\r t
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->vinGlobalNetsDisclosure->value=t
+\r t
+\a _ihdlBrowseForFile(impHdlOptionsForm 'impHdlVerDesignField "Verilog Files To Import" 'existingFiles "VerilogFiles (*.v);;All Files (*)")
+\p > 
+\a (hiFileDialogSetSelection ihdlFileBrowse '("/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route" ( "level_fsm.v")) 'done)
+\r t
+\a (hiFileDialogDone ihdlFileBrowse t)
+\r t
+\r (("/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route" "level_fsm.v"))
+\a ihdlBrowseLibrary()
+\r t
+\i ddsServSelect("level_fsm_pnr" "" "")
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page1->impHdlTargetLibField->value="level_fsm_schematic"
+\r "level_fsm_schematic"
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page1->impHdlRefLibField->value="gsclib045 sample basic"
+\r "gsclib045 sample basic"
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->value=2
+\r 2
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->impHdlConnectPowerNetByNameField->value= t
+\r t
+\a impHdlOptionsFormMain->impHdlImportFileTabMain->page2->impHdlConnectGroundNetByNameField->value= t
+\r t
+\a hiFormDone(impHdlOptionsFormMain)
+\o INFO (VERILOGIN_GUI-13): Verilog Import process has started ...
+\r t
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFFHQX1. Therefore using library
+\o gsclib045, cell DFFHQX1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFFQXL. Therefore using library
+\o gsclib045, cell DFFQXL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OR4X1. Therefore using library
+\o gsclib045, cell OR4X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI2BB1X1. Therefore using library
+\o gsclib045, cell OAI2BB1X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2X1. Therefore using library
+\o gsclib045, cell NOR2X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND4XL. Therefore using library
+\o gsclib045, cell NAND4XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI33XL. Therefore using library
+\o gsclib045, cell AOI33XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI21X1. Therefore using library
+\o gsclib045, cell OAI21X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI31X1. Therefore using library
+\o gsclib045, cell OAI31X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND3BXL. Therefore using library
+\o gsclib045, cell NAND3BXL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2X1. Therefore using library
+\o gsclib045, cell NAND2X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND3X1. Therefore using library
+\o gsclib045, cell NAND3X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI22X1. Therefore using library
+\o gsclib045, cell AOI22X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OR3XL. Therefore using library
+\o gsclib045, cell OR3XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI211X1. Therefore using library
+\o gsclib045, cell OAI211X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2BX1. Therefore using library
+\o gsclib045, cell NAND2BX1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI32X1. Therefore using library
+\o gsclib045, cell AOI32X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI211XL. Therefore using library
+\o gsclib045, cell AOI211XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX1. Therefore using library
+\o gsclib045, cell INVX1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2BX1. Therefore using library
+\o gsclib045, cell NOR2BX1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module OAI33X1. Therefore using library
+\o gsclib045, cell OAI33X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AOI21X1. Therefore using library
+\o gsclib045, cell AOI21X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AND4X1. Therefore using library
+\o gsclib045, cell AND4X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module AND2X1. Therefore using library
+\o gsclib045, cell AND2X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2XL. Therefore using library
+\o gsclib045, cell NAND2XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR3XL. Therefore using library
+\o gsclib045, cell NOR3XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR3X1. Therefore using library
+\o gsclib045, cell NOR3X1, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2XL. Therefore using library
+\o gsclib045, cell NOR2XL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVXL. Therefore using library
+\o gsclib045, cell INVXL, and view symbol as the symbol.
+\o INFO (VERILOGIN-126): Unable to find the Verilog definition for module TIELO. Therefore using library
+\o gsclib045, cell TIELO, and view symbol as the symbol.
+\o INFO (VERILOGIN-383): Generated sheet 1 for schematic level_fsm.
+\o INFO (VERILOGIN_GUI-15): Verilog Import completed. Look at logfile, ./verilogIn.log, for process execution details.
+\# Displaying modal dbox "sgChkLog2", title " VerilogIn "
+\p > 
+\a hiDBoxOK(sgChkLog2)
+\r t
+\a hiResizeWindow(window(2) list(197:129 1032:629))
+\r t
+\i ddsServOpen("level_fsm_schematic" "level_fsm" "schematic" "edit" nil)
+\o Loading gpdk045/libInit.il ...
+\o 	Loading gpdk045/loadCxt.ile ... done!
+\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+\o 	Loading gpdk045/gpdk045_customFilter.il ... done!
+\o 	Loading gpdk045/libInitCustomExit.il ... 
+\o 	Loading Environment Settings ...
+\o 	Loading Model Management File ...
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\# Memory report: using         548 MB, process size 1,879 MB at UTC 2021.12.03 08:38:12.192
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o Loading lx.cxt 
+\o Loading lce.cxt 
+\o Loading le.cxt 
+\o Loading rte.cxt 
+\o Loading te.cxt 
+\o Loading schHDL.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 45nm PDK                       *           
+\o   *                        (gpdk045)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	VERSION: 5.0 (22-Feb-2016)
+\o 
+\o done!
+\o Loaded gpdk045/libInit.il successfully!
+\o function gsclib045_stretch redefined
+\o function gsclib045_round redefined
+\o function gsclib045_cellTmplCB redefined
+\o Loading schematic.cxt 
+\o Loading ddui.cxt 
+\o Loading vb.cxt 
+\o Loading nt.cxt 
+\o Loading oi.cxt 
+\o Loading see.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\o Loading simui.cxt 
+\o Loading drdEdit.cxt 
+\# Memory report: using         653 MB, process size 2,061 MB at UTC 2021.12.03 08:38:18.577
+\a _treeNavActivateOpc(dwindow('treeAssistant1) "")
+\r t
+\o Loading hsm.cxt 
+\a when(dwindow('oiAssistant1) hiMapWindow(dwindow('oiAssistant1)))
+\r t
+\a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
+\r t
+\# Memory report: Maximum memory size now 4,405 MB at UTC 2021.12.03 08:38:19.036
+\# Thread usage report: 13 active threads, active load 1.00 at UTC 2021.12.03 08:38:19.036
+\a hiResizeWindow(swindow(1) list(-3:-3 2557:1312))
+\r t
+\a geScroll(nil "n" nil)
+\r t
+\a geScroll(nil "n" nil)
+\r t
+\a hiZoomInAtMouse()
+\i 49:27.4375
+\r t
+\a hiZoomInAtMouse()
+\i 141.5625:81.125
+\r t
+\a hiZoomInAtMouse()
+\i 148.25:81.75
+\r t
+\a hiZoomInAtMouse()
+\i 162:89
+\r t
+\a hiZoomInAtMouse()
+\i 162:89
+\r t
+\a hiZoomInAtMouse()
+\i 161.125:89.3125
+\r t
+\a hiZoomInAtMouse()
+\i 161.125:89.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 161.4375:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 161.4375:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 161.375:89.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 161.4375:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 161.375:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 161.375:89.0625
+\r t
+\a hiZoomInAtMouse()
+\i -5.5:88.3125
+\r t
+\a hiZoomInAtMouse()
+\i -5.5625:88.3125
+\r t
+\a hiZoomInAtMouse()
+\i -5.5625:88.3125
+\r t
+\a hiZoomOutAtMouse()
+\i -0.375:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i -0.3125:89.0625
+\r t
+\a hiZoomInAtMouse()
+\i -0.375:89.125
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:89.125
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:89.125
+\r t
+\a hiZoomInAtMouse()
+\i 1.5:88.5625
+\r t
+\a hiZoomInAtMouse()
+\i 1.5:88.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 0.8125:88.4375
+\r t
+\a hiZoomOutAtMouse()
+\i 0.8125:88.5
+\r t
+\a hiZoomOutAtMouse()
+\i 0.75:88.5
+\r t
+\a hiZoomOutAtMouse()
+\i 0.75:88.4375
+\r t
+\a hiZoomOutAtMouse()
+\i 3.0625:89.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 3.375:89.3125
+\r t
+\a hiZoomInAtMouse()
+\i 23.625:41.125
+\r t
+\a hiZoomOutAtMouse()
+\i 23.5625:43.9375
+\r t
+\a hiZoomInAtMouse()
+\i 160.875:25.75
+\r t
+\a hiZoomInAtMouse()
+\i 160.875:25.625
+\r t
+\a hiZoomInAtMouse()
+\i 163.125:43.625
+\r t
+\a hiZoomInAtMouse()
+\i 161.9375:41.5
+\r t
+\a hiZoomInAtMouse()
+\i 161.75:40.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 161:39.125
+\r t
+\a hiZoomOutAtMouse()
+\i 160.875:39
+\r t
+\a hiZoomInAtMouse()
+\i 160.4375:43.125
+\r t
+\a hiZoomInAtMouse()
+\i 157.875:45.25
+\r t
+\a hiZoomInAtMouse()
+\i 157.875:45.25
+\r t
+\a schSingleSelectPt()
+\i 158:45.25
+\r t
+\a hiZoomOutAtMouse()
+\i 158.125:45.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 158.25:45.125
+\r t
+\a hiZoomOutAtMouse()
+\i 158.25:45.125
+\r t
+\a hiZoomOutAtMouse()
+\i 158.25:45.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 158.5:45.125
+\r t
+\a hiZoomOutAtMouse()
+\i 158.6875:45.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 120.125:34.8125
+\r t
+\a hiZoomInAtMouse()
+\i 57.9375:34.375
+\r t
+\a hiZoomInAtMouse()
+\i 59.625:32.9375
+\r t
+\a hiZoomInAtMouse()
+\i 86.1875:28.5625
+\r t
+\a hiZoomInAtMouse()
+\i 86.25:28.5
+\r t
+\a hiZoomInAtMouse()
+\i 85.0625:27.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 88.5625:27.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 89:27.25
+\r t
+\a hiZoomOutAtMouse()
+\i 89:27.25
+\r t
+\a hiZoomOutAtMouse()
+\i 65.375:33.5625
+\r t
+\a hiZoomInAtMouse()
+\i 97.375:46.5
+\r t
+\a hiZoomOutAtMouse()
+\i 70.0625:55
+\r t
+\a schDirectEdit(1)
+\i -10.9375:97.9375
+\i -10.9375:97.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 187.5:-13.75
+\r t
+\r nil
+\a schSingleSelectPt()
+\i -24.3125:78.9375
+\r nil
+\a schHiViewToView()
+\p > 
+\a schViewToViewForm->fromViewName->value="schematic"
+\r "schematic"
+\a hiiSetCurrentForm('schViewToViewForm)
+\r t
+\a schViewToViewForm->toDataType->value="schematicSymbol"
+\r "schematicSymbol"
+\a hiFormDone(schViewToViewForm)
+\# Displaying modal dbox "schReplaceOrModifyDialog", title "Create Cellview"
+\p > 
+\a hiDBoxUser(schReplaceOrModifyDialog nil 3)
+\r t
+\r t
+\r t
+\a schHiViewToView()
+\p > 
+\a schViewToViewForm->toDataType->value="schematic"
+\r "schematic"
+\a schViewToViewForm->toDataType->value="schematicSymbol"
+\r "schematicSymbol"
+\# Memory report: Maximum memory size now 4,528 MB at UTC 2021.12.03 08:39:28.000
+\a schViewToViewForm->cellName->value="level_fsm_block"
+\r "level_fsm_block"
+\a hiFormDone(schViewToViewForm)
+\w *WARNING* (SCH-1298): Use the Create Cellview form to specify a valid Library Name,
+\w Cell Name and View Name for the source cellview.
+\r t
+\r t
+\a schHiViewToView()
+\p > 
+\a dmbSyncWithCellForm(schViewToViewForm 'browse 'libraryName 'cellName 'fromViewName)
+\r t
+\i ddsServSelect("level_fsm_schematic" "level_fsm" "")
+\i ddsServSelect("level_fsm_schematic" "level_fsm" "symbol")
+\i ddsServSelect("level_fsm_schematic" "level_fsm" "schematic")
+\a hiFormCancel(schViewToViewForm) 
+\r t
+\r t
+\a schHiInstToView()
+\p > 
+\a geSingleSelectBox()
+\i -9.6875:96.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 207.125:-36.75
+\r t
+\p > 
+\a hiiSetCurrentForm('schInstToViewForm)
+\r t
+\a hiFormDone(schInstToViewForm)
+\# Displaying modal dbox "viewToViewNoOp", title "Create Cellview"
+\p > 
+\a hiDBoxCancel(viewToViewNoOp) 
+\r t
+\r t
+\r t
+\r t
+\a schHiViewToView()
+\p > 
+\a hiiSetCurrentForm('schViewToViewForm)
+\r t
+\a schViewToViewForm->toDataType->value="schematicSymbol"
+\r "schematicSymbol"
+\a schViewToViewForm->cellName->value="level_fsm_block"
+\r "level_fsm_block"
+\a hiFormApply(schViewToViewForm)
+\w *WARNING* (SCH-1298): Use the Create Cellview form to specify a valid Library Name,
+\w Cell Name and View Name for the source cellview.
+\r t
+\a hiFormDone(schViewToViewForm)
+\w *WARNING* (SCH-1298): Use the Create Cellview form to specify a valid Library Name,
+\w Cell Name and View Name for the source cellview.
+\r t
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\# Memory report: Maximum memory size now 4,419 MB at UTC 2021.12.03 08:42:17.005
+\# Available memory:          3,620 MB at UTC 2021.12.03 08:42:57.001
+\# Memory report: Maximum memory size now 4,280 MB at UTC 2021.12.03 08:42:57.001
+\# Memory report: Maximum memory size now 4,180 MB at UTC 2021.12.03 08:47:37.000
+\# Memory report: Maximum memory size now 4,269 MB at UTC 2021.12.03 08:49:57.001
+\a hiSetCurrentWindow(window(3))
+\r t
+\a schSingleSelectPt()
+\i 178.625:94.75
+\r nil
+\a schDirectEdit(1)
+\i 178.625:94.75
+\i 178.625:94.75
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i -12.25:-9.5625
+\r t
+\r nil
+\a schSingleSelectPt()
+\i -12.25:-9.5625
+\r nil
+\a ddsHiCreateLibrary()
+\p > 
+\a hiiSetCurrentForm('ddsCreateLibForm)
+\r t
+\a hiFormCancel(ddsCreateLibForm) 
+\r t
+\r nil
+\o  
+\o Library Manager new cellview request for library "level_fsm_schematic".
+\i deNew('(nil libName "level_fsm_schematic"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a deNewForm->deCellName->value="level_fsm_block"
+\r "level_fsm_block"
+\a deNewForm->viewType->value="schematicSymbol"
+\r "schematicSymbol"
+\a deNewForm->viewType->value="schematic"
+\r "schematic"
+\a hiFormDone(deNewForm)
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant2) "")
+\r t
+\a when(dwindow('oiAssistant2) hiMapWindow(dwindow('oiAssistant2)))
+\r t
+\a when(dwindow('treeAssistant2) hiMapWindow(dwindow('treeAssistant2)))
+\r t
+\a schSingleSelectPt()
+\i 169.25:-9.5625
+\r nil
+\a schSingleSelectPt()
+\i 169.25:-9.5625
+\r nil
+\i ddsServOpen("level_fsm_schematic" "level_fsm_block" "schematic" "edit" nil)
+\a hiSetCurrentWindow(window(3))
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant3) "")
+\r t
+\a schDirectEdit(1)
+\i nil
+\e *Error* geGetPotentialSelection: Invalid point - nil
+\r ERROR
+\a when(dwindow('oiAssistant3) hiMapWindow(dwindow('oiAssistant3)))
+\r t
+\a when(dwindow('treeAssistant3) hiMapWindow(dwindow('treeAssistant3)))
+\r t
+\a addPoint(hiGetCommandPoint())
+\i nil
+\r nil
+\a hiResizeWindow(swindow(2) list(221:205 1121:895))
+\r t
+\a hiCloseWindow(swindow(2))
+\o Loading cph.cxt 
+\r t
+\a schDirectEdit(1)
+\i -23:93.875
+\i -23:93.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 181.4375:-22.375
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 179.9375:-20.1875
+\r nil
+\a schHiViewToView()
+\p > 
+\a hiiSetCurrentForm('schViewToViewForm)
+\r t
+\a schViewToViewForm->cellName->value="level_fsm_block"
+\r "level_fsm_block"
+\a hiFormDone(schViewToViewForm)
+\p > 
+\a hiiSetCurrentForm('schSgForm)
+\r t
+\a schSgListPinsCB('left)
+\r t
+\a schSgListPinsCB('right)
+\r t
+\a schSgForm->bottomPins->value="VDD VSS"
+\r "VDD VSS"
+\a hiZoomInAtMouse()
+\i 1.625:66.25
+\r t
+\a hiZoomInAtMouse()
+\i 1.625:66.3125
+\r t
+\a hiZoomInAtMouse()
+\i 1.625:66.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 2.375:61.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 2.5:61.75
+\r t
+\a hiZoomInAtMouse()
+\i 2.5625:39.25
+\r t
+\a hiZoomInAtMouse()
+\i 1.5:39
+\r t
+\a hiZoomInAtMouse()
+\i -0.875:37.9375
+\r t
+\a hiZoomInAtMouse()
+\i -0.9375:37.875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.625:38.75
+\r t
+\a hiZoomInAtMouse()
+\i -0.125:38.6875
+\r t
+\a hiZoomInAtMouse()
+\i -0.375:38.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.375:38.6875
+\r t
+\a hiZoomInAtMouse()
+\i 1.625:38.8125
+\r t
+\a hiZoomOutAtMouse()
+\i 1.5625:38.8125
+\r t
+\a hiZoomInAtMouse()
+\i -0.0625:38.9375
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:38.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 2.375:38.8125
+\r t
+\a hiZoomInAtMouse()
+\i -1.1875:38.1875
+\r t
+\a hiZoomInAtMouse()
+\i -0.4375:38.5625
+\r t
+\a schSgForm->leftPins->value="i2c_data_out_valid_i i2c_arb_lost_i i2c_rxak_i i2c_data_out_i "
+\r "i2c_data_out_valid_i i2c_arb_lost_i i2c_rxak_i i2c_data_out_i "
+\# Memory report: Maximum memory size now 4,185 MB at UTC 2021.12.03 08:56:13.000
+\a schSgForm->leftPins->value="clk_i reset_i i2c_busy_i i2c_rxak_i i2c_arb_lost_i i2c_write_done_i i2c_data_out_valid_i i2c_data_out_i"
+\r "clk_i reset_i i2c_busy_i i2c_rxak_i i2c_arb_lost_i i2c_write_done_i i2c_data_out_valid_i i2c_data_out_i"
+\a schSgForm->rightPins->value="i2c_write_o i2c_read_o i2c_slave_addr_o i2c_din_o i2c_command_byte_o i2c_num_bytes_o error_led_o led_o"
+\r "i2c_write_o i2c_read_o i2c_slave_addr_o i2c_din_o i2c_command_byte_o i2c_num_bytes_o error_led_o led_o"
+\a hiFormDone(schSgForm)
+\o Symbol (level_fsm_block symbol) generated and saved in library:level_fsm_schematic.
+\a _treeNavActivateOpc(dwindow('treeAssistant4) "")
+\r t
+\r t
+\o INFO (SCH-1061): Completed generating design in library "level_fsm_schematic" as "level_fsm_block" "symbol".
+\o Adding CDF information ...
+\o Loading cdf.cxt 
+\o     Adding base cell CDF parameter information ...
+\o     Adding base cell CDF simulation information ...
+\o     Adding base lib CDF label display information ...
+\r t
+\r t
+\a when(dwindow('oiAssistant4) hiMapWindow(dwindow('oiAssistant4)))
+\r t
+\a when(dwindow('treeAssistant4) hiMapWindow(dwindow('treeAssistant4)))
+\r t
+\a hiResizeWindow(swindow(4) list(801:140 1701:830))
+\r t
+\a schHiVICAndSave()
+\o Warning: Terminal "i2c_arb_lost_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_read_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_din_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_num_bytes_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "VDD" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "clk_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_rxak_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "reset_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_busy_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_write_done_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_command_byte_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "VSS" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_data_out_valid_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_data_out_i" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "error_led_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_slave_addr_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "led_o" in view symbol not found in "level_fsm_block schematic".
+\o Warning: Terminal "i2c_write_o" in view symbol not found in "level_fsm_block schematic".
+\o INFO (SCH-1172): There were 0 errors and 18 warnings found in "level_fsm_schematic level_fsm_block symbol".
+\# Displaying modal dbox "_schCVCDBox", title "Cross View Check"
+\p > 
+\a hiDBoxOK(_schCVCDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_block symbol" saved.
+\r t
+\a hiResizeWindow(swindow(4) list(801:140 1701:917))
+\r t
+\a hiResizeWindow(swindow(4) list(730:221 1630:998))
+\r t
+\a hiResizeWindow(swindow(4) list(490:280 1390:1057))
+\r t
+\a hiResizeWindow(swindow(4) list(682:208 1582:985))
+\r t
+\a hiZoomOutAtMouse()
+\i 3.8125:-0.625
+\r t
+\a hiZoomInAtMouse()
+\i 1.6875:-0.8125
+\r t
+\a hiZoomOutAtMouse()
+\i 0.875:-0.375
+\r t
+\a hiZoomInAtMouse()
+\i 1.625:-0.3125
+\r t
+\a hiZoomOutAtMouse()
+\i -0.125:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 2.5:-0.4375
+\r t
+\a hiZoomInAtMouse()
+\i 3.6875:0
+\r t
+\a hiZoomOutAtMouse()
+\i 3.875:-0.25
+\r t
+\a hiZoomOutAtMouse()
+\i 3.875:-0.1875
+\r t
+\a hiZoomInAtMouse()
+\i 1.25:-0.75
+\r t
+\a hiZoomOutAtMouse()
+\i -0.25:-0.625
+\r t
+\a hiZoomInAtMouse()
+\i 1.125:-0.5
+\r t
+\a hiResizeWindow(swindow(4) list(737:183 1637:960))
+\r t
+\a hiResizeWindow(swindow(4) list(702:155 1602:932))
+\r t
+\o  
+\o Library Manager new cellview request for library "level_fsm_schematic".
+\i deNew('(nil libName "level_fsm_schematic"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a deNewForm->deCellName->value="level_fsm_block_tb"
+\r "level_fsm_block_tb"
+\a hiFormDone(deNewForm)
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant5) "")
+\r t
+\a when(dwindow('oiAssistant5) hiMapWindow(dwindow('oiAssistant5)))
+\r t
+\a when(dwindow('treeAssistant5) hiMapWindow(dwindow('treeAssistant5)))
+\r t
+\i ddsServOpen("level_fsm_schematic" "level_fsm_block_tb" "" "edit" nil)
+\i ddsServOpen("level_fsm_schematic" "level_fsm_block_tb" "" "edit" nil)
+\p > 
+\# Displaying modal dbox "deDBox", title "Open File"
+\p > 
+\a hiDBoxOK(deDBox)
+\r t
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a hiFormCancel(deOpenForm) 
+\r t
+\a hiResizeWindow(swindow(3) list(361:185 1261:875))
+\r t
+\a hiCloseWindow(swindow(3))
+\r t
+\a hiResizeWindow(swindow(5) list(361:112 1261:802))
+\r t
+\a hiResizeWindow(swindow(5) list(560:291 1460:981))
+\r t
+\a _deUpdateMenu('schematicTools 7)
+\r t
+\a schHiCreatePin()
+\p > 
+\a hiiSetCurrentForm('schCreatePinForm)
+\r t
+\a hiiToggleEnterForm(schCreatePinForm) 
+\r t
+\a schCreatePinForm->terminalName->value="i"
+\r "i"
+\a schHiCreateInst()
+\r t
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a schCreateInstForm->libraryName->value="level_fsm_schematic"
+\r "level_fsm_schematic"
+\a schCreateInstForm->cellName->value="level_fsm_block"
+\r "level_fsm_block"
+\a mouseAddPt(t)
+\i -1.60625:0.55625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i -0.125:0.3125
+\r t
+\a hiZoomOutAtMouse()
+\i -0.125:0.3125
+\r t
+\a hiZoomInAtMouse()
+\i 0.375:-0.375
+\r t
+\a hiZoomInAtMouse()
+\i 0.625:-0.6875
+\r t
+\a hiResizeWindow(swindow(5) list(560:118 2342:981))
+\r t
+\a hiZoomOutAtMouse()
+\i 5.75:-1.6875
+\r t
+\a hiZoomInAtMouse()
+\i -0.9375:0.375
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:0.0625
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:0
+\r t
+\a hiZoomInAtMouse()
+\i -0.1875:0.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 0:0.25
+\r t
+\a hiZoomInAtMouse()
+\i 0.4375:-0.0625
+\r t
+\a schHiOpenCellView()
+\p > 
+\a schViewToViewForm->fromViewName->value="symbol"
+\r "symbol"
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a deOpenForm->deCellChoice->value= '( "level_fsm_block" )
+\r ("level_fsm_block")
+\a _deCellChoiceCB()
+\r "symbol"
+\a hiFormDone(deOpenForm)
+\r t
+\r nil
+\a hiRaiseWindow(8 t)
+\r t
+\a mouseSingleSelectPt()
+\i 0.5625:-0.25
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a mouseSingleSelectPt()
+\i 0:-0.25
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a mouseSingleSelectPt()
+\i 3.6875:0
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a hiRaiseWindow(7 t)
+\r t
+\a hiZoomOutAtMouse()
+\i -0.4375:0.125
+\r t
+\a hiZoomInAtMouse()
+\i 0.375:0.3125
+\r t
+\a hiRaiseWindow(8 t)
+\r t
+\a hiRaiseWindow(7 t)
+\r t
+\a hiRaiseWindow(8 t)
+\r t
+\a hiCloseWindow(window(8))
+\r t
+\a _hiSetCurrentWinNum(7)
+\r t
+\a schDirectEdit(1)
+\i -2:1.0625
+\i -2:1.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.6875:-1.125
+\r t
+\r nil
+\# Memory report: Maximum memory size now 4,274 MB at UTC 2021.12.03 09:01:53.000
+\a schSingleSelectPt()
+\i -1.3125:-0.0625
+\r t
+\a schSingleSelectPt()
+\i -1.625:-0.0625
+\r t
+\a schSingleSelectPt()
+\i -1.8125:-0.6875
+\r nil
+\a schDirectEdit(1)
+\i -1.875:1.0625
+\i -1.875:1.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.125:-1.125
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 2.25:-1.0625
+\r nil
+\a _deUpdateWindowMenu('schWindowMenu7 7)
+\r t
+\a _deUpdateWindowMenu('schWindowMenu7 7)
+\r t
+\a _deUpdateWindowMenu('schWindowMenu7 7)
+\r t
+\a _deUpdateWindowMenu('schWindowMenu7 7)
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_block_tb schematic"
+\o Warning: Pin "VSS" on instance "I0": floating input.
+\o Warning: Pin "VDD" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_read_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_slave_addr_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_din_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_command_byte_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_num_bytes_o" on instance "I0": floating output.
+\o Warning: Pin "error_led_o" on instance "I0": floating output.
+\o Warning: Pin "led_o" on instance "I0": floating output.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_i" on instance "I0": floating input.
+\o INFO (SCH-1172): There were 0 errors and 18 warnings found in "level_fsm_schematic level_fsm_block_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_block_tb schematic" saved.
+\r t
+\a hiResizeWindow(swindow(5) list(258:353 2040:1216))
+\r t
+\a hiResizeWindow(window(1) list(880:24 1675:537))
+\r t
+\a hiResizeWindow(window(1) list(1422:53 2217:566))
+\r t
+\a schSingleSelectPt()
+\i 0.8125:-1
+\r nil
+\a schDirectEdit(1)
+\i -1.9375:1
+\i -1.9375:1
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.5:-1.125
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 2.3125:-1.0625
+\r nil
+\a _deUpdateMenu('schematicTools 7)
+\r t
+\i ddsServOpen("level_fsm_schematic" "level_fsm" "schematic" "edit" nil)
+\a _treeNavActivateOpc(dwindow('treeAssistant6) "")
+\r t
+\a when(dwindow('oiAssistant6) hiMapWindow(dwindow('oiAssistant6)))
+\r t
+\a when(dwindow('treeAssistant6) hiMapWindow(dwindow('treeAssistant6)))
+\r t
+\a hiCloseWindow(swindow(5))
+\r t
+\a hiResizeWindow(swindow(6) list(-3:-3 2557:1312))
+\r t
+\a hiZoomInAtMouse()
+\i 198.625:-19.5
+\r t
+\a hiZoomOutAtMouse()
+\i 171.125:-11.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 236.3125:-23.75
+\r t
+\a hiZoomInAtMouse()
+\i 24.25:55.875
+\r t
+\a hiZoomInAtMouse()
+\i 21.6875:54.875
+\r t
+\a hiZoomInAtMouse()
+\i 6.75:51.4375
+\r t
+\a hiZoomInAtMouse()
+\i 2.25:46.1875
+\r t
+\a hiZoomInAtMouse()
+\i 0.375:44.0625
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:44.125
+\r t
+\a hiZoomInAtMouse()
+\i 0.0625:45.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 2.125:44.5625
+\r t
+\a hiZoomInAtMouse()
+\i -0.625:46.875
+\r t
+\a hiZoomInAtMouse()
+\i -0.375:46.875
+\r t
+\a schSingleSelectPt()
+\i -0.3125:46.875
+\r t
+\a schHiObjectProperty()
+\r t
+\# Memory report: Maximum memory size now 4,175 MB at UTC 2021.12.03 09:02:52.000
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a hiZoomOutAtMouse()
+\i 0.0625:46.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 0:46.875
+\r t
+\a hiZoomOutAtMouse()
+\i 0:46.875
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:37.25
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:37.25
+\r t
+\a hiZoomInAtMouse()
+\i 0.1875:37.25
+\r t
+\a hiZoomOutAtMouse()
+\i -0.25:38.1875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.25:38.25
+\r t
+\a hiZoomOutAtMouse()
+\i -0.3125:38.1875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.25:38.1875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.25:38.1875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.3125:38.25
+\r t
+\a hiZoomInAtMouse()
+\i 140.4375:47.8125
+\r t
+\a schHiViewToView()
+\p > 
+\a hiiSetCurrentForm('schViewToViewForm)
+\r t
+\a schViewToViewForm->cellName->value="level_fsm_block"
+\r "level_fsm_block"
+\a schViewToViewForm->fromViewName->value="symbol"
+\r "symbol"
+\a dmbSyncWithCellForm(schViewToViewForm 'browse 'libraryName 'cellName 'fromViewName)
+\r t
+\i ddsServSelect("level_fsm_schematic" "level_fsm_block" "symbol")
+\# Memory report: Maximum memory size now 4,061 MB at UTC 2021.12.03 09:03:11.002
+\a hiFormDone(schViewToViewForm)
+\# Displaying modal dbox "schReplaceOrModifyDialog", title "Create Cellview"
+\p > 
+\a hiDBoxUser(schReplaceOrModifyDialog nil 1)
+\r t
+\p > 
+\a hiiSetCurrentForm('schSgForm)
+\r t
+\a schSgListPinsCB('left)
+\p > 
+\a hiiSetCurrentForm('schSgFormleft)
+\r t
+\a hiFormDone(schSgFormleft)
+\r t
+\r t
+\a hiiSetCurrentForm('schSgForm)
+\r t
+\# Memory report: Maximum memory size now 4,153 MB at UTC 2021.12.03 09:03:33.001
+\a hiFormCancel(schSgForm)
+\r t
+\w *WARNING* (SCH-1060): Failed to generate cellview "level_fsm_block symbol" from pin list.
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 146.0625:17.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 146.0625:17.5
+\r t
+\a hiZoomInAtMouse()
+\i 46.5:30.3125
+\r t
+\a hiZoomInAtMouse()
+\i 43.5625:30.3125
+\r t
+\a hiZoomInAtMouse()
+\i 0.0625:42
+\r t
+\a hiZoomInAtMouse()
+\i 0.0625:42
+\r t
+\a hiZoomInAtMouse()
+\i 0.0625:42
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:39.625
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:39.5625
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:39.5625
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:39.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 0:39.5
+\r t
+\a hiZoomOutAtMouse()
+\i 107.75:77.9375
+\r t
+\a hiZoomInAtMouse()
+\i 76:19
+\r t
+\a hiZoomInAtMouse()
+\i 76:19
+\r t
+\# Memory report: Maximum memory size now 4,270 MB at UTC 2021.12.03 09:03:53.108
+\# Memory report: Maximum memory size now 4,140 MB at UTC 2021.12.03 09:04:03.000
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm schematic"
+\o Warning: Pin "VSS": floating input/output.
+\o Warning: Floating net "VSS" at (160.1250, 44.3750).
+\o Warning: Solder dot on cross over at ( 9.0000, 28.8750 ).
+\o Warning: Solder dot on cross over at ( 9.3750, 47.1250 ).
+\o Warning: Solder dot on cross over at ( 11.3750, 53.2500 ).
+\o Warning: Solder dot on cross over at ( 14.0000, 67.7500 ).
+\o Warning: Solder dot on cross over at ( 20.8750, 38.2500 ).
+\o Warning: Solder dot on cross over at ( 21.0000, 12.1250 ).
+\o Warning: Solder dot on cross over at ( 21.2500, 47.1250 ).
+\o Warning: Solder dot on cross over at ( 30.0000, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 41.8750, 47.1250 ).
+\o Warning: Solder dot on cross over at ( 41.8750, 50.0625 ).
+\o Warning: Solder dot on cross over at ( 48.3750, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 70.1250, 47.0000 ).
+\o Warning: Solder dot on cross over at ( 77.8750, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 78.5000, 47.0000 ).
+\o Warning: Solder dot on cross over at ( 79.2500, 32.3750 ).
+\o Warning: Solder dot on cross over at ( 88.8750, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 115.7500, 53.1250 ).
+\o Warning: Solder dot on cross over at ( 121.3750, 47.0000 ).
+\o Warning: Solder dot on cross over at ( 156.1250, 12.0000 ).
+\o Warning: Solder dot on cross over at ( 156.1250, 30.8125 ).
+\# Memory report: Maximum memory size now 4,022 MB at UTC 2021.12.03 09:04:22.849
+\o INFO (SCH-1172): There were 0 errors and 22 warnings found in "level_fsm_schematic level_fsm schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\# Memory report: Maximum memory size now 4,147 MB at UTC 2021.12.03 09:04:32.144
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:38.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:38.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:38.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.25:38.75
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:38.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.375:38.75
+\r t
+\a hiZoomInAtMouse()
+\i -0.8125:39.3125
+\r t
+\a hiResizeWindow(swindow(1) list(340:212 1240:902))
+\r t
+\a hiCloseWindow(swindow(1))
+\r t
+\a _hiSetCurrentWinNum(2)
+\r t
+\a hiCloseWindow(swindow(4))
+\r t
+\w Qt Warning: QXcbClipboard: SelectionRequest too old
+\a hiSetCurrentWindow(window(9))
+\r t
+\a schSingleSelectPt()
+\i 135:65.375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm schematic"
+\# Available memory:          6,098 MB at UTC 2021.12.03 09:05:23.084
+\# Memory report: Maximum memory size now 6,773 MB at UTC 2021.12.03 09:05:23.084
+\o Warning: Pin "VSS": floating input/output.
+\o Warning: Floating net "VSS" at (160.1250, 44.3750).
+\o Warning: Solder dot on cross over at ( 9.0000, 28.8750 ).
+\o Warning: Solder dot on cross over at ( 9.3750, 47.1250 ).
+\o Warning: Solder dot on cross over at ( 11.3750, 53.2500 ).
+\o Warning: Solder dot on cross over at ( 14.0000, 67.7500 ).
+\o Warning: Solder dot on cross over at ( 20.8750, 38.2500 ).
+\o Warning: Solder dot on cross over at ( 21.0000, 12.1250 ).
+\o Warning: Solder dot on cross over at ( 21.2500, 47.1250 ).
+\o Warning: Solder dot on cross over at ( 30.0000, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 41.8750, 47.1250 ).
+\o Warning: Solder dot on cross over at ( 41.8750, 50.0625 ).
+\o Warning: Solder dot on cross over at ( 48.3750, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 70.1250, 47.0000 ).
+\o Warning: Solder dot on cross over at ( 77.8750, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 78.5000, 47.0000 ).
+\o Warning: Solder dot on cross over at ( 79.2500, 32.3750 ).
+\o Warning: Solder dot on cross over at ( 88.8750, 46.8750 ).
+\o Warning: Solder dot on cross over at ( 115.7500, 53.1250 ).
+\o Warning: Solder dot on cross over at ( 121.3750, 47.0000 ).
+\o Warning: Solder dot on cross over at ( 156.1250, 12.0000 ).
+\o Warning: Solder dot on cross over at ( 156.1250, 30.8125 ).
+\o INFO (SCH-1172): There were 0 errors and 22 warnings found in "level_fsm_schematic level_fsm schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiResizeWindow(window(2) list(155:109 1032:629))
+\r t
+\# Memory report: Maximum memory size now 6,913 MB at UTC 2021.12.03 09:05:53.000
+\a hiSetCurrentWindow(window(9))
+\r t
+\a schSingleSelectPt()
+\i 185.4375:67.75
+\r nil
+\a hiZoomInAtMouse()
+\i 5.6875:0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 5.625:0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 5.8125:4.0625
+\r t
+\a hiZoomInAtMouse()
+\i 5.8125:4.0625
+\r t
+\a hiZoomInAtMouse()
+\i 5.3125:5.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 5.5625:5.25
+\r t
+\a hiZoomOutAtMouse()
+\i 5.9375:5.25
+\r t
+\a hiZoomOutAtMouse()
+\i 5.9375:5.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 5.9375:5.25
+\r t
+\a hiZoomOutAtMouse()
+\i 19.125:-1.75
+\r t
+\a hiZoomInAtMouse()
+\i 160.3125:13.75
+\r t
+\a hiZoomInAtMouse()
+\i 160.375:13.5625
+\r t
+\a hiZoomInAtMouse()
+\i 160.375:13.5625
+\r t
+\a hiZoomInAtMouse()
+\i 160.375:13.5625
+\r t
+\a hiZoomInAtMouse()
+\i 160.375:13.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 160.6875:12.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 160.4375:12.6875
+\r t
+\a hiZoomInAtMouse()
+\i 153.125:16.75
+\r t
+\a hiZoomInAtMouse()
+\i 153.375:16.5
+\r t
+\a hiZoomInAtMouse()
+\i 153.3125:19.4375
+\r t
+\a hiZoomInAtMouse()
+\i 153.3125:19.4375
+\r t
+\a hiZoomOutAtMouse()
+\i 153.3125:19.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 153.25:18.75
+\r t
+\a hiZoomOutAtMouse()
+\i 154.1875:18.75
+\r t
+\a hiZoomOutAtMouse()
+\i 154.125:18.75
+\r t
+\a hiZoomOutAtMouse()
+\i 154.125:18.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 158.6875:5.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 158.75:5.3125
+\r t
+\a schSingleSelectPt()
+\i 175.1875:51.9375
+\r nil
+\a schSingleSelectPt()
+\i 160.8125:88.8125
+\r t
+\a hiZoomInAtMouse()
+\i 160:90.375
+\r t
+\a hiZoomInAtMouse()
+\i 160:90.375
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a hiZoomInAtMouse()
+\i 160.625:89.125
+\r t
+\a hiZoomInAtMouse()
+\i 160.625:89.125
+\r t
+\a hiZoomInAtMouse()
+\i 160.625:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 160.8125:89.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 160.75:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 160.75:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 160.75:89.125
+\r t
+\a hiZoomOutAtMouse()
+\i 160.5:89
+\r t
+\a hiZoomOutAtMouse()
+\i 159.9375:88.5625
+\r t
+\a hiZoomInAtMouse()
+\i 156.625:70.3125
+\r t
+\a hiZoomInAtMouse()
+\i 157.125:66.6875
+\r t
+\a hiZoomInAtMouse()
+\i 136.8125:52.1875
+\r t
+\a hiZoomInAtMouse()
+\i 128.625:46.9375
+\r t
+\a hiZoomInAtMouse()
+\i 128.625:46.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 128.625:46.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 128.625:46.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 128.6875:46.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 135.5:47.875
+\r t
+\a hiZoomInAtMouse()
+\i 116.875:19.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 99.5:14.6875
+\r t
+\a hiZoomInAtMouse()
+\i 67.125:12.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 94.625:13.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 95.1875:13.6875
+\r t
+\a hiZoomInAtMouse()
+\i -25.75:11.5625
+\r t
+\a hiZoomInAtMouse()
+\i -25.125:11.4375
+\r t
+\a hiZoomOutAtMouse()
+\i 14.875:15.9375
+\r t
+\a hiZoomInAtMouse()
+\i 14.75:25.6875
+\r t
+\a hiZoomInAtMouse()
+\i 12.9375:25.1875
+\r t
+\a hiZoomInAtMouse()
+\i 0.75:25.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.0625:25.625
+\r t
+\a hiZoomInAtMouse()
+\i 0:25.5625
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:25.75
+\r t
+\a hiZoomOutAtMouse()
+\i -0.125:25.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -0.1875:26.0625
+\r t
+\a hiZoomInAtMouse()
+\i -0.0625:16.9375
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:17.25
+\r t
+\a hiZoomInAtMouse()
+\i 0.4375:19.375
+\r t
+\a hiZoomOutAtMouse()
+\i 0.125:21.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 0.125:21.5625
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:20.9375
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:5.625
+\r t
+\a hiZoomOutAtMouse()
+\i -1.375:7.6875
+\r t
+\a hiZoomInAtMouse()
+\i 53.3125:67.5
+\r t
+\a hiZoomOutAtMouse()
+\i 58.1875:61.875
+\r t
+\a hiZoomInAtMouse()
+\i 164.625:42.3125
+\r t
+\a hiZoomInAtMouse()
+\i 164.625:42.25
+\r t
+\a hiZoomInAtMouse()
+\i 164.4375:42.3125
+\r t
+\a hiZoomInAtMouse()
+\i 160.5625:44.4375
+\r t
+\a hiZoomInAtMouse()
+\i 160.5625:44.4375
+\r t
+\a hiZoomInAtMouse()
+\i 160.5625:44.4375
+\r t
+\a hiZoomInAtMouse()
+\i 160.5:44.625
+\r t
+\a schSingleSelectPt()
+\i 160.25:44.625
+\r t
+\a schDirectEdit(1)
+\i 160.4375:44.75
+\i 160.4375:44.75
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 160.0625:44.125
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 160.3125:44.375
+\r t
+\a schSingleSelectPt()
+\i 160.375:44.25
+\r nil
+\a schSingleSelectPt()
+\i 160.25:44.375
+\r t
+\a hiZoomOutAtMouse()
+\i 161:43.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 161:43.9375
+\r t
+\a schSingleSelectPt()
+\i 157.875:45.25
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a schHiDefaultAction()
+\i 158:45.1875
+\i 158:45.1875
+\p > 
+\a hiiSetCurrentForm('schDescendForm)
+\r t
+\a hiFormDone(schDescendForm)
+\# Displaying modal dbox "_schDBox", title "Information"
+\p > 
+\a hiDBoxOK(_schDBox)
+\r t
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 0.375:0
+\r t
+\a hiResizeWindow(swindow(6) list(1190:344 2090:1034))
+\r t
+\a hiCloseWindow(swindow(6))
+\r t
+\a _hiSetCurrentWinNum(2)
+\r t
+\i ddsServOpen("level_fsm_schematic" "level_fsm" "symbol" "edit" nil)
+\a _treeNavActivateOpc(dwindow('treeAssistant7) "")
+\r t
+\a when(dwindow('oiAssistant7) hiMapWindow(dwindow('oiAssistant7)))
+\r t
+\a when(dwindow('treeAssistant7) hiMapWindow(dwindow('treeAssistant7)))
+\r t
+\a hiCloseWindow(swindow(7))
+\r t
+\a _hiSetCurrentWinNum(2)
+\r t
+\o  
+\o Library Manager deleting cell "level_fsm_schematic/level_fsm_block".
+\i ddDeleteLocal(ddGetObj("level_fsm_schematic" "level_fsm_block" "" ""))
+\o Deleted cell 'level_fsm_schematic/level_fsm_block'.
+\o  
+\o Library Manager deleting cell "level_fsm_schematic/level_fsm_block_tb".
+\i ddDeleteLocal(ddGetObj("level_fsm_schematic" "level_fsm_block_tb" "" ""))
+\w *WARNING* (DB-270337): dbGetInstHeaderMaster: Failed to open cellview 'level_fsm_block symbol' from library 'level_fsm_schematic' in read-only mode because the cellview does not exist. This cellview was instantiated in  cellview 'level_fsm_block_tb schematic' of library 'level_fsm_schematic'. Ensure that the cellview exists in the library.
+\w *WARNING* (DB-270337): dbGetInstHeaderMaster: Failed to open cellview 'level_fsm_block symbol' from library 'level_fsm_schematic' in read-only mode because the cellview does not exist. This cellview was instantiated in  cellview 'level_fsm_block_tb schematic' of library 'level_fsm_schematic'. Ensure that the cellview exists in the library.
+\o Deleted cell 'level_fsm_schematic/level_fsm_block_tb'.
+\o  
+\o Library Manager new cellview request for library "level_fsm_schematic".
+\i deNew('(nil libName "level_fsm_schematic"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a deNewForm->deCellName->value="level_fsm_tb"
+\r "level_fsm_tb"
+\a hiFormDone(deNewForm)
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant8) "")
+\r t
+\a when(dwindow('oiAssistant8) hiMapWindow(dwindow('oiAssistant8)))
+\r t
+\a when(dwindow('treeAssistant8) hiMapWindow(dwindow('treeAssistant8)))
+\r t
+\a hiResizeWindow(swindow(8) list(562:301 1462:991))
+\r t
+\a hiResizeWindow(swindow(8) list(-3:-3 2557:1312))
+\r t
+\a schHiCreateInst()
+\w *WARNING* (SCH-1162): Cell "level_fsm_block" does not exist in library "level_fsm_schematic".
+\p > 
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a schCreateInstForm->cellName->value="level_fsm"
+\r "level_fsm"
+\a mouseAddPt(t)
+\i 5.54375:-2.30625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 5.625:-2.75
+\r t
+\# Memory report: Maximum memory size now 6,771 MB at UTC 2021.12.03 09:21:21.001
+\a hiZoomOutAtMouse()
+\i 5.6875:-3.0625
+\r t
+\a hiZoomInAtMouse()
+\i 5.9375:-3.4375
+\r t
+\a schHiCreateInst()
+\p > 
+\a schCreateInstForm->libraryName->value="basic"
+\r "basic"
+\a schCreateInstForm->cellName->value="cds_thru"
+\r "cds_thru"
+\a schCreateInstForm->cellName->value="cds_thrur"
+\w *WARNING* (SCH-1162): Cell "cds_thrur" does not exist in library "basic".
+\r "cds_thrur"
+\a schSetEnv("rotate" t)
+\r t
+\a mouseAddPt(t)
+\i 8.275:-3.3625
+\r t
+\a mouseAddPt(t)
+\i 7.9:-3.39375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\w *WARNING* (SCH-1162): Cell "cds_thrur" does not exist in library "basic".
+\p > 
+\a schCreateInstForm->cellName->value="cds_thru"
+\r "cds_thru"
+\a schSetEnv("rotate" t)
+\r t
+\a schSetEnv("rotate" t)
+\r t
+\a schSetEnv("rotate" t)
+\r t
+\a schSetEnv("rotate" t)
+\r t
+\a schSetEnv("rotate" t)
+\r t
+\a mouseAddPt(t)
+\i 7.8125:-4.675
+\r t
+\a hiZoomOutAtMouse()
+\i 7.8125:-3.3125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a schCreateInstForm->cellName->value="gnd"
+\r "gnd"
+\a hiiToggleEnterForm(schCreateInstForm)
+\r t
+\a mouseAddPt(t)
+\i 7.825:-4.91875
+\r t
+\a hiZoomInAtMouse()
+\i 8.6875:-5.0625
+\r t
+\a hiZoomInAtMouse()
+\i 8.125:-5.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 7.9375:-5.0625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 7.825:-3.95625
+\r t
+\a mouseAddPt(t)
+\i 7.3125:-1.825
+\r t
+\a mouseAddPt(t)
+\i 7.8:-4.96875
+\r t
+\a mouseAddPt(t)
+\i 7.825:-4.68125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a mouseAddPt(t)
+\i 7.825:-3.54375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a schCreateInstForm->cellName->value=""
+\r ""
+\a schCreateInstForm->libraryName->value="analogLib"
+\r "analogLib"
+\a schCreateInstForm->cellName->value="vsource"
+\r "vsource"
+\a mouseAddPt(t)
+\i 8.475:-4.13125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 7.8375:-5.15625
+\r t
+\a mouseAddPt(t)
+\i 8.5:-5.2
+\r t
+\a schHiCreateWire(0.0)
+\r t
+\a mouseAddPt(t)
+\i 8.50625:-4.93125
+\r t
+\a mouseAddPt(t)
+\i 8.51875:-4.50625
+\r t
+\a mouseAddPt(t)
+\i 8.5125:-4.1
+\r t
+\a mouseAddPt(t)
+\i 7.31875:-1.6875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 7.125:-3.4375
+\r t
+\a hiZoomInAtMouse()
+\i 7.625:-3.25
+\r t
+\a _schHiSaveAs()
+\p > 
+\a hiiSetCurrentForm('_schHiSaveAsForm)
+\r t
+\a hiFormDone(_schHiSaveAsForm)
+\r t
+\r t
+\a _schHiSaveAs()
+\p > 
+\a hiiSetCurrentForm('_schHiSaveAsForm)
+\r t
+\a hiFormDone(_schHiSaveAsForm)
+\r t
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "led_o<8:0>" on instance "I0": floating output.
+\o Warning: Pin "error_led_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_num_bytes_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_command_byte_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_din_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_slave_addr_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_read_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_write_o" on instance "I0": floating output.
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o INFO (SCH-1172): There were 0 errors and 16 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a schSingleSelectPt()
+\i 8.5625:-4.3125
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->srcType->value="dc"
+\r "dc"
+\a schObjPropForm->vdc->value="VSS"
+\r "VSS"
+\a hiFormDone(schObjPropForm)
+\r t
+\# Memory report: Maximum memory size now 6,913 MB at UTC 2021.12.03 09:41:50.001
+\a schSingleSelectPt()
+\i 10.1875:-3.875
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 8.50625:-4.34375
+\r t
+\a hiZoomOutAtMouse()
+\i 6.25:-3.25
+\r t
+\a hiZoomOutAtMouse()
+\i 6.25:-3.1875
+\r t
+\a hiZoomInAtMouse()
+\i 2.4375:-3.875
+\r t
+\a hiZoomInAtMouse()
+\i 2.4375:-3.875
+\r t
+\a hiZoomOutAtMouse()
+\i 2.75:-4
+\r t
+\a hiZoomInAtMouse()
+\i 2.5625:-3.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 2.6875:-4
+\r t
+\a hiZoomInAtMouse()
+\i 3.125:-2.6875
+\r t
+\a mouseAddPt(t)
+\i 3.25625:-3.6375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 3.3125:-3.5
+\r t
+\a schSingleSelectPt()
+\i 3.3125:-3.5
+\r t
+\a schSingleSelectPt()
+\i 3.3125:-3.5
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->vdc->value=" V"
+\r " V"
+\a hiFormDone(schObjPropForm)
+\r t
+\a hiZoomOutAtMouse()
+\i 3.125:-2.9375
+\r t
+\a hiZoomInAtMouse()
+\i 8.625:-3.625
+\r t
+\a hiZoomOutAtMouse()
+\i 8.3125:-4.1875
+\r t
+\a hiZoomInAtMouse()
+\i 5.4375:-3.25
+\r t
+\# Memory report: Maximum memory size now 6,627 MB at UTC 2021.12.03 10:00:19.001
+\a hiZoomOutAtMouse()
+\i 3.9375:-2.875
+\r t
+\a hiResizeWindow(swindow(8) list(402:307 1302:997))
+\r t
+\a hiResizeWindow(window(1) list(1294:251 2089:764))
+\r t
+\a hiZoomOutAtMouse()
+\i 1:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 1:-0.6875
+\r t
+\a schSingleSelectPt()
+\i nil
+\r nil
+\a hiZoomOutAtMouse()
+\i 1:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 1:-0.75
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 1:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.75
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.75
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.75
+\r t
+\a hiZoomInAtMouse()
+\i 1:-0.6875
+\r t
+\a schSingleSelectPt()
+\i nil
+\r nil
+\a hiZoomOutAtMouse()
+\i 1:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 1:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.875:-0.6875
+\r t
+\a schSingleSelectPt()
+\i nil
+\r nil
+\a hiZoomOutAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-0.625
+\r t
+\a hiZoomOutAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.875:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomInAtMouse()
+\i 0.9375:-0.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-357.25
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-595
+\r t
+\a hiZoomOutAtMouse()
+\i 0.9375:-594.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 57052.375:207642.875
+\r t
+\a hiZoomOutAtMouse()
+\i 49445.5:144886.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 34231.8125:34586.8125
+\r t
+\a hiZoomInAtMouse()
+\i -673206.4375:-2407216.375
+\r t
+\a hiZoomInAtMouse()
+\i -673206.4375:-2399609.5
+\r t
+\a hiZoomInAtMouse()
+\i -673206.4375:-2397707.8125
+\r t
+\a hiZoomInAtMouse()
+\i -673206.4375:-2397707.8125
+\r t
+\a hiZoomInAtMouse()
+\i -673206.4375:-2395330.6875
+\r t
+\a hiZoomInAtMouse()
+\i -656804.125:-2344222.0625
+\r t
+\a hiZoomOutAtMouse()
+\i -656209.875:-2351234.625
+\r t
+\a hiZoomOutAtMouse()
+\i -656209.8125:-2351234.6875
+\r t
+\a hiZoomOutAtMouse()
+\i -656209.8125:-2351234.625
+\r t
+\a hiZoomInAtMouse()
+\i -634340.125:-2273264.3125
+\r t
+\a hiZoomInAtMouse()
+\i -629585.8125:-2268510
+\r t
+\a hiZoomInAtMouse()
+\i -629348.125:-2268510
+\r t
+\a hiZoomInAtMouse()
+\i -629229.25:-2268510
+\r t
+\a hiZoomOutAtMouse()
+\i -627208.6875:-2272313.4375
+\r t
+\a hiZoomOutAtMouse()
+\i -627208.6875:-2272551.1875
+\r t
+\a hiZoomOutAtMouse()
+\i -627208.6875:-2272551.125
+\r t
+\a hiZoomOutAtMouse()
+\i -627208.6875:-2272551.125
+\r t
+\a hiResizeWindow(swindow(8) list(-3:-3 2557:1312))
+\r t
+\a _deUpdateWindowMenu('schWindowMenu11 11)
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\a schSingleSelectPt()
+\i 3.625:-4.1875
+\r nil
+\a hiZoomOutAtMouse()
+\i 3.4375:-3.6875
+\r t
+\a hiZoomInAtMouse()
+\i 9.3125:-4.0625
+\r t
+\a schHiCreateInst()
+\p > 
+\a schCreateInstForm->cellName->value="cap"
+\r "cap"
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm)
+\r t
+\# Memory report: Maximum memory size now 6,788 MB at UTC 2021.12.03 10:01:48.001
+\a hiZoomOutAtMouse()
+\i 6.25:-3.8125
+\r t
+\a hiZoomInAtMouse()
+\i 9.8125:-2.25
+\r t
+\a mouseAddPt(t)
+\i 9.64375:-2.49375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 9.625:-2.6875
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->c->value="10f F"
+\r "10f F"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 10.25:-2.6875
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 9.56875:-2.64375
+\r t
+\a mouseAddPt(t)
+\i 10.01875:-2.6375
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 10.05:-2.6625
+\r t
+\a mouseAddPt(t)
+\i 10.50625:-2.675
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 10.48125:-2.68125
+\r t
+\a mouseAddPt(t)
+\i 10.90625:-2.7
+\r t
+\a geSingleSelectBox()
+\i 11.375:-2.375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.25:-3.0625
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 9.25:-2.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.1875:-3.375
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 10.975:-2.66875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 11.375:-2.3125
+\i 11.375:-2.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.0625:-3.0625
+\r t
+\r nil
+\a mgc_rve_end_enter_function_binding("Schematics")
+\r t
+\a hiFocusToCIW(hiGetCurrentWindow())
+\r t
+\a schSingleSelectPt()
+\i 10.5625:-1.5625
+\r nil
+\a schDirectEdit(1)
+\i 8.875:-2.1875
+\i 8.875:-2.1875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.75:-3.25
+\r t
+\r nil
+\a schHiMousePopUp()
+\r t
+\a hiPopupDown(schMultiPopUp)
+\r t
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 11.4625:-2.7875
+\r t
+\a schHiMousePopUp()
+\r t
+\a hiPopupDown(schMultiPopUp)
+\r t
+\a schHiMove()
+\r t
+\a geSingleSelectBox()
+\i 10.9375:-2.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.875:-2.6875
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 11.4375:-2.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.5:-3.0625
+\r t
+\r t
+\a geSingleSelectBox()
+\i 9.625:-2.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.125:-2.6875
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 11.5625:-2.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.4375:-3
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 9.65625:-2.64375
+\r t
+\a mouseAddPt(t)
+\i 11.38125:-2.6375
+\r t
+\a hiZoomOut()
+\p > 
+\a hiUndo()
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 11.3125:-2.375
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 9.3125:-3.0625
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 10.8125:-3
+\r t
+\a hiZoomInAtMouse()
+\i 10.8125:-3
+\r t
+\a geSingleSelectBox()
+\i 11.4375:-2.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.4375:-3.0625
+\r t
+\r t
+\a schHiMousePopUp()
+\r t
+\a hiPopupDown(schMultiPopUp)
+\r t
+\a schHiCopy()
+\r t
+\a schHiMousePopUp()
+\i 11.375:-2.75
+\r t
+\a hiPopupDown(schNonePopUp)
+\r t
+\a geSingleSelectBox()
+\i 9.25:-2.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.125:-3.4375
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 9.25:-2.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.625:-3.25
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 9.63125:-2.6625
+\r t
+\a mouseAddPt(t)
+\i 11.3625:-2.65625
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 11.38125:-2.675
+\r t
+\a mouseAddPt(t)
+\i 11.8:-2.70625
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 11.8125:-2.725
+\r t
+\a mouseAddPt(t)
+\i 12.225:-2.75
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 12.24375:-2.66875
+\r t
+\a mouseAddPt(t)
+\i 12.68125:-2.675
+\r t
+\a geSingleSelectBox()
+\i 13.125:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.375:-2.3125
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 10.0625:-2.4375
+\r t
+\a hiZoomInAtMouse()
+\i 10.125:-2.5
+\r t
+\a mouseAddPt(t)
+\i 9.73125:-3.3375
+\r t
+\a mouseAddPt(t)
+\i 9.69375:-3.08125
+\r t
+\a hiZoomIn()
+\p > 
+\a hiZoomOut()
+\p > 
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiUndo()
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 9.25:-1.9375
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 13:-3.5
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 10.75:-2.625
+\r t
+\a hiZoomOutAtMouse()
+\i 10.6875:-2.625
+\r t
+\a geSingleSelectBox()
+\i 9.4375:-2.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14.0625:-3.5625
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 9.5:-2.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14:-2.3125
+\r t
+\r t
+\a mouseAddPt(t)
+\i 10.2875:-2.76875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 10.1875:-3.0625
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 9.6125:-2.89375
+\r t
+\a mouseAddPt(t)
+\i 9.63125:-3.13125
+\r t
+\a mouseAddPt(t)
+\i 12.68125:-3.13125
+\r t
+\a mouseAddPt(t)
+\i 12.725:-2.86875
+\r t
+\a mouseAddPt(t)
+\i 12.20625:-2.86875
+\r t
+\a mouseAddPt(t)
+\i 12.2375:-3.10625
+\r t
+\a mouseAddPt(t)
+\i 11.79375:-2.89375
+\r t
+\a mouseAddPt(t)
+\i 11.8125:-3.1125
+\r t
+\a mouseAddPt(t)
+\i 11.3625:-2.88125
+\r t
+\a mouseAddPt(t)
+\i 11.375:-3.10625
+\r t
+\a mouseAddPt(t)
+\i 10.93125:-2.88125
+\r t
+\a mouseAddPt(t)
+\i 10.95625:-3.1
+\r t
+\a mouseAddPt(t)
+\i 10.5125:-2.89375
+\r t
+\a mouseAddPt(t)
+\i 10.525:-3.10625
+\r t
+\a mouseAddPt(t)
+\i 10.0625:-2.90625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 10.0625:-2.89375
+\r t
+\a mouseAddPt(t)
+\i 10.075:-3.125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 9.25:-1.9375
+\i 9.25:-1.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 13.125:-3.4375
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a geSingleSelectBox()
+\i 9.25:-2.1875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 13.375:-3.6875
+\r t
+\r t
+\a mouseAddPt(t)
+\i 10.80625:-3.09375
+\r t
+\a mouseAddPt(t)
+\i 10.79375:-4.15625
+\r t
+\a hiZoomOutAtMouse()
+\i 10.8125:-3.1875
+\r t
+\a geSingleSelectBox()
+\i 9.125:-1.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14.1875:-5.4375
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 9.375:-2.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 13.8125:-5.1875
+\r t
+\r t
+\a mouseAddPt(t)
+\i 13.78125:-5.16875
+\r t
+\a mouseAddPt(t)
+\i 13.8125:-3.24375
+\r t
+\a geSingleSelectBox()
+\i 13.75:-5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.3125:-3.5625
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 9.48125:-3.5
+\r t
+\a geSingleSelectBox()
+\i 15.25:-5.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 8.875:-3.1875
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 9.4375:-3.375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 13.375:-4.6875
+\r t
+\r t
+\a mouseAddPt(t)
+\i 12.26875:-3.8125
+\r t
+\a mouseAddPt(t)
+\i 12.24375:-4.725
+\r t
+\a geSingleSelectBox()
+\i 13.125:-4.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.4375:-5.3125
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 12.6375:-4.76875
+\r t
+\a mouseAddPt(t)
+\i 13.03125:-4.76875
+\r t
+\a hiZoomInAtMouse()
+\i 13:-4.8125
+\r t
+\a hiZoomInAtMouse()
+\i 13.0625:-4.875
+\r t
+\a schHiCreateWire(0.0)
+\r t
+\a mouseAddPt(t)
+\i 12.71875:-5.10625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 12.675:-5.125
+\r t
+\a mouseAddPt(t)
+\i 13.14375:-4.88125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 13.1875:-4.875
+\r t
+\a hiZoomOutAtMouse()
+\i 13.125:-4.9375
+\r t
+\a schDirectEdit(1)
+\i 9.375:-0.1875
+\i 9.375:-0.1875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 13.75:-5.6875
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 10.1875:-2.8
+\r t
+\a mouseAddPt(t)
+\i 10.85625:-2.8125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 9.25:-2.5625
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 13.8:-4.65625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 9.625:0.1875
+\i 9.625:0.1875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.0625:-5.5625
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 10.31875:-2.73125
+\r t
+\a mouseAddPt(t)
+\i 11.35:-2.73125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 16.125:-4.0625
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 14.88125:-4.6625
+\r t
+\a mouseAddPt(t)
+\i 8.8875:-4.29375
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 8.88125:-4.31875
+\r t
+\a mouseAddPt(t)
+\i 9.34375:-4.35625
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 9.625:-4.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.375:-4.875
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 9.875:-4
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.25:-4.9375
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 9.35:-4.425
+\r t
+\a mouseAddPt(t)
+\i 9.34375:-4.3875
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 9.38125:-4.2875
+\r t
+\a mouseAddPt(t)
+\i 9.7875:-4.33125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 9.8125:-4.625
+\r t
+\a schDirectEdit(1)
+\i 10.1875:-4
+\i 10.1875:-4
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.625:-4.8125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 9.775:-4.325
+\r t
+\a mouseAddPt(t)
+\i 9.8875:-4.33125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 10.125:-4.875
+\r nil
+\a hiZoomOutAtMouse()
+\i 10.3125:-4.5
+\r t
+\a schDirectEdit(1)
+\i 8.9375:-5.25
+\i 8.9375:-5.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 8.25:-5.0625
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 8.49375:-5.125
+\r t
+\a mouseAddPt(t)
+\i 8.85625:-5.13125
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 8.86875:-5.1375
+\r t
+\a mouseAddPt(t)
+\i 9.375:-5.15
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 9.34375:-5.1125
+\r t
+\a mouseAddPt(t)
+\i 9.95:-5.13125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 8.88125:-4.90625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 8.9375:-4.75
+\r t
+\a schDirectEdit(1)
+\i 10.1875:-3.9375
+\i 10.1875:-3.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.75:-5.3125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 9.86875:-5.10625
+\r t
+\a mouseAddPt(t)
+\i 9.76875:-5.10625
+\r t
+\r t
+\a schSingleSelectPt()
+\i 9.375:-4.6875
+\r nil
+\a schDirectEdit(1)
+\i 10.375:-3.8125
+\i 10.375:-3.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.1875:-5.3125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 9.3125:-4.85
+\r t
+\a mouseAddPt(t)
+\i 9.2625:-4.8375
+\r t
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 9.45625:-4.25625
+\r t
+\a mouseAddPt(t)
+\i 9.45:-4.3
+\r t
+\r t
+\a schSingleSelectPt()
+\i 9.125:-4.5625
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 8.89375:-4.5
+\r t
+\a mouseAddPt(t)
+\i 8.85625:-4.94375
+\r t
+\a mouseAddPt(t)
+\i 9.3:-4.9
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 9.33125:-4.5125
+\r t
+\a mouseAddPt(t)
+\i 9.31875:-4.9375
+\r t
+\a mouseAddPt(t)
+\i 9.8:-4.9625
+\r t
+\a mouseAddPt(t)
+\i 9.75:-4.5
+\r t
+\a hiZoomOutAtMouse()
+\i 9.875:-4.9375
+\r t
+\a hiZoomInAtMouse()
+\i 7.75:-3
+\r t
+\a mouseAddPt(t)
+\i 8.83125:-4.11875
+\r t
+\a mouseAddPt(t)
+\i 7.3375:-2.81875
+\r t
+\a mouseAddPt(t)
+\i 7.3:-2.06875
+\r t
+\a mouseAddPt(t)
+\i 9.31875:-4.15
+\r t
+\a mouseAddPt(t)
+\i 7.34375:-1.95
+\r t
+\a mouseAddPt(t)
+\i 9.7:-4.1125
+\r t
+\a hiZoomOutAtMouse()
+\i 9.125:-2.75
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 9.5:-3.1875
+\r t
+\a hiZoomInAtMouse()
+\i 13.125:-1.9375
+\r t
+\a hiZoomInAtMouse()
+\i 9.5:-3
+\r t
+\a hiZoomOutAtMouse()
+\i 9.1875:-3
+\r t
+\a schHiCreateWire(schGetEnv("defWideWireWidth"))
+\p > 
+\a mouseAddPt(t)
+\i 7.35:-2.20625
+\r t
+\a mouseAddPt(t)
+\i 14.44375:-0.25625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(schGetEnv("defWideWireWidth"))
+\p > 
+\a mouseAddPt(t)
+\i 7.3:-2.44375
+\r t
+\a mouseAddPt(t)
+\i 14.4625:-1.3625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 9.875:-2.125
+\i 9.875:-2.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.0625:-2.125
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 9.8125:-1.875
+\i 9.8125:-1.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 9.9375:-1.875
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 10.0625:-1.875
+\i 10.0625:-1.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.3125:-1.875
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 10:-1.8125
+\i 10:-1.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.0625:-1.8125
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 10.625:-3.0625
+\r nil
+\a schHiCreateWire(schGetEnv("defWideWireWidth"))
+\p > 
+\a mouseAddPt(t)
+\i 7.325:-2.575
+\r t
+\a mouseAddPt(t)
+\i 10.69375:-3.3625
+\r t
+\a mouseAddPt(t)
+\i 14.4625:-3.35625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(schGetEnv("defWideWireWidth"))
+\p > 
+\a mouseAddPt(t)
+\i 7.31875:-2.9625
+\r t
+\a mouseAddPt(t)
+\i 10.85:-3.7625
+\r t
+\a mouseAddPt(t)
+\i 14.85625:-4.30625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 9.74375:-5.1375
+\r t
+\a mouseAddPt(t)
+\i 15.5125:-5.675
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 15.3125:-5.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 15.375:-5.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 14.1875:-2.375
+\r t
+\a hiZoomInAtMouse()
+\i 15.125:-3.6875
+\r t
+\a hiZoomInAtMouse()
+\i 15.9375:-4.8125
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 15.525:-5.4875
+\r t
+\a mouseAddPt(t)
+\i 14.45625:-2.25
+\r t
+\a mouseAddPt(t)
+\i 14.44375:-3.125
+\r t
+\a mouseAddPt(t)
+\i 15.5:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 14.4375:-4.20625
+\r t
+\a mouseAddPt(t)
+\i 15.5125:-4.175
+\r t
+\a mouseAddPt(t)
+\i 14.89375:-5.1125
+\r t
+\a mouseAddPt(t)
+\i 15.50625:-5.125
+\r t
+\a hiZoomOutAtMouse()
+\i 14.8125:-5.3125
+\r t
+\a hiZoomInAtMouse()
+\i 14.625:-1.1875
+\r t
+\a mouseAddPt(t)
+\i 14.41875:-1.19375
+\r t
+\a mouseAddPt(t)
+\i 15.48125:-2.25
+\r t
+\a hiZoomOutAtMouse()
+\i 15.1875:-0.875
+\r t
+\a hiZoomOutAtMouse()
+\i 15.125:-0.8125
+\r t
+\a hiZoomInAtMouse()
+\i 14.0625:-2.1875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 15.4375:-5.4375
+\i 15.4375:-5.4375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.9375:-4.375
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 10.9375:-4.35625
+\r t
+\a mouseAddPt(t)
+\i 10.91875:-4.48125
+\r t
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 13.05:-4.2875
+\r t
+\a mouseAddPt(t)
+\i 13.06875:-4.3375
+\r t
+\r t
+\a schDirectEdit(1)
+\i 12.875:-4.3125
+\i 12.875:-4.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.875:-4.375
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 15.0625:-4.625
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 11.34375:-3.55
+\r t
+\a mouseAddPt(t)
+\i 11.375:-3.375
+\r t
+\a mouseAddPt(t)
+\i 11.83125:-3.56875
+\r t
+\a mouseAddPt(t)
+\i 11.825:-3.375
+\r t
+\a mouseAddPt(t)
+\i 12.2375:-3.55
+\r t
+\a mouseAddPt(t)
+\i 12.25625:-3.4
+\r t
+\a mouseAddPt(t)
+\i 12.69375:-3.54375
+\r t
+\a mouseAddPt(t)
+\i 12.7:-3.39375
+\r t
+\a mouseAddPt(t)
+\i 13.1375:-3.56875
+\r t
+\a mouseAddPt(t)
+\i 13.11875:-3.35625
+\r t
+\a mouseAddPt(t)
+\i 13.55625:-3.55625
+\r t
+\a mouseAddPt(t)
+\i 13.5625:-3.3875
+\r t
+\a mouseAddPt(t)
+\i 14.01875:-3.55
+\r t
+\a mouseAddPt(t)
+\i 13.99375:-3.3375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiUndo()
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 14.00625:-3.55
+\r t
+\a mouseAddPt(t)
+\i 14.01875:-3.36875
+\r t
+\a mouseAddPt(t)
+\i 14.4375:-3.53125
+\r t
+\a mouseAddPt(t)
+\i 14.4:-3.3875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 14.375:-3.5
+\i 14.375:-3.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14.375:-3.375
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 11.375:-3.5
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "led_o<8:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_num_bytes_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_command_byte_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_din_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_slave_addr_o<7:0>" on instance "I0": floating output.
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "PLUS" on instance "V1": floating input/output.
+\o Warning: Pin "MINUS" on instance "V1": floating input/output.
+\o Warning: Pin "PLUS" on instance "C40": floating input/output.
+\o Warning: Pin "PLUS" on instance "C39": floating input/output.
+\o Warning: Pin "PLUS" on instance "C38": floating input/output.
+\o Warning: Pin "PLUS" on instance "C37": floating input/output.
+\o Warning: Pin "PLUS" on instance "C36": floating input/output.
+\o Warning: Pin "PLUS" on instance "C35": floating input/output.
+\o Warning: Pin "PLUS" on instance "C34": floating input/output.
+\o Warning: Pin "PLUS" on instance "C33": floating input/output.
+\o Warning: Pin "PLUS" on instance "C32": floating input/output.
+\o Warning: Pin "PLUS" on instance "C31": floating input/output.
+\o Warning: Pin "PLUS" on instance "C30": floating input/output.
+\o Warning: Pin "PLUS" on instance "C29": floating input/output.
+\o Warning: Pin "PLUS" on instance "C28": floating input/output.
+\o Warning: Pin "PLUS" on instance "C27": floating input/output.
+\o Warning: Pin "PLUS" on instance "C26": floating input/output.
+\o Warning: Pin "PLUS" on instance "C25": floating input/output.
+\o Warning: Pin "PLUS" on instance "C24": floating input/output.
+\o Warning: Pin "PLUS" on instance "C23": floating input/output.
+\o Warning: Pin "PLUS" on instance "C22": floating input/output.
+\o Warning: Pin "PLUS" on instance "C21": floating input/output.
+\o Warning: Pin "PLUS" on instance "C20": floating input/output.
+\o Warning: Pin "PLUS" on instance "C19": floating input/output.
+\o Warning: Pin "PLUS" on instance "C18": floating input/output.
+\o Warning: Pin "PLUS" on instance "C17": floating input/output.
+\o Warning: Pin "PLUS" on instance "C16": floating input/output.
+\o Warning: Pin "PLUS" on instance "C7": floating input/output.
+\o Warning: Pin "PLUS" on instance "C6": floating input/output.
+\o Warning: Pin "PLUS" on instance "C5": floating input/output.
+\o Warning: Pin "PLUS" on instance "C4": floating input/output.
+\o Warning: Pin "PLUS" on instance "C3": floating input/output.
+\o Warning: Pin "PLUS" on instance "C2": floating input/output.
+\o Warning: Pin "PLUS" on instance "C1": floating input/output.
+\o Warning: Pin "PLUS" on instance "C0": floating input/output.
+\o Warning: Floating net "net9<0:7>" at (14.4375, -1.3750).
+\o Warning: Floating net "net10<0:7>" at (14.4375, -0.2500).
+\o Warning: Floating net "net5<0:8>" at (14.8750, -4.3750).
+\o INFO (SCH-1172): There were 0 errors and 51 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 12.125:-4
+\r t
+\a hiZoomInAtMouse()
+\i 8:-3.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 10.625:-3.75
+\r t
+\a hiZoomInAtMouse()
+\i 8.0625:-3.125
+\r t
+\a schSingleSelectPt()
+\i 10.25:-3.75
+\r t
+\a schSingleSelectPt()
+\i 6.75:-2.9375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant8) "22" 1)
+\r t
+\a _oiExpandItem(dwindow('oiAssistant8) "22")
+\r t
+\a hiZoomOutAtMouse()
+\i 8.5625:-3.75
+\r t
+\a hiZoomInAtMouse()
+\i 14.625:-4.625
+\r t
+\a hiZoomOutAtMouse()
+\i 14.125:-4.625
+\r t
+\a hiZoomInAtMouse()
+\i 14.375:-4.4375
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 11.39375:-4.60625
+\r t
+\a mouseAddPt(t)
+\i 11.3625:-4.36875
+\r t
+\a mouseAddPt(t)
+\i 11.8:-4.60625
+\r t
+\a mouseAddPt(t)
+\i 11.8:-4.3875
+\r t
+\a mouseAddPt(t)
+\i 12.24375:-4.6125
+\r t
+\a mouseAddPt(t)
+\i 12.24375:-4.35625
+\r t
+\a mouseAddPt(t)
+\i 12.69375:-4.6
+\r t
+\a mouseAddPt(t)
+\i 12.69375:-4.3875
+\r t
+\a mouseAddPt(t)
+\i 13.1:-4.60625
+\r t
+\a mouseAddPt(t)
+\i 13.14375:-4.35625
+\r t
+\a mouseAddPt(t)
+\i 13.56875:-4.6125
+\r t
+\a mouseAddPt(t)
+\i 13.55:-4.39375
+\r t
+\a mouseAddPt(t)
+\i 13.98125:-4.625
+\r t
+\a mouseAddPt(t)
+\i 13.9875:-4.38125
+\r t
+\a mouseAddPt(t)
+\i 14.43125:-4.625
+\r t
+\a mouseAddPt(t)
+\i 14.4375:-4.375
+\r t
+\a mouseAddPt(t)
+\i 14.875:-4.625
+\r t
+\a mouseAddPt(t)
+\i 14.89375:-4.3875
+\r t
+\a hiZoomOutAtMouse()
+\i 12.75:-4.3125
+\r t
+\a hiZoomInAtMouse()
+\i 13.4375:-2.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 12.6875:-2.875
+\r t
+\a hiZoomOutAtMouse()
+\i 10.9375:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 7.625:-3.1875
+\r t
+\a hiZoomInAtMouse()
+\i 7.3125:-2.8125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 7.3125:-2.8125
+\r t
+\a hiZoomInAtMouse()
+\i 8.4375:-2.875
+\r t
+\a schHiCreateWire(schGetEnv("defWideWireWidth"))
+\p > 
+\a mouseAddPt(t)
+\i 7.3125:-2.6625
+\r t
+\a mouseAddPt(t)
+\i 10.525:-2.7
+\r t
+\a mouseAddPt(t)
+\i 11.35:-2.35
+\r t
+\a hiZoomOutAtMouse()
+\i 10.0625:-2.625
+\r t
+\a hiZoomOutAtMouse()
+\i 10.0625:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 14.9375:-2.4375
+\r t
+\a hiZoomInAtMouse()
+\i 14.1875:-2.1875
+\r t
+\a mouseAddPt(t)
+\i 14.425:-2.35625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 11.3875:-2.51875
+\r t
+\a mouseAddPt(t)
+\i 11.39375:-2.39375
+\r t
+\a mouseAddPt(t)
+\i 11.775:-2.49375
+\r t
+\a mouseAddPt(t)
+\i 11.80625:-2.35
+\r t
+\a mouseAddPt(t)
+\i 12.2375:-2.46875
+\r t
+\a mouseAddPt(t)
+\i 12.2625:-2.35625
+\r t
+\a mouseAddPt(t)
+\i 12.68125:-2.5
+\r t
+\a mouseAddPt(t)
+\i 12.70625:-2.375
+\r t
+\a mouseAddPt(t)
+\i 13.13125:-2.49375
+\r t
+\a mouseAddPt(t)
+\i 13.1375:-2.375
+\r t
+\a mouseAddPt(t)
+\i 13.55:-2.49375
+\r t
+\a mouseAddPt(t)
+\i 13.55625:-2.35625
+\r t
+\a mouseAddPt(t)
+\i 13.99375:-2.4875
+\r t
+\a mouseAddPt(t)
+\i 14.05625:-2.38125
+\r t
+\a hiUndo()
+\r t
+\a schHiCreateWire(0.0)
+\r t
+\a mouseAddPt(t)
+\i 14.0125:-2.4875
+\r t
+\a mouseAddPt(t)
+\i 14.01875:-2.3625
+\r t
+\a mouseAddPt(t)
+\i 14.425:-2.49375
+\r t
+\a mouseAddPt(t)
+\i 14.43125:-2.36875
+\r t
+\a mouseAddPt(t)
+\i 11.36875:-1.59375
+\r t
+\a mouseAddPt(t)
+\i 11.38125:-1.3875
+\r t
+\a mouseAddPt(t)
+\i 11.79375:-1.60625
+\r t
+\a mouseAddPt(t)
+\i 11.79375:-1.36875
+\r t
+\a mouseAddPt(t)
+\i 12.2375:-1.61875
+\r t
+\a mouseAddPt(t)
+\i 12.25625:-1.36875
+\r t
+\a mouseAddPt(t)
+\i 12.675:-1.625
+\r t
+\a mouseAddPt(t)
+\i 12.68125:-1.375
+\r t
+\a mouseAddPt(t)
+\i 13.11875:-1.61875
+\r t
+\a mouseAddPt(t)
+\i 13.125:-1.375
+\r t
+\a mouseAddPt(t)
+\i 13.55625:-1.625
+\r t
+\a mouseAddPt(t)
+\i 13.54375:-1.35
+\r t
+\a mouseAddPt(t)
+\i 13.99375:-1.63125
+\r t
+\a mouseAddPt(t)
+\i 14.00625:-1.3875
+\r t
+\a mouseAddPt(t)
+\i 14.44375:-1.6125
+\r t
+\a mouseAddPt(t)
+\i 14.43125:-1.36875
+\r t
+\a hiZoomOutAtMouse()
+\i 13.0625:-2.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 13.0625:-2.3125
+\r t
+\a hiZoomInAtMouse()
+\i 12.25:-0.9375
+\r t
+\a hiZoomInAtMouse()
+\i 12.25:-0.9375
+\r t
+\a schHiCreateWire(0.0)
+\r t
+\a mouseAddPt(t)
+\i 11.4:-0.55625
+\r t
+\a mouseAddPt(t)
+\i 11.38125:-0.25
+\r t
+\a mouseAddPt(t)
+\i 11.825:-0.5625
+\r t
+\a mouseAddPt(t)
+\i 11.825:-0.25
+\r t
+\a mouseAddPt(t)
+\i 12.2625:-0.575
+\r t
+\a mouseAddPt(t)
+\i 12.23125:-0.25625
+\r t
+\a mouseAddPt(t)
+\i 12.675:-0.55625
+\r t
+\a mouseAddPt(t)
+\i 12.6875:-0.2375
+\r t
+\a mouseAddPt(t)
+\i 13.1375:-0.575
+\r t
+\a mouseAddPt(t)
+\i 13.1125:-0.25
+\r t
+\a mouseAddPt(t)
+\i 13.5625:-0.5625
+\r t
+\a mouseAddPt(t)
+\i 13.55:-0.2375
+\r t
+\a mouseAddPt(t)
+\i 13.975:-0.55625
+\r t
+\a mouseAddPt(t)
+\i 14.01875:-0.2625
+\r t
+\a mouseAddPt(t)
+\i 14.41875:-0.54375
+\r t
+\a mouseAddPt(t)
+\i 14.44375:-0.24375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "led_o<8:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_num_bytes_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_command_byte_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_din_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_slave_addr_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "PLUS" on instance "V1": floating input/output.
+\o Warning: Pin "MINUS" on instance "V1": floating input/output.
+\o INFO (SCH-1172): There were 0 errors and 15 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 13.375:-0.5
+\r t
+\a hiZoomInAtMouse()
+\i 7.125:-2.625
+\r t
+\a hiZoomInAtMouse()
+\i 7.25:-2.75
+\r t
+\a hiResizeWindow(window(1) list(0:0 2560:1315))
+\r t
+\a hiQuit()
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiDBoxCancel(hiQuitDBox)
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 7.875:-2.5
+\r t
+\a hiZoomOutAtMouse()
+\i 7.875:-2.5
+\r t
+\a hiZoomInAtMouse()
+\i 9.5:-3.75
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->expandBusNames->value= t
+\r t
+\a schCreateWireLabelForm->expandBusNames->value= nil
+\r nil
+\a schCreateWireLabelForm->expandBusNames->value= t
+\r t
+\a mouseAddPt(t)
+\i 10.56875:-3.75625
+\r t
+\a mouseAddPt(t)
+\i 11.36875:-4.51875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<8:0>"
+\r "led_o<8:0>"
+\a mouseAddPt(t)
+\i 10.56875:-3.76875
+\r t
+\a hiZoomOutAtMouse()
+\i 9.625:-3.75
+\r t
+\a hiZoomInAtMouse()
+\i 10.4375:-4.125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->expandBusNames->value= t
+\r t
+\a mouseAddPt(t)
+\i 11.3875:-4.5375
+\r t
+\a mouseAddPt(t)
+\i 11.36875:-4.5375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C32", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C33", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C34", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C35", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C36", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C37", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C38", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C39", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C40", pin "PLUS" (1 bit).
+\o INFO (SCH-1172): There were 9 errors and 0 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\# Displaying modal dbox "_schCheckAndSaveDBox", title "Check and Save"
+\p > 
+\a hiDBoxOK(_schCheckAndSaveDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r nil
+\a hiZoomOutAtMouse()
+\i 8.6875:-3.6875
+\r t
+\a hiZoomInAtMouse()
+\i 14.1875:-4.75
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<9>"
+\r "led_o<9>"
+\a schCreateWireLabelForm->createAlias->value= t
+\r t
+\a schCreateWireLabelForm->createAlias->value= nil
+\r nil
+\a schCreateWireLabelForm->label->value=""
+\r ""
+\a schCreateWireLabelForm->createAlias->value= t
+\r t
+\a schCreateWireLabelForm->createAlias->value= nil
+\r nil
+\a schCreateWireLabelForm->label->value="led_o<9>"
+\r "led_o<9>"
+\a schCreateWireLabelForm->createAlias->value= t
+\r t
+\a mouseAddPt(t)
+\i 11.3875:-4.525
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C32", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C33", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C34", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C35", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C36", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C37", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C38", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C39", pin "PLUS" (1 bit).
+\o Error: Net "led_o<8:0>" (9 bits) can't connect to "C40", pin "PLUS" (1 bit).
+\o INFO (SCH-1172): There were 9 errors and 0 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\# Displaying modal dbox "_schCheckAndSaveDBox", title "Check and Save"
+\p > 
+\a hiDBoxOK(_schCheckAndSaveDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r nil
+\a mouseAddPt(t)
+\i 11.29375:-4.55625
+\r t
+\a hiUndo()
+\r nil
+\a mouseAddPt(t)
+\i 11.175:-4.5625
+\r t
+\a hiUndo()
+\r nil
+\a mouseAddPt(t)
+\i 11.29375:-4.525
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a mouseAddPt(t)
+\i 11.375:-4.50625
+\r t
+\a mouseAddPt(t)
+\i 10.925:-4.55625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a hiiToggleEnterForm(schCreateWireLabelForm) 
+\r t
+\a schCreateWireLabelForm->label->value="1"
+\r "1"
+\a mouseAddPt(t)
+\i 11.3:-4.5375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 11.25:-4.5625
+\r t
+\a schHiDelete()
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<9>"
+\r "led_o<9>"
+\a mouseAddPt(t)
+\i 11.375:-4.51875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<8>"
+\r "led_o<8>"
+\a mouseAddPt(t)
+\i 11.825:-4.5125
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<7>"
+\r "led_o<7>"
+\a mouseAddPt(t)
+\i 12.2375:-4.50625
+\r t
+\a mouseAddPt(t)
+\i 12.2125:-4.525
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<6>"
+\r "led_o<6>"
+\a mouseAddPt(t)
+\i 12.6875:-4.525
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a mouseAddPt(t)
+\i 10.225:-4.41875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<5>"
+\r "led_o<5>"
+\a mouseAddPt(t)
+\i 13.13125:-4.5125
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<4>"
+\r "led_o<4>"
+\a mouseAddPt(t)
+\i 13.55:-4.51875
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<3>"
+\r "led_o<3>"
+\a mouseAddPt(t)
+\i 14:-4.51875
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<2>"
+\r "led_o<2>"
+\a mouseAddPt(t)
+\i 14.4375:-4.525
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="led_o<1>"
+\r "led_o<1>"
+\a mouseAddPt(t)
+\i 14.8875:-4.50625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Error: (DB-270004): Illegal bus reference - Can't tap "<led_o<9>>" from net "led_o<8:0>".
+\o INFO (SCH-1172): There were 1 error and 0 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\# Displaying modal dbox "_schCheckAndSaveDBox", title "Check and Save"
+\p > 
+\a hiDBoxOK(_schCheckAndSaveDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r nil
+\a schSingleSelectPt()
+\i 11.3125:-4.5
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiDescendRead()
+\p > 
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->labelText->value="led_o<0>"
+\r "led_o<0>"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "i2c_num_bytes_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_command_byte_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_din_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_slave_addr_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "PLUS" on instance "V1": floating input/output.
+\o Warning: Pin "MINUS" on instance "V1": floating input/output.
+\o INFO (SCH-1172): There were 0 errors and 14 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 13.5625:-3.9375
+\r t
+\a hiZoomInAtMouse()
+\i 13.5625:-3.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 13.5625:-3.9375
+\r t
+\a hiZoomInAtMouse()
+\i 13.875:-4.9375
+\r t
+\a cancelEnterFun()
+\r t
+\r t
+\a schDirectEdit(1)
+\i 11.0625:-5.5
+\i 11.0625:-5.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.1875:-4.5
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 15.2125:-4.48125
+\r t
+\a mouseAddPt(t)
+\i 15.19375:-4.7875
+\r t
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 14.80625:-4.54375
+\r t
+\a mouseAddPt(t)
+\i 14.7875:-4.65
+\r t
+\r t
+\a schSingleSelectPt()
+\i 14.8125:-4.625
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 14.7875:-4.7
+\r t
+\a mouseAddPt(t)
+\i 14.7875:-4.9
+\r t
+\r t
+\a schSingleSelectPt()
+\i 14.375:-4.625
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 14.3625:-4.76875
+\r t
+\a mouseAddPt(t)
+\i 14.375:-4.93125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 13.9375:-4.6875
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 13.93125:-4.70625
+\r t
+\a mouseAddPt(t)
+\i 13.925:-4.88125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 13.5:-4.6875
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 13.4875:-4.73125
+\r t
+\a mouseAddPt(t)
+\i 13.5125:-4.9125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 13.0625:-4.6875
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 13.0625:-4.71875
+\r t
+\a mouseAddPt(t)
+\i 13.06875:-4.91875
+\r t
+\r t
+\a schSingleSelectPt()
+\i 12.625:-4.75
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.61875:-4.7125
+\r t
+\a mouseAddPt(t)
+\i 12.6375:-4.89375
+\r t
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.18125:-4.71875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 12.1875:-4.6875
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.18125:-4.69375
+\r t
+\a mouseAddPt(t)
+\i 12.18125:-4.86875
+\r t
+\r t
+\a schSingleSelectPt()
+\i 11.6875:-4.6875
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 11.725:-4.7125
+\r t
+\a mouseAddPt(t)
+\i 11.7375:-4.8875
+\r t
+\r t
+\a schSingleSelectPt()
+\i 11.3125:-4.6875
+\r t
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 11.29375:-4.70625
+\r t
+\a mouseAddPt(t)
+\i 11.2875:-4.875
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 11.875:-5.25
+\r t
+\a hiZoomInAtMouse()
+\i 13.0625:-2.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 13.1875:-3.125
+\r t
+\a schDirectEdit(1)
+\i 15.875:-6.1875
+\i 15.875:-6.1875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.375:-5.5
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 15.5375:-5.65
+\r t
+\a mouseAddPt(t)
+\i 15.56875:-6.74375
+\r t
+\r t
+\a schDirectEdit(1)
+\i 15.4375:-6.125
+\i 15.4375:-6.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.9375:-4.3125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 10.925:-4.3
+\r t
+\a mouseAddPt(t)
+\i 10.91875:-5.10625
+\r t
+\r t
+\a schHiStretch()
+\p > 
+\a geSingleSelectBox()
+\i 15.5625:-5.1875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.1875:-5.4375
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 15.25:-5.3625
+\r t
+\a mouseAddPt(t)
+\i 15.25:-5.39375
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 15.38125:-5.25625
+\r t
+\a mouseAddPt(t)
+\i 15.35:-6.41875
+\r t
+\a mouseAddPt(t)
+\i 15.9375:-6.35
+\r t
+\a geSingleSelectBox()
+\i 15.25:-4.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.3125:-3.875
+\r t
+\r t
+\a geSingleSelectBox()
+\i 11.1875:-3.5625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14.625:-4.8125
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 14.4625:-4.43125
+\r t
+\a geSingleSelectBox()
+\i 14.8125:-4.5625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.3125:-3.5
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a geSingleSelectBox()
+\i 11.25:-3.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14.625:-4.625
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a geSingleSelectBox()
+\i 14.75:-4.625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.1875:-3.5
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a geSingleSelectBox()
+\i 11.1875:-3.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 14.75:-4.625
+\r t
+\r t
+\a mouseAddPt(t)
+\i 14.4:-3.76875
+\r t
+\a mouseAddPt(t)
+\i 14.36875:-4.10625
+\r t
+\a geSingleSelectBox()
+\i 14.8125:-4.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.25:-3.75
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 11.275:-3.73125
+\r t
+\a geSingleSelectBox()
+\i 11.1875:-3.75
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.25:-4.875
+\r t
+\r t
+\a mouseAddPt(t)
+\i 14.5625:-4.26875
+\r t
+\a mouseAddPt(t)
+\i 14.55:-4.3625
+\r t
+\a hiZoomInAtMouse()
+\i 12.125:-4.125
+\r t
+\a hiZoomOutAtMouse()
+\i 12:-4.125
+\r t
+\a hiZoomInAtMouse()
+\i 9.4375:-3.4375
+\r t
+\a hiZoomOutAtMouse()
+\i 11.0625:-3.75
+\r t
+\a hiZoomInAtMouse()
+\i 8.75:-2.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 10.9375:-3.5625
+\r t
+\a hiZoomInAtMouse()
+\i 8.5625:-3.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 9.1875:-3.125
+\r t
+\a hiZoomInAtMouse()
+\i 8.3125:-2.875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a mouseAddPt(t)
+\i 10.05:-3.38125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<7:0>"
+\r "i2c_command_byte_o<7:0>"
+\a mouseAddPt(t)
+\i 10.26875:-3.38125
+\r t
+\a hiZoomOutAtMouse()
+\i 9.875:-3.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 9.75:-3.1875
+\r t
+\a hiZoomInAtMouse()
+\i 14.4375:-3.8125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<7>"
+\r "i2c_command_byte_o<7>"
+\a mouseAddPt(t)
+\i 11.3875:-3.75
+\r t
+\a schHiCreateInst()
+\r t
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<6>"
+\r "i2c_command_byte_o<6>"
+\a mouseAddPt(t)
+\i 11.825:-3.76875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<5>"
+\r "i2c_command_byte_o<5>"
+\a mouseAddPt(t)
+\i 12.25:-3.775
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<4>"
+\r "i2c_command_byte_o<4>"
+\a mouseAddPt(t)
+\i 12.66875:-3.8125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 12.9375:-4.25
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<3>"
+\r "i2c_command_byte_o<3>"
+\a mouseAddPt(t)
+\i 13.13125:-3.73125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<2>"
+\r "i2c_command_byte_o<2>"
+\a mouseAddPt(t)
+\i 13.58125:-3.73125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<2>"
+\r "i2c_command_byte_o<2>"
+\a mouseAddPt(t)
+\i 14.025:-3.74375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 13.9375:-3.8125
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->labelText->value="i2c_command_byte_o<1>"
+\r "i2c_command_byte_o<1>"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 14.3125:-3.875
+\r nil
+\a schHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_command_byte_o<0>"
+\r "i2c_command_byte_o<0>"
+\a mouseAddPt(t)
+\i 14.4375:-3.74375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.625:-3.7875
+\r t
+\a mouseAddPt(t)
+\i 12.6375:-3.75
+\r t
+\a hiZoomOutAtMouse()
+\i 12.625:-3.875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 12.875:-3.75
+\r t
+\a hiZoomInAtMouse()
+\i 12.625:-3.75
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "i2c_num_bytes_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_din_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_slave_addr_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "PLUS" on instance "V1": floating input/output.
+\o Warning: Pin "MINUS" on instance "V1": floating input/output.
+\o INFO (SCH-1172): There were 0 errors and 13 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 10.875:-3.5
+\r t
+\a hiZoomInAtMouse()
+\i 11.3125:-4.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 11.3125:-3.875
+\r t
+\a hiZoomInAtMouse()
+\i 5:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 5:-2.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 5:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 3.625:-3.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 3.625:-3.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 5.75:-0.8125
+\r t
+\a hiZoomInAtMouse()
+\i 13.8125:-3.6875
+\r t
+\a schHiStretch()
+\p > 
+\a geSingleSelectBox()
+\i 16:-7.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.125:-3.1875
+\r t
+\r t
+\a mouseAddPt(t)
+\i 10.51875:-3.31875
+\r t
+\a mouseAddPt(t)
+\i 11.975:-6.01875
+\r t
+\a hiZoomOutAtMouse()
+\i 13.625:-3.4375
+\r t
+\a hiZoomInAtMouse()
+\i 17.125:-6.8125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.50625:-5.29375
+\r t
+\a mouseAddPt(t)
+\i 10.525:-5.26875
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 12.91875:-4.9625
+\r t
+\a mouseAddPt(t)
+\i 10.95625:-4.93125
+\r t
+\a hiZoomOutAtMouse()
+\i 12.5625:-5.125
+\r t
+\a hiZoomInAtMouse()
+\i 14.1875:-3.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 13.1875:-2.9375
+\r t
+\a hiZoomInAtMouse()
+\i 12.4375:-0.1875
+\r t
+\a geSingleSelectBox()
+\i 10.875:0.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.875:-3.25
+\r t
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 15.75:-3.4375
+\r nil
+\a schDirectEdit(1)
+\i 16.625:-3.5625
+\i 16.625:-3.5625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.0625:-2.25
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 15.6875:-4.0625
+\r nil
+\a schDirectEdit(1)
+\i 16.75:-3.6875
+\i 16.75:-3.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.625:-2.3125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.31875:-2.8375
+\r t
+\a mouseAddPt(t)
+\i 13.76875:-5.34375
+\r t
+\r t
+\a schSingleSelectPt()
+\i 14.8125:-4.625
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 10.125:-5.23125
+\r t
+\a mouseAddPt(t)
+\i 10.125:-2.6875
+\r t
+\a mouseAddPt(t)
+\i 13.75625:-3.0875
+\r t
+\a schHiStretch()
+\r t
+\a geSingleSelectBox()
+\i 15.875:-4.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.0625:-5
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 12.075:-4.975
+\r t
+\a geSingleSelectBox()
+\i 16.25:-4.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.9375:-4.9375
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 12:-4.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.1875:-4.6875
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 16.1875:-4.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.6875:-5
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 11.69375:-5
+\r t
+\a geSingleSelectBox()
+\i 11.8125:-5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16:-4.8125
+\r t
+\r t
+\a mouseAddPt(t)
+\i 15.98125:-4.78125
+\r t
+\a mouseAddPt(t)
+\i 15.9875:-4.66875
+\r t
+\a geSingleSelectBox()
+\i 16:-4.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.8125:-4.875
+\r t
+\r t
+\a mouseAddPt(t)
+\i 11.7875:-4.88125
+\r t
+\a mouseAddPt(t)
+\i 11.80625:-4.525
+\r t
+\a hiZoomOutAtMouse()
+\i 16.5625:-4.375
+\r t
+\a hiZoomInAtMouse()
+\i 16.625:-4.6875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 15.4375:-3
+\i 15.4375:-3
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.75:-3.375
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 15.6875:-3.25625
+\r t
+\a geSingleSelectBox()
+\i 15.0625:-2.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.3125:-3.5
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a geSingleSelectBox()
+\i 15.25:-2.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.9375:-3.5
+\r t
+\r t
+\a schHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 15.49375:-3.14375
+\r t
+\a geSingleSelectBox()
+\i 15.5:-3.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.6875:-3.25
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 15.5:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 15.1875:-2.9375
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 15.125:-2.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.1875:-3.375
+\r t
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 15.5:-3.125
+\i 15.5:-3.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.75:-3.1875
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 16.9375:-4.375
+\r t
+\a schDirectEdit(1)
+\i 15.5:-3.5625
+\i 15.5:-3.5625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.9375:-3.5625
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 15.5:-2.875
+\i 15.5:-2.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 17:-2.875
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 17:-3.125
+\i 17:-3.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 17:-5.6875
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 15.5:-1.9375
+\i 15.5:-1.9375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 17:-1.9375
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 12.1875:-3.25
+\i 12.1875:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.0625:-3.25
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 10.875:-4.4375
+\i 10.875:-4.4375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.75:-4.4375
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 12.375:-3.25
+\r t
+\a hiZoomInAtMouse()
+\i 12.4375:-6.875
+\r t
+\a hiZoomOutAtMouse()
+\i 15.5:-5.8125
+\r t
+\a hiZoomInAtMouse()
+\i 9.875:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 9.875:-2.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 9.5625:-2.8125
+\r t
+\a hiZoomInAtMouse()
+\i 7.9375:-2.8125
+\r t
+\a hiZoomOutAtMouse()
+\i 9.875:-3.375
+\r t
+\a hiZoomInAtMouse()
+\i 9.75:-3.25
+\r t
+\a hiZoomOutAtMouse()
+\i 10.8125:-3.625
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a mouseAddPt(t)
+\i 11.81875:-4.425
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<7:0>"
+\r "i2c_num_bytes_o<7:0>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 11.8875:-4.41875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 12.0625:-4.3125
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a hiZoomOutAtMouse()
+\i 6.875:-3.75
+\r t
+\a hiZoomInAtMouse()
+\i 16.625:-4.75
+\r t
+\a hiZoomInAtMouse()
+\i 14.0625:-4.8125
+\r t
+\a hiZoomOutAtMouse()
+\i 13.75:-4.9375
+\r t
+\a hiZoomInAtMouse()
+\i 13.5625:-5.3125
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<7>"
+\r "i2c_num_bytes_o<7>"
+\a mouseAddPt(t)
+\i 12.7875:-4.78125
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<6>"
+\r "i2c_num_bytes_o<6>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 13.24375:-4.825
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<5>"
+\r "i2c_num_bytes_o<5>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 13.70625:-4.83125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<4>"
+\r "i2c_num_bytes_o<4>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.125:-4.83125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<3>"
+\r "i2c_num_bytes_o<3>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.55:-4.825
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<2>"
+\r "i2c_num_bytes_o<2>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15:-4.83125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<1>"
+\r "i2c_num_bytes_o<1>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.44375:-4.80625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_num_bytes_o<0>"
+\r "i2c_num_bytes_o<0>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.8625:-4.80625
+\r t
+\a hiZoomOutAtMouse()
+\i 16.125:-5.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 16.0625:-5.3125
+\r t
+\a hiZoomInAtMouse()
+\i 12.8125:-3.625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "i2c_din_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_slave_addr_o<7:0>" on instance "I0": shorted output.
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "PLUS" on instance "V1": floating input/output.
+\o Warning: Pin "MINUS" on instance "V1": floating input/output.
+\o INFO (SCH-1172): There were 0 errors and 12 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 8.375:-2.25
+\r t
+\a hiZoomInAtMouse()
+\i 16.5:-4.5
+\r t
+\a schSingleSelectPt()
+\i 13.4375:-3.5
+\r nil
+\a schDirectEdit(1)
+\i 12.0625:-4.375
+\i 12.0625:-4.375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.125:-3.625
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 11.125:-3.625
+\i 11.125:-3.625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.5:-3.5625
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 11.5:-3.5625
+\i 11.5:-3.5625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.125:-4.375
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 12.25:-3.9375
+\r nil
+\a schDirectEdit(1)
+\i 16.6875:-2.8125
+\i 16.6875:-2.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.125:-1.3125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 11.925:-1.80625
+\r t
+\a mouseAddPt(t)
+\i 13.35:-1.89375
+\r t
+\r t
+\a schSingleSelectPt()
+\i 16.0625:-2.625
+\r nil
+\a schDirectEdit(1)
+\i 16.0625:-2.8125
+\i 16.0625:-2.8125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.6875:-1.6875
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.66875:-1.725
+\r t
+\a mouseAddPt(t)
+\i 12.7125:-2.175
+\r t
+\r t
+\a schDirectEdit(1)
+\i 16.5625:-3.5
+\i 16.5625:-3.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.5:-1.3125
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.51875:-1.325
+\r t
+\a mouseAddPt(t)
+\i 12.5125:-2.6625
+\r t
+\r t
+\a schHiStretch()
+\p > 
+\a geSingleSelectBox()
+\i 11.125:-2.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.375:-2.375
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 11.125:-2.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.375:-2.3125
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 11.125:-2.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.375:-2.25
+\r t
+\r nil
+\a mouseAddPt(t)
+\i 11.375:-2.25625
+\r t
+\a geSingleSelectBox()
+\i 11.125:-2.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.4375:-2.5
+\r t
+\r nil
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 11.1875:-2.3125
+\i 11.1875:-2.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.375:-2.3125
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 10.8125:-1.5
+\i 10.8125:-1.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.8125:-2.5
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 12.9375:-2.5625
+\r t
+\a hiZoomInAtMouse()
+\i 13.1875:-2.75
+\r t
+\a hiZoomOutAtMouse()
+\i 15.3125:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 12.375:-1.3125
+\r t
+\a schDirectEdit(1)
+\i 15.6875:-1.75
+\i 15.6875:-1.75
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.4375:0
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 11.15:-0.1875
+\r t
+\a mouseAddPt(t)
+\i 12.53125:-0.19375
+\r t
+\r t
+\a schSingleSelectPt()
+\i 15.6875:-1.75
+\r nil
+\a schDirectEdit(1)
+\i 16.125:-1.625
+\i 16.125:-1.625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.625:-0.5
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 12.60625:-0.4625
+\r t
+\a mouseAddPt(t)
+\i 12.6:-0.98125
+\r t
+\r t
+\a schSingleSelectPt()
+\i 10.4375:-0.0625
+\r nil
+\a schDirectEdit(1)
+\i 11.5625:0.25
+\i 11.5625:0.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 16.1875:-2
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 16.15625:-1.96875
+\r t
+\a mouseAddPt(t)
+\i 16.20625:-2.6875
+\r t
+\r t
+\a schSingleSelectPt()
+\i 16.875:-1.5
+\r nil
+\a schHiStretch()
+\p > 
+\a geSingleSelectBox()
+\i 10:-1.75
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.375:-1.875
+\r t
+\r nil
+\a geSingleSelectBox()
+\i 10:-1.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.9375:-1.75
+\r t
+\r nil
+\a mouseAddPt(t)
+\i 10.9625:-1.74375
+\r t
+\a geSingleSelectBox()
+\i 9.9375:-1.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 10.1875:-1.75
+\r t
+\r nil
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 10:-1.6875
+\i 10:-1.6875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 11.3125:-1.6875
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 11.625:-1.75
+\r nil
+\a hiZoomOutAtMouse()
+\i 14.8125:-2.1875
+\r t
+\a hiZoomInAtMouse()
+\i 15.4375:-3.125
+\r t
+\a hiZoomOutAtMouse()
+\i 13.3125:-4.9375
+\r t
+\a hiZoomInAtMouse()
+\i 8.6875:-4.375
+\r t
+\a hiZoomOutAtMouse()
+\i 11.3125:-4.5
+\r t
+\a hiZoomInAtMouse()
+\i 10.4375:-5.5
+\r t
+\a hiZoomOutAtMouse()
+\i 10.0625:-4.0625
+\r t
+\a hiZoomInAtMouse()
+\i 4.75:-3.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 5.0625:-3.5
+\r t
+\a hiZoomInAtMouse()
+\i 12.375:-5.6875
+\r t
+\a hiZoomInAtMouse()
+\i 15.0625:-2.5
+\r t
+\a hiZoomOutAtMouse()
+\i 13.3125:-3.3125
+\r t
+\a hiZoomInAtMouse()
+\i 15.5625:-2.875
+\r t
+\a hiZoomOutAtMouse()
+\i 15.5625:-2.875
+\r t
+\a hiZoomInAtMouse()
+\i 13.4375:-2.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 13.25:-2.375
+\r t
+\a schHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a mouseAddPt(t)
+\i 11.7625:-2.81875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_din_o<7:0>"
+\r "i2c_din_o<7:0>"
+\a mouseAddPt(t)
+\i 12.025:-2.79375
+\r t
+\a hiZoomInAtMouse()
+\i 12.6875:-3.0625
+\r t
+\a hiZoomOutAtMouse()
+\i 12.6875:-3.0625
+\r t
+\a hiZoomInAtMouse()
+\i 13.375:-3.1875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<7>"
+\r "i2c_din_o<7>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 12.81875:-3.19375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<6>"
+\r "i2c_din_o<6>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 13.225:-3.1875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a hiiToggleEnterForm(schCreateInstForm) 
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_din_o<5>"
+\r "i2c_din_o<5>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 13.7125:-3.19375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<4>"
+\r "i2c_din_o<4>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.1125:-3.20625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<3>"
+\r "i2c_din_o<3>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.53125:-3.19375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<2>"
+\r "i2c_din_o<2>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.98125:-3.2125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<1>"
+\r "i2c_din_o<1>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.45625:-3.16875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_din_o<0>"
+\r "i2c_din_o<0>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.8625:-3.20625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 13.8125:-3.125
+\r t
+\a hiZoomOutAtMouse()
+\i 13.75:-3.125
+\r t
+\a hiZoomOutAtMouse()
+\i 13.75:-3.1875
+\r t
+\a hiZoomInAtMouse()
+\i 14.25:-2.5625
+\r t
+\a hiZoomInAtMouse()
+\i 15.1875:-1.6875
+\r t
+\a _schHiSaveAs()
+\p > 
+\a hiiSetCurrentForm('_schHiSaveAsForm)
+\r t
+\a hiFormDone(_schHiSaveAsForm)
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 10.8125:-1.875
+\r t
+\a hiZoomInAtMouse()
+\i 9.25:-2
+\r t
+\a hiZoomInAtMouse()
+\i 8.125:-1.8125
+\r t
+\a hiZoomOutAtMouse()
+\i 10:-2.125
+\r t
+\a hiZoomInAtMouse()
+\i 8.625:-1.75
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a hiZoomOutAtMouse()
+\i 8.625:-1.75
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a hiiSetCurrentForm('schCreateWireLabelForm)
+\r t
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<7:0>"
+\r "i2c_slave_addr_o<7:0>"
+\a mouseAddPt(t)
+\i 12.00625:-0.96875
+\r t
+\a mouseAddPt(t)
+\i 12.01875:-0.9625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 12.0625:-0.875
+\i 12.0625:-0.875
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 12.0625:-0.8125
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 12.0625:-0.875
+\r t
+\a schHiDelete()
+\r t
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<7:0>"
+\r "i2c_slave_addr_o<7:0>"
+\a mouseAddPt(t)
+\i 12.025:-0.925
+\r t
+\a hiZoomInAtMouse()
+\i 15.75:-1.3125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<7>"
+\r "i2c_slave_addr_o<7>"
+\a mouseAddPt(t)
+\i 12.78125:-1.4125
+\r t
+\a schHiCreateWireLabel()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<6>"
+\r "i2c_slave_addr_o<6>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 13.25:-1.4625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<5>"
+\r "i2c_slave_addr_o<5>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 13.70625:-1.45
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<4>"
+\r "i2c_slave_addr_o<4>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.1375:-1.45
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<3>"
+\r "i2c_slave_addr_o<3>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 14.54375:-1.45
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<2>"
+\r "i2c_slave_addr_o<2>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.00625:-1.45
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<1>"
+\r "i2c_slave_addr_o<1>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.43125:-1.4625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<1>"
+\r "i2c_slave_addr_o<1>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWireLabel()
+\p > 
+\a schCreateWireLabelForm->label->value="i2c_slave_addr_o<0>"
+\r "i2c_slave_addr_o<0>"
+\a hiiToggleEnterForm(schCreateWireLabelForm)
+\r t
+\a mouseAddPt(t)
+\i 15.875:-1.45
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 15.875:-1.4375
+\r t
+\a hiZoomOutAtMouse()
+\i 15.8125:-1.5
+\r t
+\a hiZoomOutAtMouse()
+\i 8.6875:-3.9375
+\r t
+\a hiZoomInAtMouse()
+\i 12.1875:-6.4375
+\r t
+\a hiZoomInAtMouse()
+\i 11.1875:-6.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 9.5625:-5.75
+\r t
+\a hiZoomInAtMouse()
+\i 8.25:-3.25
+\r t
+\a hiZoomInAtMouse()
+\i 10.3125:-3.5
+\r t
+\a hiZoomOutAtMouse()
+\i 9.6875:-3.4375
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o Warning: Pin "clk_i" on instance "I0": floating input.
+\o Warning: Pin "PLUS" on instance "V1": floating input/output.
+\o Warning: Pin "MINUS" on instance "V1": floating input/output.
+\o INFO (SCH-1172): There were 0 errors and 10 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 8.375:-2.75
+\r t
+\a hiZoomInAtMouse()
+\i 3.75:-3
+\r t
+\a hiZoomInAtMouse()
+\i 3.5625:-2.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 3.5625:-2.6875
+\r t
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 7.85625:-5.1375
+\r t
+\a mouseAddPt(t)
+\i 3.325:-4.13125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 3.4375:-4.375
+\i 3.4375:-4.375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.875:-3.125
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 3.3125:-3.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 5.75:-3.8125
+\r t
+\a hiZoomInAtMouse()
+\i 2.25:-3
+\r t
+\a hiZoomOutAtMouse()
+\i 2.4375:-3.0625
+\r t
+\a schDirectEdit(1)
+\i 3.5625:-3.25
+\i 3.5625:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3.125:-4.5625
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 3.15:-4.53125
+\r t
+\a mouseAddPt(t)
+\i 3.475:-4.5375
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 3.6875:-3.5
+\r t
+\a schSingleSelectPt()
+\i 3.8125:-3.4375
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 3.6375:-3.375
+\r t
+\a mouseAddPt(t)
+\i 3.8375:-1.79375
+\r t
+\a mouseAddPt(t)
+\i 3.65:-3.94375
+\r t
+\a mouseAddPt(t)
+\i 3.61875:-3.75
+\r t
+\a hiZoomOutAtMouse()
+\i 2.8125:-3.5625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 5.3125:-3.6875
+\r t
+\a hiZoomInAtMouse()
+\i 11.5:-4.75
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o Warning: Pin "i2c_data_out_i<7:0>" on instance "I0": floating input.
+\o Warning: Pin "i2c_data_out_valid_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_write_done_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_arb_lost_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_rxak_i" on instance "I0": floating input.
+\o Warning: Pin "i2c_busy_i" on instance "I0": floating input.
+\o Warning: Pin "reset_i" on instance "I0": floating input.
+\o INFO (SCH-1172): There were 0 errors and 7 warnings found in "level_fsm_schematic level_fsm_tb schematic".
+\# Displaying modal dbox "_schCheckDBox", title "Schematic Check"
+\p > 
+\a hiDBoxOK(_schCheckDBox)
+\r t
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomInAtMouse()
+\i 3.625:-2.875
+\r t
+\a hiZoomOutAtMouse()
+\i 3.625:-2.875
+\r t
+\a hiZoomInAtMouse()
+\i 5.875:-1.6875
+\r t
+\a hiZoomOutAtMouse()
+\i 7.125:-2.125
+\r t
+\a hiZoomOutAtMouse()
+\i 3.3125:-1.625
+\r t
+\a hiZoomInAtMouse()
+\i 15.6875:-4.875
+\r t
+\a hiZoomOutAtMouse()
+\i 15.5:-6.375
+\r t
+\a hiZoomInAtMouse()
+\i 8.0625:-2.1875
+\r t
+\# Memory report: Maximum memory size now 6,653 MB at UTC 2021.12.03 10:30:33.000
+\# Memory report: Maximum memory size now 6,364 MB at UTC 2021.12.03 10:32:33.000
+\# Memory report: Maximum memory size now 6,606 MB at UTC 2021.12.03 10:32:43.001
+\a hiZoomOutAtMouse()
+\i 9:-3.5625
+\r t
+\a hiZoomOutAtMouse()
+\i 9.4375:-3.375
+\r t
+\a hiZoomInAtMouse()
+\i -0.4375:-2.1875
+\r t
+\a hiZoomInAtMouse()
+\i 5.1875:-2.6875
+\r t
+\a hiZoomInAtMouse()
+\i 2.75:-3.0625
+\r t
+\a schSingleSelectPt()
+\i 2.6875:-2.375
+\r nil
+\a schHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a schCreateInstForm->cellName->value="vpwlf"
+\r "vpwlf"
+\a hiiToggleEnterForm(schCreateInstForm)
+\r t
+\a mouseAddPt(t)
+\i 2:-2.8875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 2.0625:-3.125
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a dmbSyncWithForm(schObjPropForm 'browse 'libraryName 'cellName 'viewName)
+\r t
+\i ddsServSelect("analogLib" "vpwlf" "symbol")
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a schSingleSelectPt()
+\i 2.3125:-2.9375
+\r nil
+\a schHiDelete()
+\p > 
+\a mouseAddPt(t)
+\i 2.00625:-3.05
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 3.875:-3.4375
+\r t
+\a hiZoomInAtMouse()
+\i 4.1875:-4.625
+\r t
+\a schSingleSelectPt()
+\i 3.625:-3.625
+\r t
+\a schDirectEdit(1)
+\i 3.9375:-4.375
+\i 3.9375:-4.375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3.125:-3.25
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 4.0625:-4.375
+\r nil
+\a schDirectEdit(1)
+\i 3.6875:-4.4375
+\i 3.6875:-4.4375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3.25:-1.875
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 3.25:-1.9125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 3.9375:-4.625
+\i 3.9375:-4.625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3:-3.1875
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 3.725:-3.50625
+\r t
+\a mouseAddPt(t)
+\i 1.075:-3.51875
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 4:-2.875
+\r t
+\a hiZoomInAtMouse()
+\i 1.6875:-2.75
+\r t
+\a schSingleSelectPt()
+\i 1.625:-3.5625
+\r nil
+\a schDirectEdit(1)
+\i 1.125:-4.25
+\i 1.125:-4.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 0.5625:-3.3125
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 0.9375:-3.59375
+\r t
+\a mouseAddPt(t)
+\i 1.31875:-3.64375
+\r t
+\r t
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 1.33125:-3.6
+\r t
+\a mouseAddPt(t)
+\i 1.725:-3.64375
+\r t
+\r t
+\a schDirectEdit(1)
+\i 2.0625:-3.125
+\i 2.0625:-3.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 1.5625:-4.375
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 1.775:-3.575
+\r t
+\a mouseAddPt(t)
+\i 2.1875:-3.575
+\r t
+\r t
+\a schHiCopy()
+\p > 
+\a geSingleSelectBox()
+\i 2.375:-3.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.125:-4.375
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 2.375:-3.125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2:-4.375
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 2.175:-3.525
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 2.5625:-3.375
+\i 2.5625:-3.375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.0625:-4.375
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 2.175:-3.55625
+\r t
+\a mouseAddPt(t)
+\i 2.75:-3.5625
+\r t
+\r t
+\a schHiCopy()
+\p > 
+\a geSingleSelectBox()
+\i 3:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.5:-4.4375
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 2.68125:-3.525
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 3.0625:-3.3125
+\i 3.0625:-3.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.5625:-4.5
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 2.65:-3.35
+\r t
+\a mouseAddPt(t)
+\i 3.04375:-3.375
+\r t
+\r t
+\a schHiCopy()
+\p > 
+\a geSingleSelectBox()
+\i 3.25:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.9375:-4.5625
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a geSingleSelectBox()
+\i 3.375:-3.0625
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3.0625:-4.25
+\r t
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 3.2125:-3.50625
+\r t
+\a mouseAddPt(t)
+\i 3.63125:-3.50625
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt(t)
+\i 3.6:-3.64375
+\r t
+\a mouseAddPt(t)
+\i 4.0375:-3.6125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 4.375:-4.3125
+\i 4.375:-4.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 0.3125:-3.25
+\r t
+\r nil
+\a schHiStretch()
+\p > 
+\a mouseAddPt(t)
+\i 1.85625:-3.3125
+\r t
+\a mouseAddPt(t)
+\i 1.16875:-3.31875
+\r t
+\r t
+\a schDirectEdit(1)
+\i 2.9375:-4.3125
+\i 2.9375:-4.3125
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.3125:-3.9375
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 2.625:-4.375
+\r nil
+\a schDirectEdit(1)
+\i 2.6875:-4.4375
+\i 2.6875:-4.4375
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 2.375:-3.8125
+\r t
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 2.39375:-3.80625
+\r t
+\a mouseAddPt(t)
+\i 2.7875:-3.81875
+\r t
+\r t
+\a schHiCopy()
+\p > 
+\a mouseAddPt(t)
+\i 2.91875:-3.975
+\r t
+\a mouseAddPt(t)
+\i 3.38125:-4.00625
+\r t
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 2.9375:-3.75625
+\r t
+\a mouseAddPt(t)
+\i 2.94375:-3.91875
+\r t
+\a mouseAddPt(t)
+\i 3.4:-3.9125
+\r t
+\a mouseAddPt(t)
+\i 3.40625:-3.775
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 3.39375:-3.3625
+\r t
+\a mouseAddPt(t)
+\i 3.825:-2.7875
+\r t
+\a mouseAddPt(t)
+\i 2.975:-3.35
+\r t
+\a mouseAddPt(t)
+\i 3.8125:-2.66875
+\r t
+\a mouseAddPt(t)
+\i 2.51875:-3.34375
+\r t
+\a mouseAddPt(t)
+\i 3.7875:-2.5375
+\r t
+\a mouseAddPt(t)
+\i 2.0625:-3.36875
+\r t
+\a mouseAddPt(t)
+\i 3.8:-2.41875
+\r t
+\a mouseAddPt(t)
+\i 1.48125:-3.35
+\r t
+\a mouseAddPt(t)
+\i 3.86875:-2.175
+\r t
+\a mouseAddPt(t)
+\i 1.0875:-3.35
+\r t
+\a mouseAddPt(t)
+\i 3.83125:-2.05
+\r t
+\a mouseAddPt(t)
+\i 0.63125:-3.3625
+\r t
+\a mouseAddPt(t)
+\i 3.81875:-1.9375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomInAtMouse()
+\i 2.4375:-2.875
+\r t
+\a hiZoomOutAtMouse()
+\i 2.4375:-2.875
+\r t
+\a schSingleSelectPt()
+\i 3.875:-3.8125
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 1.4375:-3
+\r t
+\a hiZoomInAtMouse()
+\i 1.6875:-2.75
+\r t
+\a schHiCreateWire(0.0)
+\p > 
+\a mouseAddPt(t)
+\i 3.4:-3.1875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiDelete()
+\p > 
+\a geSingleSelectBox()
+\i 3.4375:-3.25
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 3.25:-3.0625
+\r t
+\r nil
+\a mouseAddPt(t)
+\i 3.375:-3.04375
+\r t
+\a mouseAddPt(t)
+\i 3.46875:-2.8375
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a schHiMousePopUp()
+\i 2.625:-3.125
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a mouseAddPt(t)
+\i 2.6375:-3.11875
+\r t
+\a hiZoomOutAtMouse()
+\i 6.4375:-3.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 6.4375:-3.3125
+\r t
+\a hiPopupDown(schNonePopUp)
+\r t
+\a schHiDelete()
+\r t
+\a schHiDelete()
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a cancelEnterFun()
+\r nil
+\a cancelEnterFun()
+\r nil
+\a cancelEnterFun()
+\r nil
+\a cancelEnterFun()
+\r nil
+\a schZoomFit(1.0 0.9)
+\r t
+\a schHiCreateWireStubs()
+\p > 
+\a hiUpdateMagOptions()
+\r t
+\a schSnapToConn()
+\r nil
+\a hiZoomOut()
+\p > 
+\a hiZoomIn()
+\p > 
+\a schHiNewCellView()
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a hiFormCancel(deNewForm) 
+\r t
+\r nil
+\a hiFormCancel(hiMagOptionsForm) 
+\r t
+\a hiZoomInAtMouse()
+\i 0.6875:-3.5625
+\r t
+\a hiZoomInAtMouse()
+\i 1.0625:-3.375
+\r t
+\a hiZoomOutAtMouse()
+\i 2.625:-4.3125
+\r t
+\a hiZoomInAtMouse()
+\i 2:-2.4375
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a hiZoomOutAtMouse()
+\i 2.4375:-2.75
+\r t
+\a schHiCreateWire(schGetEnv("defWideWireWidth"))
+\r t
+\a mouseAddPt(t)
+\i 3.35:-3.4
+\r t
+\a mouseAddPt(t)
+\i 3.8875:-2.8125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiZoomOutAtMouse()
+\i 3.375:-3.0625
+\r t
+\a hiZoomInAtMouse()
+\i 1.3125:-1.9375
+\r t
+\a hiZoomOutAtMouse()
+\i 0:-2.5625
+\r t
+\a hiZoomInAtMouse()
+\i 4.375:-2.5625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a hiResizeWindow(window(1) list(1294:251 2089:764))
+\r t
+\a hiZoomInAtMouse()
+\i 1.875:-3.1875
+\r t
+\a hiZoomOutAtMouse()
+\i 1.75:-3.3125
+\r t
+\a hiZoomInAtMouse()
+\i 1.5:-3.375
+\r t
+\a hiZoomOutAtMouse()
+\i 2.875:-3.25
+\r t
+\a hiZoomInAtMouse()
+\i 1.75:-3.5
+\r t
+\a hiZoomOutAtMouse()
+\i 1.5625:-3.4375
+\r t
+\a hiZoomInAtMouse()
+\i 1.9375:-3.125
+\r t
+\a hiZoomOutAtMouse()
+\i 1.9375:-3.1875
+\r t
+\a hiZoomInAtMouse()
+\i 1.875:-3.1875
+\r t
+\a schSingleSelectPt()
+\i 3.5625:-3.625
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t
+\a schHiObjectProperty()
+\r t
+\a schSingleSelectPt()
+\i 3.4375:-3.5625
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->srcType->value="pwl"
+\r "pwl"
+\a schObjPropForm->selectFile->value= t
+\r t
+\a (hiFileDialogSetSelection UnixschObjPropForm nil 'cancel)
+\r t
+\a (hiFileDialogDone UnixschObjPropForm nil)
+\r t
+\a schObjPropForm->pwlEntryMethod->value="Voltage/Time points"
+\r "Voltage/Time points"
+\a schObjPropForm->pwlEntryMethod->value="File"
+\r "File"
+\a hiFormCancel(schObjPropForm) 
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "level_fsm_tb schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
+\r t

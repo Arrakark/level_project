@@ -4,3 +4,5 @@ DEFINE basic     $CDS_HOME/tools/dfII/etc/cdslib/basic
 DEFINE cdsDefTechLib $CDS_HOME/tools/dfII/etc/cdsDefTechLib
 DEFINE NCSU_TechLib_FreePDK15  $PDK_DIR/cdslib/NCSU_TechLib_FreePDK15
 ### the rest are your libraries
+#Removed by ddDeleteObj: DEFINE elec403 /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virtuoso/elec403
+DEFINE elec402 /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virtuoso/elec402
