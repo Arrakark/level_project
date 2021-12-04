@@ -1,0 +1,485 @@
+Timing Analyzer Settings
+     Time_Scale:        1.000000E-12
+     Time_Per_Division: 1.440000E+05
+     NumberDivisions:   10
+     Start_Time:        0.0
+     End_Time:          1440000.0
+Digital_Signal
+     Position:          1
+     Height:            24
+     Space_Above:       24
+     Name:              clk_i
+     Start_State:       1
+     Number_Edges:      288
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               5000.0 0
+          Edge:               10000.0 1
+          Edge:               15000.0 0
+          Edge:               20000.0 1
+          Edge:               25000.0 0
+          Edge:               30000.0 1
+          Edge:               35000.0 0
+          Edge:               40000.0 1
+          Edge:               45000.0 0
+          Edge:               50000.0 1
+          Edge:               55000.0 0
+          Edge:               60000.0 1
+          Edge:               65000.0 0
+          Edge:               70000.0 1
+          Edge:               75000.0 0
+          Edge:               80000.0 1
+          Edge:               85000.0 0
+          Edge:               90000.0 1
+          Edge:               95000.0 0
+          Edge:               100000.0 1
+          Edge:               105000.0 0
+          Edge:               110000.0 1
+          Edge:               115000.0 0
+          Edge:               120000.0 1
+          Edge:               125000.0 0
+          Edge:               130000.0 1
+          Edge:               135000.0 0
+          Edge:               140000.0 1
+          Edge:               145000.0 0
+          Edge:               150000.0 1
+          Edge:               155000.0 0
+          Edge:               160000.0 1
+          Edge:               165000.0 0
+          Edge:               170000.0 1
+          Edge:               175000.0 0
+          Edge:               180000.0 1
+          Edge:               185000.0 0
+          Edge:               190000.0 1
+          Edge:               195000.0 0
+          Edge:               200000.0 1
+          Edge:               205000.0 0
+          Edge:               210000.0 1
+          Edge:               215000.0 0
+          Edge:               220000.0 1
+          Edge:               225000.0 0
+          Edge:               230000.0 1
+          Edge:               235000.0 0
+          Edge:               240000.0 1
+          Edge:               245000.0 0
+          Edge:               250000.0 1
+          Edge:               255000.0 0
+          Edge:               260000.0 1
+          Edge:               265000.0 0
+          Edge:               270000.0 1
+          Edge:               275000.0 0
+          Edge:               280000.0 1
+          Edge:               285000.0 0
+          Edge:               290000.0 1
+          Edge:               295000.0 0
+          Edge:               300000.0 1
+          Edge:               305000.0 0
+          Edge:               310000.0 1
+          Edge:               315000.0 0
+          Edge:               320000.0 1
+          Edge:               325000.0 0
+          Edge:               330000.0 1
+          Edge:               335000.0 0
+          Edge:               340000.0 1
+          Edge:               345000.0 0
+          Edge:               350000.0 1
+          Edge:               355000.0 0
+          Edge:               360000.0 1
+          Edge:               365000.0 0
+          Edge:               370000.0 1
+          Edge:               375000.0 0
+          Edge:               380000.0 1
+          Edge:               385000.0 0
+          Edge:               390000.0 1
+          Edge:               395000.0 0
+          Edge:               400000.0 1
+          Edge:               405000.0 0
+          Edge:               410000.0 1
+          Edge:               415000.0 0
+          Edge:               420000.0 1
+          Edge:               425000.0 0
+          Edge:               430000.0 1
+          Edge:               435000.0 0
+          Edge:               440000.0 1
+          Edge:               445000.0 0
+          Edge:               450000.0 1
+          Edge:               455000.0 0
+          Edge:               460000.0 1
+          Edge:               465000.0 0
+          Edge:               470000.0 1
+          Edge:               475000.0 0
+          Edge:               480000.0 1
+          Edge:               485000.0 0
+          Edge:               490000.0 1
+          Edge:               495000.0 0
+          Edge:               500000.0 1
+          Edge:               505000.0 0
+          Edge:               510000.0 1
+          Edge:               515000.0 0
+          Edge:               520000.0 1
+          Edge:               525000.0 0
+          Edge:               530000.0 1
+          Edge:               535000.0 0
+          Edge:               540000.0 1
+          Edge:               545000.0 0
+          Edge:               550000.0 1
+          Edge:               555000.0 0
+          Edge:               560000.0 1
+          Edge:               565000.0 0
+          Edge:               570000.0 1
+          Edge:               575000.0 0
+          Edge:               580000.0 1
+          Edge:               585000.0 0
+          Edge:               590000.0 1
+          Edge:               595000.0 0
+          Edge:               600000.0 1
+          Edge:               605000.0 0
+          Edge:               610000.0 1
+          Edge:               615000.0 0
+          Edge:               620000.0 1
+          Edge:               625000.0 0
+          Edge:               630000.0 1
+          Edge:               635000.0 0
+          Edge:               640000.0 1
+          Edge:               645000.0 0
+          Edge:               650000.0 1
+          Edge:               655000.0 0
+          Edge:               660000.0 1
+          Edge:               665000.0 0
+          Edge:               670000.0 1
+          Edge:               675000.0 0
+          Edge:               680000.0 1
+          Edge:               685000.0 0
+          Edge:               690000.0 1
+          Edge:               695000.0 0
+          Edge:               700000.0 1
+          Edge:               705000.0 0
+          Edge:               710000.0 1
+          Edge:               715000.0 0
+          Edge:               720000.0 1
+          Edge:               725000.0 0
+          Edge:               730000.0 1
+          Edge:               735000.0 0
+          Edge:               740000.0 1
+          Edge:               745000.0 0
+          Edge:               750000.0 1
+          Edge:               755000.0 0
+          Edge:               760000.0 1
+          Edge:               765000.0 0
+          Edge:               770000.0 1
+          Edge:               775000.0 0
+          Edge:               780000.0 1
+          Edge:               785000.0 0
+          Edge:               790000.0 1
+          Edge:               795000.0 0
+          Edge:               800000.0 1
+          Edge:               805000.0 0
+          Edge:               810000.0 1
+          Edge:               815000.0 0
+          Edge:               820000.0 1
+          Edge:               825000.0 0
+          Edge:               830000.0 1
+          Edge:               835000.0 0
+          Edge:               840000.0 1
+          Edge:               845000.0 0
+          Edge:               850000.0 1
+          Edge:               855000.0 0
+          Edge:               860000.0 1
+          Edge:               865000.0 0
+          Edge:               870000.0 1
+          Edge:               875000.0 0
+          Edge:               880000.0 1
+          Edge:               885000.0 0
+          Edge:               890000.0 1
+          Edge:               895000.0 0
+          Edge:               900000.0 1
+          Edge:               905000.0 0
+          Edge:               910000.0 1
+          Edge:               915000.0 0
+          Edge:               920000.0 1
+          Edge:               925000.0 0
+          Edge:               930000.0 1
+          Edge:               935000.0 0
+          Edge:               940000.0 1
+          Edge:               945000.0 0
+          Edge:               950000.0 1
+          Edge:               955000.0 0
+          Edge:               960000.0 1
+          Edge:               965000.0 0
+          Edge:               970000.0 1
+          Edge:               975000.0 0
+          Edge:               980000.0 1
+          Edge:               985000.0 0
+          Edge:               990000.0 1
+          Edge:               995000.0 0
+          Edge:               1000000.0 1
+          Edge:               1005000.0 0
+          Edge:               1010000.0 1
+          Edge:               1015000.0 0
+          Edge:               1020000.0 1
+          Edge:               1025000.0 0
+          Edge:               1030000.0 1
+          Edge:               1035000.0 0
+          Edge:               1040000.0 1
+          Edge:               1045000.0 0
+          Edge:               1050000.0 1
+          Edge:               1055000.0 0
+          Edge:               1060000.0 1
+          Edge:               1065000.0 0
+          Edge:               1070000.0 1
+          Edge:               1075000.0 0
+          Edge:               1080000.0 1
+          Edge:               1085000.0 0
+          Edge:               1090000.0 1
+          Edge:               1095000.0 0
+          Edge:               1100000.0 1
+          Edge:               1105000.0 0
+          Edge:               1110000.0 1
+          Edge:               1115000.0 0
+          Edge:               1120000.0 1
+          Edge:               1125000.0 0
+          Edge:               1130000.0 1
+          Edge:               1135000.0 0
+          Edge:               1140000.0 1
+          Edge:               1145000.0 0
+          Edge:               1150000.0 1
+          Edge:               1155000.0 0
+          Edge:               1160000.0 1
+          Edge:               1165000.0 0
+          Edge:               1170000.0 1
+          Edge:               1175000.0 0
+          Edge:               1180000.0 1
+          Edge:               1185000.0 0
+          Edge:               1190000.0 1
+          Edge:               1195000.0 0
+          Edge:               1200000.0 1
+          Edge:               1205000.0 0
+          Edge:               1210000.0 1
+          Edge:               1215000.0 0
+          Edge:               1220000.0 1
+          Edge:               1225000.0 0
+          Edge:               1230000.0 1
+          Edge:               1235000.0 0
+          Edge:               1240000.0 1
+          Edge:               1245000.0 0
+          Edge:               1250000.0 1
+          Edge:               1255000.0 0
+          Edge:               1260000.0 1
+          Edge:               1265000.0 0
+          Edge:               1270000.0 1
+          Edge:               1275000.0 0
+          Edge:               1280000.0 1
+          Edge:               1285000.0 0
+          Edge:               1290000.0 1
+          Edge:               1295000.0 0
+          Edge:               1300000.0 1
+          Edge:               1305000.0 0
+          Edge:               1310000.0 1
+          Edge:               1315000.0 0
+          Edge:               1320000.0 1
+          Edge:               1325000.0 0
+          Edge:               1330000.0 1
+          Edge:               1335000.0 0
+          Edge:               1340000.0 1
+          Edge:               1345000.0 0
+          Edge:               1350000.0 1
+          Edge:               1355000.0 0
+          Edge:               1360000.0 1
+          Edge:               1365000.0 0
+          Edge:               1370000.0 1
+          Edge:               1375000.0 0
+          Edge:               1380000.0 1
+          Edge:               1385000.0 0
+          Edge:               1390000.0 1
+          Edge:               1395000.0 0
+          Edge:               1400000.0 1
+          Edge:               1405000.0 0
+          Edge:               1410000.0 1
+          Edge:               1415000.0 0
+          Edge:               1420000.0 1
+          Edge:               1425000.0 0
+          Edge:               1430000.0 1
+          Edge:               1435000.0 0
+          Edge:               1440000.0 1
+Digital_Signal
+     Position:          2
+     Height:            24
+     Space_Above:       24
+     Name:              reset_i
+     Start_State:       0
+     Number_Edges:      4
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 1
+          Edge:               20000.0 0
+          Edge:               360000.0 1
+          Edge:               370000.0 0
+Digital_Signal
+     Position:          3
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_busy_i
+     Start_State:       1
+     Number_Edges:      9
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               40000.0 0
+          Edge:               70000.0 1
+          Edge:               90000.0 0
+          Edge:               160000.0 1
+          Edge:               190000.0 0
+          Edge:               240000.0 1
+          Edge:               290000.0 0
+          Edge:               400000.0 1
+          Edge:               420000.0 0
+Digital_Bus
+     Position:          4
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_data_out_i[7:0]
+     Start_State:       00
+     State_Format:      Hex
+     Number_Edges:      1
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               190000.0 F9
+Digital_Signal
+     Position:          5
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_data_out_valid_i
+     Start_State:       0
+     Number_Edges:      3
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               190000.0 1
+          Edge:               240000.0 0
+          Edge:               300000.0 1
+Digital_Signal
+     Position:          6
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_write_done_i
+     Start_State:       0
+     Number_Edges:      1
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               110000.0 1
+Digital_Signal
+     Position:          7
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_arb_lost_i
+     Start_State:       0
+     Number_Edges:      1
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               300000.0 1
+Digital_Signal
+     Position:          8
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_rxak_i
+     Start_State:       0
+     Number_Edges:      2
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               190000.0 1
+          Edge:               300000.0 0
+Digital_Bus
+     Position:          9
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_slave_addr_o[7:0]
+     Start_State:       X
+     State_Format:      Hex
+     Number_Edges:      4
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 00
+          Edge:               40000.0 D0
+          Edge:               360000.0 00
+          Edge:               370000.0 D0
+Digital_Bus
+     Position:          10
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_command_byte_o[7:0]
+     Start_State:       X
+     State_Format:      Hex
+     Number_Edges:      5
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 00
+          Edge:               40000.0 6B
+          Edge:               130000.0 3D
+          Edge:               360000.0 00
+          Edge:               370000.0 6B
+Digital_Bus
+     Position:          11
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_num_bytes_o[7:0]
+     Start_State:       X
+     State_Format:      Hex
+     Number_Edges:      4
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 00
+          Edge:               40000.0 02
+          Edge:               360000.0 00
+          Edge:               370000.0 02
+Digital_Signal
+     Position:          12
+     Height:            24
+     Space_Above:       24
+     Name:              error_led_o
+     Start_State:       X
+     Number_Edges:      4
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 0
+          Edge:               310000.0 1
+          Edge:               360000.0 0
+          Edge:               420000.0 1
+Digital_Signal
+     Position:          13
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_read_o
+     Start_State:       X
+     Number_Edges:      5
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 0
+          Edge:               140000.0 1
+          Edge:               150000.0 0
+          Edge:               230000.0 1
+          Edge:               240000.0 0
+Digital_Signal
+     Position:          14
+     Height:            24
+     Space_Above:       24
+     Name:              i2c_write_o
+     Start_State:       X
+     Number_Edges:      5
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 0
+          Edge:               50000.0 1
+          Edge:               60000.0 0
+          Edge:               380000.0 1
+          Edge:               390000.0 0
+Digital_Bus
+     Position:          15
+     Height:            24
+     Space_Above:       24
+     Name:              led_o[8:0]
+     Start_State:       X
+     State_Format:      Hex
+     Number_Edges:      3
+     Rise_Time:         0.2
+     Fall_Time:         0.2
+          Edge:               10000.0 000
+          Edge:               210000.0 080
+          Edge:               360000.0 000
