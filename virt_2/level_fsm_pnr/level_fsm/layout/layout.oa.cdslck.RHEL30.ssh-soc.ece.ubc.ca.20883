@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      l9w0b
+HostName                       ssh-soc.ece.ubc.ca
+ProcessIdentifier              20883
+ProcessCreationTime_UTC        1638519332
+ProcessCreationTime_Readable   Fri Dec  3 00:15:32 2021 PST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/virt_2/level_fsm_pnr/level_fsm/layout/layout.oa.cdslck
+TimeEditLocked                 Fri Dec  3 12:57:57 2021 PST
