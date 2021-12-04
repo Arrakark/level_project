@@ -1,0 +1,569 @@
+[12/03 02:51:34      0s] 
+[12/03 02:51:34      0s] Cadence Innovus(TM) Implementation System.
+[12/03 02:51:34      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/03 02:51:34      0s] 
+[12/03 02:51:34      0s] Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+[12/03 02:51:34      0s] Options:	-log myinnovus.log 
+[12/03 02:51:34      0s] Date:		Fri Dec  3 02:51:34 2021
+[12/03 02:51:34      0s] Host:		ssh-soc.ece.ubc.ca (x86_64 w/Linux 3.10.0-1160.15.2.el7.x86_64) (1core*12cpus*Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz 30720KB)
+[12/03 02:51:34      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[12/03 02:51:34      0s] 
+[12/03 02:51:34      0s] License:
+[12/03 02:51:35      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[12/03 02:51:35      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/03 02:52:07     16s] @(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+[12/03 02:52:07     16s] @(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+[12/03 02:52:07     16s] @(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+[12/03 02:52:07     16s] @(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+[12/03 02:52:07     16s] @(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+[12/03 02:52:07     16s] @(#)CDS: CPE v18.10-p005
+[12/03 02:52:07     16s] @(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+[12/03 02:52:07     16s] @(#)CDS: OA 22.50-p083 Tue Jan  2 17:02:41 2018
+[12/03 02:52:07     16s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[12/03 02:52:07     16s] @(#)CDS: RCDB 11.13
+[12/03 02:52:07     16s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_78990_ssh-soc.ece.ubc.ca_l9w0b_uRjHq0.
+
+[12/03 02:52:07     16s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[12/03 02:52:09     17s] 
+[12/03 02:52:09     17s] **INFO:  MMMC transition support version v31-84 
+[12/03 02:52:09     17s] 
+[12/03 02:52:09     17s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/03 02:52:09     17s] <CMD> suppressMessage ENCEXT-2799
+[12/03 02:52:09     17s] <CMD> win
+[12/03 02:53:19     25s] <CMD> encMessage warning 0
+[12/03 02:53:19     25s] Suppress "**WARN ..." messages.
+[12/03 02:53:19     25s] <CMD> encMessage debug 0
+[12/03 02:53:19     25s] <CMD> encMessage info 0
+[12/03 02:53:19     25s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "Verify"
+[12/03 02:53:33     28s] <CMD> encMessage warning 0
+[12/03 02:53:33     28s] Suppress "**WARN ..." messages.
+[12/03 02:53:33     28s] <CMD> encMessage debug 0
+[12/03 02:53:33     28s] <CMD> encMessage info 0
+[12/03 02:53:33     28s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "gE#À€À€À€À€À€À€À€À€À€À€7À€À€À€À€À€À€À€À€À€À€À€À€À€*À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€%À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€"
+[12/03 02:53:43     30s] <CMD> encMessage warning 0
+[12/03 02:53:43     30s] Suppress "**WARN ..." messages.
+[12/03 02:53:43     30s] <CMD> encMessage debug 0
+[12/03 02:53:43     30s] <CMD> encMessage info 0
+[12/03 02:53:43     30s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: can't read "CDS_HOME": no such variable
+[12/03 02:53:50     32s] <CMD> encMessage warning 0
+[12/03 02:53:50     32s] Suppress "**WARN ..." messages.
+[12/03 02:53:50     32s] <CMD> encMessage debug 0
+[12/03 02:53:50     32s] <CMD> encMessage info 0
+[12/03 02:53:50     32s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: can't read "CDS_HOME": no such variable
+[12/03 02:53:58     34s] <CMD> encMessage warning 0
+[12/03 02:53:58     34s] Suppress "**WARN ..." messages.
+[12/03 02:53:58     34s] <CMD> encMessage debug 0
+[12/03 02:53:58     34s] <CMD> encMessage info 0
+[12/03 02:53:58     34s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: ambiguous command name "PO": POPCTEREPORT POPFEREPORT POPULATEPGSLACKTABLE POPVIEW POSTSELECTNETP2P
+[12/03 02:54:08     36s] <CMD> encMessage warning 0
+[12/03 02:54:08     36s] Suppress "**WARN ..." messages.
+[12/03 02:54:08     36s] <CMD> encMessage debug 0
+[12/03 02:54:08     36s] <CMD> encMessage info 0
+[12/03 02:54:09     37s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+[12/03 02:54:09     37s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+[12/03 02:54:09     37s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+[12/03 02:54:09     37s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+[12/03 02:54:09     37s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+[12/03 02:54:09     37s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[12/03 02:54:09     37s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:54:09     37s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 02:54:09     37s] Loading view definition file from /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/viewDefinition.tcl
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     37s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:09     38s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+[12/03 02:54:10     38s] *** End library_loading (cpu=0.02min, real=0.02min, mem=14.1M, fe_cpu=0.64min, fe_real=2.60min, fe_mem=638.9M) ***
+[12/03 02:54:11     38s] *** Netlist is unique.
+[12/03 02:54:11     39s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/03 02:54:11     39s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/03 02:54:11     39s] Loading preference file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/gui.pref.tcl ...
+[12/03 02:54:11     39s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/level_fsm_map.sdc, Line 9).
+[12/03 02:54:11     39s] 
+[12/03 02:54:11     39s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/level_fsm_map.sdc, Line 10).
+[12/03 02:54:11     39s] 
+[12/03 02:54:12     39s] Loading place ...
+[12/03 02:54:14     41s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 18.10-p002_1. They will be removed in the next release. 
+[12/03 02:54:14     41s] timing_enable_default_delay_arc
+[12/03 02:56:24     72s] <CMD> encMessage warning 0
+[12/03 02:56:24     72s] Suppress "**WARN ..." messages.
+[12/03 02:56:24     72s] <CMD> encMessage debug 0
+[12/03 02:56:24     72s] <CMD> encMessage info 0
+[12/03 02:56:24     72s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "À€À€À€À€Ã¥À€"
+[12/03 02:56:37     73s] <CMD> restoreDesign -cellview {level_fsm_pnr level_fsm layout}
+[12/03 02:56:37     73s] #% Begin load design ... (date=12/03 02:56:37, mem=723.3M)
+[12/03 02:56:37     73s] The hierarchical pg variable 'upf_hier_pg_port_support' only can be set before design is loaded.
+[12/03 02:56:37     73s] Resetting process node dependent CCOpt properties.
+[12/03 02:56:37     73s] Free PSO.
+[12/03 02:56:37     73s] Cleaning up the current multi-corner RC extraction setup.
+[12/03 02:56:37     73s] Resetting process node dependent CCOpt properties.
+[12/03 02:56:37     73s] AAE DB initialization (MEM=898.73 CPU=0:00:00.1 REAL=0:00:00.0) 
+[12/03 02:56:38     73s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[12/03 02:56:38     73s] Set DBUPerIGU to 1000.
+[12/03 02:56:38     73s] Set net toggle Scale Factor to 1.00
+[12/03 02:56:38     73s] Set Shrink Factor to 1.00000
+[12/03 02:56:38     73s] Set net toggle Scale Factor to 1.00
+[12/03 02:56:38     73s] Set Shrink Factor to 1.00000
+[12/03 02:56:38     73s] Set net toggle Scale Factor to 1.00
+[12/03 02:56:38     73s] Set Shrink Factor to 1.00000
+[12/03 02:56:38     74s] 
+[12/03 02:56:38     74s] *** Memory Usage v#1 (Current mem = 742.262M, initial mem = 259.488M) ***
+[12/03 02:56:38     74s] 
+[12/03 02:56:38     74s] 
+[12/03 02:56:38     74s] Info (SM2C): Status of key globals:
+[12/03 02:56:38     74s] 	 MMMC-by-default flow     : 1
+[12/03 02:56:38     74s] 	 Default MMMC objs envvar : 0
+[12/03 02:56:38     74s] 	 Data portability         : 0
+[12/03 02:56:38     74s] 	 MMMC PV Emulation        : 0
+[12/03 02:56:38     74s] 	 MMMC debug               : 0
+[12/03 02:56:38     74s] 	 Init_Design flow         : 1
+[12/03 02:56:38     74s] 
+[12/03 02:56:38     74s] 
+[12/03 02:56:38     74s] 	 CTE SM2C global          : false
+[12/03 02:56:38     74s] 	 Reporting view filter    : false
+[12/03 02:56:38     74s] **ERROR: (IMPSYT-7221):	restoreDesign failed: level_fsm.globals file not found in 'level_fsm_pnr/level_fsm/layout'.
+[12/03 02:56:38     74s] #% End load design ... (date=12/03 02:56:38, total cpu=0:00:00.7, real=0:00:01.0, peak res=723.3M, current mem=578.3M)
+[12/03 02:56:38     74s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[12/03 02:57:23     77s] <CMD> encMessage warning 1
+[12/03 02:57:23     77s] <CMD> encMessage debug 0
+[12/03 02:57:23     77s] <CMD> encMessage info 1
+[12/03 02:57:23     77s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "À€À€À€À€Ã¥À€"
+[12/03 02:57:24     78s] <CMD> encMessage warning 1
+[12/03 02:57:24     78s] <CMD> encMessage debug 0
+[12/03 02:57:24     78s] <CMD> encMessage info 1
+[12/03 02:57:52     82s] <CMD> encMessage warning 1
+[12/03 02:57:52     82s] <CMD> encMessage debug 0
+[12/03 02:57:52     82s] <CMD> encMessage info 1
+[12/03 02:57:52     82s] <CMD> restoreDesign /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat level_fsm
+[12/03 02:57:52     82s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[12/03 02:57:52     82s] #% Begin load design ... (date=12/03 02:57:52, mem=578.6M)
+[12/03 02:57:52     82s] Set Default Input Pin Transition as 0.1 ps.
+[12/03 02:57:52     82s] Loading design 'level_fsm' saved by 'Innovus' '18.10-p002_1' on 'Thu Dec 2 23:39:23 2021'.
+[12/03 02:57:52     82s] % Begin Load MMMC data ... (date=12/03 02:57:52, mem=579.7M)
+[12/03 02:57:52     82s] % End Load MMMC data ... (date=12/03 02:57:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=579.7M, current mem=579.7M)
+[12/03 02:57:52     82s] 
+[12/03 02:57:52     82s] Loading LEF file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/lef/gsclib045_tech.lef ...
+[12/03 02:57:52     82s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+[12/03 02:57:52     82s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+[12/03 02:57:52     82s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+[12/03 02:57:52     82s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+[12/03 02:57:52     82s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+[12/03 02:57:52     82s] **WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+[12/03 02:57:52     82s] 
+[12/03 02:57:52     82s] Loading LEF file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/lef/gsclib045_macro.lef ...
+[12/03 02:57:52     82s] Set DBUPerIGU to M2 pitch 400.
+[12/03 02:57:53     83s] 
+[12/03 02:57:53     83s] Loading LEF file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/lef/gsclib045_multibitsDFF.lef ...
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-58' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[12/03 02:57:53     83s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 02:57:53     83s] Type 'man IMPLF-61' for more detail.
+[12/03 02:57:53     83s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 02:57:53     83s] Type 'man IMPLF-200' for more detail.
+[12/03 02:57:53     83s] 
+[12/03 02:57:53     83s] viaInitial starts at Fri Dec  3 02:57:53 2021
+viaInitial ends at Fri Dec  3 02:57:53 2021
+Reading OA reference library 'level_fsm_pnr' ...
+[12/03 02:57:53     83s] Reading OA reference library 'level_fsm_pnr' ...
+[12/03 02:57:53     83s] **WARN: (IMPOAX-754):	Macro 'M5_M4_VH' has no SIZE statement or a zero SIZE statement and it is a class CORE macro so it needs a correct SIZE. There is no SITE statement, so a useful SIZE cannot be computed, so this macro is not loaded in the Innovus database and cannot be used in netlist.
+[12/03 02:57:53     83s] **WARN: (IMPOAX-754):	Macro 'M5_M4_VV' has no SIZE statement or a zero SIZE statement and it is a class CORE macro so it needs a correct SIZE. There is no SITE statement, so a useful SIZE cannot be computed, so this macro is not loaded in the Innovus database and cannot be used in netlist.
+[12/03 02:57:53     83s] **WARN: (IMPOAX-754):	Macro 'M5_M4_HH' has no SIZE statement or a zero SIZE statement and it is a class CORE macro so it needs a correct SIZE. There is no SITE statement, so a useful SIZE cannot be computed, so this macro is not loaded in the Innovus database and cannot be used in netlist.
+[12/03 02:57:53     83s] Reading OA reference library 'level_fsm_pnr' ...
+[12/03 02:57:53     83s] **WARN: (IMPOAX-1673):	Block of design with lib: 'level_fsm_pnr', cell: 'M4_M3_HV', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[12/03 02:57:53     83s] **WARN: (IMPOAX-1673):	Block of design with lib: 'level_fsm_pnr', cell: 'M4_M3_M_EV', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[12/03 02:57:53     83s] **WARN: (IMPOAX-1673):	Block of design with lib: 'level_fsm_pnr', cell: 'M4_M3_HH', view: 'layout'  did not have an abstract. Tool will create temporary abstract to enable the Static timing analysis flow, or allow users to perform additional floorplanning in tool. Users should run the Abstract generator tool to create real abstracts, if other parts of the implementation flow in tool are to be exercised.
+[12/03 02:57:53     83s] 
+[12/03 02:57:53     83s] There were 3 layout cells that used automatic abstract creation. See level_fsm.oaread.rpt for a list of all the cells.
+[12/03 02:57:53     83s] 
+[12/03 02:57:53     83s] Loading view definition file from /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/viewDefinition.tcl
+[12/03 02:57:53     83s] Reading lsMax timing library '/ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+[12/03 02:57:54     83s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/03 02:57:54     83s] Read 489 cells in library 'slow_vdd1v0' 
+[12/03 02:57:54     83s] Reading lsMin timing library '/ubc/ece/data/cmc2/kits/GPDK45/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+[12/03 02:57:54     84s] Read 489 cells in library 'fast_vdd1v0' 
+[12/03 02:57:54     84s] *** End library_loading (cpu=0.02min, real=0.02min, mem=8.5M, fe_cpu=1.41min, fe_real=6.33min, fe_mem=753.8M) ***
+[12/03 02:57:54     84s] % Begin Load netlist data ... (date=12/03 02:57:54, mem=575.9M)
+[12/03 02:57:54     84s] *** Begin netlist parsing (mem=753.8M) ***
+[12/03 02:57:54     84s] Created 489 new cells from 2 timing libraries.
+[12/03 02:57:54     84s] Reading netlist ...
+[12/03 02:57:54     84s] Backslashed names will retain backslash and a trailing blank character.
+[12/03 02:57:54     84s] Reading verilogBinary netlist '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.v.bin'
+[12/03 02:57:54     84s] Reading binary database version 1
+[12/03 02:57:54     84s] 
+[12/03 02:57:54     84s] *** Memory Usage v#1 (Current mem = 759.832M, initial mem = 259.488M) ***
+[12/03 02:57:54     84s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=759.8M) ***
+[12/03 02:57:54     84s] % End Load netlist data ... (date=12/03 02:57:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=583.1M, current mem=583.1M)
+[12/03 02:57:54     84s] Top level cell is level_fsm.
+[12/03 02:57:55     84s] Hooked 978 DB cells to tlib cells.
+[12/03 02:57:55     84s] Starting recursive module instantiation check.
+[12/03 02:57:55     84s] No recursion found.
+[12/03 02:57:55     84s] Building hierarchical netlist for Cell level_fsm ...
+[12/03 02:57:55     84s] *** Netlist is unique.
+[12/03 02:57:55     84s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[12/03 02:57:55     84s] ** info: there are 1076 modules.
+[12/03 02:57:55     84s] ** info: there are 147 stdCell insts.
+[12/03 02:57:55     84s] 
+[12/03 02:57:55     84s] *** Memory Usage v#1 (Current mem = 774.836M, initial mem = 259.488M) ***
+[12/03 02:57:55     84s] *info: set bottom ioPad orient R0
+[12/03 02:57:55     84s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/03 02:57:55     84s] Type 'man IMPFP-3961' for more detail.
+[12/03 02:57:55     84s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/03 02:57:55     84s] Type 'man IMPFP-3961' for more detail.
+[12/03 02:57:55     84s] Set Default Net Delay as 1000 ps.
+[12/03 02:57:55     84s] Set Default Net Load as 0.5 pF. 
+[12/03 02:57:55     84s] Set Default Input Pin Transition as 0.1 ps.
+[12/03 02:57:55     85s] Loading preference file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/gui.pref.tcl ...
+[12/03 02:57:55     85s] addRing command will ignore shorts while creating rings.
+[12/03 02:57:55     85s] addRing command will disallow rings to go over rows.
+[12/03 02:57:55     85s] addRing command will consider rows while creating rings.
+[12/03 02:57:55     85s] The ring targets are set to core/block ring wires.
+[12/03 02:57:55     85s] **WARN: analysis view av_lsMax_rcWorst_cmFunc not found, use default_view_setup
+[12/03 02:57:55     85s] **WARN: analysis view av_lsMin_rcBest_cmFunc not found, use default_view_setup
+[12/03 02:57:55     85s] Extraction setup Started 
+[12/03 02:57:55     85s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[12/03 02:57:55     85s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[12/03 02:57:56     86s] Generating auto layer map file.
+[12/03 02:57:56     86s] Loading preRoute extracted patterns from file '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.techData.gz' ...
+[12/03 02:57:56     86s] Completed (cpu: 0:00:00.9 real: 0:00:01.0)
+[12/03 02:57:56     86s] Set Shrink Factor to 1.00000
+[12/03 02:57:56     86s] Summary of Active RC-Corners : 
+[12/03 02:57:56     86s]  
+[12/03 02:57:56     86s]  Analysis View: av_lsMax_rcWorst_cmFunc
+[12/03 02:57:56     86s]     RC-Corner Name        : rcWorst
+[12/03 02:57:56     86s]     RC-Corner Index       : 0
+[12/03 02:57:56     86s]     RC-Corner Temperature : 25 Celsius
+[12/03 02:57:56     86s]     RC-Corner Cap Table   : ''
+[12/03 02:57:56     86s]     RC-Corner PreRoute Res Factor         : 1
+[12/03 02:57:56     86s]     RC-Corner PreRoute Cap Factor         : 1
+[12/03 02:57:56     86s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/03 02:57:56     86s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/03 02:57:56     86s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/03 02:57:56     86s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner Technology file: '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/rcWorst/gpdk045.tch'
+[12/03 02:57:56     86s]  
+[12/03 02:57:56     86s]  Analysis View: av_lsMin_rcBest_cmFunc
+[12/03 02:57:56     86s]     RC-Corner Name        : rcBest
+[12/03 02:57:56     86s]     RC-Corner Index       : 1
+[12/03 02:57:56     86s]     RC-Corner Temperature : 25 Celsius
+[12/03 02:57:56     86s]     RC-Corner Cap Table   : ''
+[12/03 02:57:56     86s]     RC-Corner PreRoute Res Factor         : 1
+[12/03 02:57:56     86s]     RC-Corner PreRoute Cap Factor         : 1
+[12/03 02:57:56     86s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/03 02:57:56     86s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/03 02:57:56     86s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/03 02:57:56     86s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/03 02:57:56     86s]     RC-Corner Technology file: '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/rcWorst/gpdk045.tch'
+[12/03 02:57:56     86s] Technology file '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/rcWorst/gpdk045.tch' associated with first view 'av_lsMax_rcWorst_cmFunc' will be used as the primary corner for the multi-corner extraction.
+[12/03 02:57:56     86s] Updating RC grid for preRoute extraction ...
+[12/03 02:57:56     86s] Initializing multi-corner resistance tables ...
+[12/03 02:57:56     86s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[12/03 02:57:56     86s] *Info: initialize multi-corner CTS.
+[12/03 02:57:56     86s] Reading timing constraints file '/ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/level_fsm_map.sdc' ...
+[12/03 02:57:56     86s] Current (total cpu=0:01:26, real=0:06:22, peak res=749.8M, current mem=749.8M)
+[12/03 02:57:56     86s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/level_fsm_map.sdc, Line 9).
+[12/03 02:57:56     86s] 
+[12/03 02:57:56     86s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/level_fsm_map.sdc, Line 10).
+[12/03 02:57:56     86s] 
+[12/03 02:57:56     86s] INFO (CTE): Reading of timing constraints file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/libs/mmmc/level_fsm_map.sdc completed, with 2 WARNING
+[12/03 02:57:56     86s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=750.4M, current mem=750.4M)
+[12/03 02:57:56     86s] Current (total cpu=0:01:26, real=0:06:22, peak res=750.4M, current mem=750.4M)
+[12/03 02:57:56     86s] Creating Cell Server ...(0, 1, 1, 1)
+[12/03 02:57:56     86s] Summary for sequential cells identification: 
+[12/03 02:57:56     86s]   Identified SBFF number: 104
+[12/03 02:57:56     86s]   Identified MBFF number: 0
+[12/03 02:57:56     86s]   Identified SB Latch number: 0
+[12/03 02:57:56     86s]   Identified MB Latch number: 0
+[12/03 02:57:56     86s]   Not identified SBFF number: 16
+[12/03 02:57:56     86s]   Not identified MBFF number: 0
+[12/03 02:57:56     86s]   Not identified SB Latch number: 0
+[12/03 02:57:56     86s]   Not identified MB Latch number: 0
+[12/03 02:57:56     86s]   Number of sequential cells which are not FFs: 32
+[12/03 02:57:56     86s] Total number of combinational cells: 327
+[12/03 02:57:56     86s] Total number of sequential cells: 152
+[12/03 02:57:56     86s] Total number of tristate cells: 10
+[12/03 02:57:56     86s] Total number of level shifter cells: 0
+[12/03 02:57:56     86s] Total number of power gating cells: 0
+[12/03 02:57:56     86s] Total number of isolation cells: 0
+[12/03 02:57:56     86s] Total number of power switch cells: 0
+[12/03 02:57:56     86s] Total number of pulse generator cells: 0
+[12/03 02:57:56     86s] Total number of always on buffers: 0
+[12/03 02:57:56     86s] Total number of retention cells: 0
+[12/03 02:57:56     86s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[12/03 02:57:56     86s] Total number of usable buffers: 16
+[12/03 02:57:56     86s] List of unusable buffers:
+[12/03 02:57:56     86s] Total number of unusable buffers: 0
+[12/03 02:57:56     86s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[12/03 02:57:56     86s] Total number of usable inverters: 19
+[12/03 02:57:56     86s] List of unusable inverters:
+[12/03 02:57:56     86s] Total number of unusable inverters: 0
+[12/03 02:57:56     86s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[12/03 02:57:56     86s] Total number of identified usable delay cells: 8
+[12/03 02:57:56     86s] List of identified unusable delay cells:
+[12/03 02:57:56     86s] Total number of identified unusable delay cells: 0
+[12/03 02:57:56     86s] Creating Cell Server, finished. 
+[12/03 02:57:56     86s] 
+[12/03 02:57:56     86s] Deleting Cell Server ...
+[12/03 02:57:56     86s] Reading floorplan file - /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.fp.gz (mem = 916.8M).
+[12/03 02:57:56     86s] % Begin Load floorplan data ... (date=12/03 02:57:56, mem=751.3M)
+[12/03 02:57:56     86s] *info: reset 195 existing net BottomPreferredLayer and AvoidDetour
+[12/03 02:57:56     86s] Deleting old partition specification.
+[12/03 02:57:57     86s] Set FPlanBox to (0 0 68400 58140)
+[12/03 02:57:57     86s]  ... processed partition successfully.
+[12/03 02:57:57     86s] Reading binary special route file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.fp.spr.gz (Created by Innovus v18.10-p002_1 on Thu Dec  2 23:39:22 2021, version: 1)
+[12/03 02:57:57     86s] Extracting standard cell pins and blockage ...... 
+[12/03 02:57:57     86s] Pin and blockage extraction finished
+[12/03 02:57:57     86s] % End Load floorplan data ... (date=12/03 02:57:57, total cpu=0:00:00.0, real=0:00:01.0, peak res=751.3M, current mem=751.3M)
+[12/03 02:57:57     86s] Reading congestion map file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.route.congmap.gz ...
+[12/03 02:57:57     86s] % Begin Load SymbolTable ... (date=12/03 02:57:57, mem=751.4M)
+[12/03 02:57:57     86s] Suppress "**WARN ..." messages.
+[12/03 02:57:57     86s] routingBox: (0 0) (68400 58140)
+[12/03 02:57:57     86s] coreBox:    (10000 10260) (58400 47880)
+[12/03 02:57:57     86s] Un-suppress "**WARN ..." messages.
+[12/03 02:57:57     86s] % End Load SymbolTable ... (date=12/03 02:57:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=751.4M, current mem=751.4M)
+[12/03 02:57:57     86s] Loading place ...
+[12/03 02:57:57     86s] % Begin Load placement data ... (date=12/03 02:57:57, mem=751.4M)
+[12/03 02:57:57     86s] Reading placement file - /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.place.gz.
+[12/03 02:57:57     86s] *** Checked 2 GNC rules.
+[12/03 02:57:57     86s] *** applyConnectGlobalNets disabled.
+[12/03 02:57:57     86s] ** Reading stdCellPlacement_binary (Created by Innovus v18.10-p002_1 on Thu Dec  2 23:39:22 2021, version# 2) ...
+[12/03 02:57:57     86s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=916.8M) ***
+[12/03 02:57:57     86s] Total net length = 1.321e+03 (8.346e+02 4.860e+02) (ext = 5.305e+02)
+[12/03 02:57:57     86s] % End Load placement data ... (date=12/03 02:57:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=752.4M, current mem=752.4M)
+[12/03 02:57:57     86s] *** Checked 2 GNC rules.
+[12/03 02:57:57     86s] *** Applying global-net connections...
+[12/03 02:57:57     86s] *** Applied 2 GNC rules (cpu = 0:00:00.0)
+[12/03 02:57:57     86s] % Begin Load routing data ... (date=12/03 02:57:57, mem=752.4M)
+[12/03 02:57:57     86s] Reading routing file - /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.route.gz.
+[12/03 02:57:57     86s] Reading Innovus routing data (Created by Innovus v18.10-p002_1 on Thu Dec  2 23:39:22 2021 Format: 18.1) ...
+[12/03 02:57:57     86s] *** Total 164 nets are successfully restored.
+[12/03 02:57:57     86s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=916.8M) ***
+[12/03 02:57:57     86s] % End Load routing data ... (date=12/03 02:57:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=753.6M, current mem=753.5M)
+[12/03 02:57:57     86s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[12/03 02:57:57     86s] Reading property file /ubc/ece/home/ugrads/l/l9w0b/Documents/level_project/place-n-route/level_fsm.dat/level_fsm.prop
+[12/03 02:57:57     86s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=916.8M) ***
+[12/03 02:57:57     86s] Set Default Input Pin Transition as 0.1 ps.
+[12/03 02:57:57     86s] Updating RC grid for preRoute extraction ...
+[12/03 02:57:57     86s] Initializing multi-corner resistance tables ...
+[12/03 02:57:57     86s] % Begin Load power constraints ... (date=12/03 02:57:57, mem=753.5M)
+[12/03 02:57:57     86s] % End Load power constraints ... (date=12/03 02:57:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=753.5M, current mem=753.5M)
+[12/03 02:57:57     86s] Start generating vias ...
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #WARNING (NRFL-369) Ignoring MINIMUMCUT rules with number of cuts less than 2.
+[12/03 02:57:57     86s] #Skip building auto via since it is not turned on.
+[12/03 02:57:57     86s] Via generation completed.
+[12/03 02:57:57     86s] % Begin load AAE data ... (date=12/03 02:57:57, mem=754.0M)
+[12/03 02:57:58     86s] AAE DB initialization (MEM=928.914 CPU=0:00:00.1 REAL=0:00:01.0) 
+[12/03 02:57:58     86s] % End load AAE data ... (date=12/03 02:57:58, total cpu=0:00:00.1, real=0:00:01.0, peak res=754.8M, current mem=754.8M)
+[12/03 02:57:58     86s] Creating Cell Server ...(0, 1, 1, 1)
+[12/03 02:57:58     87s] Summary for sequential cells identification: 
+[12/03 02:57:58     87s]   Identified SBFF number: 104
+[12/03 02:57:58     87s]   Identified MBFF number: 0
+[12/03 02:57:58     87s]   Identified SB Latch number: 0
+[12/03 02:57:58     87s]   Identified MB Latch number: 0
+[12/03 02:57:58     87s]   Not identified SBFF number: 16
+[12/03 02:57:58     87s]   Not identified MBFF number: 0
+[12/03 02:57:58     87s]   Not identified SB Latch number: 0
+[12/03 02:57:58     87s]   Not identified MB Latch number: 0
+[12/03 02:57:58     87s]   Number of sequential cells which are not FFs: 32
+[12/03 02:57:58     87s] Total number of combinational cells: 327
+[12/03 02:57:58     87s] Total number of sequential cells: 152
+[12/03 02:57:58     87s] Total number of tristate cells: 10
+[12/03 02:57:58     87s] Total number of level shifter cells: 0
+[12/03 02:57:58     87s] Total number of power gating cells: 0
+[12/03 02:57:58     87s] Total number of isolation cells: 0
+[12/03 02:57:58     87s] Total number of power switch cells: 0
+[12/03 02:57:58     87s] Total number of pulse generator cells: 0
+[12/03 02:57:58     87s] Total number of always on buffers: 0
+[12/03 02:57:58     87s] Total number of retention cells: 0
+[12/03 02:57:58     87s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[12/03 02:57:58     87s] Total number of usable buffers: 16
+[12/03 02:57:58     87s] List of unusable buffers:
+[12/03 02:57:58     87s] Total number of unusable buffers: 0
+[12/03 02:57:58     87s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[12/03 02:57:58     87s] Total number of usable inverters: 19
+[12/03 02:57:58     87s] List of unusable inverters:
+[12/03 02:57:58     87s] Total number of unusable inverters: 0
+[12/03 02:57:58     87s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[12/03 02:57:58     87s] Total number of identified usable delay cells: 8
+[12/03 02:57:58     87s] List of identified unusable delay cells:
+[12/03 02:57:58     87s] Total number of identified unusable delay cells: 0
+[12/03 02:57:58     87s] Creating Cell Server, finished. 
+[12/03 02:57:58     87s] 
+[12/03 02:57:58     87s] Deleting Cell Server ...
+[12/03 02:57:58     87s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 18.10-p002_1. They will be removed in the next release. 
+[12/03 02:57:58     87s] timing_enable_default_delay_arc
+[12/03 02:57:58     87s] #% End load design ... (date=12/03 02:57:58, total cpu=0:00:04.3, real=0:00:06.0, peak res=756.0M, current mem=754.9M)
+[12/03 02:57:58     87s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[12/03 02:57:58     87s] <CMD> setDrawView fplan
+[12/03 02:57:58     87s] <CMD> encMessage warning 1
+[12/03 02:57:58     87s] <CMD> encMessage debug 0
+[12/03 02:57:58     87s] <CMD> encMessage info 1
+[12/03 02:58:37     90s] <CMD> set init_design_netlisttype OA
+[12/03 02:58:37     90s] <CMD> set init_oa_design_view layout
+[12/03 02:58:37     90s] <CMD> set init_oa_design_lib level_fsm_pnr
+[12/03 02:58:37     90s] <CMD> set init_oa_design_cell level_fsm
+[12/03 02:58:37     90s] <CMD> init_design
+[12/03 02:58:37     90s] report_message: '-start_cmd/-end_cmd' can not be nested. Retire previous calls.
+[12/03 02:58:37     90s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[12/03 02:58:37     90s] 
+[12/03 02:58:37     90s] *** Summary of all messages that are not suppressed in this session:
+[12/03 02:58:37     90s] Severity  ID               Count  Summary                                  
+[12/03 02:58:37     90s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[12/03 02:58:37     90s] *** Message Summary: 1 warning(s), 0 error(s)
+[12/03 02:58:37     90s] 
+[12/03 02:58:55     93s] <CMD> encMessage warning 1
+[12/03 02:58:55     93s] <CMD> encMessage debug 0
+[12/03 02:58:55     93s] <CMD> encMessage info 1
+[12/03 02:58:55     93s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "gE#À€À€cÀ€À€À€À€À€À€À€À€À€Â†À€À€À€À€À€À€À€À€À€À€À€À€À€*À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€%À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€>À€À€À€À€À€À€"
+[12/03 02:58:55     93s] <CMD> encMessage warning 1
+[12/03 02:58:55     93s] <CMD> encMessage debug 0
+[12/03 02:58:55     93s] <CMD> encMessage info 1
+[12/03 02:59:53     98s] <CMD> encMessage warning 1
+[12/03 02:59:53     98s] <CMD> encMessage debug 0
+[12/03 02:59:53     98s] <CMD> encMessage info 1
+[12/03 02:59:53     98s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "À€À€À€À€Ã¥À€"
+[12/03 02:59:56     98s] <CMD> encMessage warning 1
+[12/03 02:59:56     98s] <CMD> encMessage debug 0
+[12/03 02:59:56     98s] <CMD> encMessage info 1
+[12/03 02:59:59     98s] <CMD> encMessage warning 1
+[12/03 02:59:59     98s] <CMD> encMessage debug 0
+[12/03 02:59:59     98s] <CMD> encMessage info 1
+[12/03 02:59:59     98s] **ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "À€À€À€À€Ã¥À€"
+[12/03 03:00:01     98s] <CMD> encMessage warning 1
+[12/03 03:00:01     98s] <CMD> encMessage debug 0
+[12/03 03:00:01     98s] <CMD> encMessage info 1

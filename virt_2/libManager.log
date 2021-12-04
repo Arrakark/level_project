@@ -376,3 +376,87 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "level_fsm_schematic"
 \a cdsLibManager->libLineEdit->value = "level_fsm_schematic"
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "level_fsm"
+\a cdsLibManager->cellLineEdit->value = "level_fsm"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "level_fsm_tb"
+\a cdsLibManager->cellLineEdit->value = "level_fsm_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "level_fsm"
+\a cdsLibManager->cellLineEdit->value = "level_fsm"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "level_fsm_tb"
+\a cdsLibManager->cellLineEdit->value = "level_fsm_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "level_fsm"
+\a cdsLibManager->cellLineEdit->value = "level_fsm"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "gpdk045"
+\a cdsLibManager->libLineEdit->value = "gpdk045"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "giolib045"
+\a cdsLibManager->libLineEdit->value = "giolib045"
+\a cdsLibManager->libListBox->value = "sample"
+\a cdsLibManager->libLineEdit->value = "sample"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "level_fsm_pnr"
+\a cdsLibManager->libLineEdit->value = "level_fsm_pnr"
+\a cdsLibManager->cellListBox->value = "level_fsm"
+\a cdsLibManager->cellLineEdit->value = "level_fsm"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 36 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "level_fsm_pnr"
+\a cdsLibManager->libLineEdit->value = "level_fsm_pnr"
+\a cdsLibManager->cellListBox->value = "level_fsm"
+\a cdsLibManager->cellLineEdit->value = "level_fsm"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
