@@ -191,7 +191,7 @@ cell { name: "u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/
 cell { name: "u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF" type: "eft" mode: "logic_ff_clk_RISING" }
 cell { name: "u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF" type: "eft" mode: "logic_ff_clk_RISING" }
 cell { name: "u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3]~FF" type: "eft" mode: "logic_ff_clk_RISING" }
-cell { name: "clk" type: "io" mode: "inpad" fixed {x: 78 y: 85 k: 1} }
+cell { name: "clk" type: "io" mode: "inpad" fixed {x: 0 y: 83 k: 1} }
 cell { name: "reset_i" type: "io" mode: "inpad" fixed {x: 78 y: 145 k: 1} }
 cell { name: "sda_oe" type: "io" mode: "outpad" fixed {x: 78 y: 26 k: 0} }
 cell { name: "sda_o" type: "io" mode: "outpad" fixed {x: 78 y: 25 k: 0} }
@@ -448,7 +448,7 @@ cell { name: "LUT__995" type: "efl" mode: "logic" }
 cell { name: "LUT__1085" type: "efl" mode: "logic" }
 cell { name: "LUT__641" type: "efl" mode: "logic" }
 cell { name: "LUT__1086" type: "efl" mode: "logic" }
-cell { name: "CLKBUF__0" type: "gbuf_block" mode: "gbuf_block" fixed {x: 77 y: 85 k: 0} }
+cell { name: "CLKBUF__0" type: "gbuf_block" mode: "gbuf_block" fixed {x: 1 y: 83 k: 0} }
 cell { name: "LUT__1088" type: "efl" mode: "logic" }
 cell { name: "LUT__1089" type: "efl" mode: "logic" }
 cell { name: "LUT__1090" type: "efl" mode: "logic" }

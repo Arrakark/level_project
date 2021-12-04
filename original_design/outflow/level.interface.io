@@ -1,5 +1,5 @@
 # Efinity IO Placement 
-# Interface File: /home/vlad/Documents/level_project/outflow/level.interface.csv
+# Interface File: /home/vlad/Documents/level_project/original_design/outflow/level.interface.csv
 # Version:        2021.1.165
 # Date:           Jun 25 2021
 
@@ -8,6 +8,8 @@
 
 # pin name 	x	y	z
 # -------- 	----	----	---
+clk        	0	83	1
+pll_clkin  	0	102	1
 error_led_o	0	105	0
 scl_o      	78	22	0
 scl_i      	78	22	1
@@ -15,7 +17,6 @@ scl_oe     	78	23	0
 sda_o      	78	25	0
 sda_i      	78	25	1
 sda_oe     	78	26	0
-clk        	78	85	1
 led_o[8]   	78	92	0
 led_o[7]   	78	97	0
 led_o[6]   	78	102	0

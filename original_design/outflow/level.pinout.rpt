@@ -1,7 +1,7 @@
 
 # Efinity Pinout Report
 # Version: 2021.1.165
-# Date: 2021-09-28 21:59
+# Date: 2021-10-14 00:40
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -35,7 +35,7 @@
 |     B9     |         --UNUSED--        |        GPIOR_14       |     Input     |                      |      3.3 V       |  2A  | weak pullup |           User IO           |
 |     C1     |          --VCC--          |          VCC          |     Power     |                      |                  |      |             |       1.1 V VCC Power       |
 |     C2     |         --UNUSED--        |     GPIOL_16_CLK2     |     Input     |                      |      3.3 V       |  1B  | weak pullup |         User IO/GCLK        |
-|     C3     |         --UNUSED--        |     GPIOL_20_PLLIN    |     Input     |                      |      3.3 V       |  1B  | weak pullup |      User IO/PLL_CLKIN      |
+|     C3     |         pll_clkin         |     GPIOL_20_PLLIN    |     Input     | 3.3 V LVTTL / LVCMOS |      3.3 V       |  1B  |             |      User IO/PLL_CLKIN      |
 |     C4     |          --TCK--          |          TCK          |     Input     |                      |      3.3 V       |  1B  |             |        Configuration        |
 |     C5     |          reset_i          | GPIOR_02_RESERVED_OUT |     Input     | 3.3 V LVTTL / LVCMOS |      3.3 V       |  2A  | weak pullup |           User IO           |
 |     C6     |          led_o[2]         |        GPIOR_06       |     Output    | 3.3 V LVTTL / LVCMOS |      3.3 V       |  2A  |             |           User IO           |

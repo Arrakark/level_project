@@ -1,7 +1,7 @@
 
 # Efinity Pinout Report
 # Version: 2021.1.165
-# Date: 2021-09-28 21:59
+# Date: 2021-10-14 00:40
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -31,7 +31,7 @@ B8,GPIOR_11,led_o[4],Output,2A,3.3 V,3.3 V LVTTL / LVCMOS,,User IO
 B9,GPIOR_14,,Input,2A,3.3 V,,weak pullup,User IO
 C1,VCC,,Power,,,,,1.1 V VCC Power
 C2,GPIOL_16_CLK2,,Input,1B,3.3 V,,weak pullup,User IO/GCLK
-C3,GPIOL_20_PLLIN,,Input,1B,3.3 V,,weak pullup,User IO/PLL_CLKIN
+C3,GPIOL_20_PLLIN,pll_clkin,Input,1B,3.3 V,3.3 V LVTTL / LVCMOS,,User IO/PLL_CLKIN
 C4,TCK,,Input,1B,3.3 V,,,Configuration
 C5,GPIOR_02_RESERVED_OUT,reset_i,Input,2A,3.3 V,3.3 V LVTTL / LVCMOS,weak pullup,User IO
 C6,GPIOR_06,led_o[2],Output,2A,3.3 V,3.3 V LVTTL / LVCMOS,,User IO

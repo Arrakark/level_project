@@ -1,7 +1,7 @@
 
 # Efinity Interface Configuration
 # Version: 2021.1.165
-# Date: 2021-09-28 21:59
+# Date: 2021-10-14 00:40
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -10,7 +10,7 @@ clkout, 78, 22, -1, clk
 clkout, 78, 23, -1, clk
 clkout, 78, 25, -1, clk
 clkout, 78, 26, -1, clk
-input, 78, 85, 1, __bypass__, clk
+input, 0, 83, 1, __bypass__, clk
 output, 0, 105, 0, __bypass__, error_led_o
 output, 78, 155, 0, __bypass__, led_o[0]
 output, 78, 142, 0, __bypass__, led_o[1]
@@ -21,6 +21,7 @@ output, 78, 107, 0, __bypass__, led_o[5]
 output, 78, 102, 0, __bypass__, led_o[6]
 output, 78, 97, 0, __bypass__, led_o[7]
 output, 78, 92, 0, __bypass__, led_o[8]
+optional input, 0, 102, 1, __bypass__, pll_clkin
 input, 78, 145, 1, __bypass__, reset_i
 input, 78, 22, 1, __bypass__, scl_i
 output, 78, 22, 0, __bypass__, scl_o

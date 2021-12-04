@@ -221,7 +221,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
             .I2(n444), .I3(\level_inst/raw_buffer[7] ), .O(n214)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_LUT4, LUTMASK=16'h008f */ ;
     defparam LUT__642.LUTMASK = 16'h008f;
     EFX_FF \level_inst/led_o[0]~FF  (.D(n214), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[0])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[0])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[0]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[0]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[0]~FF .SR_POLARITY = 1'b0;
@@ -230,7 +230,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[0]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[0]~FF  (.D(\i2c_data_out[0] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[0]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[0]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[0]~FF .SR_POLARITY = 1'b0;
@@ -239,7 +239,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[0]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/i2c_command_byte[0]~FF  (.D(n220), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\i2c_command_byte[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\i2c_command_byte[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/i2c_command_byte[0]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/i2c_command_byte[0]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/i2c_command_byte[0]~FF .SR_POLARITY = 1'b0;
@@ -248,7 +248,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/i2c_command_byte[0]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/i2c_command_byte[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/i2c_write~FF  (.D(n221), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(i2c_write)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(i2c_write)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/i2c_write~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/i2c_write~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/i2c_write~FF .SR_POLARITY = 1'b0;
@@ -257,7 +257,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/i2c_write~FF .SR_VALUE = 1'b0;
     defparam \level_inst/i2c_write~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[1]~FF  (.D(n222), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[1])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[1])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[1]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[1]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[1]~FF .SR_POLARITY = 1'b0;
@@ -266,7 +266,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[1]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[2]~FF  (.D(n223), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[2])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[2])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[2]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[2]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[2]~FF .SR_POLARITY = 1'b0;
@@ -275,7 +275,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[2]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[3]~FF  (.D(n224), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[3])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[3])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[3]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[3]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[3]~FF .SR_POLARITY = 1'b0;
@@ -284,7 +284,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[3]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[4]~FF  (.D(n225), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[4])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[4])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[4]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[4]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[4]~FF .SR_POLARITY = 1'b0;
@@ -293,7 +293,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[4]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[5]~FF  (.D(n226), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[5])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[5])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[5]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[5]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[5]~FF .SR_POLARITY = 1'b0;
@@ -302,7 +302,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[5]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[6]~FF  (.D(n227), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[6])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[6])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[6]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[6]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[6]~FF .SR_POLARITY = 1'b0;
@@ -311,7 +311,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[6]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[7]~FF  (.D(n228), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[7])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[7])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[7]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[7]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[7]~FF .SR_POLARITY = 1'b0;
@@ -320,7 +320,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[7]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/led_o[8]~FF  (.D(n229), .CE(n216), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(led_o[8])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(led_o[8])) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/led_o[8]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/led_o[8]~FF .CE_POLARITY = 1'b0;
     defparam \level_inst/led_o[8]~FF .SR_POLARITY = 1'b0;
@@ -329,7 +329,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/led_o[8]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/led_o[8]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[1]~FF  (.D(\i2c_data_out[1] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[1]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[1]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[1]~FF .SR_POLARITY = 1'b0;
@@ -338,7 +338,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[1]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[2]~FF  (.D(\i2c_data_out[2] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[2]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[2]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[2]~FF .SR_POLARITY = 1'b0;
@@ -347,7 +347,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[2]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[3]~FF  (.D(\i2c_data_out[3] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[3]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[3]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[3]~FF .SR_POLARITY = 1'b0;
@@ -356,7 +356,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[3]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[4]~FF  (.D(\i2c_data_out[4] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[4]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[4]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[4]~FF .SR_POLARITY = 1'b0;
@@ -365,7 +365,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[4]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[5]~FF  (.D(\i2c_data_out[5] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[5]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[5]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[5]~FF .SR_POLARITY = 1'b0;
@@ -374,7 +374,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[5]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[6]~FF  (.D(\i2c_data_out[6] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[6]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[6]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[6]~FF .SR_POLARITY = 1'b0;
@@ -383,7 +383,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[6]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/raw_buffer[7]~FF  (.D(\i2c_data_out[7] ), .CE(n219), 
-           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .CLK(\clk~O ), .SR(reset_i), .Q(\level_inst/raw_buffer[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/raw_buffer[7]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[7]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/raw_buffer[7]~FF .SR_POLARITY = 1'b0;
@@ -392,7 +392,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/raw_buffer[7]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/raw_buffer[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/i2c_command_byte[1]~FF  (.D(n237), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\i2c_command_byte[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\i2c_command_byte[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/i2c_command_byte[1]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/i2c_command_byte[1]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/i2c_command_byte[1]~FF .SR_POLARITY = 1'b0;
@@ -401,7 +401,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/i2c_command_byte[1]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/i2c_command_byte[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/i2c_command_byte[2]~FF  (.D(n238), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\i2c_command_byte[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\i2c_command_byte[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/i2c_command_byte[2]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/i2c_command_byte[2]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/i2c_command_byte[2]~FF .SR_POLARITY = 1'b0;
@@ -410,7 +410,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/i2c_command_byte[2]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/i2c_command_byte[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/i2c_read~FF  (.D(n239), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(i2c_read)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(i2c_read)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/i2c_read~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/i2c_read~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/i2c_read~FF .SR_POLARITY = 1'b0;
@@ -419,7 +419,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/i2c_read~FF .SR_VALUE = 1'b0;
     defparam \level_inst/i2c_read~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/error_led_o~FF  (.D(n240), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(error_led_o)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(error_led_o)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/error_led_o~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/error_led_o~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/error_led_o~FF .SR_POLARITY = 1'b0;
@@ -428,7 +428,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/error_led_o~FF .SR_VALUE = 1'b0;
     defparam \level_inst/error_led_o~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/state[3]~FF  (.D(n241), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\level_inst/state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\level_inst/state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/state[3]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/state[3]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/state[3]~FF .SR_POLARITY = 1'b0;
@@ -437,7 +437,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/state[3]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/state[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/state[4]~FF  (.D(n242), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\level_inst/state[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\level_inst/state[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/state[4]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/state[4]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/state[4]~FF .SR_POLARITY = 1'b0;
@@ -446,7 +446,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/state[4]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/state[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/state[5]~FF  (.D(n243), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\level_inst/state[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\level_inst/state[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/state[5]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/state[5]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/state[5]~FF .SR_POLARITY = 1'b0;
@@ -455,7 +455,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/state[5]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/state[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \level_inst/state[6]~FF  (.D(n244), .CE(1'b1), .CLK(\clk~O ), 
-           .SR(reset_i), .Q(\level_inst/state[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/level_fsm.sv(166)
+           .SR(reset_i), .Q(\level_inst/state[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/level_fsm.sv(225)
     defparam \level_inst/state[6]~FF .CLK_POLARITY = 1'b1;
     defparam \level_inst/state[6]~FF .CE_POLARITY = 1'b1;
     defparam \level_inst/state[6]~FF .SR_POLARITY = 1'b0;
@@ -464,7 +464,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \level_inst/state[6]~FF .SR_VALUE = 1'b0;
     defparam \level_inst/state[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0]~FF  (.D(n245), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(482)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(482)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0]~FF .SR_POLARITY = 1'b0;
@@ -473,7 +473,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0]~FF  (.D(n246), 
-           .CE(n408), .CLK(\clk~O ), .SR(n248), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(n248), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0]~FF .SR_POLARITY = 1'b1;
@@ -482,7 +482,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3~FF .SR_POLARITY = 1'b0;
@@ -492,7 +492,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_o~FF  (.D(n250), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(scl_o)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1412)
+           .Q(scl_o)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1412)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_o~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_o~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_o~FF .SR_POLARITY = 1'b0;
@@ -501,7 +501,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_o~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_o~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2~FF .SR_POLARITY = 1'b0;
@@ -510,7 +510,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data2~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p~FF  (.D(n253), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2663)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2663)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p~FF .SR_POLARITY = 1'b0;
@@ -520,7 +520,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/write_p~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0~FF  (.D(n254), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1334)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1334)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0~FF .SR_POLARITY = 1'b0;
@@ -529,7 +529,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data3 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4~FF .SR_POLARITY = 1'b0;
@@ -539,7 +539,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data4~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_o~FF  (.D(n256), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(sda_o)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1406)
+           .Q(sda_o)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1406)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_o~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_o~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_o~FF .SR_POLARITY = 1'b0;
@@ -549,7 +549,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_o~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1323)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1323)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1~FF .SR_POLARITY = 1'b0;
@@ -559,7 +559,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0]~FF  (.D(n258), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1552)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1552)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0]~FF .SR_POLARITY = 1'b0;
@@ -569,7 +569,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop~FF  (.D(n259), 
            .CE(n260), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1346)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1346)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop~FF .SR_POLARITY = 1'b0;
@@ -579,7 +579,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStop~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart~FF  (.D(n261), 
            .CE(n262), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1317)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1317)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart~FF .SR_POLARITY = 1'b0;
@@ -589,7 +589,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/genStart~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0 ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1303)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1303)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1~FF .SR_POLARITY = 1'b0;
@@ -599,7 +599,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1297)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1297)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0~FF .SR_POLARITY = 1'b0;
@@ -609,7 +609,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mstaS0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1281)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1281)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1~FF .SR_POLARITY = 1'b0;
@@ -619,7 +619,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int_p1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1281)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1281)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1~FF .SR_POLARITY = 1'b0;
@@ -628,7 +628,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int_p1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0]~FF .SR_POLARITY = 1'b1;
@@ -638,7 +638,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0]~FF  (.D(n269), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(703)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(703)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0]~FF .SR_POLARITY = 1'b1;
@@ -648,7 +648,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[0]~FF  (.D(n271), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[0]~FF .SR_POLARITY = 1'b0;
@@ -659,7 +659,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1 ), 
            .CE(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1] ), 
            .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1266)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1266)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int~FF .SR_POLARITY = 1'b0;
@@ -669,7 +669,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_int~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5]~FF  (.D(n274), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5]~FF .SR_POLARITY = 1'b0;
@@ -679,7 +679,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0 ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1238)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1238)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1~FF .SR_POLARITY = 1'b0;
@@ -689,7 +689,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0~FF  (.D(scl_i), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1238)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1238)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0~FF .SR_POLARITY = 1'b0;
@@ -699,7 +699,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclIn_0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutMaster~FF  (.D(n277), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutMaster )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1391)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutMaster )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1391)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutMaster~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutMaster~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutMaster~FF .SR_POLARITY = 1'b0;
@@ -710,7 +710,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1 ), 
            .CE(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1] ), 
            .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1222)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1222)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1~FF .SR_POLARITY = 1'b0;
@@ -719,7 +719,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n281), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1255)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n281), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1255)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0]~FF .SR_POLARITY = 1'b0;
@@ -729,7 +729,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_next_p1 ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1213)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1213)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int~FF .SR_POLARITY = 1'b0;
@@ -739,7 +739,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4]~FF  (.D(n283), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4]~FF .SR_POLARITY = 1'b0;
@@ -749,7 +749,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0 ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1185)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1185)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1~FF .SR_POLARITY = 1'b0;
@@ -758,7 +758,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0]~FF  (.D(n285), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(756)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(756)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0]~FF .SR_POLARITY = 1'b0;
@@ -768,7 +768,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3]~FF  (.D(n286), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3]~FF .SR_POLARITY = 1'b0;
@@ -777,7 +777,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1~FF .SR_POLARITY = 1'b0;
@@ -787,7 +787,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta ), 
            .CE(i2c_busy), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1367)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1367)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master~FF .SR_POLARITY = 1'b0;
@@ -796,7 +796,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/master~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(741)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(741)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1~FF .SR_POLARITY = 1'b0;
@@ -805,7 +805,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete1 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(741)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(741)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2~FF .SR_POLARITY = 1'b0;
@@ -815,7 +815,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/xfer_complete2~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0~FF  (.D(sda_i), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1185)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1185)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0~FF .SR_POLARITY = 1'b0;
@@ -824,7 +824,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0]~FF  (.D(n292), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(767)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(767)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0]~FF .SR_POLARITY = 1'b0;
@@ -833,7 +833,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0]~FF  (.D(n293), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0]~FF .SR_POLARITY = 1'b0;
@@ -843,7 +843,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0~FF  (.D(n295), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1358)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1358)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0~FF .SR_POLARITY = 1'b0;
@@ -852,7 +852,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStopS0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0~FF  (.D(1'b0), 
-           .CE(n296), .CLK(\clk~O ), .SR(i2c_read), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2637)
+           .CE(n296), .CLK(\clk~O ), .SR(i2c_read), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2637)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0~FF .SR_POLARITY = 1'b1;
@@ -861,7 +861,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p~FF  (.D(n298), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2663)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2663)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p~FF .SR_POLARITY = 1'b0;
@@ -870,7 +870,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/read_p~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4~FF .SR_POLARITY = 1'b0;
@@ -879,7 +879,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data4~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0]~FF  (.D(n300), 
-           .CE(n301), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(800)
+           .CE(n301), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(800)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0]~FF .SR_POLARITY = 1'b0;
@@ -888,7 +888,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/data_cnt[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3~FF .SR_POLARITY = 1'b0;
@@ -897,7 +897,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data3~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2~FF .SR_POLARITY = 1'b0;
@@ -906,7 +906,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data2~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data0 ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2655)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2655)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1~FF .SR_POLARITY = 1'b0;
@@ -915,7 +915,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_rdflag/data1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[0]~FF .SR_POLARITY = 1'b0;
@@ -924,7 +924,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0~FF  (.D(1'b0), 
-           .CE(n307), .CLK(\clk~O ), .SR(i2c_write), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2637)
+           .CE(n307), .CLK(\clk~O ), .SR(i2c_write), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2637)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0~FF .SR_POLARITY = 1'b1;
@@ -933,7 +933,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_pgfts_wrflag/data0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0]~FF  (.D(reset_i), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(861)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(861)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0]~FF .SR_POLARITY = 1'b0;
@@ -943,7 +943,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1]~FF  (.D(n309), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1]~FF .SR_POLARITY = 1'b0;
@@ -952,7 +952,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10]~FF  (.D(n310), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10]~FF .SR_POLARITY = 1'b1;
@@ -962,7 +962,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[10]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave~FF  (.D(n311), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1563)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1563)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave~FF .SR_POLARITY = 1'b0;
@@ -971,7 +971,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaOutSlave~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9]~FF  (.D(n312), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9]~FF .SR_POLARITY = 1'b1;
@@ -980,7 +980,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[9]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0]~FF .SR_POLARITY = 1'b1;
@@ -989,7 +989,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8]~FF  (.D(n315), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8]~FF .SR_POLARITY = 1'b1;
@@ -999,7 +999,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[8]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc~FF  (.D(n316), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1663)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1663)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc~FF .SR_POLARITY = 1'b0;
@@ -1008,7 +1008,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/wait_uc~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7]~FF  (.D(n317), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7]~FF .SR_POLARITY = 1'b1;
@@ -1017,7 +1017,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6]~FF  (.D(n318), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6]~FF .SR_POLARITY = 1'b1;
@@ -1026,7 +1026,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5]~FF  (.D(n319), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5]~FF .SR_POLARITY = 1'b1;
@@ -1035,7 +1035,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4]~FF  (.D(n320), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4]~FF .SR_POLARITY = 1'b1;
@@ -1044,7 +1044,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0]~FF  (.D(n321), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0]~FF .SR_POLARITY = 1'b1;
@@ -1053,7 +1053,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0]~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3]~FF  (.D(n323), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3]~FF .SR_POLARITY = 1'b1;
@@ -1062,7 +1062,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2]~FF  (.D(n324), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2]~FF .SR_POLARITY = 1'b1;
@@ -1072,7 +1072,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse~FF  (.D(n254), 
            .CE(n325), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1685)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1685)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse~FF .SR_POLARITY = 1'b0;
@@ -1081,7 +1081,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detect_start_pulse~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1]~FF  (.D(n326), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1400)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n268), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1400)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1]~FF .SR_POLARITY = 1'b1;
@@ -1091,7 +1091,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mclkCount[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0]~FF .SR_POLARITY = 1'b0;
@@ -1101,7 +1101,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1] ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1872)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1872)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1~FF .SR_POLARITY = 1'b0;
@@ -1111,7 +1111,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/uc_wr_data_p1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2]~FF  (.D(n329), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2]~FF .SR_POLARITY = 1'b0;
@@ -1121,7 +1121,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1]~FF  (.D(n331), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1]~FF .SR_POLARITY = 1'b0;
@@ -1130,7 +1130,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1]~FF  (.D(n332), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n281), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1255)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n281), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1255)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1]~FF .SR_POLARITY = 1'b0;
@@ -1140,7 +1140,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/scl_spike_cnt[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0]~FF  (.D(n333), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0]~FF .SR_POLARITY = 1'b0;
@@ -1150,7 +1150,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[0] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0]~FF .SR_POLARITY = 1'b0;
@@ -1159,7 +1159,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]~FF  (.D(n336), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n337), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1202)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n337), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1202)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]~FF .SR_POLARITY = 1'b0;
@@ -1168,7 +1168,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost~FF  (.D(n338), 
-           .CE(n339), .CLK(\clk~O ), .SR(n340), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1915)
+           .CE(n339), .CLK(\clk~O ), .SR(n340), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1915)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost~FF .SR_POLARITY = 1'b1;
@@ -1178,7 +1178,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/arb_lost~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2]~FF  (.D(n341), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2]~FF .SR_POLARITY = 1'b0;
@@ -1188,7 +1188,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7]~FF  (.D(n342), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7]~FF .SR_POLARITY = 1'b0;
@@ -1198,7 +1198,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7]~FF  (.D(n343), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1942)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1942)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7]~FF .SR_POLARITY = 1'b0;
@@ -1208,7 +1208,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBSR[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6]~FF  (.D(n344), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1376)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1376)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6]~FF .SR_POLARITY = 1'b0;
@@ -1218,7 +1218,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mscl_state[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1] ), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1969)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1969)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1~FF .SR_POLARITY = 1'b0;
@@ -1228,7 +1228,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2~FF  (.D(n346), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1969)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1969)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2~FF .SR_POLARITY = 1'b0;
@@ -1237,7 +1237,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr2~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start~FF  (.D(n347), 
-           .CE(n348), .CLK(\clk~O ), .SR(n349), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1988)
+           .CE(n348), .CLK(\clk~O ), .SR(n349), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1988)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start~FF .SR_POLARITY = 1'b1;
@@ -1247,7 +1247,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/rep_start~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_busy~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/detectStartS0 ), 
            .CE(n351), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(i2c_busy)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2001)
+           .Q(i2c_busy)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2001)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_busy~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_busy~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_busy~FF .SR_POLARITY = 1'b0;
@@ -1257,7 +1257,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_busy~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0~FF  (.D(i2c_busy), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2008)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0 )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2008)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0~FF .SR_POLARITY = 1'b0;
@@ -1266,7 +1266,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbbS0~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_arb_lost~FF  (.D(1'b1), 
-           .CE(n352), .CLK(\clk~O ), .SR(n353), .Q(i2c_arb_lost)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2032)
+           .CE(n352), .CLK(\clk~O ), .SR(n353), .Q(i2c_arb_lost)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2032)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_arb_lost~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_arb_lost~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_arb_lost~FF .SR_POLARITY = 1'b1;
@@ -1276,7 +1276,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_arb_lost~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_rxak~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sdaIn_int ), 
            .CE(n354), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(i2c_rxak)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(2083)
+           .Q(i2c_rxak)) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(2083)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_rxak~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_rxak~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_rxak~FF .SR_POLARITY = 1'b0;
@@ -1285,7 +1285,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_rxak~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_rxak~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n337), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1202)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n337), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1202)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0]~FF .SR_POLARITY = 1'b0;
@@ -1295,7 +1295,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sda_spike_cnt[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5] ), 
            .CE(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/mbcr_wr1 ), 
-           .CLK(\clk~O ), .SR(n358), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1162)
+           .CLK(\clk~O ), .SR(n358), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1162)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta~FF .SR_POLARITY = 1'b1;
@@ -1305,7 +1305,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/msta~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1]~FF  (.D(n359), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1552)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1552)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1]~FF .SR_POLARITY = 1'b0;
@@ -1315,7 +1315,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2]~FF  (.D(n360), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1552)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1552)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2]~FF .SR_POLARITY = 1'b0;
@@ -1325,7 +1325,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3]~FF  (.D(n361), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1552)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1552)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3]~FF .SR_POLARITY = 1'b0;
@@ -1334,7 +1334,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sscl_state[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1]~FF  (.D(n362), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1]~FF .SR_POLARITY = 1'b1;
@@ -1343,7 +1343,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2]~FF  (.D(n363), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2]~FF .SR_POLARITY = 1'b1;
@@ -1352,7 +1352,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3]~FF  (.D(n364), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3]~FF .SR_POLARITY = 1'b1;
@@ -1361,7 +1361,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4]~FF  (.D(n365), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4]~FF .SR_POLARITY = 1'b1;
@@ -1370,7 +1370,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5]~FF  (.D(n366), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5]~FF .SR_POLARITY = 1'b1;
@@ -1379,7 +1379,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF  (.D(n367), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF .SR_POLARITY = 1'b1;
@@ -1388,7 +1388,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7]~FF  (.D(n368), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7]~FF .SR_POLARITY = 1'b1;
@@ -1397,7 +1397,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8]~FF  (.D(n369), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8]~FF .SR_POLARITY = 1'b1;
@@ -1406,7 +1406,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[8]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9]~FF  (.D(n370), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9]~FF .SR_POLARITY = 1'b1;
@@ -1415,7 +1415,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[9]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10]~FF  (.D(n371), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1571)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n314), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1571)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10]~FF .SR_POLARITY = 1'b1;
@@ -1424,7 +1424,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/sclkCount[10]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1]~FF  (.D(n372), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1]~FF .SR_POLARITY = 1'b1;
@@ -1433,7 +1433,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2]~FF  (.D(n373), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2]~FF .SR_POLARITY = 1'b1;
@@ -1442,7 +1442,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3]~FF  (.D(n374), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3]~FF .SR_POLARITY = 1'b1;
@@ -1451,7 +1451,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4]~FF  (.D(n375), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4]~FF .SR_POLARITY = 1'b1;
@@ -1460,7 +1460,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5]~FF  (.D(n376), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5]~FF .SR_POLARITY = 1'b1;
@@ -1469,7 +1469,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6]~FF  (.D(n377), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6]~FF .SR_POLARITY = 1'b1;
@@ -1478,7 +1478,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7]~FF  (.D(n378), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1672)
+           .CE(1'b1), .CLK(\clk~O ), .SR(n322), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1672)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7]~FF .SR_POLARITY = 1'b1;
@@ -1487,7 +1487,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2c_state[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0] ), 
-           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1694)
+           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b0, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1694)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0]~FF .SR_POLARITY = 1'b1;
@@ -1496,7 +1496,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[0]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1]~FF  (.D(n382), 
-           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1694)
+           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1694)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1]~FF .SR_POLARITY = 1'b1;
@@ -1505,7 +1505,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2]~FF  (.D(n383), 
-           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1694)
+           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1694)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2]~FF .SR_POLARITY = 1'b1;
@@ -1514,7 +1514,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3]~FF  (.D(n384), 
-           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1694)
+           .CE(n380), .CLK(\clk~O ), .SR(n381), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1694)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3]~FF .SR_POLARITY = 1'b1;
@@ -1524,7 +1524,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/bitCount[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[0] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1]~FF .SR_POLARITY = 1'b0;
@@ -1534,7 +1534,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[1] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2]~FF .SR_POLARITY = 1'b0;
@@ -1544,7 +1544,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[2] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3]~FF .SR_POLARITY = 1'b0;
@@ -1554,7 +1554,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[3] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4]~FF .SR_POLARITY = 1'b0;
@@ -1564,7 +1564,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[4] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5]~FF .SR_POLARITY = 1'b0;
@@ -1574,7 +1574,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[5] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6]~FF .SR_POLARITY = 1'b0;
@@ -1584,7 +1584,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[6] ), 
            .CE(n327), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1855)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1855)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7]~FF .SR_POLARITY = 1'b0;
@@ -1594,7 +1594,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/i2cHeader[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3]~FF  (.D(n392), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3]~FF .SR_POLARITY = 1'b0;
@@ -1604,7 +1604,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4]~FF  (.D(n393), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4]~FF .SR_POLARITY = 1'b0;
@@ -1614,7 +1614,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5]~FF  (.D(n394), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5]~FF .SR_POLARITY = 1'b0;
@@ -1624,7 +1624,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6]~FF  (.D(n395), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6]~FF .SR_POLARITY = 1'b0;
@@ -1634,7 +1634,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7]~FF  (.D(n396), 
            .CE(n330), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1881)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1881)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7]~FF .SR_POLARITY = 1'b0;
@@ -1644,7 +1644,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[1] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1]~FF .SR_POLARITY = 1'b0;
@@ -1654,7 +1654,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[2] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2]~FF .SR_POLARITY = 1'b0;
@@ -1664,7 +1664,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[3] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3]~FF .SR_POLARITY = 1'b0;
@@ -1674,7 +1674,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[4] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4]~FF .SR_POLARITY = 1'b0;
@@ -1684,7 +1684,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[5] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5]~FF .SR_POLARITY = 1'b0;
@@ -1694,7 +1694,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[6] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6]~FF .SR_POLARITY = 1'b0;
@@ -1704,7 +1704,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/shiftReg[7] ), 
            .CE(n335), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(1890)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(1890)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7]~FF .SR_POLARITY = 1'b0;
@@ -1713,7 +1713,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/u_i2c_mstrslv_ctl/u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1]~FF  (.D(n404), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(482)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(482)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1]~FF .SR_POLARITY = 1'b0;
@@ -1722,7 +1722,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2]~FF  (.D(n405), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(482)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(482)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2]~FF .SR_POLARITY = 1'b0;
@@ -1731,7 +1731,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3]~FF  (.D(n406), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(482)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(482)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3]~FF .SR_POLARITY = 1'b0;
@@ -1740,7 +1740,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/current_st[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1]~FF  (.D(n407), 
-           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1]~FF .SR_POLARITY = 1'b0;
@@ -1749,7 +1749,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2]~FF  (.D(n409), 
-           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2]~FF .SR_POLARITY = 1'b0;
@@ -1758,7 +1758,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3]~FF  (.D(n410), 
-           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3]~FF .SR_POLARITY = 1'b0;
@@ -1767,7 +1767,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4]~FF  (.D(n411), 
-           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4]~FF .SR_POLARITY = 1'b0;
@@ -1776,7 +1776,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6]~FF  (.D(n412), 
-           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6]~FF .SR_POLARITY = 1'b0;
@@ -1785,7 +1785,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7]~FF  (.D(n413), 
-           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(610)
+           .CE(n408), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(610)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7]~FF .SR_POLARITY = 1'b0;
@@ -1794,7 +1794,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MIDR[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2]~FF  (.D(n414), 
-           .CE(n415), .CLK(\clk~O ), .SR(n416), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(685)
+           .CE(n415), .CLK(\clk~O ), .SR(n416), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(685)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2]~FF .SR_POLARITY = 1'b1;
@@ -1803,7 +1803,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF  (.D(n417), 
-           .CE(n415), .CLK(\clk~O ), .SR(n418), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(685)
+           .CE(n415), .CLK(\clk~O ), .SR(n418), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(685)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF .SR_POLARITY = 1'b1;
@@ -1813,7 +1813,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF  (.D(n419), 
            .CE(n415), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(685)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(685)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF .SR_POLARITY = 1'b1;
@@ -1822,7 +1822,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5]~FF  (.D(n420), 
-           .CE(n415), .CLK(\clk~O ), .SR(n421), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(685)
+           .CE(n415), .CLK(\clk~O ), .SR(n421), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(685)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5]~FF .SR_POLARITY = 1'b1;
@@ -1832,7 +1832,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6]~FF  (.D(1'b1), 
            .CE(n422), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(685)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(685)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6]~FF .SR_POLARITY = 1'b1;
@@ -1842,7 +1842,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MBCR[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1]~FF  (.D(n423), 
            .CE(1'b1), .CLK(\clk~O ), .SR(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3] ), 
-           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(703)
+           .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b1 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(703)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1]~FF .SR_POLARITY = 1'b1;
@@ -1851,7 +1851,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/mbcr_write0[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1]~FF  (.D(n424), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(756)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(756)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1]~FF .SR_POLARITY = 1'b0;
@@ -1860,7 +1860,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_wr_data0[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1]~FF  (.D(n425), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(767)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(767)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1]~FF .SR_POLARITY = 1'b0;
@@ -1869,7 +1869,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/uc_rd_data0[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1]~FF  (.D(n426), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1]~FF .SR_POLARITY = 1'b0;
@@ -1878,7 +1878,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2]~FF  (.D(n427), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2]~FF .SR_POLARITY = 1'b0;
@@ -1887,7 +1887,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3]~FF  (.D(n428), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3]~FF .SR_POLARITY = 1'b0;
@@ -1896,7 +1896,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4]~FF  (.D(n429), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4]~FF .SR_POLARITY = 1'b0;
@@ -1905,7 +1905,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF  (.D(n430), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF .SR_POLARITY = 1'b0;
@@ -1914,7 +1914,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6]~FF  (.D(n431), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6]~FF .SR_POLARITY = 1'b0;
@@ -1923,7 +1923,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7]~FF  (.D(n432), 
-           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(786)
+           .CE(n294), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b0, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(786)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7]~FF .CE_POLARITY = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7]~FF .SR_POLARITY = 1'b0;
@@ -1932,7 +1932,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/byte_cnt[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[1]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[1] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[1]~FF .SR_POLARITY = 1'b0;
@@ -1941,7 +1941,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[1]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[2]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[2] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[2]~FF .SR_POLARITY = 1'b0;
@@ -1950,7 +1950,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[2]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[3]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[3] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[3]~FF .SR_POLARITY = 1'b0;
@@ -1959,7 +1959,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[3]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[3]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[4]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[4] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[4]~FF .SR_POLARITY = 1'b0;
@@ -1968,7 +1968,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[5]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[5] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[5] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[5]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[5]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[5]~FF .SR_POLARITY = 1'b0;
@@ -1977,7 +1977,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[5]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[5]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[6]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[6] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[6] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[6]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[6]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[6]~FF .SR_POLARITY = 1'b0;
@@ -1986,7 +1986,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[6]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[6]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[7]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/MODR[7] ), 
-           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(810)
+           .CE(n306), .CLK(\clk~O ), .SR(reset_i), .Q(\i2c_data_out[7] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(810)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[7]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[7]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[7]~FF .SR_POLARITY = 1'b0;
@@ -1995,7 +1995,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[7]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_data_out[7]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4]~FF  (.D(\i2c_command_byte[0] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(471)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b1, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b0, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(471)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4]~FF .SR_POLARITY = 1'b0;
@@ -2004,7 +2004,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4]~FF .SR_VALUE = 1'b0;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/i2c_slave_addr0[4]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[0] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(861)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(861)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF .SR_POLARITY = 1'b0;
@@ -2013,7 +2013,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[1] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(861)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(861)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF .SR_POLARITY = 1'b0;
@@ -2022,7 +2022,7 @@ module level (clk, reset_i, sda_oe, sda_o, sda_i, scl_oe, scl_o,
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF .SR_VALUE = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2]~FF .SR_SYNC_PRIORITY = 1'b1;
     EFX_FF \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3]~FF  (.D(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[2] ), 
-           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/ip/i2c_interface/i2c_interface.v(861)
+           .CE(1'b1), .CLK(\clk~O ), .SR(reset_i), .Q(\u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3] )) /* verific EFX_ATTRIBUTE_CELL_NAME=EFX_FF, CLK_POLARITY=1'b1, D_POLARITY=1'b1, CE_POLARITY=1'b1, SR_SYNC=1'b0, SR_SYNC_PRIORITY=1'b1, SR_VALUE=1'b1, SR_POLARITY=1'b0 */ ;   // /home/vlad/Documents/level_project/original_design/ip/i2c_interface/i2c_interface.v(861)
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3]~FF .CLK_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3]~FF .CE_POLARITY = 1'b1;
     defparam \u_i2c_interface/u_i2c_controller_2e835ddf2f154dd587bb395c6ea8daac/genblk1.master_ctl_inst/soft_rst_reg[3]~FF .SR_POLARITY = 1'b0;
