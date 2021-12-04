@@ -12032,3 +12032,218 @@
 \o INFO (SCH-1426): Schematic check completed with no errors.
 \o INFO (SCH-1181): "level_fsm_schematic level_fsm_tb schematic" saved.
 \r t
+\a hiSetCurrentWindow(window(12))
+\r t
+\a hiZoomOutAtMouse()
+\i 13.81:11.09
+\r t
+\a hiZoomInAtMouse()
+\i 10.79:7.28
+\r t
+\a mouseSingleSelectPt()
+\i 10.62:4.79
+\r t
+\a hiZoomInAtMouse()
+\i 10.62:4.82
+\r t
+\a hiZoomInAtMouse()
+\i 10.62:4.82
+\r t
+\a hiZoomOutAtMouse()
+\i 10.62:4.83
+\r t
+\a hiZoomOutAtMouse()
+\i 10.62:4.84
+\r t
+\a mouseSingleSelectPt()
+\i -5.17:2.99
+\r nil
+\a _deUpdateWindowMenu('leSessionWindowMenu12 12)
+\r t
+\a _deUpdateWindowMenu('leSessionWindowMenu12 12)
+\r t
+\a leHiCreateMeasurement()
+\p > 
+\a mouseAddPt(t)
+\i 0.0405:-0.008
+\r t
+\a mouseAddPt(t)
+\i 33.737:-0.008
+\r t
+\a mouseAddPt(t)
+\i 35.0245:-0.036
+\r t
+\a mouseAddPt(t)
+\i 34.4925:28.007
+\r t
+\a hiZoomInAtMouse()
+\i 27.72:20.23
+\r t
+\a hiZoomInAtMouse()
+\i 27.79:20.23
+\r t
+\a hiZoomInAtMouse()
+\i 27.79:20.23
+\r t
+\a hiZoomOutAtMouse()
+\i 27.79:20.23
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a mouseSingleSelectPt()
+\i 29.41:19.51
+\r nil
+\a hiGetCurrentWindow()->stopLevel = dbGetMaxHierDepth()-1
+\r 31
+\a leSetStopLevelToEditLevel(hiGetCurrentWindow())
+\r 0
+\a hiZoomOutAtMouse()
+\i 27.94:19.65
+\r t
+\a hiZoomOutAtMouse()
+\i 27.94:19.65
+\r t
+\a hiZoomOutAtMouse()
+\i 27.93:19.65
+\r t
+\a hiZoomInAtMouse()
+\i 21.89:19.53
+\r t
+\a leSetStopLevelToEditLevel(hiGetCurrentWindow())
+\r 0
+\a hiZoomInAtMouse()
+\i 18:0.3
+\r t
+\a hiZoomInAtMouse()
+\i 18:0.3
+\r t
+\a hiZoomInAtMouse()
+\i 18:0.3
+\r t
+\a hiZoomOutAtMouse()
+\i 17.53:0.72
+\r t
+\a hiZoomOutAtMouse()
+\i 17.52:0.73
+\r t
+\a hiZoomOutAtMouse()
+\i 17.43:1.35
+\r t
+\a hiZoomOutAtMouse()
+\i 20.54:1.92
+\r t
+\a hiZoomInAtMouse()
+\i 19.03:16.81
+\r t
+\a hiZoomOutAtMouse()
+\i 17.21:8.66
+\r t
+\a hiZoomInAtMouse()
+\i 17.21:8.67
+\r t
+\a hiZoomOutAtMouse()
+\i 14.49:22.41
+\r t
+\a hiZoomInAtMouse()
+\i 17.3:5.06
+\r t
+\# Memory report: Maximum memory size now 5,313 MB at UTC 2021.12.04 00:28:32.002
+\# Memory report: Maximum memory size now 5,185 MB at UTC 2021.12.04 00:29:52.002
+\# Available memory:          3,326 MB at UTC 2021.12.04 00:31:02.003
+\# Memory report: Maximum memory size now 5,069 MB at UTC 2021.12.04 00:32:02.002
+\# Memory report: Maximum memory size now 5,210 MB at UTC 2021.12.04 00:33:02.002
+\# Available memory:          3,832 MB at UTC 2021.12.04 00:33:12.000
+\# Memory report: Maximum memory size now 5,592 MB at UTC 2021.12.04 00:33:12.000
+\# Memory report: Maximum memory size now 5,770 MB at UTC 2021.12.04 00:33:32.000
+\# Memory report: Maximum memory size now 5,618 MB at UTC 2021.12.04 00:37:22.457
+\a hiResizeWindow(swindow(9) list(-3:-3 797:537))
+\r t
+\a hiResizeWindow(window(1) list(771:-516 1566:-3))
+\r t
+\a hiResizeWindow(window(2) list(155:-523 1032:-3))
+\r t
+\a hiResizeWindow(swindow(8) list(-3:-3 797:537))
+\r t
+\a hiResizeWindow(swindow(9) list(-3:-3 2557:1312))
+\r t
+\a hiResizeWindow(window(1) list(1294:251 2089:764))
+\r t
+\a hiResizeWindow(window(2) list(155:109 1032:629))
+\r t
+\a hiResizeWindow(swindow(8) list(-3:-3 2557:1312))
+\r t
+\a hiSetCurrentWindow(window(58))
+\r t
+\# Memory report: using       1,896 MB, process size 3,398 MB at UTC 2021.12.04 00:37:48.570
+\a hiResizeWindow(swindow(29) list(268:158 1536:1223))
+\r t
+\a hiResizeWindow(swindow(29) list(268:158 1459:1223))
+\r t
+\# Memory report: Maximum memory size now 5,745 MB at UTC 2021.12.04 00:38:02.000
+\# Memory report: Maximum memory size now 5,628 MB at UTC 2021.12.04 00:38:41.867
+\a hiResizeWindow(swindow(29) list(268:158 2043:1223))
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "horizontalMarker")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "pointMarker")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "pointMarker")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "deleteObjects")
+\r t
+\a hiCloseWindow(swindow(29))
+\r t
+\a _hiSetCurrentWinNum(57)
+\r t
+\a hiResizeWindow(swindow(10) list(474:296 1281:870))
+\r t
+\a hiSetCurrentWindow(window(11))
+\r t
+\a _treeNavOpcHome(dwindow('treeAssistant8))
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant8) "Objects/Nets")
+\r t
+\a _treeNavCollapse(dwindow('treeAssistant8) "/I0/g2707 Inst")
+\r t
+\a hiZoomOutAtMouse()
+\i 6.5:-3.5
+\r t
+\a hiZoomInAtMouse()
+\i 7.3125:-6.5
+\r t
+\a schSingleSelectPt()
+\i 7.3125:-6.5625
+\r nil
+\a hiCloseWindow(swindow(8))
+\# Available memory:          4,393 MB at UTC 2021.12.04 00:42:01.261
+\# Memory report: Maximum memory size now 6,221 MB at UTC 2021.12.04 00:42:01.261
+\r t
+\a _hiSetCurrentWinNum(2)
+\r t
+\a hiCloseWindow(swindow(9))
+\# Displaying modal dbox "geDBox", title "Save Changes"
+\p > 
+\a hiCloseWindow(swindow(9))
+\r nil
+\a hiDBoxOK(geDBox)
+\r t
+\# Memory report: Maximum memory size now 6,495 MB at UTC 2021.12.04 00:42:14.465
+\r t
+\# Available memory:          4,837 MB at UTC 2021.12.04 00:42:24.001
+\# Memory report: Maximum memory size now 6,664 MB at UTC 2021.12.04 00:42:24.001
+\a hiQuit()
+\# Available memory:          5,388 MB at UTC 2021.12.04 00:42:57.531
+\# Memory report: Maximum memory size now 7,216 MB at UTC 2021.12.04 00:42:57.532
+\# Displaying modal dbox "hiQuitDBox", title "Quit"
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables19".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\# Memory report: on exit          1,828 MB, process size 3,284 MB at UTC 2021.12.04 00:43:05.584
+\# Memory report: peak usage       1,900 MB, process size 3,404 MB
