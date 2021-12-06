@@ -161,41 +161,41 @@ led\_o & 9 & System & Output & LED array output of bubble level &
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{verilogtb.png}
-    \caption{For comparison, here is the input and output vector of the original Verilog simulation. This simulation tests does the following in this order: 1) FSM reset 2) Write to accelerometer to wake it up 3) Wait for valid response 4) Read from accelerometer register 5) Display level on LEDs. 6) Read from accelerometer register, but this time receive an error 7) Verify error\_led output 8) Reset FSM 9) Write to accelerometer to wake it up, but this time receive an error 10) Verify error\_led output 11) Stall forever. This procedure tests an overwhelming majority of the FSM. Signals have been color-coded for your convenience.}
+    \caption{For comparison, here is the input and output vector of the original Verilog simulation. This simulation tests does the following in this order: 1) FSM reset 2) Write to accelerometer to wake it up 3) Wait for valid response 4) Read from accelerometer register 5) Display level on LEDs. 6) Read from accelerometer register, but this time receive an error 7) Verify error\_led output 8) Reset FSM 9) Write to accelerometer to wake it up, but this time receive an error 10) Verify error\_led output 11) Stall forever. This procedure tests an overwhelming majority of the FSM.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{waveforms.png}
-    \caption{Here is the same test bench but now it is executed in Virtuoso. As we can see the waveforms are the same, but we see characteristic RC delays.}
+    \caption{Here is the same test bench but now it is executed in Virtuoso. As we can see the waveforms are the same, but we see characteristic RC delays. The multi-bit vector values were the same in both cases. Rise time for input signals was 2ns. The layout passed the test!}
 \end{figure}
 
 
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{disc1.png}
-    \caption{Blah blah blah}
+    \caption{I encountered an interesting problem while troubleshooting the simulation. Part of my vectors from the Verilog and Virtuoso simulations were not lining up. Upon an FSM reset, the slave addr, command byte, and num bytes should be going to 0, then back to their default non-zero values after a reset. This happens on the Verilog simulation, but not on the Virtuoso one. However, the rest of the FSM's functionality would continue as normal. Without those signals though, the FSM would not read/write from the device correctly though. I found that adjusting the length of the reset signal to be slightly MORE than two cycles would solve this issue. However, the root cause of the issue is poor test bench design. It was ultimately a setup-time violation on the reset line that would cause the FSM to skip a state. }
 \end{figure}
 
 
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{disc2.png}
-    \caption{Blah blah blah}
+    \caption{What the FSM outputs should look like according to the Verilog test bench. Note how the slave address and other busses change their values at 370ns, but in the Virtuoso they do not.}
 \end{figure}
 
 
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{fixed.png}
-    \caption{Blah blah blah}
+    \caption{Extending the reset pulse in Virtuoso solved this bug. Now the simulations are functionally identical.}
 \end{figure}
 
 
 \begin{figure}[H]
     \centering
 \includegraphics[width=0.99\textwidth]{delay.png}
-    \caption{Blah blah blah}
+    \caption{Another thing I played around with is measuring the propagation delay. I found the worst-case delay to be on the i2c\_command\_byte bus. The worst case delay was a staggering 722ps. Since the FSM is rather simple and it's function is really just to pipe data from the accelerometer to the LEDs, I can be quite confidant that this is in fact the worst-case delay.}
 \end{figure}
 
 
@@ -203,20 +203,20 @@ led\_o & 9 & System & Output & LED array output of bubble level &
 
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.9\textwidth]{2a.png}
+\includegraphics[width=0.8\textwidth]{2a.png}
 \end{figure}
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.9\textwidth]{3a.png}
+\includegraphics[width=0.8\textwidth]{3a.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.9\textwidth]{3b.png}
+\includegraphics[width=0.8\textwidth]{3b.png}
 \end{figure}
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.9\textwidth]{5.png}
+\includegraphics[width=0.8\textwidth]{5.png}
 \end{figure}
 
 
